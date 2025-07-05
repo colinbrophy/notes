@@ -109,14 +109,14 @@
             "id": "44f799aeb6a01b9a",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "2025-07-05.md",
-                "bFile": "2025-07-05.md",
-                "aRef": ""
+                "file": "System Level Comparison of OSes.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: 2025-07-05"
+              "icon": "lucide-file",
+              "title": "System Level Comparison of OSes"
             }
           },
           {
@@ -283,12 +283,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "System Level Comparison of OSes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of System Level Comparison of OSes"
             }
           },
           {
@@ -319,7 +320,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "270711e3cb5699b9",
+  "active": "44f799aeb6a01b9a",
   "lastOpenFiles": [
     "System Level Comparison of OSes.md",
     "Preserve the Non-Obvious.md",

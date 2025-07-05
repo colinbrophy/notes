@@ -43,6 +43,25 @@ This table summarises core system-level capabilities across Linux (Fedora with G
 |Display scaling (HiDPI)|✅ Fractional, Wayland-native|❌ Just 2x scaling|⚠️ Inconsistent per-monitor|
 |Touchpad gestures|✅ Good on libinput + GNOME|✅ Excellent|⚠️ Somewhat clunky|
 |Thermal management|✅ Configurable, sensors visible|❌ Mostly closed|⚠️ OEM-specific tools|
+### 🔌 Compatibility & Integration Strengths
+
+| Area                              | Linux                                     | macOS                            | Windows 11                                |
+| --------------------------------- | ----------------------------------------- | -------------------------------- | ----------------------------------------- |
+| Broad hardware support            | ⚠️ Good, but needs vendor alignment       | ✅ Excellent on Apple hardware    | ✅ Very broad, including legacy            |
+| Third-party software availability | ✅ Good via package managers               | ✅ Wide availability (mac-native) | ✅ Extensive Win32 and UWP base            |
+| Peripheral support                | ⚠️ Varies, especially proprietary devices | ✅ Excellent with certified gear  | ✅ Very good, especially OEM-specific      |
+| Mobile device integration         | ⚠️ KDE Connect or GSConnect               | ✅ Tight iOS/macOS integration    | ⚠️ Android sync tools, no native SMS etc. |
+| Commercial support ecosystem      | ⚠️ Canonical/Red Hat exist, but limited   | ✅ AppleCare, Apple stores        | ✅ OEMs, Microsoft Enterprise              |
+### 🛡️ Security & Isolation Features
+
+| Feature                        | Linux                              | macOS                          | Windows 11                           |
+| ------------------------------ | ---------------------------------- | ------------------------------ | ------------------------------------ |
+| Mandatory Access Control (MAC) | ✅ SELinux, AppArmor                | ❌ Not available                | ❌ Not available                      |
+| Application sandboxing         | ✅ Flatpak, systemd, seccomp        | ✅ App sandboxing for App Store | ⚠️ UWP apps only, rest unrestricted  |
+| Kernel hardening               | ✅ Grsecurity/SELinux stack         | ⚠️ Hardened, but closed        | ⚠️ Some protections, no user control |
+| Software signing enforcement   | ⚠️ Optional, distro-dependent      | ✅ Strict signing model         | ✅ Strong for Store apps              |
+| Encryption tooling             | ✅ LUKS, dm-crypt, TPM2 integration | ✅ FileVault + secure enclave   | ✅ BitLocker + TPM                    |
+| Firmware update mechanism      | ✅ fwupd + LVFS                     | ✅ Apple firmware updates       | ⚠️ OEM-dependent                     |
 
 **Legend**:
 
@@ -53,5 +72,24 @@ This table summarises core system-level capabilities across Linux (Fedora with G
 - ❌ Lacks robust support or transparency
     
 
-**Conclusion**:  
-Linux (Fedora/GNOME) leads in nearly all low-level system features — especially in transparency, rollback, filesystem resilience, and service/tooling architecture. macOS remains strong for polished defaults but weak on observability and control. Windows retains hardware compatibility but trails in integrity, update safety, and modern architecture. For laptops and desktops alike, Linux gives maximum control and composability, albeit with some tuning required on laptops for battery and suspend behavior.
+**Conclusion**: Linux (Fedora/GNOME) leads in nearly all low-level system features — especially in transparency, rollback, filesystem resilience, and service/tooling architecture. macOS remains strong for polished defaults but weak on observability and control. Windows retains hardware compatibility but trails in integrity, update safety, and modern architecture. For laptops and desktops alike, Linux gives maximum control and composability, albeit with some tuning required on laptops for battery and suspend behavior.
+
+macOS and Windows, however, retain strong advantages in **default compatibility, polish, and vendor-integrated workflows**, especially for mainstream hardware and software use. These strengths are real — but arise more from controlled ecosystems than from system design itself.
+
+### 📝 TODO: Potential Future Comparison Dimensions
+
+- Software trust and distribution models (e.g. Flatpak vs App Store vs MSI)
+    
+- VPN and network isolation capabilities (per-app firewalls, namespace support)
+    
+- Update models (monolithic vs transactional vs delta)
+    
+- Crash reporting infrastructure and user control
+    
+- Telemetry defaults and privacy controls
+    
+- Multi-user and session isolation architecture
+    
+- System identity and authentication model (e.g. local vs cloud accounts)
+    
+- Filesystem layout and philosophy (FHS, sandboxing, `/usr` merge, etc.)
