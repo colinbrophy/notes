@@ -24,6 +24,26 @@ This table summarises core system-level capabilities across Linux (Fedora with G
 |**Swap Management**|✅ Swap files, zswap, zram supported|⚠️ Hidden from user|❌ Confusing mix of pagefile & hibernation|
 |**Bootloader & Recovery**|✅ systemd-boot/GRUB, EFI-aware, boot snapshot integration|❌ Opaque, boot stubs only|❌ Opaque, no snapshot boot, basic recovery mode|
 
+### 🖥️ Desktop-Focused Features
+
+|Feature|Linux|macOS|Windows 11|
+|---|---|---|---|
+|Multi-monitor setup|✅ Excellent, Wayland-aware|⚠️ Often glitchy with scaling|⚠️ Functional, but inconsistently applied|
+|Keyboard workflow|✅ Strong: GNOME/KDE-driven|⚠️ Trackpad-focused, limited keys|⚠️ Weak keyboard-centric support|
+|App theming & customisation|✅ Fully customisable via themes|❌ Mostly locked down|⚠️ Some theming, but inconsistent|
+|App integration|✅ Flatpak + portals improving|✅ Polished for native apps|❌ Store vs Win32 fragmentation|
+|Workspace isolation|✅ GNOME workspaces per monitor|❌ No real isolation|⚠️ Virtual desktops only|
+
+### 💻 Laptop-Specific Features
+
+|Feature|Linux|macOS|Windows 11|
+|---|---|---|---|
+|Suspend/resume reliability|⚠️ Varies by hardware|✅ Very reliable|✅ Generally reliable|
+|Battery life|⚠️ Needs tuning (TLP etc.)|✅ Very efficient|⚠️ Hardware/OEM dependent|
+|Display scaling (HiDPI)|✅ Fractional, Wayland-native|❌ Just 2x scaling|⚠️ Inconsistent per-monitor|
+|Touchpad gestures|✅ Good on libinput + GNOME|✅ Excellent|⚠️ Somewhat clunky|
+|Thermal management|✅ Configurable, sensors visible|❌ Mostly closed|⚠️ OEM-specific tools|
+
 **Legend**:
 
 - ✅ Best-in-class or complete
@@ -34,4 +54,4 @@ This table summarises core system-level capabilities across Linux (Fedora with G
     
 
 **Conclusion**:  
-Linux (Fedora/GNOME) leads in nearly all low-level system features — especially in transparency, rollback, filesystem resilience, and service/tooling architecture. macOS remains strong for polished defaults but weak on observability and control. Windows retains hardware compatibility but trails in integrity, update safety, and modern architecture.
+Linux (Fedora/GNOME) leads in nearly all low-level system features — especially in transparency, rollback, filesystem resilience, and service/tooling architecture. macOS remains strong for polished defaults but weak on observability and control. Windows retains hardware compatibility but trails in integrity, update safety, and modern architecture. For laptops and desktops alike, Linux gives maximum control and composability, albeit with some tuning required on laptops for battery and suspend behavior.

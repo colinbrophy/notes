@@ -109,10 +109,14 @@
             "id": "44f799aeb6a01b9a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "2025-07-05.md",
+                "bFile": "2025-07-05.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: 2025-07-05"
             }
           },
           {
@@ -211,8 +215,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -280,13 +283,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AUR, A Hacky Software Installation Method or Powerful Tool?.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of AUR, A Hacky Software Installation Method or Powerful Tool?"
+              "title": "Outline"
             }
           },
           {
@@ -320,20 +322,21 @@
   "active": "270711e3cb5699b9",
   "lastOpenFiles": [
     "System Level Comparison of OSes.md",
-    "AUR, A Hacky Software Installation Method or Powerful Tool?.md",
-    "Forever Backup Plan with Metadata Snapshots.md",
-    "Why Connect Thinkers?.md",
-    "A Vault as Refuge from the Modern Web.md",
     "Preserve the Non-Obvious.md",
-    "French Schwa.md",
-    "Greenspun's Tenth Rule and Static Typing.md",
     "Philosophy and the Other Fields.md",
-    "Useful commands.md",
+    "French Schwa.md",
+    "Forever Backup Plan with Metadata Snapshots.md",
     "ChatGPT_Session_Summary_Obsidian.md",
+    "AUR, A Hacky Software Installation Method or Powerful Tool?.md",
+    "A Vault as Refuge from the Modern Web.md",
+    "2025-07-05.md",
+    "Why Connect Thinkers?.md",
+    "Useful commands.md",
+    "Untitled.canvas",
+    "Greenspun's Tenth Rule and Static Typing.md",
     "languages/Efficient Language Learning Strategy.md",
     "languages",
     "google_tasks.md",
-    "Untitled.canvas",
     "2025-06-30.md",
     "Welcome.md",
     "create a link.md",
