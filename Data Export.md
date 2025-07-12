@@ -13,31 +13,31 @@ This list includes only data that is **not safely handled by regular disk backup
 Select only what you use. Recommended sections:
 
 #### 📬 Gmail
-- [ ] Export `.mbox` file (ensure it’s non-empty)
-- [ ] Confirm it contains **Sent mail**, **All Mail**, and **important folders**
-- [ ] Labels appear as metadata or in folder names
-- [ ] File is readable in Thunderbird or other MBOX viewer
+- [x] Export `.mbox` file (ensure it’s non-empty) 
+- [x] Confirm it contains **Sent mail**, **All Mail**, and **important folders**
+- [x] Labels appear as metadata or in folder names
+- [x] File is readable in Thunderbird or other MBOX viewer
 
 #### 📁 Google Drive
-- [ ] Export files in **PDF**, **ODT**, or **original formats**
-- [ ] Ensure Docs, Sheets, and Slides are converted and usable
-- [ ] Confirm embedded images/media are included
-- [ ] Folder structure is preserved (or recoverable)
+- [x] Export files in **PDF**, **ODT**, or **original formats**
+- [x] Ensure Docs, Sheets, and Slides are converted and usable
+- [x] Confirm embedded images/media are included
+- [x] Folder structure is preserved (or recoverable)
 
 #### 👥 Contacts
-- [ ] Export as `.vcf` (vCard)
-- [ ] Check that contact names, emails, phone numbers are intact
-- [ ] Verify importability into another contact manager (e.g. Thunderbird, KDE Contacts)
+- [x] Export as `.vcf` (vCard)
+- [x] Check that contact names, emails, phone numbers are intact
+- [x] Verify importability into another contact manager (e.g. Thunderbird, KDE Contacts)
 
 #### 📅 Calendar
-- [ ] Export as `.ics`
-- [ ] Confirm event titles, times, locations, and attendees are present
-- [ ] Check timezones and recurring events are handled correctly
+- [x] Export as `.ics`
+- [x] Confirm event titles, times, locations, and attendees are present
+- [x] Check timezones and recurring events are handled correctly
 
 #### 🖼 Google Photos
-- [ ] Download original-quality images + JSON metadata
-- [ ] Confirm filenames match and metadata (dates, captions) exists
-- [ ] Verify album structure if preserved
+- [x] Download original-quality images + JSON metadata
+- [x] Confirm filenames match and metadata (dates, captions) exists
+- [x] Verify album structure if preserved
 
 ---
 
@@ -58,19 +58,14 @@ Select only what you use. Recommended sections:
 ## 💬 3. Messaging Apps
 
 ### WhatsApp
-- [ ] Use "Export Chat" feature to `.txt` (with media optional)
-- [ ] Ensure timestamps, sender names, and content are present
-- [ ] Save as `whatsapp-export-<chatname>.txt`
+- [x] Use "Export Chat" feature to `.txt` (with media optional)
+- [x] Ensure timestamps, sender names, and content are present
+- [x] Save as `whatsapp-export-<chatname>.txt`
 
 ### Signal
-- [ ] Use backup feature (creates `.backup` file)
-- [ ] Ensure you have the **32-digit restore passphrase**
-- [ ] Note: not readable without restoring in Signal
-
-### iMessage
-- [ ] Use Mac with `iMazing`, `iExplorer`, or native backup
-- [ ] Check message threads, timestamps, and media are exported
-
+- [x] Use backup feature (creates `.backup` file)
+- [x] Ensure you have the **32-digit restore passphrase**
+- [x] Note: not readable without restoring in Signal
 ### Others (Telegram, Discord)
 - [ ] Use built-in data export if available
 - [ ] Confirm that private DMs and channel data are included
