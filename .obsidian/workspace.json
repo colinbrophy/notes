@@ -111,26 +111,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System Level Comparison of OSes.md",
+                "file": "Snapshot & Backup Strategy for Linux Desktop (2025).md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "System Level Comparison of OSes"
+              "title": "Snapshot & Backup Strategy for Linux Desktop (2025)"
             }
           },
           {
-            "id": "c8dacaeed51d6868",
+            "id": "56af34f4c5ee5a9c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Snapshot & Backup Strategy for Linux Desktop (2025).md",
+                "file": "TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Snapshot & Backup Strategy for Linux Desktop (2025)"
+              "title": "TODO"
+            }
+          },
+          {
+            "id": "de0be18135925f4e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Export.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Data Export"
             }
           },
           {
@@ -176,7 +190,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -297,13 +311,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System Level Comparison of OSes.md",
+                "file": "Snapshot & Backup Strategy for Linux Desktop (2025).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of System Level Comparison of OSes"
+              "title": "Outline of Snapshot & Backup Strategy for Linux Desktop (2025)"
             }
           },
           {
@@ -334,10 +348,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "270711e3cb5699b9",
+  "active": "de0be18135925f4e",
   "lastOpenFiles": [
-    "System Level Comparison of OSes.md",
+    "TODO.md",
+    "Data Export.md",
     "Snapshot & Backup Strategy for Linux Desktop (2025).md",
+    "System Level Comparison of OSes.md",
     "Preserve the Non-Obvious.md",
     "Philosophy and the Other Fields.md",
     "French Schwa.md",

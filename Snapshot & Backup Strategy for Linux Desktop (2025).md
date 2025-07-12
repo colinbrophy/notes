@@ -19,17 +19,17 @@ This note outlines a strategy for handling different types of data on a Linux de
 - **Backup?** Yes
     
 
-### 2. **Replaceable Local Data**
+### 2. **Local Project Data**
 
-- **Examples**: Code checkouts, downloaded installers, build artefacts
+- **Examples**: Code checkouts, local dev environments, notes, build trees
     
-- **Traits**: Re-creatable
+- **Traits**: Often recoverable but inconvenient to lose
     
-- **Approach**: Exclude from backup unless modified
+- **Approach**: Snapshot regularly and back up selectively with pruning
     
-- **Snapshot?** Optional
+- **Snapshot?** Yes
     
-- **Backup?** Only if irreplaceable or customised
+- **Backup?** Yes (optional if low value)
     
 
 ### 3. **System Software**
@@ -58,9 +58,11 @@ This note outlines a strategy for handling different types of data on a Linux de
 - **Backup?** Yes
     
 
-### 5. **Containerised/Virtualised Environments**
+> 💡 Ansible (or similar tools) is ideal here — it captures what you've changed and why, helping rebuild and audit your system over time. Snapshots can save you from accidents, but config management lets you know what _matters_.
 
-- **Examples**: Docker volumes, Podman images, Flatpak data, Libvirt VMs
+### 5. "App data"
+
+- **Examples**: Docker volumes, Podman images, Flatpak data, Libvirt VMs, Browser profiles
     
 - **Traits**: Mixed user data and software, complex state
     
@@ -71,7 +73,7 @@ This note outlines a strategy for handling different types of data on a Linux de
 - **Backup?** Yes
     
 
-### 6. **Ephemeral `/var` Data**
+### 6. **Ephemeral** `/var` **Data**
 
 - **Examples**: `/var/log`, `/var/cache`, `/var/tmp`, `/var/spool`
     
@@ -84,7 +86,7 @@ This note outlines a strategy for handling different types of data on a Linux de
 - **Backup?** No
     
 
-### 7. **Essential `/var` State**
+### 7. **Essential** `/var` **State**
 
 - **Examples**: `/var/lib/rpm`, `/var/lib/systemd`, `/var/lib/NetworkManager`
     
@@ -101,43 +103,33 @@ This note outlines a strategy for handling different types of data on a Linux de
 
 - **Examples**: SSH keys, GPG keys, Password vaults
     
-- **Approach**: Back up securely, often encrypted, versioned separately
+- **Approach**: Password manager, with backups
     
-- **Snapshot?** No
+- **Snapshot?** Yes for convenient restore 
     
 - **Backup?** Yes (securely)
     
-
----
-
-## ⛏️ Recommended Subvolume Layout (Btrfs)
-
-```
-@root       => /
-@home       => /home
-@etc        => /etc
-@var_log    => /var/log (exclude from snapshots)
-@var_lib_vm => /var/lib/libvirt (optional)
-@var_lib_ctr=> /var/lib/containers (optional)
-```
-
 ---
 
 ## 📌 Summary Table
 
-|Category|Snapshot|Backup|Notes|
-|---|---|---|---|
-|User Data|❌|✅|Dedup + archive|
-|Local Clones/Builds|❌|❌/✅|Only if custom|
-|Installed Software|✅|❌|Use snapshots|
-|Config Files|✅/Optional|✅|Git + backup|
-|Containers / Flatpaks|⚠️|✅|Use tool-aware backups|
-|Ephemeral /var|❌|❌|Always exclude|
-|Essential /var State|✅|✅/❌|Snapshot for system integrity|
-|Secrets/Credentials|❌|✅|Use encrypted vault or repo|
+| Category              | Snapshot   | Backup | Notes                         |
+| --------------------- | ---------- | ------ | ----------------------------- |
+| User Data             | ❌          | ✅      | Dedup + archive               |
+| Local Project Data    | ✅          | ✅      | Snapshots + prune old backups |
+| Installed Software    | ✅          | ❌      | Use snapshots                 |
+| Config Files          | ✅/Optional | ✅      | Git + backup                  |
+| Containers / Flatpaks | ⚠️         | ✅      | Use tool-aware backups        |
+| Ephemeral /var        | ❌          | ❌      | Always exclude                |
+| Essential /var State  | ✅          | ✅/❌    | Snapshot for system integrity |
+| Secrets/Credentials   | ✅          | ✅      | Use encrypted vault or repo   |
 
 ---
 
 ## 🧠 Final Thought
 
-Snapshots are not backups. They are useful for quick system rollback, but **user data and virtualised environments require separate, deliberate handling**. Match the tool to the data, not the other way around.
+Snapshots are not backups. They are useful for quick system rollback, but **user data and virtualised environments require separate, deliberate handling**.
+
+System config is the hardest to track — use Git or Ansible to record what you've done. **Local projects are easy to move but annoying to lose**, so snapshots and pruneable backups are well worth it.
+
+Match the tool to the data, not the other way around.
