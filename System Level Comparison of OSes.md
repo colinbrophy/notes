@@ -1,5 +1,3 @@
-d
-
 This table summarises core system-level capabilities across Linux (Fedora with GNOME), macOS, and Windows 11. It excludes superficial polish and focuses on architecture, control, stability, observability, and recovery.
 
 | Feature                                   | **Linux (Fedora/GNOME)**                                  | **macOS**                                                 | **Windows 11**                                        |
@@ -26,13 +24,13 @@ This table summarises core system-level capabilities across Linux (Fedora with G
 
 ### 🖥️ Desktop-Focused Features
 
-|Feature|Linux|macOS|Windows 11|
-|---|---|---|---|
-|Multi-monitor setup|✅ Excellent, Wayland-aware|⚠️ Often glitchy with scaling|⚠️ Functional, but inconsistently applied|
-|Keyboard workflow|✅ Strong: GNOME/KDE-driven|⚠️ Trackpad-focused, limited keys|⚠️ Weak keyboard-centric support|
-|App theming & customisation|✅ Fully customisable via themes|❌ Mostly locked down|⚠️ Some theming, but inconsistent|
-|App integration|✅ Flatpak + portals improving|✅ Polished for native apps|❌ Store vs Win32 fragmentation|
-|Workspace isolation|✅ GNOME workspaces per monitor|❌ No real isolation|⚠️ Virtual desktops only|
+| Feature                     | Linux                           | macOS                             | Windows 11                                |
+| --------------------------- | ------------------------------- | --------------------------------- | ----------------------------------------- |
+| Multi-monitor setup         | ✅ Excellent, Wayland-aware      | ⚠️ Often glitchy with scaling     | ⚠️ Functional, but inconsistently applied |
+| Keyboard workflow           | ✅ Strong: GNOME/KDE-driven      | ⚠️ Trackpad-focused, limited keys | ⚠️ Weak keyboard-centric support          |
+| App theming & customisation | ✅ Fully customisable via themes | ❌ Mostly locked down              | ⚠️ Some theming, but inconsistent         |
+| App integration             | ✅ Flatpak + portals improving   | ✅ Polished for native apps        | ❌ Store vs Win32 fragmentation            |
+| Workspace isolation         | ✅ GNOME workspaces per monitor  | ❌ No real isolation               | ⚠️ Virtual desktops only                  |
 
 ### 💻 Laptop-Specific Features
 
