@@ -45,13 +45,13 @@ Select only what you use. Recommended sections:
 
 ### [ ] Export encrypted vault file
 
-- [ ] Format: `.kdbx` (KeePassXC), encrypted `.json` or `.csv` (Bitwarden, 1Password)
-- [ ] Check that the file includes:
-  - [ ] All accounts
-  - [ ] Notes and fields (TOTP seeds, recovery codes)
-  - [ ] Folder or tag structure (if applicable)
+- [x] Format: `.kdbx` (KeePassXC), encrypted `.json` or `.csv` (Bitwarden, 1Password)
+- [x] Check that the file includes:
+  - [x] All accounts
+  - [x] Notes and fields (TOTP seeds, recovery codes)
+  - [x] Folder or tag structure (if applicable)
 - [ ] Securely store the **master password** or keyfile
-- [ ] NEVER export in plaintext unless encrypted at rest
+- [x] NEVER export in plaintext unless encrypted at rest
 
 ---
 
