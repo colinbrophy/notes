@@ -8,287 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a96c2a4204154bc0",
+            "id": "4f0c6052734ae31b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ChatGPT_Session_Summary_Obsidian.md",
+                "file": "2025-10-02.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ChatGPT_Session_Summary_Obsidian"
+              "title": "2025-10-02"
             }
           },
           {
-            "id": "29d729bcf4963bae",
+            "id": "448a89bb75b7e0c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Efficient Language Learning Strategy.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Efficient Language Learning Strategy"
-            }
-          },
-          {
-            "id": "e321cb9bb5bfb2f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Efficient Language Learning Strategy.md",
+                "file": "2025-10-23.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Efficient Language Learning Strategy"
+              "title": "2025-10-23"
             }
           },
           {
-            "id": "a1bda8db20298356",
+            "id": "562c930eab3c98da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Forever Backup Plan with Metadata Snapshots.md",
+                "file": "2025-10-29.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Forever Backup Plan with Metadata Snapshots"
-            }
-          },
-          {
-            "id": "6da2b48389779bc5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Useful commands.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Useful commands"
-            }
-          },
-          {
-            "id": "58e235ebe4ad5599",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Forever Backup Plan with Metadata Snapshots.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Forever Backup Plan with Metadata Snapshots"
-            }
-          },
-          {
-            "id": "5d90ec147dc92065",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AUR, A Hacky Software Installation Method or Powerful Tool?.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AUR, A Hacky Software Installation Method or Powerful Tool?"
-            }
-          },
-          {
-            "id": "44f799aeb6a01b9a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Snapshot & Backup Strategy for Linux Desktop (2025).md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Snapshot & Backup Strategy for Linux Desktop (2025)"
-            }
-          },
-          {
-            "id": "56af34f4c5ee5a9c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TODO.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TODO"
-            }
-          },
-          {
-            "id": "de0be18135925f4e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System Level Comparison of OSes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "System Level Comparison of OSes"
-            }
-          },
-          {
-            "id": "e571a2b646587c27",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BIOS and GRUB passwords.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "BIOS and GRUB passwords"
-            }
-          },
-          {
-            "id": "9a6051a92b8d38ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Stats and letby.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Stats and letby"
-            }
-          },
-          {
-            "id": "d2acde202d89ef51",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Transcripts of Lucy Letby’s Cross-exam - Part 1, Handover Sheets.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Transcripts of Lucy Letby’s Cross-exam - Part 1, Handover Sheets"
-            }
-          },
-          {
-            "id": "26b3371310519527",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-07-31.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-07-31"
-            }
-          },
-          {
-            "id": "e125d37d48557f4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Why Mathematical Structure Is Essential for Understanding Raw Problems.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Why Mathematical Structure Is Essential for Understanding Raw Problems"
-            }
-          },
-          {
-            "id": "42a0a330d29480b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Structured Turing Machines and Mathematical Structure.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Structured Turing Machines and Mathematical Structure"
-            }
-          },
-          {
-            "id": "27b6013f191cf633",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "On the Reality and Role of the Set-Theoretic Universe (V).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "On the Reality and Role of the Set-Theoretic Universe (V)"
-            }
-          },
-          {
-            "id": "32984256d7970606",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Preserve the Non-Obvious.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Preserve the Non-Obvious"
-            }
-          },
-          {
-            "id": "e8507aea47a5015a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "A Vault as Refuge from the Modern Web.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "A Vault as Refuge from the Modern Web"
-            }
-          },
-          {
-            "id": "e42f76b03e3ad1f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Why Connect Thinkers?.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Why Connect Thinkers?"
+              "title": "2025-10-29"
             }
           }
         ],
-        "currentTab": 16
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -409,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Snapshot & Backup Strategy for Linux Desktop (2025).md",
+                "file": "letby/july32023.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Snapshot & Backup Strategy for Linux Desktop (2025)"
+              "title": "Outline of july32023"
             }
           },
           {
@@ -437,6 +199,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -446,36 +209,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "27b6013f191cf633",
+  "active": "562c930eab3c98da",
   "lastOpenFiles": [
-    "Structured Turing Machines and Mathematical Structure.md",
-    "On the Reality and Role of the Set-Theoretic Universe (V).md",
-    "Why Mathematical Structure Is Essential for Understanding Raw Problems.md",
+    "2025-10-28.md",
+    "2025-10-27.md",
+    "2025-10-29.md",
+    "2025-10-26.md",
     "2025-07-31.md",
-    "languages/Efficient Language Learning Strategy.md",
-    "Data Export.md",
-    "Forever Backup Plan with Metadata Snapshots.md",
-    "languages/French Schwa.md",
-    "google_tasks.md",
-    "Greenspun's Tenth Rule and Static Typing.md",
-    "Stats and letby.md",
-    "System Level Comparison of OSes.md",
-    "TODO.md",
-    "Transcripts of Lucy Letby’s Cross-exam - Part 1, Handover Sheets.md",
-    "Unseen Influences, Navigating Unconscious Biases in the Discussions of the Lucy Letby Case.md",
-    "Useful commands.md",
-    "Why Connect Thinkers?.md",
-    "A Vault as Refuge from the Modern Web.md",
-    "AUR, A Hacky Software Installation Method or Powerful Tool?.md",
-    "ChatGPT_Session_Summary_Obsidian.md",
-    "Philosophy and the Other Fields.md",
-    "Preserve the Non-Obvious.md",
-    "BIOS and GRUB passwords.md",
-    "Snapshot & Backup Strategy for Linux Desktop (2025).md",
-    "2025-07-05.md",
+    "2025-10-24.md",
+    "letby/Baby B locations..md",
+    "Untitled 1.md",
+    "Untitled 6.md",
+    "2025-10-23.md",
+    "2025-09-12.md",
+    "letby/Child A locations.md",
+    "2025-09-21.md",
+    "2025-10-02.md",
+    "2025-09-19.md",
+    "2025-09-14.md",
+    "2025-08-01.md",
+    "2025-07-03 at 23∶08∶14.pdf",
+    "letby/july32023.md",
+    "letby",
+    "2025-09-10.md",
+    "2025-09-02.md",
+    "maths/The Three Ways of Mathematics.md",
+    "maths/iWhy Do Some Mathematical Structures Matter?.md",
+    "Untitled 5.md",
+    "maths/What Makes a Mathematical Field Interesting or Sustainable?.md",
+    "maths/Why Wigner's 'Unreasonable Effectiveness' Is Actually Reasonable.md",
+    "Untitled 4.md",
+    "maths",
     "Untitled.canvas",
     "languages",
-    "2025-06-30.md",
     "Unconfirmed 500547.crdownload"
   ]
 }
