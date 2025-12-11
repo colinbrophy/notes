@@ -36,6 +36,11 @@ Low memorisation load, high conceptual return.
 * Institutional design
 * Critical thinking
 * Argument analysis
+* **Cognitive science basics** (memory, attention, biases, learning theory)
+* **Forecasting & modelling** (Bayesian reasoning, causal models)
+* **Rhetoric & writing** (clarity, structure, persuasion)
+* **Political & institutional literacy** (incentives, legitimacy, governance)
+* **Technology literacy** (how networks, security, scaling, automation behave)
 
 **Summary:**
 Small conceptual footprint, high reuse.
@@ -52,6 +57,8 @@ These enrich your worldview, but isolated facts are low value.
 * National histories
 * Military history
 * Economic & intellectual history
+* **Biographies of major thinkers & leaders**
+* **Macrosocial theorists** (Weber, Durkheim, Marx, Tocqueville)
 
 ## **Literature**
 
@@ -75,6 +82,7 @@ These enrich your worldview, but isolated facts are low value.
 * Music history
 * Visual arts
 * Cultural studies
+* **Cultural anthropology (narrative style)**
 
 **Summary:**
 Absorb the *gist* and *patterns*, not the catalogue of facts.
@@ -145,6 +153,9 @@ These fields require vast domain-specific detail and provide little general cogn
 * Area studies (Sinology, Balkan studies, etc)
 * Hyper-specialised sociology (sociology of film, food, cyberspace, etc)
 * Anthropological microfields
+* **Technical arts & media workflows** (cinematography pipelines, sound engineering)
+* **Business microdomains** (HR compliance, insurance regulation)
+* **Military technical specialisms** (weapons systems, naval architecture)
 
 **Summary:**
 Huge memorisation burden, minimal general payoff.
@@ -156,4 +167,3 @@ Huge memorisation burden, minimal general payoff.
 **High leverage:** concepts that compress experience into reusable models.
 **Medium leverage:** narratives that shape intuition.
 **Low leverage:** detail-heavy domains with little abstraction.
-
