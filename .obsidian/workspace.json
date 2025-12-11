@@ -55,12 +55,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "letby/Wiki links.md",
+                "file": "2025-11-11.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wiki links"
+              "title": "2025-11-11"
+            }
+          },
+          {
+            "id": "651278222087e6af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-07-31.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-07-31"
+            }
+          },
+          {
+            "id": "f5b5ceee1b6b9b69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 11.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 11"
             }
           },
           {
@@ -92,7 +120,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -251,38 +279,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "492ae5020b334c1b",
+  "active": "f5b5ceee1b6b9b69",
   "lastOpenFiles": [
-    "2025-11-04.md",
+    "llm_core_capabilities.md",
+    "Unconfirmed 257780.crdownload",
+    "2025-07-31.md",
+    "Untitled 11.md",
+    "maths/iWhy Do Some Mathematical Structures Matter?.md",
+    "maths/Why Mathematical Structure Is Essential for Understanding Raw Problems.md",
+    "maths/Why Wigner's 'Unreasonable Effectiveness' Is Actually Reasonable.md",
+    "maths/What Makes a Mathematical Field Interesting or Sustainable?.md",
+    "maths/The Three Ways of Mathematics.md",
+    "maths/Structured Turing Machines and Mathematical Structure.md",
+    "maths/Canonical Structure in Mathematics vs. Emergent Patterns in Physics.md",
+    "Data Export.md",
+    "Forever Backup Plan with Metadata Snapshots.md",
+    "google_tasks.md",
+    "Greenspun's Tenth Rule and Static Typing.md",
+    "Stats and letby.md",
+    "System Level Comparison of OSes.md",
+    "TODO.md",
+    "maths/Abstraction as Inductive Climb.md",
     "letby/Wiki links.md",
-    "2025-11-03.md",
-    "2025-10-24.md",
-    "letby/Child A locations.md",
-    "letby/Witness Accounts of Staff Locations Before Baby C’s Collapse.md",
-    "letby/Baby C supplmentary stuff.md",
+    "Why Connect Thinkers?.md",
+    "Useful commands.md",
+    "Unseen Influences, Navigating Unconscious Biases in the Discussions of the Lucy Letby Case.md",
+    "Transcripts of Lucy Letby’s Cross-exam - Part 1, Handover Sheets.md",
+    "ChatGPT_Session_Summary_Obsidian.md",
+    "BIOS and GRUB passwords.md",
+    "A Vault as Refuge from the Modern Web.md",
     "Baby C floor.png",
     "Pasted image 20251102155344.png",
-    "letby/Baby B locations..md",
-    "Untitled 9.md",
-    "Untitled 8.md",
-    "letby/july32023.md",
-    "Baby C Supplrementary stuff.md",
-    "Baby C comment supplemtnary stuff.md",
-    "2025-10-31.md",
-    "2025-10-30.md",
-    "2025-10-29.md",
     "Untitled 1.base",
     "Untitled.base",
-    "Untitled 7.md",
-    "2025-10-28.md",
-    "2025-10-27.md",
-    "2025-10-26.md",
-    "2025-07-31.md",
-    "Untitled 1.md",
-    "Untitled 6.md",
-    "2025-10-23.md",
-    "2025-09-12.md",
-    "2025-09-21.md",
     "2025-07-03 at 23∶08∶14.pdf",
     "letby",
     "maths",
