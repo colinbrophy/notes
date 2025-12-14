@@ -305,20 +305,22 @@
 
 1. Mouth guard
 2. [ ] Brolley ideas.
-3. [ ] Fix docking for GNOME
-4. [ ] Sort out clothing get rid
-5. [ ] Earpods
-6.  [ ] The ordinary peel
-7.  [ ] azeleic acid
-8.  [ ] Lastfm and music
-9.  [ ] Oxford happiness
-10.  [ ] Make it a typing deck
-11.  [ ] Org mode
-12.  [ ] Switch bsnk?
-13.  [ ] Pocket is shutting down
+3. [ ] Cycling power neter
+4. [ ] Sort out socks
+5. [ ] Fix docking for GNOME
+6. [ ] Sort out clothing get rid
+7. [ ] Earpods
+8.  [ ] The ordinary peel
+9.  [ ] azeleic acid
+10.  [ ] Lastfm and music
+11.  [ ] Oxford happiness
+12.  [ ] Make it a typing deck
+13.  [ ] Org mode
+14.  [ ] Switch bsnk?
+15.  [ ] Pocket is shutting down
     1.  [ ] setup wallbag
-14. [ ] Sort out loft stuff ask dad
-15. [x] Bug report about mp3 issue
+16. [ ] Sort out loft stuff ask dad
+17. [x] Bug report about mp3 issue
 
 
 ## Maintenance
