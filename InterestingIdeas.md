@@ -252,52 +252,54 @@
 ## Letby
 
 1.  [x] Start using phone for payment
-2.  [ ]
+2. [ ] “Sort out Letby wiki”
+3. [ ] “Read Bayes paper”
+4.  [ ]
     https://www.publishyourdissertation.com/criminology-sociology-and-legal-studies/jack-gillbanks
-3.  [ ] S
-4.  [ ] Archive the sub
-5.  [ ] Dr evans antibiotics
-6.  [ ] pytman transcipts
-7.  [ ] Statistics analysis
-8.  [ ] Do juror\'s know the difference
-9.  [ ] Swollen thigh
-10. [ ] Bayes
-11. [ ] Apply for transcript from court
-12. [ ] - 2nd bags and so on. allen
-13. [ ] - Stuff around the Law Comssion and parliamentary reports on
+5.  [ ] S
+6.  [ ] Archive the sub
+7.  [ ] Dr evans antibiotics
+8.  [ ] pytman transcipts
+9.  [ ] Statistics analysis
+10.  [ ] Do juror\'s know the difference
+11.  [ ] Swollen thigh
+12. [ ] Bayes
+13. [ ] Apply for transcript from court
+14. [ ] - 2nd bags and so on. allen
+15. [ ] - Stuff around the Law Comssion and parliamentary reports on
     Expert evidence, appeals and so on..
-14. [ ] Timelines
-15. [ ] - More Court of Appeal analysis. In particular going through the
+16. [ ] Timelines
+17. [ ] - More Court of Appeal analysis. In particular going through the
     transcripts and comparing it with the judgment.
-16. [ ] - Cole&Oliver (maybe given Cole likes the Wiznar case we can tie
+18. [ ] - Cole&Oliver (maybe given Cole likes the Wiznar case we can tie
     that in)
-17. [ ] Benguit
-18. [ ] rashes
-19. [ ] unherd post
-20. [ ] LEtter
-21. [ ] Send letter to COA
-22. [ ] Norris campbell
-23. [ ] Post on the baby a hemmorage
-24. [ ] fda post on rashes
-25. [ ] ian allen
-26. [ ] Post about law comssion
+19. [ ] Benguit
+20. [ ] rashes
+21. [ ] unherd post
+22. [ ] LEtter
+23. [ ] Send letter to COA
+24. [ ] Norris campbell
+25. [ ] Post on the baby a hemmorage
+26. [ ] fda post on rashes
+27. [ ] ian allen
+28. [ ] Post about law comssion
     1.  [ ] 2 law comssion reports on expert evidence and on appeals etc
     2.  [ ] Fisher report
-27. [ ] log plot insuion
-28. [ ]
+29. [ ] log plot insuion
+30. [ ]
     https://crimeline.co.uk/report-of-the-westminster-commission-on-miscarriages-of-justice/#:\~:text=The%20inquiry%20also%20examined%20the,serious%20doubt%20about%20the%20verdict
-29. [ ] Post on the excluseion of evidence
-30. [ ] Trophies post
-31. [ ] Evans explains his method
-32. [ ] Stats posts
+31. [ ] Post on the excluseion of evidence
+32. [ ] Trophies post
+33. [ ] Evans explains his method
+34. [ ] Stats posts
     1.  [ ] It\'s all statistics
-33. [ ]
+35. [ ]
     https://scholar.google.com/scholar?q=related:m16xMNZbzocJ:scholar.google.com/&scioq=Forensic+Science+and+Expert+Testimony+in+Wrongful+Convictions:+A+Study+of+Decision-Making+at+the+Criminal+Cases+Review+Commission+Get+access+Arrow&hl=fr&as_sdt=0,5
     1.  [ ] Finality essay
 
         https://supremecourt.uk/uploads/speech_111014_26ad13a615.pdf
-34. [ ] Defence claims about case
-35. [ ] Moritz book post
+36. [ ] Defence claims about case
+37. [ ] Moritz book post
 
 ## Low Priority
 
