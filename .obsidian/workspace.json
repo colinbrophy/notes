@@ -8,203 +8,51 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4f0c6052734ae31b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-10-02.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-10-02"
-            }
-          },
-          {
-            "id": "448a89bb75b7e0c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-10-23.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-10-23"
-            }
-          },
-          {
-            "id": "562c930eab3c98da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-10-29.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-10-29"
-            }
-          },
-          {
-            "id": "492ae5020b334c1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-11-11.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-11-11"
-            }
-          },
-          {
-            "id": "651278222087e6af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-07-31.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-07-31"
-            }
-          },
-          {
-            "id": "f5b5ceee1b6b9b69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 11.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled 11"
-            }
-          },
-          {
-            "id": "f22a616a4b0a6376",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "letby/Baby C comment supplemtnary stuff.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Baby C comment supplemtnary stuff"
-            }
-          },
-          {
-            "id": "01c0e8752371d954",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "letby/Transcripts of Lucy Letby’s Cross-exam - Part 1, Handover Sheets.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Transcripts of Lucy Letby’s Cross-exam - Part 1, Handover Sheets"
-            }
-          },
-          {
-            "id": "227ea51f3d628f6f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "letby/Unseen Influences, Navigating Unconscious Biases in the Discussions of the Lucy Letby Case.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Unseen Influences, Navigating Unconscious Biases in the Discussions of the Lucy Letby Case"
-            }
-          },
-          {
-            "id": "6da3b0763daf2e7d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "letby/Transcripts of Lucy Letby’s Cross-exam - Part 1, Handover Sheets.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Transcripts of Lucy Letby’s Cross-exam - Part 1, Handover Sheets"
-            }
-          },
-          {
-            "id": "b46bfcb86c67acfa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "InterestingIdeas.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "InterestingIdeas"
-            }
-          },
-          {
-            "id": "fdebdd1d36f5a508",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "InterestingIdeas.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "InterestingIdeas"
-            }
-          },
-          {
             "id": "5d9713a839f7a5c2",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "InterestingIdeas.md",
+                "file": "NowFocus.md",
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "InterestingIdeas"
+              "title": "NowFocus"
             }
           },
           {
-            "id": "b8d7265e0d473df9",
+            "id": "08b786d6e4835abb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "letby/july32023.md",
+                "file": "letby/Project – Letby.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "july32023"
+              "title": "Project – Letby"
+            }
+          },
+          {
+            "id": "e740c9c568c3af60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "letby/Project – Letby.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Project – Letby"
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -363,10 +211,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5d9713a839f7a5c2",
+  "active": "e740c9c568c3af60",
   "lastOpenFiles": [
-    "letby/Baby C supplmentary stuff.md",
+    "AGENTS.md",
+    "NowFocus.md",
+    "letby/Project – Letby.md",
+    "Untitled 2.base",
+    "letby/Witness Accounts of Staff Locations Before Baby C’s Collapse.md",
+    "letby/Wiki links.md",
+    "letby/july32023.md",
+    "letby/Stats and letby.md",
+    "letby/Transcripts of Lucy Letby’s Cross-exam - Part 1, Handover Sheets.md",
     "InterestingIdeas.md",
+    "Unconfirmed 823499.crdownload",
+    "letby/Baby C supplmentary stuff.md",
     "computer/Useful commands.md",
     "Untitled.md",
     "SubjectLeverage.md",
@@ -384,15 +242,7 @@
     "Forever Backup Plan with Metadata Snapshots.md",
     "google_tasks.md",
     "Philosophy and the Other Fields.md",
-    "Untitled 11.md",
-    "Untitled 12.md",
     "Untitled 1.base",
-    "Untitled 10.md",
-    "Untitled 9.md",
-    "Untitled 8.md",
-    "Untitled 7.md",
-    "Untitled 6.md",
-    "Untitled 4.md",
     "computer",
     "Diary/2025-07-03 at 23∶08∶14.pdf",
     "Diary",
@@ -401,8 +251,6 @@
     "letby/Baby C floor.png",
     "Pasted image 20251102155344.png",
     "letby",
-    "maths",
-    "Untitled.canvas",
-    "languages"
+    "Untitled.canvas"
   ]
 }
