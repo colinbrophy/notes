@@ -301,27 +301,29 @@
 36. [ ] Defence claims about case
 37. [ ] Moritz book post
 
-## Low Priority
+## Low Priority Ideas
 
-1.  [ ] Mouth guard?
-2.  [ ] Fix attempts on laptop
-3.  [ ] Bug report about mp3 issue
-4.  [ ] The ordinary peel
-5.  [ ] azeleic acid
-6.  [ ] Lastfm and music
-7.  [ ] Oxford happiness
-8.  [ ] Make it a typing deck
-9.  [ ] Org mode
-10. [ ] Switch bsnk?
-11. [ ] Pocket is shutting down
+1. Mouth guard
+2. [ ] Brolley ideas.
+3. [ ] Fix docking for GNOME
+4. [ ] Sort out clothing get rid
+5. [ ] Earpods
+6.  [ ] The ordinary peel
+7.  [ ] azeleic acid
+8.  [ ] Lastfm and music
+9.  [ ] Oxford happiness
+10.  [ ] Make it a typing deck
+11.  [ ] Org mode
+12.  [ ] Switch bsnk?
+13.  [ ] Pocket is shutting down
     1.  [ ] setup wallbag
-12. [ ] laptop label and wipe ssd
-13. [ ] Go through accounts delete and/or download data
+14. [ ] Sort out loft stuff ask dad
+15. [x] Bug report about mp3 issue
 
 
 ## Maintenance
 
-1.  [ ] Dentsit
+1. [ ] Optimise food situation
 2.  [ ] New chair, and maybe a footrest of some kind?
 3.  [ ] Sleep auto light setup.
 4.  [ ] Update linked in
@@ -337,12 +339,11 @@
 13. [ ] Fixing docking for GNOME
 14. [ ] earpods
 15. [ ] Sort ouplug mess
-16. [ ] Optimise food situation
-17. [ ] Plan for chat leak
-18. [ ] Cycling power neter
-19. [ ] Full disk image
-20. [ ] Sort out loft stuff ask dad
-21. [x] Sunscreen
+16. [ ] Plan for chat leak
+17. [ ] Cycling power neter
+18. [ ] Full disk image
+19. [ ] Sort out loft stuff ask dad
+20. [x] Sunscreen
 
 ## Maths
 
