@@ -12,7 +12,7 @@
 5.  [ ] The werest people in the world
 6.  [ ] Paranoid style
 7.  [ ] strangers-their-own-land
-8.  [ ] The Dictator\'s Learning Curve: Tyranny and Democracy in The
+8.  [x] The Dictator\'s Learning Curve: Tyranny and Democracy in The
     Modern World
 9.  [ ] Why Civil Resistance Works: The Strategic Logic of Nonviolent
     Conflict

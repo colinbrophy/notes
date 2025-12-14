@@ -167,12 +167,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A Vault as Refuge from the Modern Web.md",
+                "file": "InterestingIdeas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "A Vault as Refuge from the Modern Web"
+              "title": "InterestingIdeas"
             }
           },
           {
@@ -181,12 +181,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "letby/Baby C supplmentary stuff.md",
+                "file": "InterestingIdeas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Baby C supplmentary stuff"
+              "title": "InterestingIdeas"
             }
           },
           {
@@ -204,7 +204,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -363,17 +363,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fdebdd1d36f5a508",
+  "active": "5d9713a839f7a5c2",
   "lastOpenFiles": [
+    "letby/Baby C supplmentary stuff.md",
+    "InterestingIdeas.md",
+    "computer/Useful commands.md",
+    "Untitled.md",
+    "SubjectLeverage.md",
+    "maths/Abstraction as Inductive Climb.md",
+    "A Vault as Refuge from the Modern Web.md",
+    "Why Connect Thinkers?.md",
+    "what_to_memorise_note.md",
+    "Untitled.base",
+    "TODO.md",
+    "TaskSetup.md",
+    "Snapshot & Backup Strategy for Linux Desktop (2025).md",
+    "Preserve the Non-Obvious.md",
+    "Productivty Tools Philsophy.md",
     "Data Export.md",
     "Forever Backup Plan with Metadata Snapshots.md",
     "google_tasks.md",
-    "InterestingIdeas.md",
-    "Productivty Tools Philsophy.md",
-    "Preserve the Non-Obvious.md",
     "Philosophy and the Other Fields.md",
-    "Untitled.base",
-    "Useful commands.md",
     "Untitled 11.md",
     "Untitled 12.md",
     "Untitled 1.base",
@@ -383,16 +393,6 @@
     "Untitled 7.md",
     "Untitled 6.md",
     "Untitled 4.md",
-    "Untitled 5.md",
-    "Untitled 3.md",
-    "Untitled 2.md",
-    "Untitled 1.md",
-    "Untitled.md",
-    "A Vault as Refuge from the Modern Web.md",
-    "ChatGPT_Session_Summary_Obsidian.md",
-    "llm_core_capabilities.md",
-    "computer/System Level Comparison of OSes.md",
-    "TaskSetup.md",
     "computer",
     "Diary/2025-07-03 at 23∶08∶14.pdf",
     "Diary",
