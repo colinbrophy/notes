@@ -1,0 +1,1 @@
+- Like we discussed in [[Emacs]] avoid this tool, as it's built of shaky foundations.

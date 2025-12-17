@@ -9,7 +9,7 @@
 
 ## Recommended Tool Roles
 - **Google Tasks**: Short-term, shallow action items only.
-- **Obsidian**: Idea capture, long-term notes, project context. Minimal structure.
+- [[Obsidian]]: Idea capture, long-term notes, project context. Minimal structure.
 - **Loop Habit Tracker**: Simple recurring habits.
 - **Calendar**: Fixed commitments and events.
 - **ChatGPT**: Scheduling, prioritisation, planning, decomposing tasks.
