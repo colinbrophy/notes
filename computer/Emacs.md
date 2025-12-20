@@ -1,4 +1,3 @@
-
 * Emacs is a **shared-mutable-state system** with no ownership or isolation.
 * “Composability” relies on hooks and global state, not real boundaries.
 * Single-threaded but **reentrant**, so behaviour depends on timing and history.

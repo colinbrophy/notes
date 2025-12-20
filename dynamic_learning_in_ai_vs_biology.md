@@ -74,5 +74,3 @@ None solve the general problem.
 - Accept architectural pluralism rather than single-paradigm solutions
 
 ---
-
-*This note is formatted for direct use in Obsidian.*

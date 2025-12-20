@@ -4,7 +4,7 @@ A practical rule for intellectual life.
 ## Core Principles  
 - Memory is expensive; treat it as a scarce resource.  
 - Understanding comes from **exposure, variation, and narrative**, not raw fact retention.  
-- Use Anki for **atomic, high‑leverage recall items**, not for deep concepts or rich subjects.  
+- Use [[Anki]] for **atomic, high‑leverage recall items**, not for deep concepts or rich subjects.  
 - Read widely, but memorise selectively.  
 - Ignore isolated facts that offer no conceptual or practical payoff.
 
@@ -27,7 +27,7 @@ A practical rule for intellectual life.
 - Compatibilism vs incompatibilism
 
 ### Technical Daily Knowledge  
-- Essential Unix flags (grep -r, rsync -av, tar -xzvf)  
+- Essential [[Unix]] flags (grep -r, rsync -av, tar -xzvf)  
 - Git operations you forget (rebase options, reset modes)  
 - Kubernetes basics (Deployment vs StatefulSet, probes, Services vs Ingress)  
 - Regex syntax  
@@ -144,7 +144,7 @@ Why: these require deep exposure, not memorisation.
 **Ignore what provides no leverage.**
 
 This is the practical rule:  
-- Use Anki for *fast recall of core concepts and tools*.  
+- Use [[Anki]] for *fast recall of core concepts and tools*.  
 - Use books, podcasts and philosophy for *deep models and intuition*.  
 - Let isolated facts die. They were never valuable.
 

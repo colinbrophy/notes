@@ -6,74 +6,50 @@ Abstraction in mathematics and logic emerges **inductively**, not deductively. I
 **0. Physical Manipulation (Pre-formal)**
 
 - Activity: Writing with pen and paper, using language, performing calculations
-    
 - Description: Informal, embodied, practical reasoning
-    
 - Note: The real base — what all formalism arises from
-    
 
 **1. Symbolic Computation**
 
 - Tools: Turing machines, λ-calculus, simple rule-based systems
-    
 - Abstraction: Stripping physical computation into step-wise, idealised sequences
-    
 - Motivation: Capture process independent of medium
-    
 
 **2. Formal Syntax & Logic**
 
 - Tools: Formal languages, inference rules, deductive systems
-    
 - Abstraction: Represent proof as symbolic manipulation
-    
 - Motivation: Make reasoning mechanical and checkable
-    
 
 **3. Semantics & Model Theory**
 
 - Tools: Tarskian truth conditions, Kripke models
-    
 - Abstraction: Assign meaning to symbols over structured domains
-    
 - Motivation: Explain what formulas _mean_, not just how they're derived
-    
 
 **4. Structural Mathematics**
 
 - Tools: Sets, functions, relations, algebraic structures
-    
 - Abstraction: Treat domains and transformations as general mathematical objects
-    
 - Motivation: Build models and explore their properties abstractly
-    
 
 **5. Meta-Theory**
 
 - Tools: Provability, completeness, consistency, coding
-    
 - Abstraction: Theories about theories; proofs as objects
-    
 - Motivation: Reflect on the limits of formal systems
-    
 
 **6. Set Theory / Foundations**
 
 - Tools: ZFC, power sets, cumulative hierarchy, ordinals
-    
 - Abstraction: A language to describe _all_ mathematical structure
-    
 - Motivation: Provide a general platform to model everything else
-    
 
 **7. Meta-Mathematical Universes**
 
 - Tools: Forcing, large cardinals, independence, inner models
-    
 - Abstraction: Models _of_ set theory itself; alternate mathematical realities
-    
 - Motivation: Understand the global space of mathematical possibility
-    
 
 ---
 
@@ -92,11 +68,8 @@ At each layer there "mapping" isn't perfect it's not like an injective function.
 **Philosophical Consequence**:
 
 - You cannot formalise the act of abstraction _as it occurs_, because it involves building the tools that don’t yet exist.
-    
 - Attempting to do so leads to regress or bootstrapping from within an insufficient system.
-    
 - Abstraction is therefore **manifest**, not deductively defined.
-    
 
 > "Abstraction isn’t constructed from axioms. It’s excavated from experience."
 
@@ -105,18 +78,12 @@ At each layer there "mapping" isn't perfect it's not like an injective function.
 **Related Concepts**:
 
 - Gödel incompleteness: truth beyond proof
-    
 - Wittgenstein's ladder: tools used then discarded
-    
 - Church-Turing thesis: computability as idealised action
-    
 - Historical emergence: category theory, set theory, computation
-    
 
 **Use**:
 
 - Framework for understanding how mathematical ideas evolve
-    
 - Alternative to the myth of top-down foundations
-    
 - Grounding philosophy of logic in cognitive and historical realism

@@ -94,7 +94,7 @@ Checkboxes turn curiosity into debt.
 
 ## Where Ideas Live Now
 
-### Obsidian
+### [[Obsidian]]
 Used for:
 - Interests
 - Ideas
@@ -134,7 +134,7 @@ If no → it is not a task.
 ## Maintenance & Tooling
 
 - Maintenance is boxed and boring
-- Tool optimisation (including Obsidian) is **not a standing task**
+- Tool optimisation (including [[Obsidian]]) is **not a standing task**
 - Only fix tooling when there is **real pain**
 - Fix one specific issue, then stop
 

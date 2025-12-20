@@ -1,8 +1,8 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-- Plain Obsidian vault; everything is Markdown unless noted. Top-level notes live beside thematic folders.
-- Key folders: `Diary/` (dated daily logs), `computer/` (technical how-tos), `languages/` (language study), `letby/` (case research), `maths/` (math essays), `.obsidian/` (editor config). Keep images/PDFs next to the referencing note.
+- Plain [[Obsidian]] vault; everything is Markdown unless noted. Top-level notes live beside thematic folders.
+- Key folders: `Diary/` (dated daily logs), `computer/` (technical how-tos), `languages/` (language study), `letby/` (case research), `maths/` (math essays), `.[[[[[[obsidian]]]]]]/` (editor config). Keep images/PDFs next to the referencing note.
 
 ## Build, Test, and Development Commands
 - No build pipeline; work is text-first. Use `git status -sb` to see pending edits.

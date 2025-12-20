@@ -1,0 +1,3 @@
+- Great for learning:
+	- Languages
+	- Really underrated in programming learning, a lot of atomic rules to memorise.

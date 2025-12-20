@@ -66,17 +66,17 @@
             }
           },
           {
-            "id": "cb47a3f8744fcdc7",
+            "id": "b53a5f605f11f829",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "computer/types_languages_and_real_world_software_notes.md",
+                "file": "computer/Neovim.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "types_languages_and_real_world_software_notes"
+              "title": "Neovim"
             }
           }
         ],
@@ -153,17 +153,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Forever Backup Plan with Metadata Snapshots.md",
+                "file": "computer/Obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Forever Backup Plan with Metadata Snapshots"
+              "title": "Backlinks for Obsidian"
             }
           },
           {
@@ -172,12 +172,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Useful commands.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "file": "maths/Structured Turing Machines and Mathematical Structure.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Useful commands"
+              "title": "Outgoing links from Structured Turing Machines and Mathematical Structure"
             }
           },
           {
@@ -201,13 +201,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "letby/july32023.md",
+                "file": "maths/Structured Turing Machines and Mathematical Structure.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of july32023"
+              "title": "Outline of Structured Turing Machines and Mathematical Structure"
             }
           },
           {
@@ -239,44 +239,45 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0ef79f5830ad60bb",
+  "active": "b53a5f605f11f829",
   "lastOpenFiles": [
-    "Untitled.base",
-    "SubjectLeverage.md",
-    "TaskSetup.md",
-    "ChatGPT_Session_Summary_Obsidian.md",
-    "Personal Knowledge Management.md",
-    "NowFocus.md",
     "Ideas.md",
+    "computer/Python.md",
+    "Untitled 11.md",
+    "Untitled.md",
     "computer/Obsidian.md",
-    "Productivty Tools Philsophy.md",
-    "**Obsidian**.md",
-    "dynamic_learning_in_ai_vs_biology.md",
-    "computer/Logseq vs Obsidian.md",
-    "computer/Logseq.md",
-    "Untitled 1.md",
+    "computer/Org-mode.md",
+    "Untitled.base",
+    "languages/French Schwa.md",
+    "2025-12-18.md",
+    "computer/Microservices.md",
+    "computer/Neovim.md",
+    "computer/UNIX.md",
     "computer/System Level Comparison of OSes.md",
+    "TaskSetup.md",
+    "computer/Anki.md",
+    "computer/Unconfirmed 257806.crdownload",
+    "Exlixir.md",
+    "letby/Project – Letby.md",
+    "maths/Structured Turing Machines and Mathematical Structure.md",
+    "maths/iWhy Do Some Mathematical Structures Matter?.md",
+    "maths/Canonical Structure in Mathematics vs. Emergent Patterns in Physics.md",
+    "maths/Abstraction as Inductive Climb.md",
+    "computer/Logseq vs Obsidian.md",
+    "Untitled 1.base",
+    "Untitled 2.base",
+    "computer/Logseq.md",
+    "computer/AUR.md",
+    "computer/Greenspun's Tenth Rule and Static Typing.md",
+    "types_languages_and_real_world_software_notes.md",
+    "Data Export.md",
+    "letby/Baby C floor.png",
     "software",
-    "oo_vs_adts_two_dimensions_of_change_and_stronger_invariants.md",
     "Unconfirmed 587046.crdownload",
-    "pkm_vs_internet_core_insight.md",
     "Unconfirmed 715409.crdownload",
     "Unconfirmed 695811.crdownload",
-    "computer/types_languages_and_real_world_software_notes.md",
     "Unconfirmed 928845.crdownload",
-    "computer/Org-mode.md",
-    "computer/Useful commands.md",
-    "Snapshot & Backup Strategy for Linux Desktop (2025).md",
-    "what_to_memorise_note.md",
-    "computer/Greenspun's Tenth Rule and Static Typing.md",
-    "computer/Neovim.md",
-    "computer/Emacs.md",
-    "computer/Data Export.md",
-    "Untitled 2.base",
     "TaskArchive",
-    "Unconfirmed 823499.crdownload",
-    "Untitled 1.base",
-    "letby/Baby C floor.png",
     "Pasted image 20251102155344.png",
     "Untitled.canvas"
   ]

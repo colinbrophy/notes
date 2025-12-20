@@ -33,7 +33,7 @@
 25. [ ] Continuous delivery
 26. [ ] Lisp
 27. [ ] https://landing.google.com/sre/book/index.html
-28. [ ] Building microservices
+28. [ ] Building [[microservices]]
 29. [ ] Disrubted algorithms
 30. [ ] Mythil man month
 31. [ ] Domain driven design
@@ -267,7 +267,7 @@
 
 30. [ ] office politics
 
-31. [ ] Anki geography
+31. [ ] [[Anki]] geography
 
 32. [ ] Lactose
 

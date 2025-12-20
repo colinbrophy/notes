@@ -13,7 +13,7 @@
 - **Loop Habit Tracker**: Simple recurring habits.
 - **Calendar**: Fixed commitments and events.
 - **ChatGPT**: Scheduling, prioritisation, planning, decomposing tasks.
-- **Neovim**: Deep work and execution environment.
+- **[[Neovim]]**: Deep work and execution environment.
 
 ## Why Not Heavy Systems
 - Flexible tools like Org mode or Notion require a predefined workflow.

@@ -1,5 +1,5 @@
 ## What it is
-[[Logseq]] is a local-first, open-source PKM tool built around **block-based outlining**.  
+[[Logseq]] is a local-first, open-source [[Personal Knowledge Management]] tool built around **block-based outlining**.  
 Every block of text has a stable identity and can be referenced independently.
 
 ## First-class concepts

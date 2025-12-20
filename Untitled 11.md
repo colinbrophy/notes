@@ -40,7 +40,7 @@ Mapping concepts between domains
 
 Normalising or reorganising messy information
 
-Translation is where most productive uses lie (documentation cleanup, Anki card generation, knowledge distillation).
+Translation is where most productive uses lie (documentation cleanup, [[Anki]] card generation, knowledge distillation).
 
 3. Pattern Recombination (Constrained Idea Generation)
 

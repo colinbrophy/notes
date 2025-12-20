@@ -14,7 +14,7 @@ Despite the high idea density, little is retained, no projects get completed, an
 
 ### ✅ Categories of Tools (Your Attention Taxonomy)
 - **Addictive + Low Value**: Reddit, X, TikTok → Block entirely (except mod tools in sandboxed container)  
-- **High Value + Not Addictive**: Books, Anki, Obsidian → Core tools  
+- **High Value + Not Addictive**: Books, [[Anki]], [[Obsidian]] → Core tools  
 - **High Value + Addictive**: ChatGPT, YouTube, Wikipedia → Must be *bounded*
 
 ### ✅ Problem with ChatGPT and Wikipedia
