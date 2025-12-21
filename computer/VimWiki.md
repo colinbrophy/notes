@@ -29,6 +29,10 @@
 - No dynamic views or recomputation.
     
 
+### A cool project idea:
+
+Make an indexer service for VimWiki, then you can get the benefits of Obsidian but no annoying electron app.
+- [[Rust]] sounds like the ideal language choice here.
 ## Mental model
 
 _A text editor with links, not a knowledge system._

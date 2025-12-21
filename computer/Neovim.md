@@ -403,3 +403,7 @@ usr_08 (Windows) - Substantial gaps:
     :set splitbelow / :set splitright
     CTRL-W CTRL-^ (split + alternate file)
 
+
+## Plugin ideas
+
+- [[Obsidian]] plugin for Neovim.

@@ -14,12 +14,13 @@ Its primary abstraction is the **note as a document**, stored in folders on disk
 - Large and active plugin ecosystem
 - Strong for long-form writing and documentation
 - Scales well to very large vaults
+- Supports [[Mermaid]] and [[MathJax]]
 
 ## Trade-offs
+- Doesn't have a daemon mode and slow to startup.
 - Blocks are not first-class objects
 - Refactoring often involves moving text between files
 - Advanced workflows depend on plugins
-- Structure must be chosen rather than emerging automatically
 
 ## Best suited for
 - Long-term PKM (decades)
