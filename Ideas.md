@@ -17,3 +17,4 @@
 17. https://github.com/numman-ali/opencode-openai-codex-auth
 18. Disable core dumps fedora
 19. Faster way to navigate in browser
+20. etckeeper at work

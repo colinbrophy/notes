@@ -1,3 +1,4 @@
+Need to look at getting a start page with recently used files.
 ## Legend
 
 * **READ**: worth reading end to end
@@ -9,20 +10,20 @@
 
 * [ ] usr_07.txt Editing more than one file (READ)
 
-  * [ ] 07.1 Edit another file (READ)
-  * [ ] 07.2 A list of files (READ)
-  * [ ] 07.3 Jumping from file to file (READ)
-  * [ ] 07.4 Backup files (SKIM)
-  * [ ] 07.5 Copy text between files (READ)
-  * [ ] 07.6 Viewing a file (SKIM)
-  * [ ] 07.7 Changing the file name (SKIM)
+  * [x] 07.1 Edit another file (READ)
+  * [x] 07.2 A list of files (READ)
+  * [x] 07.3 Jumping from file to file (READ)
+  * [x] 07.4 Backup files (SKIM)
+  * [x] 07.5 Copy text between files (READ)
+  * [x] 07.6 Viewing a file (SKIM)
+  * [x] 07.7 Changing the file name (SKIM)
 
 * [ ] usr_08.txt Splitting windows (READ)
 
-  * [ ] 08.1 Split a window (READ)
-  * [ ] 08.2 Split a window on another file (READ)
-  * [ ] 08.3 Window size (READ)
-  * [ ] 08.4 Vertical splits (READ)
+  * [x] 08.1 Split a window (READ)
+  * [x] 08.2 Split a window on another file (READ)
+  * [x] 08.3 Window size (READ)
+  * [x] 08.4 Vertical splits (READ)
   * [ ] 08.5 Moving windows (READ)
   * [ ] 08.6 Commands for all windows (READ)
   * [ ] 08.7 Diff mode (READ)
@@ -245,10 +246,160 @@
   * [ ] 45.4 Editing files with another encoding (READ)
   * [ ] 45.5 Entering language text (SKIM/REF)
 
-## Recommended reading order (maximum payoff)
+---
 
-* [ ] Phase 1: usr_02, usr_03, usr_04
-* [ ] Phase 2: usr_10, usr_20, usr_26, usr_27, usr_32
-* [ ] Phase 3: usr_07, usr_08, usr_22, usr_21
-* [ ] Phase 4: usr_05, usr_40, usr_43
-* [ ] Phase 5: Everything marked REF or DATED as needed
+## Neovim help index checklist
+
+### Nvim documentation
+- [x] nvim-intro (READ)
+- [ ] Q_ct About Nvim (REF)
+- [ ] news News since the previous release (SKIM/REF)
+- [ ] nvim Getting started with Nvim (READ)
+- [ ] tutor 30-minute interactive course (READ)
+- [ ] vim-differences Nvim compared to Vim (SKIM)
+- [ ] faq Frequently Asked Questions (SKIM)
+- [ ] tips Various tips (REF)
+- [ ] bugs Where to send bug reports (REF)
+- [ ] support Supported platforms (REF)
+- [ ] copying About copyrights (DATED/REF)
+
+### Usage
+- [ ] helphelp Using the :help files (READ)
+- [ ] intro Introduction to Vim (SKIM)
+- [ ] quickref Overview of common commands (READ)
+- [ ] index Index of all commands (REF)
+- [ ] user-manual User manual (READ)  
+  - Note: covered above via usr_01..usr_45 checklist
+- [ ] message.txt (Error) messages and explanations (REF)
+- [ ] Kuwasha Helping poor children in Uganda (DATED/OPTIONAL)
+
+### Basic editing
+- [ ] starting Starting Vim, arguments, initialisation (READ)
+- [ ] edit-files Editing and writing files (READ)
+- [ ] motion.txt Moving around (READ)
+- [ ] scrolling Scrolling the text in the window (READ)
+- [ ] insert.txt Insert and Replace mode (READ)
+- [ ] change.txt Deleting and replacing text (READ)
+- [ ] undo-redo Undo and Redo (READ)
+- [ ] repeat.txt Repeating commands, Vim scripts and debugging (READ)
+- [ ] visual-mode Using Visual mode (READ)
+- [ ] various Various other commands (SKIM)
+- [ ] crash-recovery Recovering from a crash (READ)
+
+### Advanced editing
+- [ ] cmdline Command-line editing (READ)
+- [ ] options Description of all options (REF)
+- [ ] pattern-searches Regexp patterns and search commands (READ)
+- [ ] key-mapping Key mapping, abbreviations (READ)
+- [ ] tags Tags and special searches (SKIM)
+- [ ] windows Windows and buffers (READ)
+- [ ] tabpage Tabpages (SKIM)
+- [ ] spell Spell checking (SKIM)
+- [ ] diff Comparing files (READ)
+- [ ] folding Fold ranges of lines (READ)
+- [ ] terminal Embedded terminal emulator (READ)
+
+### API (extensibility, scripting, plugins)
+- [ ] api Nvim API via RPC, Lua and Vimscript (READ)
+- [ ] ui Nvim UI protocol (REF)
+- [ ] lua-guide Nvim Lua guide (READ)
+- [ ] lua Lua API (REF)
+- [ ] luaref Lua reference manual (REF)
+- [ ] luvref Luv (vim.uv) reference manual (REF)
+- [ ] autocmd Event handlers (READ)
+- [ ] job-control Spawn and control processes (REF)
+- [ ] channel Nvim asynchronous IO (REF)
+- [ ] vimscript Vimscript reference (REF)
+- [ ] vimscript-functions Vimscript functions (REF)
+- [ ] remote-plugin Nvim remote plugins (REF)
+- [ ] health Health checking (READ)
+
+### Programming language support
+- [ ] lsp Language Server Protocol (READ)
+- [ ] diagnostic-api Diagnostic framework (REF)
+- [ ] treesitter Incremental syntax parsing (READ)
+- [ ] indent.txt Automatic indenting for C and other languages (SKIM)
+- [ ] syntax Syntax highlighting (SKIM/REF)
+- [ ] filetype Settings for specific types of files (READ)
+- [ ] quickfix Quick edit-compile-fix cycle (READ)
+- [ ] ft_ada.txt Ada filetype plugin (REF)
+- [ ] ft_hare.txt Hare filetype plugin (REF)
+- [ ] ft_ps1.txt PowerShell filetype plugin (REF)
+- [ ] ft_raku.txt Raku filetype plugin (REF)
+- [ ] ft_rust.txt Rust filetype plugin (REF)
+- [ ] ft_sql.txt SQL filetype plugin (REF)
+
+### UI
+- [ ] tui Built-in UI (SKIM)
+- [ ] gui External graphical UIs (SKIM/REF)
+- [ ] signs Signs in the gutter (SKIM)
+
+### Multilingual support
+- [ ] digraph List of available digraphs (REF)
+- [ ] mbyte.txt Multibyte text support (REF)
+- [ ] mlang.txt Non-English language support (REF)
+- [ ] rileft.txt Right-to-left editing mode (REF)
+- [ ] l10n-arabic.txt Arabic support (REF)
+- [ ] l10n-hebrew.txt Hebrew support (REF)
+- [ ] l10n-russian.txt Russian support (REF)
+- [ ] l10n-vietnamese.txt Vietnamese support (REF)
+
+### Interop
+- [ ] provider Builtin remote plugin hosts (READ)
+- [ ] if_perl Perl interface (DATED/REF)
+- [ ] if_pyth Python interface (SKIM/REF)
+- [ ] if_ruby Ruby interface (DATED/REF)
+
+### Versions
+- [ ] deprecated Deprecated features (READ)
+- [ ] vi-differences Differences between Vim and Vi (SKIM)
+
+### Developing nvim
+- [ ] dev Development of Nvim (SKIM)
+- [ ] dev-arch Internal architecture (REF)
+- [ ] dev-style Development style guidelines (REF)
+- [ ] dev-test Writing and running tests (REF)
+- [ ] dev-theme Design guidelines (REF)
+- [ ] dev-tools Tools and techniques for developing Nvim (REF)
+- [ ] dev-vimpatch Merging patches from Vim (REF)
+
+### Standard plugins
+- [ ] standard-plugin-list (REF)
+
+### Local additions
+- [ ] bars Bars example (DATED/OPTIONAL)
+
+## Suggested order for these help topics
+- [ ] Phase A: nvim-intro, tutor, helphelp, quickref
+- [ ] Phase B: starting, edit-files, motion.txt, insert.txt, change.txt, undo-redo, repeat.txt, visual-mode
+- [ ] Phase C: cmdline, pattern-searches, windows, diff, terminal
+- [ ] Phase D: lua-guide, autocmd, api, health, lsp, treesitter
+- [ ] Phase E: Everything marked REF or DATED as needed
+
+usr_07 (Multiple files) - Major gaps:
+
+    :next / :previous / :wnext / :wprevious
+    :first / :last
+    :args (show argument list)
+    :set autowrite
+    :file {name} (rename current buffer)
+    :set backup / :set backupext / :set patchmode
+    Appending to registers with uppercase ("Ayy)
+    :write >> {file} (append to file)
+
+usr_08 (Windows) - Substantial gaps:
+
+    :only (close all other windows)
+    :new / :vnew
+    :vertical {cmd} modifier
+    CTRL-W + / CTRL-W - (resize)
+    {height}CTRL-W _ (set window height)
+    CTRL-W t / CTRL-W b (top/bottom window)
+    CTRL-W H/J/K/L (move window to edge)
+    :qall / :wall / :wqall / :qall!
+    vim -o / vim -O (start with splits)
+    vimdiff: :diffsplit, ]c/[c, dp/do
+    zo / zc (open/close fold)
+    :set splitbelow / :set splitright
+    CTRL-W CTRL-^ (split + alternate file)
+
