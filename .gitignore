@@ -1,5 +1,6 @@
 # Obsidian: workspace/state (machine-specific)
 .obsidian/workspace*.json
+.obsidian/graph*.json
 .obsidian/cache/
 
 # OS/editor cruft
