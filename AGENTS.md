@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 - Plain [[Obsidian]] vault; everything is Markdown unless noted. Top-level notes live beside thematic folders.
-- Key folders: `Diary/` (dated daily logs), `computer/` (technical how-tos), `languages/` (language study), `letby/` (case research), `maths/` (math essays), `.[[[[[[obsidian]]]]]]/` (editor config). Keep images/PDFs next to the referencing note.
+- Key folders: `diary/` (dated daily logs), `computer/` (technical how-tos), `languages/` (language study), `letby/` (case research), `maths/` (math essays), `productivity/` (process notes), `external_dumps/` (imports/inbox), `rough_notes/` (scratchpad), `.obsidian/` (editor config). Keep images/PDFs next to the referencing note.
 
 ## Build, Test, and Development Commands
 - No build pipeline; work is text-first. Use `git status -sb` to see pending edits.
@@ -11,7 +11,7 @@
 
 ## Coding Style & Naming Conventions
 - Use Markdown headings and hyphen bullets; prefer fenced code blocks with language hints for commands.
-- File naming: `Diary/YYYY-MM-DD.md` for daily entries; topical notes use short, descriptive titles (spaces allowed). Avoid renaming existing files to preserve backlinks.
+- File naming: `diary/YYYY-MM-DD.md` for daily entries; topical notes use short, descriptive titles (spaces allowed). Avoid renaming existing files to preserve backlinks.
 - Default to ASCII unless a note already uses specific symbols; avoid editing `.base` files unless you know their consumer.
 
 ## Testing Guidelines
