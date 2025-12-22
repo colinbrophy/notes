@@ -1,5 +1,3 @@
-# Now – Focus 
-
 Primary:
 - [[Project – Letby]]
   Curate, analyse, and produce concrete outputs.
