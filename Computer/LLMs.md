@@ -1,7 +1,3 @@
-# Core Capabilities of LLMs
-
-**A distilled model from discussion**
-
 ## Overview
 
 Despite appearing to perform many tasks, LLMs exhibit only a small set

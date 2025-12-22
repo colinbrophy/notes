@@ -1,5 +1,4 @@
 
-# ⚡ Efficient Language Learning Strategy (SRS + Input)
 
 ## 🎯 Main Goal
 

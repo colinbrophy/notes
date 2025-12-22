@@ -24,12 +24,12 @@ Need to look at getting a start page with recently used files.
   * [x] 08.2 Split a window on another file (READ)
   * [x] 08.3 Window size (READ)
   * [x] 08.4 Vertical splits (READ)
-  * [ ] 08.5 Moving windows (READ)
-  * [ ] 08.6 Commands for all windows (READ)
+  * [x] 08.5 Moving windows (READ)
+  * [x] 08.6 Commands for all windows (READ)
   * [ ] 08.7 Diff mode (READ)
   * [ ] 08.8 Various (SKIM/REF)
 
-* [ ] usr_09.txt Using the GUI (DATED)
+* [x] usr_09.txt Using the GUI (DATED)
 
   * [ ] 09.1 Parts of the GUI (DATED)
   * [ ] 09.2 Using the mouse (SKIM)

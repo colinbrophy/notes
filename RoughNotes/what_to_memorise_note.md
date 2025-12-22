@@ -27,7 +27,7 @@ A practical rule for intellectual life.
 - Compatibilism vs incompatibilism
 
 ### Technical Daily Knowledge  
-- Essential [[Unix]] flags (grep -r, rsync -av, tar -xzvf)  
+- Essential [[UNIX]] flags (grep -r, rsync -av, tar -xzvf)  
 - Git operations you forget (rebase options, reset modes)  
 - Kubernetes basics (Deployment vs StatefulSet, probes, Services vs Ingress)  
 - Regex syntax  

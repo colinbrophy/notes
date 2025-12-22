@@ -9,7 +9,7 @@ Discussion about why some languages feel *professionally correct* while others p
 
 - Bugs are not inevitable; they are largely a consequence of **weak modelling, weak types, and sales‑driven practices**.
 - Strong type systems dramatically reduce bugs **only when the problem has deep structure**.
-- Many so‑called "robust practices" (OO inheritance, manager objects, default [[microservices]]) are cargo cults that *reduce* correctness and speed.
+- Many so‑called "robust practices" (OO inheritance, manager objects, default [[Microservices]]) are cargo cults that *reduce* correctness and speed.
 
 ---
 
