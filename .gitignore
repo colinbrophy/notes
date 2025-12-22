@@ -1,0 +1,7 @@
+# Obsidian: workspace/state (machine-specific)
+.obsidian/workspace*.json
+.obsidian/cache/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
