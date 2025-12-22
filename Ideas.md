@@ -1,3 +1,5 @@
+#todo
+
 1.   Understand fzf
 2.   MCP, on fedora
 3.   Brave blocks sleep home laptop
@@ -11,7 +13,7 @@
 11. Keyboard shortcuts chatgpt
 12. Keyboard shortcuts claude
 13. Keyboard shortcuts [[Obsidian]]
-14. [[Elixir]] understand it well.
+14. [[Elixir (programming language)|Elixir]] understand it well.
 15. Run Claude in background and overnight
 16. Vibe cod website 
 

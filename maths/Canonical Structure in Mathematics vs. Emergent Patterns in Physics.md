@@ -59,4 +59,4 @@ The divergence between math and physics isn’t a failure of alignment but a dif
 
 This explains why set theory is minimal and canonical, while physical theories (QFT, string theory) rely on redundancy, dualities, and emergent behaviour. The two disciplines aim at different kinds of truth.
 
-**[[Obsidian]] Tag Suggestions:** #philosophy-of-math #foundations #emergence #physics #abstraction
+**Related concepts:** [[Philosophy of mathematics]] · [[Foundations of mathematics]] · [[Emergence]] · [[Physics]] · [[Abstraction]]

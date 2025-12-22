@@ -1,3 +1,4 @@
+
 Typing speed has diminishing returns for knowledge work once it no longer interrupts thinking.
 
 ## Key insights
@@ -11,20 +12,4 @@ Typing speed has diminishing returns for knowledge work once it no longer interr
 - Snippets have fixed overhead; small boilerplate is often faster to type.
     
 - Accuracy and spelling improve flow more than additional speed.
-    
-
-## Open questions
-
-- Personal breakpoint for snippet versus direct typing.
-    
-- Impact of layout choice on accuracy gains.
-    
-
-## Next actions
-
-- Stop speed training after comfortable touch typing.
-    
-- Train accuracy and spelling.
-    
-- Keep snippets only when they encode structure.
     

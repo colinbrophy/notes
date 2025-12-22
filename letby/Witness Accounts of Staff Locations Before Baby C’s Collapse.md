@@ -1,3 +1,5 @@
+#source #quote
+
 ## Summary:
 - **Sophie Ellis** only documented _Melanie Taylor_ in her contemporaneous notes. In 2018 she added _Lucy Letby_ in her police statement. 
 	- She said she briefly left for the nurses’ station, heard the alarm, and returned. 

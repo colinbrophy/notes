@@ -1,3 +1,5 @@
+#source #quote
+
 [Source video here from Crime Scene to Courtroom](https://www.youtube.com/watch?v=3t4nXEr6g-A), you can listen along if you like but honestly his voice acting as Letby is utterly terrible. While concerns about CS2CR's bias that have been raised are valid, it's still valuable to source mine, as his transcripts often unintentionally debunk many of the claims made about the trial by his supporters, especially when cross referenced with other sources.
 
 A few notes:

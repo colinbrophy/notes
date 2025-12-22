@@ -1,5 +1,7 @@
 # Project – Letby
 
+#index
+
 Index of all files in this folder for quick access.
 
 - [[Baby B locations.]]

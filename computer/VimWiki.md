@@ -32,7 +32,7 @@
 ### A cool project idea:
 
 Make an indexer service for VimWiki, then you can get the benefits of Obsidian but no annoying electron app.
-- [[Rust]] or [[Go]] sounds like the ideal language choice here.
+- [[Rust]] or [[Go (programming language)|Go]] sounds like the ideal language choice here.
 ## Mental model
 
 _A text editor with links, not a knowledge system._

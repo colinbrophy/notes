@@ -1,3 +1,5 @@
+#archive
+
 ## Overview
 
 This note outlines a strategy for handling different types of data on a Linux desktop using a combination of Btrfs snapshots, backup tools (e.g. Borg), and version control (e.g. Git). Each category of data requires its own approach, based on mutability, recoverability, and user importance.

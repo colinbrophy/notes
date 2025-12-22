@@ -1,3 +1,5 @@
+#open-questions
+
 The suckless philosophy claims that minimal software is better engineered and that users should avoid running code they do not explicitly use. This often leads to patch-based configuration and self-maintained systems.
 
 ### Key insights / conclusions
@@ -11,7 +13,7 @@ The suckless philosophy claims that minimal software is better engineered and th
 - **Suckless shifts integration cost to the user**  
     Patches turn users into integrators and maintainers. Complexity is relocated, not eliminated.
     
-- **[[C]] patches are a brittle configuration mechanism**  
+- **[[C (programming language)|C]] patches are a brittle configuration mechanism**  
     They do not compose, are version-sensitive, and effectively create private forks once used heavily.
     
 - **Minimalism only works if you stay minimal**  
@@ -27,4 +29,3 @@ The suckless philosophy claims that minimal software is better engineered and th
     
 - Can patch-based systems scale without reintroducing hidden complexity?
     
-
