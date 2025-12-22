@@ -19,4 +19,5 @@
 18. Disable core dumps fedora
 19. Faster way to navigate in browser
 20. etckeeper at work
-21. Make Zsh more fish li
+21. Make Zsh more fish like
+22. Setup code review via AI
