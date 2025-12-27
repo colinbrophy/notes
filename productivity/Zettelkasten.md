@@ -13,6 +13,8 @@ Selecting a single, evidence-based book to guide principle-led note-taking appli
 - Explains why linking, atomic notes and writing-driven notes work.
     
 - Low fluff, clear arguments, transferable across tools.
+
+Applied locally: capture your own synthesis (heuristics/stances) and hard-to-retrieve information, not easily-googlable neutral facts. See: [[Personal Knowledge Management]].
     
 
 ### Non-Choices

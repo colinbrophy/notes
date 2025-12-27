@@ -29,6 +29,7 @@
   - Tags: check `Tags.md` before inventing new tags; if a new tag is needed, document it there.
   - AI-assisted writing: tag notes written primarily by an AI assistant with `#ai-written` (and treat as rough until verified/edited).
   - Division of labour: you decide what matters (selection); the assistant focuses on translation (remove fluff, restructure, rephrase) rather than inventing importance hierarchies.
+  - What to capture: prefer notes that encode your own heuristics/stances and information that is hard to look up again; avoid Wikipedia-style neutral facts that are easy to re-find.
 
 ## Testing Guidelines
 - Manual checks only: open the note(s) in Obsidian and confirm headings render, code blocks format, and links/embeds resolve.
