@@ -1,4 +1,4 @@
-#open-questions
+#open-questions #aidump 
 
 The suckless philosophy claims that minimal software is better engineered and that users should avoid running code they do not explicitly use. This often leads to patch-based configuration and self-maintained systems.
 

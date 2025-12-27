@@ -22,4 +22,7 @@
 19. Faster way to navigate in browser
 20. etckeeper at work
 21. Make Zsh more fish like
-22. Setup code review via AI
+22. Chatgptke so
+23. Setup code review via AI
+24. Look at charm products
+25. Hetzner storage for backups
