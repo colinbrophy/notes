@@ -72,7 +72,7 @@ This aligns naturally with [[UNIX]] pipes:
 man foo | mods "Using only the text above: how do I do X? If not present say 'not found'."
 ```
 
-See also: [[Tokens per second (TPS)]], [[Time to first token (TTFT)]]
+Related concepts (not separate notes unless needed): tokens/sec (TPS), time to first token (TTFT)
 
 ### Felt speed: TTFT beats TPS
 
@@ -87,14 +87,35 @@ Rule-of-thumb cliff:
 - 500–800 ms: flow degradation begins
 - > 1 s: feels remote
 
+### Local vs cloud (what “wins” depends on the metric)
+
+- Cloud often wins at “reasoning per second” and “reliability per request” (orchestration, retries/verifiers, caching, batching/infra tricks).
+- Local often wins at “flow” (low/consistent TTFT, no queueing/rate limits, fast iteration on your machine).
+
 ### Coding assistants are systems, not just models
 
-Tools like [[Codex]] and [[Claude Code]] feel better than “raw chat with
-a local model” mostly because of system design:
+Codex/Claude-code-style tools can feel better than “raw chat with a local model” mostly because of system design:
 
-- planner/executor separation (think rarely, type fast): [[Planner–executor split]]
-- planner/executor separation (think rarely, type fast): [[Planner-executor split]]
+- planner/executor separation (think rarely, type fast)
 - cached decisions/constraints (not replaying long chat history)
 - diffs/patch edits rather than full-file rewrites
 - verification + retries (you see the filtered output)
 - selective context injection (relevant slices, not “everything so far”)
+
+### Model size heuristics (for coding)
+
+Heuristic tiers (not gospel):
+
+- Basic vibe coding (snippets/boilerplate/refactors): 7B–13B is often enough.
+- “Build me an app” vibe coding (multi-file coherence): ~13B feels like a threshold; 20B–34B is comfortable; 70B+ often harms flow via latency.
+
+Context window often matters more than parameter count for “read this doc/file and answer this question”.
+
+### Search vs canonical docs
+
+For technical detail, search results increasingly contain SEO sludge and paraphrases of paraphrases.
+
+Better loop:
+
+- go straight to canonical docs/source/man pages
+- pipe the text to an LLM for extraction/explanation
