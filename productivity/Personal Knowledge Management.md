@@ -63,3 +63,5 @@ Avoid spending effort recording Wikipedia-style neutral facts that are easy to r
 
 - One-off lookups with no intent to revisit.
 - Pure consumption without output, synthesis, or reuse.
+
+Curiosity is still valid: if you want it to compound, capture a one-line takeaway (or a stance/heuristic); if not, let it pass without guilt.
