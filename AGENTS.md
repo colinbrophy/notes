@@ -7,13 +7,6 @@
 - Keep attachments next to the note that references them (e.g., `letby/Baby C floor.png` linked via `![[Baby C floor.png]]`).
 - `.obsidian/` is editor config; avoid committing machine-specific state unless intentional.
 
-## Build, Test, and Development Commands
-- No build/test pipeline (text-first repo).
-- Useful commands from the vault root:
-  - `git status -sb` — see pending edits.
-  - `git diff` — review changes before committing.
-  - `rg "search term"` — fast full-text search.
-
 ## Coding Style & Naming Conventions
 - Markdown: hierarchical headings, hyphen bullets, and fenced code blocks with language hints (e.g., ```bash).
 - Directories: lowercase with underscores (already normalized).
@@ -40,6 +33,7 @@
   - Bulk sync: `vault backup: YYYY-MM-DD HH:MM:SS`
   - Focused edits: short, imperative (e.g., `add tag system`, `fix broken links`)
 - Keep commits scoped; avoid mixing unrelated areas (especially `diary/` with refactors).
+- **Never discard changes without asking**: do not run `git restore`, `git checkout -- <file>`, `git reset`, or similar on files the user didn’t explicitly ask you to revert. If unrelated edits are present, ask whether to keep them, split them into a separate commit, or discard them.
 
 ## Security & Privacy
 - Don’t commit credentials or private third‑party data. Redact sensitive details. Avoid large binaries unless necessary.

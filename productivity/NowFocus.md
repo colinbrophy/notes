@@ -13,6 +13,8 @@ Secondary (non-negotiable maintenance):
   - [[Neovim]]
   - MCP
   - Claude Code
+  - Codex
+  - Local LLM
   - Bash / shell (aim for comfort and speed, not cleverness)
   - [[Anki]] (for memorising commands, workflows, and terminology)
 
