@@ -45,4 +45,4 @@ If it can’t give concrete checks/steps, stop anyway.
 
 - This is a workflow for controlling *attention*, not maximising idea volume.
 - For software comparisons, insist on “how to verify quickly” steps; otherwise you get plausible-but-not-decisive prose.
-
+- Backlog policy: do **not** go back and sort/curate old chats in bulk. Only extract/curate opportunistically when the same question comes up again in live work.
