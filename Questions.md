@@ -1,5 +1,3 @@
-# Questions
-
 Use this as a “parking lot” for curiosity so questions don’t get lost (or immediately turn into a chat rabbit hole).
 
 ## How to use
