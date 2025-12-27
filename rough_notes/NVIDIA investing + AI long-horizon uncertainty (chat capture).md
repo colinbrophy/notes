@@ -1,5 +1,5 @@
 ---
-tags: [draft]
+tags: [draft, ai-written]
 ---
 
 ## Context / goal
@@ -200,4 +200,3 @@ Existing notes that might be adjacent:
 - [[Capitalism]]
 - [[Emergence]]
 - [[LLMs]]
-

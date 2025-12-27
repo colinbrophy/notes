@@ -7,6 +7,7 @@ Tags are for **properties and states** of notes (not what the note *is*). Use th
 - `#todo`: actionable tasks/checklists to work through.
 - `#open-questions`: unresolved questions or uncertainties worth revisiting.
 - `#draft`: incomplete write-up that needs shaping.
+- `#ai-written`: written primarily by an AI assistant; treat as rough and verify/edit before relying on it.
 
 ## Note types
 
@@ -17,4 +18,3 @@ Tags are for **properties and states** of notes (not what the note *is*). Use th
 ## Storage
 
 - `#archive`: imported/backlog material kept for reference but not maintained.
-

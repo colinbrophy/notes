@@ -25,6 +25,8 @@
   - **Concepts** → empty notes as stable anchors (e.g., `Go (programming language).md`).
   - When a new concept is mentioned, create a corresponding (even empty) note and reference it with Obsidian `[[wikilinks]]` so it has backlinks and doesn’t become “floating text”.
   - **Properties/states** → tags (e.g., `#todo`, `#draft`, `#question`, `#low-confidence`).
+  - Tags: check `Tags.md` before inventing new tags; if a new tag is needed, document it there.
+  - AI-assisted writing: tag notes written primarily by an AI assistant with `#ai-written` (and treat as rough until verified/edited).
 
 ## Testing Guidelines
 - Manual checks only: open the note(s) in Obsidian and confirm headings render, code blocks format, and links/embeds resolve.

@@ -1,5 +1,5 @@
 ---
-tags: [draft]
+tags: [draft, ai-written]
 ---
 
 ## Context / goal
@@ -100,4 +100,3 @@ Better loop for technical work:
 - Add a “LLM as UNIX filter” section into [[LLMs]] (and link back from [[UNIX]]).
 - Capture TTFT/TPS as distinct concepts (and keep them separate from model-size talk).
 - Capture “planner/executor split” as a system pattern (separate from “big model” discourse).
-
