@@ -20,8 +20,10 @@
 - Files:
   - Daily notes: `diary/YYYY-MM-DD.md`
   - Everything else: short, descriptive titles (spaces allowed). Avoid renaming files to preserve backlinks.
+- Notes: prefer **atomic concept notes** (one main idea per note). Avoid creating mixed-topic notes (e.g., “LLM (shell pipes)”)—instead add a section to an existing concept note and link out to other concepts.
 - Linking philosophy:
   - **Concepts** → empty notes as stable anchors (e.g., `Go (programming language).md`).
+  - When a new concept is mentioned, create a corresponding (even empty) note and reference it with Obsidian `[[wikilinks]]` so it has backlinks and doesn’t become “floating text”.
   - **Properties/states** → tags (e.g., `#todo`, `#draft`, `#question`, `#low-confidence`).
 
 ## Testing Guidelines
