@@ -11,9 +11,7 @@ Write the question in [[Questions]] *before* opening chat.
 ### 1) Pre-chat (60 seconds)
 
 - Write one question as a bullet in [[Questions]].
-- Add:
-  - Why I asked:
-  - What I wanted to decide/do:
+- Optionally add a line of “why I care” (enough to recover intent later).
 
 ### 2) Timebox (10–15 minutes)
 
@@ -27,19 +25,20 @@ End every session by asking for an “exit summary”:
 
 - 5 bullets (key points)
 - 1 recommendation (if applicable)
-- 3 concrete next checks/steps
+- 3 concrete checks/experiments (how to verify, what to try, what to read)
 
-If it can’t give concrete checks/steps, stop anyway.
+If it can’t give concrete checks/experiments, stop anyway.
 
 ### 4) Capture (optional but recommended)
 
 - Dump the chat into `rough_notes/` and tag `#ai-written` (usually also `#draft`).
 - Keep the capture mostly verbatim; don’t curate while tired.
 
-### 5) Close the loop (5 minutes)
+### 5) Re-ground (optional)
 
-- Do the first “next check/step” immediately.
-- If you won’t do it now, put it back into [[Questions]] as a `#todo` (and move on).
+- Append a one-line “→ takeaway” to the question in [[Questions]] (so it survives memory decay).
+- Optionally do one tiny real-world iteration (a command, a quick test, open the official docs).
+- Then stop. The goal is to leave with a stable takeaway, not an expanding tree of threads.
 
 ## Notes
 
