@@ -10,7 +10,7 @@ Need to look at getting a start page with recently used files.
 
 ## Getting Started
 
-* [ ] usr_07.txt Editing more than one file (READ)
+* [x] usr_07.txt Editing more than one file (READ)
 
   * [x] 07.1 Edit another file (READ)
   * [x] 07.2 A list of files (READ)
@@ -28,8 +28,8 @@ Need to look at getting a start page with recently used files.
   * [x] 08.4 Vertical splits (READ)
   * [x] 08.5 Moving windows (READ)
   * [x] 08.6 Commands for all windows (READ)
-  * [ ] 08.7 Diff mode (READ)
-  * [ ] 08.8 Various (SKIM/REF)
+  * [x] 08.7 Diff mode (READ)
+  * [x] 08.8 Various (SKIM/REF)
 
 * [x] usr_09.txt Using the GUI (DATED)
 
@@ -38,7 +38,7 @@ Need to look at getting a start page with recently used files.
   * [ ] 09.3 The clipboard (READ)
   * [ ] 09.4 Select mode (DATED)
 
-* [ ] usr_10.txt Making big changes (READ)
+* [x] usr_10.txt Making big changes (READ)
 
   * [ ] 10.1 Record and playback commands (READ)
   * [ ] 10.2 Substitution (READ)

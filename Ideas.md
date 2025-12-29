@@ -22,7 +22,9 @@
 19. Faster way to navigate in browser
 20. etckeeper at work
 21. Make Zsh more fish like
-22. Chatgptke so
+22. Chatgptke sort out hairsrype
 23. Setup code review via AI
 24. Look at charm products
 25. Hetzner storage for backups
+26. ChatGPT keyboard shortcuts.
+27. Need code review with AI.
