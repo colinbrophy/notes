@@ -28,3 +28,4 @@
 25. Hetzner storage for backups
 26. ChatGPT keyboard shortcuts.
 27. Need code review with AI.
+28. https://developer.hashicorp.com/terraform/mcp-server
