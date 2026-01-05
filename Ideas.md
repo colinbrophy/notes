@@ -29,3 +29,4 @@
 26. ChatGPT keyboard shortcuts.
 27. Need code review with AI.
 28. https://developer.hashicorp.com/terraform/mcp-server
+29. Understand Gel wax etc
