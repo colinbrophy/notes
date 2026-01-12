@@ -18,4 +18,4 @@
 **The pattern:**
 The LLM is a narrow tool for specific gaps where verification is cheap. For everything else, the CLI/neovim user is faster and more reliable. The people who think LLMs remove the need to learn tools have it exactly backwards—the LLM is a lookup accelerator for people who already know what good looks like.
 
-Related: [[Tacit knowledge]].
+Related: [[Tacit knowledge]], [[Evergreen skills for AI-assisted coding]].

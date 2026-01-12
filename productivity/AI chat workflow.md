@@ -46,3 +46,5 @@ If it can’t give concrete checks/experiments, stop anyway.
 - For software comparisons, insist on “how to verify quickly” steps; otherwise you get plausible-but-not-decisive prose.
 - Backlog policy: do **not** go back and sort/curate old chats in bulk. Only extract/curate opportunistically when the same question comes up again in live work.
 - Curiosity is allowed. If you don’t want a session to evaporate in a week, make it leave one durable trace: a question in [[Questions]] plus a one-line “→ takeaway” (and optionally a rough capture).
+
+Related: [[Evergreen skills for AI-assisted coding]].

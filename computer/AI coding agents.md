@@ -51,3 +51,5 @@ If any is false: it’s a latency tax to avoid thinking.
 - Don’t steer mid-flight; review at the end.
 
 Practical workflow: [[AI coding agent workflow]].
+
+See also: [[Evergreen skills for AI-assisted coding]].

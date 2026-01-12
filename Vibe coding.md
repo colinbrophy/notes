@@ -2,4 +2,4 @@
 
 # Vibe coding
 
-See [[AI coding agents]] and [[Tacit knowledge]].
+See [[AI coding agents]], [[Tacit knowledge]], and [[Evergreen skills for AI-assisted coding]].

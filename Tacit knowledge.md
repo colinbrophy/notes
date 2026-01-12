@@ -8,4 +8,4 @@ You can often *evaluate* and *label* (“good/bad/risky”) without being able t
 - This makes examples/labels easy and complete specs hard (edge cases + tradeoffs + invariants must be made explicit).
 - Natural language helps during search (keep degrees of freedom open); formal systems help as nonsense filters (early rejection).
 
-Related: [[AI coding agents]], [[Vibe coding]], [[Dijkstra - On the foolishness of natural language programming (EWD 667)]].
+Related: [[AI coding agents]], [[Vibe coding]], [[Evergreen skills for AI-assisted coding]], [[Dijkstra - On the foolishness of natural language programming (EWD 667)]].

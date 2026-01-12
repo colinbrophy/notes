@@ -22,5 +22,6 @@ Secondary (non-negotiable maintenance):
   - Memorisation through repetition and use
   - Shallow breadth, frequent exposure
   - No deep system-building or taxonomy
+  - Bias toward durable skills; see [[Evergreen skills for AI-assisted coding]]
 
 Everything else is intentionally dormant. Although now it's the new system, I do feel some better understanding of [[Obsidian]] is needed, just read the official docs, no more.

@@ -119,3 +119,5 @@ Better loop:
 
 - go straight to canonical docs/source/man pages
 - pipe the text to an LLM for extraction/explanation
+
+See also: [[Evergreen skills for AI-assisted coding]].
