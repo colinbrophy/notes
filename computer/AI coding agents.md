@@ -10,115 +10,44 @@ non-trivial codebases, but they fail in predictable ways:
 - “Progress tracking” moves out-of-band into piles of docs
 - You end up reconciling reports with reality instead of verifying code
 
-This note captures a practical control loop: keep scope small, keep the
-repo as the source of truth, and make “done” verifiable.
+This note captures the heuristics. For the practical loop, see
+[[AI coding agent workflow]].
 
-## Core insight: put unfinished work in the code
+## Dijkstra lens (EWD 667)
 
-When you discover missing work, don’t write another plan document.
-Insert explicit, local TODO stubs directly where the missing work
-belongs.
+[[Dijkstra - On the foolishness of natural language programming (EWD 667)]] frames the core failure mode:
 
-Effects:
+- A wider interface doesn’t remove work; it adds coordination/translation work.
+- Formal systems reject nonsense early; natural language lets nonsense hide.
 
-- The codebase becomes the source of truth (no document drift)
-- Outstanding work is visible in context
-- Completion is self-cleaning (remove the TODO when done)
-- Agents operate on small, local tasks (their sweet spot)
+Why this matters for agents:
 
-## Workflow
+- “Good prompts become code” is you narrowing the interface to regain precision.
+- The machine burden shows up to you as latency (serial intent reconstruction).
+- Use vagueness only while decisions are reversible (e.g. prototypes); avoid it where invariants must hold (e.g. security).
 
-### 1) Establish invariants
+### Counterpoint: why vagueness can win
 
-- One task = one PR (or one patchset)
-- One TODO (or a tight cluster) per agent run
-- Every change has a verification step (test, lint, runtime check, or a
-  concrete observable behaviour change)
-- If the agent is uncertain: add a narrower TODO, don’t invent a bigger
-  plan
+- Humans often have an evaluator before a spec (“I’ll know it when I see it”); natural language expresses partial constraints while keeping degrees of freedom open.
+- This is powerful when decisions are reversible and evaluation is cheap (preview/tests/benchmarks); it’s basically search via candidates.
+- It becomes dangerous when invariants must hold (security/concurrency/money): you need formal filters (types/tests/specs/threat model) to reject nonsense early.
 
-### 2) Task intake: write TODOs in place
+See also: [[Tacit knowledge]].
 
-When analysis finds gaps, write TODOs in the relevant file(s), close to
-the missing behaviour. Avoid vague TODOs.
+## When to use an agent (3-question rule)
 
-Include:
+Use an agent only if all are true:
 
-- What is missing, and why
-- Acceptance criteria (observable outcomes)
-- How to verify (tests/commands)
-- Constraints/dependencies (if any)
+- **“Done” is checkable up front** (tests/commands/examples).
+- **First draft can be wrong** (discard is acceptable).
+- **Mostly execution, not design** (plumbing/boilerplate/refactors/tests/doc→code).
 
-### 3) Task selection
+If any is false: it’s a latency tax to avoid thinking.
 
-- Enumerate TODOs via a deterministic script (`rg`, CI, static analysis)
-- Pick the smallest valuable TODO first
-- Keep patches serialisable (easy to review, easy to revert)
+## Parallelism (hiding latency)
 
-### 4) Implement + verify + remove TODO
+- Parallelise **uncertainty** (spikes/competing designs), not shared-state execution.
+- Cap at **1–2 agent worktrees**.
+- Don’t steer mid-flight; review at the end.
 
-- Provide the agent only the files needed for that TODO
-- Require: implementation + verification + running the checks
-- Close the loop by deleting the TODO when it’s done
-
-### Gates (before merging)
-
-- Format
-- Lint / static analysis
-- Unit tests
-- Integration / end-to-end tests (if relevant)
-- Minimal review checklist (correctness, edge cases, security, rollback)
-
-## TODO template
-
-Use something like:
-
-- `TODO(<tag>): <action> because <reason>`
-- `Acceptance: <specific outcomes>`
-- `Verify: <tests/commands>`
-- Optional: `Deps: <files/components>`
-
-If you later need a taxonomy, decide it explicitly (don’t let it emerge
-accidentally).
-
-## Minimal commands
-
-Enumerate TODOs:
-
-```bash
-rg -n "\\bTODO\\b" .
-rg -n "TODO\\(" .   # if you standardise TODO(TAG):
-```
-
-Verification examples (project-specific):
-
-```bash
-go test ./...
-golangci-lint run
-```
-
-## Failure modes / counterpoints
-
-- TODOs can get noisy if they are vague or unowned
-- “Code complete” claims can be false if TODOs remain (treat TODOs as
-  open work)
-- Some work is too large for one patch: split into narrower TODOs or
-  track as an external “epic” (but keep *implementation gaps* in-code)
-
-## Variants seen in the wild
-
-- “List TODOs” as a slash command (but keep the underlying mechanism
-  deterministic)
-- Design by Contract: contracts as “executable TODOs” (fail loudly when
-  a spec isn’t met)
-- Heavier process frameworks (BMAD/SDD/GSD): potentially useful, but easy
-  to overdo and reintroduce plan bloat
-
-## Open questions
-
-- Do I want a TODO taxonomy (feature/bug/perf/security/refactor), or keep
-  it flat?
-- Where should “bigger than one PR” work live (issue tracker, epic note,
-  ADR)?
-- What hard limits should be set for agent runs (time, file count, diff
-  size)?
+Practical workflow: [[AI coding agent workflow]].

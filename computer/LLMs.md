@@ -106,8 +106,8 @@ Codex/Claude-code-style tools can feel better than “raw chat with a local mode
 
 Heuristic tiers (not gospel):
 
-- Basic vibe coding (snippets/boilerplate/refactors): 7B–13B is often enough.
-- “Build me an app” vibe coding (multi-file coherence): ~13B feels like a threshold; 20B–34B is comfortable; 70B+ often harms flow via latency.
+- Basic [[Vibe coding]] (snippets/boilerplate/refactors): 7B–13B is often enough.
+- “Build me an app” [[Vibe coding]] (multi-file coherence): ~13B feels like a threshold; 20B–34B is comfortable; 70B+ often harms flow via latency.
 
 Context window often matters more than parameter count for “read this doc/file and answer this question”.
 
