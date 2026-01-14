@@ -14,6 +14,9 @@
   - Daily notes: `diary/YYYY-MM-DD.md`
   - Everything else: short, descriptive titles (spaces allowed). Avoid renaming files to preserve backlinks.
 - Notes: prefer **atomic concept notes** (one main idea per note). Avoid creating mixed-topic notes (e.g., “LLM (shell pipes)”)—instead add a section to an existing concept note and link out to other concepts.
+- Note length: keep notes brief enough to read in one sitting, roughly 1–2 screens of text as a soft guideline.
+- When asked to incorporate new info, distill it into short, atomic updates and link out rather than expanding a note into a long mixed topic.
+- Prefer synthesis over summary: capture heuristics, stances, and hard-won info; avoid re-writing easy-to-find neutral facts.
 - Linking philosophy:
   - **Concepts** → empty notes as stable anchors (e.g., `Go (programming language).md`).
   - Prefer Obsidian `[[wikilinks]]` for concepts so ideas stay linkable and discoverable.

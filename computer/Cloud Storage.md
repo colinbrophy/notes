@@ -1,5 +1,3 @@
-# Cloud
-
 ## Cost Is King → Low Maintenance
 
 - “Cleanup” tends to be a **percentage of what you have** (you prune ~N% of old/big/low‑value stuff), not a perfectly optimised list.

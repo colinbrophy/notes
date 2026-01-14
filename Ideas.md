@@ -22,7 +22,7 @@
 19. Faster way to navigate in browser
 20. etckeeper at work
 21. Make Zsh more fish like
-22. Chatgptke sort out hairsrype
+22. Chatgptke sort out harsrype
 23. Setup code review via AI
 24. Look at charm products
 25. Hetzner storage for backups
@@ -30,3 +30,9 @@
 27. Need code review with AI.
 28. https://developer.hashicorp.com/terraform/mcp-server
 29. Understand Gel wax etc
+30. Coo
+31. Style ideas, work with AI.
+32. Change my brower usgae, less tabs.
+
+RAG for LETBY case with a query engine
+Look at the PDF metadata to see where it came from

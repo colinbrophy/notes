@@ -1,9 +1,6 @@
 ---
 tags: [draft, ai-written]
 ---
-
-# ChatGPT
-
 ## Context / goal
 
 - Why ChatGPT felt like a step-change versus earlier “chatbots” and voice assistants.

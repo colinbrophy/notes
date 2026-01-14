@@ -1,5 +1,3 @@
-# AUR (Arch User Repository) - A Hacky Software Installation Method?
-
 ## Key Points:
 - **AUR Overview**:
   - The **AUR** is a community-driven repository where Arch Linux users can find and install packages that aren't in the official repositories.
@@ -20,6 +18,3 @@
   - **Windows**: Often feels like a "hacky" process with manual installations, driver tweaks, and registry changes.
   - **AUR**: Similar in that it requires manual intervention, lack of polish, and potential for instability.
   - The AUR can feel like a **"hack"** for software installation, but it’s **valuable** for those looking for flexibility or niche software.
-
-## Conclusion:
-While the AUR may feel a bit **hacky** compared to polished package managers, it offers significant power for advanced users who want access to **cutting-edge or niche software**. If stability and ease of use are a priority, consider using distributions with more **official repositories**.
