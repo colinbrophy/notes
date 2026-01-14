@@ -34,6 +34,15 @@ Why this matters for agents:
 
 See also: [[Tacit knowledge]].
 
+## Taste, care, and stakes
+
+- “Taste” is mostly **negative knowledge**: knowing what not to build, from past costs.
+- Agents optimise for plausible completion, not restraint or long‑horizon coherence.
+- Care comes from social + temporal stakes (maintenance pain, reputation, future readers); agents have none.
+- RL / preference tuning shapes short‑horizon approval but does not create ownership.
+- Taste evals are comparative and noisy; pairwise choices help but Goodhart quickly.
+- Practical response: tighter constraints, cheap verification, and smaller horizons.
+
 ## When to use an agent (3-question rule)
 
 Use an agent only if all are true:
