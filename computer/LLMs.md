@@ -31,6 +31,8 @@ known patterns. Useful for: - Brainstorming - Producing design
 alternatives - Exploring edge cases - Creating analogies - Filling
 conceptual gaps
 
+A good example of this is with note taking itself, it's often a good idea to have a chat with an LLM about ideas then write them down yourself.
+
 This is not creativity in the human sense and requires human judgement
 to evaluate.
 
