@@ -27,14 +27,9 @@ Translation is where most productive uses lie (documentation cleanup,
 ## 3. Pattern Recombination (Constrained Idea Generation)
 
 LLMs generate plausible variations, alternatives and analogues based on
-known patterns. Useful for: - Brainstorming - Producing design
-alternatives - Exploring edge cases - Creating analogies - Filling
-conceptual gaps
+known patterns. 
 
 A good example of this is with note taking itself, it's often a good idea to have a chat with an LLM about ideas then write them down yourself.
-
-This is not creativity in the human sense and requires human judgement
-to evaluate.
 
 ## What LLMs Cannot Reliably Do
 
