@@ -20,4 +20,5 @@
 		- If lookup latency meaningfully disrupts work, it’s worth stabilising in Anki; otherwise letting it fade is fine.
 	- Source chat: https://chatgpt.com/share/695186f3-4d60-800b-8793-fb5e2d22d4e5
 
+- Need to be careful, probably worth capturing something in a [[Personal Knowledge Management]] system first before going straight to Anki, as you will end up just reviewing too many cards otherwise.
 ### DON'T FORGET - Memory is a scarce resource

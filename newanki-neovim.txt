@@ -1,0 +1,3 @@
+wrapmargin (wm) meaning	Chars from right window border where wrapping starts; typing beyond inserts EOL and continues on next line
+wrapmargin default and scope	Default 0; local to buffer
+wrapmargin ignored when	'textwidth' is non-zero

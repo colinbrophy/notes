@@ -1,0 +1,12 @@
+Next misspelling (spell check)	]s
+Previous misspelling (spell check)	[s
+Spell suggestions for word under cursor	z=
+Add word to personal dictionary (spellfile)	zg
+Mark word as wrong for spell check	zw
+Personal spellfile location	~/.config/nvim/spell/*.add
+Vimdiff take change from other buffer	:diffget (or :dg)
+Vimdiff put change into other buffer	:diffput (or :dp)
+Vimdiff apply entire diff hunk	cursor in hunk then :diffget
+Vimdiff take from specific buffer	:diffget {bufnr} (see :ls)
+List buffer numbers	:ls
+Vimdiff mappings (if enabled)	do = :diffget, dp = :diffput

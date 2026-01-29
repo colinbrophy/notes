@@ -1,10 +1,5 @@
-## Overview
 
-Despite appearing to perform many tasks, LLMs exhibit only a small set
-of user-facing capabilities. Internally they perform conditional pattern
-completion, but from a practical perspective their behaviour can be
-reduced to three core abilities.
-
+Only really useful for:
 ## 1. Deep Lookup
 
 LLMs retrieve and recombine patterns from their training data in
@@ -14,6 +9,7 @@ Explanations - Comparisons - Domain recall - Surfacing related concepts
 Lookup is not factual certainty, but pattern-based retrieval influenced
 by prompt context.
 
+This is essentaily the role of good
 ## 2. Deep Translation
 
 LLMs can re-express information while keeping the underlying meaning or
@@ -29,23 +25,12 @@ Translation is where most productive uses lie (documentation cleanup,
 LLMs generate plausible variations, alternatives and analogues based on
 known patterns. 
 
-A good example of this is with note taking itself, it's often a good idea to have a chat with an LLM about ideas then write them down yourself.
+**THIS IS THE MOST DANGEROUS USE OF AI, IDEA GENERATION IS CHEAP, TESTING IF THEY WORK IS HARD**
 
-## What LLMs Cannot Reliably Do
+Only use this sparingly.
 
-These fall outside the three capabilities: - Grounded or causal
-reasoning - Maintaining invariants over long tasks - Detecting when they
-are wrong - Self-correction without feedback - Handling complex,
-evolving goals - Long-horizon architectural or modelling work
+A good example of this is with note taking itself.
 
-## Summary
-
-All reliable LLM behaviours can be framed as a mix of: - Lookup -
-Translation - Recombination
-
-Everything else is an emergent impression. Understanding these limits
-clarifies where LLMs genuinely help and where human reasoning is
-required.
 
 ## Practical Use (Where They Shine)
 
@@ -117,4 +102,4 @@ Better loop:
 - go straight to canonical docs/source/man pages
 - pipe the text to an LLM for extraction/explanation
 
-See also: [[Evergreen skills for AI-assisted coding]].
+See also: [[Evergreen skills for AI-assisted coding]]. [[ChatGPT and Other chatbots]]

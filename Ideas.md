@@ -30,9 +30,10 @@
 27. Need code review with AI.
 28. https://developer.hashicorp.com/terraform/mcp-server
 29. Understand Gel wax etc
-30. Coo
+30. Coop card
 31. Style ideas, work with AI.
 32. Change my brower usgae, less tabs.
+33. Water flosser
 
 RAG for LETBY case with a query engine
 Look at the PDF metadata to see where it came from

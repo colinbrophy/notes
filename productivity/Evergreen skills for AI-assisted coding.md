@@ -17,6 +17,5 @@ Model UX changes fast. The durable wins come from narrowing the interface and ma
 - Chasing model leaderboards / tool churn
 - Agent frameworks unless repeated ROI
 - Delegating invariants (security/concurrency/money) to vibes
-- Over-optimising input speed (see [[Typing]])
 
 Related: [[AI coding agents]], [[AI coding agent workflow]], [[LLMs]], [[Vibe coding]], [[Dijkstra - On the foolishness of natural language programming (EWD 667)]], [[AI chat workflow]].

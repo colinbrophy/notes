@@ -1,6 +1,128 @@
 #todo
 
+- Best editor in pracitce as degrades well and most portable.
+	- If you know the terminal stack you can debug a broken server for example. You don't get this with [[VsCode]] or [[Jetbrains]]
+	- Has a better modal editing system too.
+
+Have a look at vimgolf
+Repeat substitution is with ampersand
+
+Addition and subtraction c-a and c-x (also nfformats option )
+
+C o for insert normal mode 
+
+C r and c p (register) to insert theb fix any indentation issues.
+
+Should I remap the caps lock key?
+
+C h delete one char
+C w delete word
+C u delete line.
+
+C g for select mode
+
+gv to select previous selections 
+
+v /V / C v is visual mode goes back to normal mode
+
+U Visiam mode uppercase l
+### Not anki from here
+
+Common commands:
+
+Jump between misspellings:
+
+]s   " next
+[s   " previous
+
+
+Suggestions for the word under cursor:
+
+z=
+
+
+Mark a word as correct:
+
+zg   " add to personal dictionary
+zw   " mark as wrong
+
+
+Personal words are stored in a .add file (typically in ~/.config/nvim/spell/).
+
+In **vimdiff**, if you want to **take (“obtain”) the entire highlighted difference**, use the diff commands:
+
+### Take the change from the other window
+
+* **From the other buffer into the current one**
+
+  ```
+  :diffget
+  ```
+
+  or shorthand:
+
+  ```
+  :dg
+  ```
+
+* **Put the current change into the other buffer**
+
+  ```
+  :diffput
+  ```
+
+  or shorthand:
+
+  ```
+  :dp
+  ```
+
+### For the *entire highlighted diff block*
+
+1. Move the cursor anywhere inside the highlighted diff.
+2. Run:
+
+   ```
+   :diffget
+   ```
+
+   Vim applies the **whole diff hunk**, not just the current line.
+
+### With explicit window numbers
+
+If you want to be precise about the source:
+
+```
+:diffget 2
+```
+
+(take from window 2 into the current window)
+
+You can check window numbers with:
+
+```
+:ls
+```
+
+### Common mappings (if enabled)
+
+Some setups provide:
+
+* `do` → `:diffget`
+* `dp` → `:diffput`
+
+These also operate on the **entire diff hunk**, not a partial selection.
+
+If you meant *selecting* multiple hunks or automating this across a file, say so and I’ll give the exact commands.
+
+
+READ THIS!!!
+
+https://lazyvim-ambitious-devs.phillips.codes/
+
 Need to look at getting a start page with recently used files.
+
+- `vim +42 filename` opens filename at line 42 
 ## Legend
 
 * **READ**: worth reading end to end

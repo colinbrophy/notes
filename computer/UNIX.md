@@ -1,11 +1,15 @@
 
 ## Context
 
-UNIX is often invoked in modern software discussions, especially to justify architectural choices like [[Microservices]]. Historically, UNIX emerged in the 1970s–80s as an interactive computing environment aimed at programmers and operators working directly at terminals.
+UNIX is often invoked in modern software discussions, especially to justify architectural choices like [[Microservices]]. 
 
 ## Core Idea
 
 UNIX is fundamentally a **UX principle** aimed at humans using computers.
+
+Text is the fundamental principle, as a universal data format. 
+
+We are not discovering new fundamental categories of information every five years. Text, numbers, time series, images, graphs, hierarchies, relationships. What changes is the operations on said data. UNIX says the data must be simple open formats, so new programs can be written for it.
 
 ## Key Characteristics
 

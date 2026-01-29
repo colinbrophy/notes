@@ -1,0 +1,30 @@
+git blame for line range	git blame -L <start>,<end> <file> (e.g., -L 42,42 main.py)
+git log full history for line range	git log -L <start>,<end>:<file>
+git log history for function	git log -L :<funcname>:<file>
+stash only unstaged changes (keep staged)	git stash -k
+Generate ed25519 deploy key (no passphrase)	ssh-keygen -t ed25519 -C "tggbackends-deploy" -f /tmp/tggbackends_deploy_key -N ""
+View deploy private key	cat /tmp/tggbackends_deploy_key
+View deploy public key	cat /tmp/tggbackends_deploy_key.pub
+Cleanup deploy key files	rm /tmp/tggbackends_deploy_key /tmp/tggbackends_deploy_key.pub
+Add deploy key to Ansible vault	ansible-vault edit vault.yml; add tggbackends_deploy_key: | and paste key
+Add deploy key to GitHub	Repo Settings -> Deploy keys -> Add deploy key; title tggbackends-deploy; paste public key; write access: no
+killall default signal	killall process_name (SIGTERM)
+killall list signals	killall -l or killall --list
+killall interactive confirm	killall -i process_name
+killall send SIGINT	killall -INT process_name
+killall force kill	killall -KILL process_name
+sed replace across all files in subdirs	find . -type f -exec sed -i 's/OLD/NEW/g' {} +
+TTY components	TTY driver (job control), line discipline (cooked/raw, Ctrl-C), device (hardware or pty)
+PTY master vs slave	Master held by terminal emulator; slave (/dev/pts/N) is what the shell sees
+/dev/tty meaning	Controlling terminal for current process
+/dev/pts/N meaning	Pseudo-terminal slave for a terminal emulator session
+Process state D	Uninterruptible sleep, stuck on I/O; signals do not kill
+Process state Z	Zombie: exited, not yet reaped by parent
+Reaping	Parent calls wait() to collect exit status and remove zombie
+Session vs process group	Session = dies on terminal disconnect; process group = one job/pipeline controlled together
+Kernel handles terminal job control	SIGINT/SIGTSTP, cooked-mode line editing, echo, foreground/background I/O rules
+Bash handles terminal UX	Prompt, parsing, history, completion, jobs/fg/bg, process groups, readline editing
+Tools that work with shared TTY	Line-oriented tools like grep, sed, awk, cat, find, jq, ripgrep, compilers
+Tools that break shared TTY	Full-screen/curses tools like vim, htop, less, fzf
+Why avoid progress bars in CLI tools	Break concurrent output, cannot be logged/piped, hide errors, use cursor hacks
+Everything is a file (reality)	/dev is mostly file-like; /proc and /sys are awkward; signals, ioctl, fork/exec, sockets, mmap are not files
