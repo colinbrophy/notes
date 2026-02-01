@@ -10,3 +10,53 @@
 	When 'textwidth' is non-zero, this option is not used.
 	See also 'formatoptions' and |ins-textwidth|.
 
+
+# next for anki cards
+
+
+Copy command create cards :t
+
+Move command :m
+
+Normally :normal
+
+@: to repeat 
+
+C r c w and c r c a
+
+q: and <CR> and c f , q/
+
+Current file name %
+
+:she'll
+
+:write ! Vs :write!
+
+:[range]!
+
+% symbol on the buffer list and plus sign 
+
+First and blast
+
+:b [number or name]
+
+:bufdo
+
+Bd [number or name of buffer]
+
+:Args with backpacks for commands
+
+
+C w c and C w o
+
+C w|
+
+C w t
+
+:lcd
+
+{N}Gt gt gT
+
+Tabnext tabprevious
+
+Tabm

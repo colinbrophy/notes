@@ -1,0 +1,23 @@
+Copy command (Ex)	:t
+Move command (Ex)	:m
+Run Normal-mode commands (Ex)	:normal
+Repeat last Ex command	@:
+Insert word/WORD under cursor (Insert mode)	Ctrl-r Ctrl-w = word; Ctrl-r Ctrl-a = WORD
+Command-line window keys	q: (Ex), q/ (search), Ctrl-f, <CR>
+Current file name in cmdline	%
+Open shell	:shell
+Difference: :write ! vs :write!	:write ! {cmd} pipes buffer to command; :write! forces write
+Filter line range through external command	:[range]!{cmd}
+Buffer list symbols: % and +	% = current buffer; + = modified
+First/last buffer	:bfirst / :blast
+Switch to buffer by number/name	:b {number|name}
+Run command across all buffers	:bufdo {cmd}
+Delete buffer by number/name	:bd {number|name}
+Args from command output (backticks)	:args `cmd`
+Window close/only	Ctrl-w c = close window; Ctrl-w o = close others
+Maximize window width	Ctrl-w |
+Go to top-left window	Ctrl-w t
+Set local working directory (window)	:lcd {path}
+Tab navigation (Normal mode)	{N}gt = tab N; gt = next; gT = previous
+Ex tab next/previous	:tabnext / :tabprevious
+Move tab (Ex)	:tabm {N}
