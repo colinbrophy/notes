@@ -11,7 +11,7 @@
 	See also 'formatoptions' and |ins-textwidth|.
 
 
-# next for anki cards
+# next for anki cards\
 
 
 Copy command create cards :t
@@ -59,4 +59,22 @@ C w t
 
 Tabnext tabprevious
 
-Tabm
+Tabmove
+
+# next anki cards
+
+:pwd
+:edit %:h
+
+:find 
+
+:set path
+Set wildmode
+# netrw
+
+Enter to enter dir file
+
+- to move up
+
+
+pow()

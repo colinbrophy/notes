@@ -1,0 +1,7 @@
+Show current working directory (Ex)	:pwd
+Open current file's directory in netrw (Ex)	:edit %:h
+Find file in 'path' (Ex)	:find {file}
+Set 'path' option for :find (Ex)	:set path=...
+Set command-line completion mode (Ex)	:set wildmode=...
+Netrw open file/enter directory	<Enter>
+Netrw go up directory	-
