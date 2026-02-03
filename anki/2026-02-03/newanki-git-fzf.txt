@@ -1,0 +1,11 @@
+Pickaxe search for when a string was added/removed	git log -p -S 'search_term'
+Pickaxe search, compact output (no diffs)	git log -S 'search_term' --oneline
+Pickaxe regex search option	git log -p -G 'pattern.*here'
+Pickaxe search limited to files	git log -p -S 'search_term' -- '*.yml'
+Pickaxe search with word-level diff	git log -p -S 'search_term' --word-diff
+Full history of a file (with patches)	git log -p -- <file>
+fzf list directories only	fzf --walker dir
+fzf walker option to include files	--walker file
+fzf walker option to follow symlinks	--walker follow
+fzf walker option to include hidden directories	--walker hidden
+Combine fzf walker options	--walker opt1,opt2 (e.g., fzf --walker dir,follow,hidden)

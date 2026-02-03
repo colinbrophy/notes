@@ -23,3 +23,36 @@ git stash -k
 ```
 
 This stashes everything except what's in the index, so your staged changes remain staged and ready to commit.
+
+
+
+# Git Search History
+
+Search git history for when a string was added/removed using the pickaxe (`-S`) option.
+
+## Basic Usage
+
+```bash
+git log -p -S 'search_term'
+```
+
+## Variations
+
+```bash
+# Compact output, no diffs
+git log -S 'search_term' --oneline
+
+# Regex search (use -G instead)
+git log -p -G 'pattern.*here'
+
+# Limit to specific files
+git log -p -S 'search_term' -- '*.yml'
+
+# Word-level diff
+git log -p -S 'search_term' --word-diff
+```
+
+## Related
+
+- `git blame <file>` — line-by-line attribution
+- `git log -p -- <file>` — full history of a file

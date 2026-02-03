@@ -3,6 +3,7 @@
 ## Project Structure & Module Organization
 - This repo is a plain **Obsidian vault**: Markdown notes plus a few local attachments (PDF/PNG/DOCX).
 - Thematic folders: `computer/`, `maths/`, `letby/`, `languages/`, `productivity/`, `external_dumps/`, `diary/`.
+- Anki exports live in `anki/YYYY-MM-DD/` (date-based subfolders).
 - Scratch work lives in `rough_notes/` (don’t treat as curated unless explicitly asked).
 - Keep attachments next to the note that references them (e.g., `letby/Baby C floor.png` linked via `![[Baby C floor.png]]`).
 - `.obsidian/` is editor config; avoid committing machine-specific state unless intentional.
@@ -16,6 +17,7 @@
 - Notes: prefer **atomic concept notes** (one main idea per note). Avoid creating mixed-topic notes (e.g., “LLM (shell pipes)”)—instead add a section to an existing concept note and link out to other concepts.
 - Note length: keep notes brief enough to read in one sitting, roughly 1–2 screens of text as a soft guideline.
 - When asked to incorporate new info, distill it into short, atomic updates and link out rather than expanding a note into a long mixed topic.
+- Anki cards should be atomic (one fact per card).
 - Prefer synthesis over summary: capture heuristics, stances, and hard-won info; avoid re-writing easy-to-find neutral facts.
 - Linking philosophy:
   - **Concepts** → empty notes as stable anchors (e.g., `Go (programming language).md`).
