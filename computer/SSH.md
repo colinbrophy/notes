@@ -27,3 +27,11 @@
   - Title: tggbackends-deploy
   - Key: paste public key
   - Allow write access: No (read-only is fine for cloning)
+  
+ ``` 
+
+```bash
+ssh-keygen -R 10.10.10.100
+```
+
+This removes the old host key entry. The next connection will prompt you to accept the new one (or Ansible will add it automatically if you have `host_key_checking = False` or `StrictHostKeyChecking=accept-new` configured).

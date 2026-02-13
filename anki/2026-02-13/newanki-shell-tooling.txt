@@ -1,0 +1,63 @@
+Remove stale SSH host key for a host	ssh-keygen -R <host>
+What does `ssh-keygen -R <host>` remove?	The old host key entry from `known_hosts`
+After removing a host key, next SSH connection does what?	Prompts you to accept the new host key
+SSH option to accept new host keys automatically	`StrictHostKeyChecking=accept-new`
+Ansible setting that disables SSH host key checking	`host_key_checking = False`
+ripgrep: search only `.yml` files	`rg -g '*.yml' 'pattern'`
+ripgrep: search YAML files by type	`rg -t yaml 'pattern'`
+ripgrep glob flag	`--glob` (or `-g`)
+ripgrep: exclude a directory with glob	`rg -g '*.yml' -g '!test/*' 'pattern'`
+ripgrep: list only matching file names	`rg -l 'pattern'`
+ripgrep: case-insensitive search with glob	`rg -ig '*.yml' 'pattern'`
+tmux hierarchy	Server -> sessions -> windows -> panes
+Default tmux prefix key	`C-b`
+tmux: detach session	`C-b d`
+tmux: new window	`C-b c`
+tmux: next window	`C-b n`
+tmux: previous window	`C-b p`
+tmux: jump to numbered window	`C-b 0-9`
+tmux: split pane right	`C-b %`
+tmux: split pane down	`C-b "`
+tmux: cycle panes	`C-b o`
+tmux: move between panes	`C-b` + arrow key
+tmux: kill pane	`C-b x`
+tmux: enter copy mode	`C-b [`
+tmux: exit copy mode	`q`
+tmux: list all bindings	`C-b ?`
+tmux command to start a new session	`tmux`
+tmux command to list sessions	`tmux ls`
+tmux command to attach to session X	`tmux attach -t X`
+tmux command to kill server	`tmux kill-server`
+tmux core value	Persistent sessions survive disconnection
+zsh (emacs mode): start of line	`Ctrl-a`
+zsh (emacs mode): end of line	`Ctrl-e`
+zsh (emacs mode): backward char	`Ctrl-b`
+zsh (emacs mode): forward char	`Ctrl-f`
+zsh (emacs mode): backward word	`Alt-b`
+zsh (emacs mode): forward word	`Alt-f`
+zsh: delete char / list completions at EOL	`Ctrl-d`
+zsh: backward delete char	`Ctrl-h` or `Ctrl-?`
+zsh: backward-kill-word	`Ctrl-w`
+zsh: kill-word (forward)	`Alt-d`
+zsh: kill to end of line	`Ctrl-k`
+zsh: kill whole line	`Ctrl-u`
+zsh: yank (paste killed text)	`Ctrl-y`
+zsh: yank-pop (cycle kill ring)	`Alt-y`
+zsh: transpose characters	`Ctrl-t`
+zsh: transpose words	`Alt-t`
+zsh: uppercase word	`Alt-u`
+zsh: lowercase word	`Alt-l`
+zsh: capitalize word	`Alt-c`
+zsh history: previous entry	`Ctrl-p`
+zsh history: next entry	`Ctrl-n`
+zsh history: reverse incremental search	`Ctrl-r`
+zsh history: forward incremental search	`Ctrl-s`
+zsh history: insert last word from previous line	`Alt-.`
+zsh completion key	`Tab`
+zsh: list completion choices	`Alt-Ctrl-d` (`M-^D`)
+zsh: clear screen	`Ctrl-l`
+zsh: abort / send break	`Ctrl-g`
+zsh: quoted insert (literal next char)	`Ctrl-v`
+zsh: edit command line in `$EDITOR`	`Ctrl-x Ctrl-e`
+zsh key notation `^` means	`Ctrl`
+zsh key notation `M-` means	`Alt` (or Esc prefix)
