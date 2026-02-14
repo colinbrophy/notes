@@ -1,0 +1,56 @@
+Command line location for :, /, ?	Bottom of screen (command line)
+Need cursor at end before <Enter>?	No; execute from current position
+Command-line delete previous character	<BS>
+Command-line delete previous word	Ctrl-w
+Command-line clear whole line	Ctrl-u
+Command-line toggle overstrike	<Insert>
+Command-line cancel without executing	Ctrl-c or <Esc>
+Command-line start: what does <BS> do?	Cancels command (deletes leading : or /)
+Command-line jump to start/end	Ctrl-b or <Home>; Ctrl-e or <End>
+Command-line move by word	<S-Left> or <C-Left>; <S-Right> or <C-Right>
+Command-line completion cycle backward	Ctrl-p
+Completion after :set expects what?	Option names (e.g., :set i -> icon)
+Completion after :set iskeyword=	Inserts current option value
+Completion not implemented	<Tab> inserts literal tab (^I)
+Command-line history older/newer	<Up> / <Down>
+Shared history for search	/ and ? share the same history
+Histories include which types?	:, search (/ and ?), expression, debug, input()
+History prefix search example	:se<Up> jumps to previous entry starting with "se"
+List : command history	:history
+List search history	:history /
+History previous/next regardless of typed text	Ctrl-p / Ctrl-n
+Open command line window	q:
+Mode in command line window	Normal mode
+Execute line under cursor in cmdline window	<Enter> (works in Normal or Insert mode)
+Do edits in cmdline window affect history?	No; only executed command is added
+Search within command line window	/ or ?
+Can you open another cmdline window inside it?	No; only one at a time
+ShaDa stores what?	Command/search history, registers, marks, buffer list, global vars
+When is ShaDa written/read?	Written on exit; read on startup
+Last Vim to exit ShaDa effect	Last one wins (overwrites previous info)
+Configure ShaDa option	:set shada=... (comma-separated option+arg pairs)
+ShaDa option ' (single quote)	How many file marks (a-z) to save
+ShaDa option f	Store global marks (A-Z, 0-9)
+ShaDa option <	Max lines saved per register
+ShaDa option :	Lines of command-line history to save
+ShaDa option /	Lines of search history to save
+ShaDa option %	Save buffer list
+Return to last exit position	'0 (mark)
+List recently edited files	:oldfiles
+Edit oldfiles entry by index	:e #<2 (works where filename accepted)
+Split with oldfiles entry	:split #<3
+Interactive oldfiles picker	:browse oldfiles
+Write ShaDa to file	:wshada! /tmp/shada
+Read ShaDa from file	:rshada! /tmp/shada
+Session save command	:mksession file
+Session restore command	:source file
+Start Vim with session	vim -S file
+Default sessionoptions	blank,buffers,curdir,folds,help,options,tabpages,winsize,terminal
+Include Vim window size in session	:set sessionoptions+=resize
+What does a view store?	Window-local state for a single file (options, folds, cursor)
+Store view for current file	:mkview
+Load view for current file	:loadview
+Store numbered view	:mkview 1 (1-9 plus unnumbered)
+Load numbered view	:loadview 1
+Store view in named file	:mkview ~/.config/nvim/main.vim
+Load named view file	:source ~/.config/nvim/main.vim
