@@ -172,14 +172,14 @@ Need to look at getting a start page with recently used files.
   * [ ] 10.8 Changing case (SKIM)
   * [ ] 10.9 Using an external program (REF)
 
-* [ ] usr_11.txt Recovering from a crash (READ)
+* [x] usr_11.txt Recovering from a crash (READ)
 
   * [ ] 11.1 Basic recovery (READ)
   * [ ] 11.2 Where is the swap file? (READ)
   * [ ] 11.3 Crashed or not? (SKIM)
   * [ ] 11.4 Further reading (REF)
 
-* [ ] usr_12.txt Clever tricks (SKIM)
+* [x] usr_12.txt Clever tricks (SKIM)
 
   * [ ] 12.1 Replace a word (SKIM)
   * [ ] 12.2 Reformat “Last, First” (SKIM)
@@ -192,7 +192,7 @@ Need to look at getting a start page with recently used files.
 
 ## Editing Effectively
 
-* [ ] usr_20.txt Typing command-line commands quickly (READ)
+* [x] usr_20.txt Typing command-line commands quickly (READ)
 
   * [ ] 20.1 Command line editing (READ)
   * [ ] 20.2 Command line abbreviations (SKIM)
@@ -200,7 +200,7 @@ Need to look at getting a start page with recently used files.
   * [ ] 20.4 Command line history (READ)
   * [ ] 20.5 Command line window (READ)
 
-* [ ] usr_21.txt Go away and come back (READ)
+* [x] usr_21.txt Go away and come back (READ)
 
   * [ ] 21.1 Suspend and resume (SKIM)
   * [ ] 21.2 Executing shell commands (READ)

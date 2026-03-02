@@ -1,0 +1,46 @@
+Netrw help page	<F1>
+Netrw help tag jump/back	Ctrl-] / Ctrl-o
+Netrw open in horizontal split	o
+Netrw open in vertical split	v
+Netrw preview window	p
+Netrw edit in previous window	P
+Netrw open in new tab	t
+Netrw cycle listing style	i
+Netrw cycle sort key	s
+Netrw reverse sort order	r
+Netrw set current dir to browser dir	cd
+Netrw rename item	R
+Netrw delete item	D
+Netrw make/goto bookmark	mb / gb
+Open netrw browser (Ex)	:Explore [dir]
+Show netrw settings	:NetrwSettings
+Remote netrw browse example	:Explore ftp://host/path/ (trailing / matters)
+Remote netrw edit example	:e scp://host/path/ (trailing / matters)
+Change global current directory (Vim)	:cd {dir}
+Jump to previous directory	:cd -
+When do windows share a directory?	When no window-local dir is set, all windows share global dir
+If window has local dir, what does :cd do?	Resets it to the shared global dir
+Set tab-local directory	:tcd {dir}
+Tab-local directory applies to	All windows in the tab except those with a local dir
+New tab directory source	Inherits directory from window used to open the tab
+Does :cd change other tabs with tab-local dirs?	No
+Open file under cursor	gf
+Open file under cursor in new window	Ctrl-w f
+Open found file in split	:sfind
+gf search uses which option?	'path'
+Filename character set controlled by	'isfname'
+Run command with hidden buffer behavior	:hide {cmd}
+Example hidden buffer switch	:hide edit two.txt (keeps changes in one.txt)
+Setting that makes abandoned buffers hidden	'hidden'
+Hidden buffers with changes: what to do before exit?	Save all modified buffers
+Active buffer definition	Displayed in a window; text loaded
+Hidden buffer definition	Not displayed; text loaded
+Inactive buffer definition	Not displayed; text not loaded
+Why keep inactive buffers?	Keep info like marks and filenames for later edits
+List buffers	:buffers
+Buffer name matching behavior	Unique/best match selected when you type a buffer name
+Open buffer in split	:sbuffer {bufnr|name}
+Remove buffer from list	:bdelete {bufnr|name}
+bdelete on active buffer does what?	Closes its window; if last window, Vim opens another buffer
+Unlisted buffers shown by	:buffers!
+Fully forget a buffer	:bwipe

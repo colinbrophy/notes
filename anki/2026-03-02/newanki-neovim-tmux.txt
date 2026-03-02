@@ -1,0 +1,11 @@
+Open file at line 42 from shell (Vim)	vim +42 filename
+:ls flag # means	Alternate buffer
+:ls flag u means	Unlisted buffer
+:ls flag a means	Buffer is loaded and displayed in a window
+:ls flag h means	Buffer is loaded but hidden
+:ls flag = means	Buffer is read-only
+:ls flag - means	Buffer is not modifiable ('modifiable' is off)
+tmux command prompt: change cwd for current session	:attach-session -t . -c new_working_dir
+tmux alias for move-window	movew
+movew with no arguments	Moves current window to first free position
+movew -r does what?	Renumbers all windows sequentially (respects base-index)

@@ -76,6 +76,54 @@ Enter to enter dir file
 
 - to move up
 
+- `<F1>` opens the netrw help page; use `Ctrl-]` to jump to help tags and `Ctrl-o` to jump back.
+- Open file: `o` (horizontal split), `v` (vertical split), `p` (preview), `P` (previous window), `t` (new tab).
+- `i` cycles listing styles (thin/long/wide/tree).
+- `s` cycles sort keys (name/mtime/size); `r` reverses sort order.
+- `cd` sets Vim's current directory to the browser directory.
+- `R` renames; `D` deletes; `mb`/`gb` make/goto bookmark.
+- `:Explore [dir]` opens netrw; `:NetrwSettings` lists netrw settings with help links.
+- Remote browsing: `:Explore ftp://host/path/` or `:e scp://host/path/` (trailing `/` matters).
+
+## Current directory
+
+- Change global current directory: `:cd {dir}`.
+- Jump to previous directory: `:cd -`.
+- Window-local directories (via `:lcd`) override the global dir; windows without one share the global dir.
+- If a window has a local dir, running `:cd` there returns it to the shared global dir.
+- Tab-local directory: `:tcd {dir}`; applies to all windows in the tab except those with a local dir.
+- New tabs inherit the directory from the window they were opened from.
+- `:cd` does not change other tabs that have a tab-local directory.
+
+## Finding a file
+
+- `gf` edits the file name under the cursor.
+- If the file is not in the current directory, `gf` searches using the `'path'` option.
+- `Ctrl-w f` opens the file under the cursor in a new window.
+- `:sfind` searches like `:find` but opens the result in a split.
+- `'isfname'` controls which characters are considered part of a filename.
+
+## Hidden buffers
+
+- `:hide {cmd}` runs a command as if `'hidden'` were set, allowing you to leave a modified buffer without writing it.
+- Example: `:hide edit two.txt` keeps changes in `one.txt` but switches to `two.txt`.
+- Setting `'hidden'` makes any abandoned buffer become hidden.
+- If you have hidden modified buffers, ensure you save them before exiting Vim.
+
+## Inactive buffers
+
+- Active buffer: displayed in a window; text loaded.
+- Hidden buffer: not displayed; text loaded.
+- Inactive buffer: not displayed; text not loaded.
+- Inactive buffers remain in the buffer list with info like marks and filenames.
+- List buffers: `:buffers`.
+- Buffer name matching: when you type a buffer name (e.g., with `:buffer`/`:b`), Vim picks the best match; a unique match is used.
+- Open a buffer in a new window: `:sbuffer {bufnr|name}`.
+- Remove buffer from the list: `:bdelete {bufnr|name}`.
+- Deleting an active/current buffer closes its window; if it was the last window, Vim opens another buffer.
+- `:bdelete` makes a buffer unlisted (hidden from `:buffers`); `:buffers!` shows unlisted buffers.
+- To fully forget a buffer, use `:bwipe` (see `'buflisted'`).
+
 
 pow()
 
@@ -189,3 +237,54 @@ Ctrl-w
 - Store current view: `:mkview`. Restore for the same file: `:loadview`.
 - Numbered views: `:mkview 1` and `:loadview 1` (up to 1–9 plus the unnumbered view).
 - Named view file: `:mkview ~/.config/nvim/main.vim`, restore with `:source ~/.config/nvim/main.vim` (can jump to that file).
+
+
+
+:pwd
+/home/Bram/VeryLongFileName
+
+
+INACTIVE BUFFERS
+
+   When a buffer has been used once, Vim remembers some information about it.
+When it is not displayed in a window and it is not hidden, it is still in the
+buffer list.  This is called an inactive buffer.  Overview:
+
+   Active		Appears in a window, text loaded.
+   Hidden		Not in a window, text loaded.
+   Inactive		Not in a window, no text loaded.
+
+The inactive buffers are remembered, because Vim keeps information about them,
+like marks.  And remembering the file name is useful too, so that you can see
+which files you have edited.  And edit them again.
+
+A command which does the same, is not so obvious to list buffers, but is much
+shorter to type: >
+
+	:ls
+
+The output could look like this:
+
+  1 #h   "help.txt"			line 62 ~
+  2 %a + "usr_21.txt"			line 1 ~
+  3      "usr_toc.txt"			line 1 ~
+
+The first column contains the buffer number.  You can use this to edit the
+buffer without having to type the name, see below.
+   After the buffer number come the flags.  Then the name of the file
+and the line number where the cursor was the last time.
+   The flags that can appear are these (from left to right):
+
+	u	Buffer is unlisted |unlisted-buffer|.
+	 %	Current buffer.
+	 #	Alternate buffer.
+	  a	Buffer is loaded and displayed.
+	  h	Buffer is loaded but hidden.
+	   =	Buffer is read-only.
+	   -	Buffer is not modifiable, the 'modifiable' option is off.
+	    +	Buffer has been modified.
+
+
+
+
+
