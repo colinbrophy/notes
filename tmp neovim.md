@@ -285,6 +285,77 @@ and the line number where the cursor was the last time.
 	    +	Buffer has been modified.
 
 
+2. Special special keys				*ins-special-special*
+
+The following keys are special.  They stop the current insert, do something,
+and then restart insertion.  This means you can do something without getting
+out of Insert mode.  This is very handy if you prefer to use the Insert mode
+all the time, just like editors that don't have a separate Normal mode. You
+can use CTRL-O if you want to map a function key to a command.
+
+The changes (inserted or deleted characters) before and after these keys can
+be undone separately.  Only the last change can be redone and always behaves
+like an "i" command.
+
+char		action	~
+-----------------------------------------------------------------------
+<Up>		cursor one line up			     *i_<Up>*
+<Down>		cursor one line down			     *i_<Down>*
+CTRL-G <Up>	cursor one line up, insert start column	     *i_CTRL-G_<Up>*
+CTRL-G k	cursor one line up, insert start column	     *i_CTRL-G_k*
+CTRL-G CTRL-K	cursor one line up, insert start column	     *i_CTRL-G_CTRL-K*
+CTRL-G <Down>	cursor one line down, insert start column    *i_CTRL-G_<Down>*
+CTRL-G j	cursor one line down, insert start column    *i_CTRL-G_j*
+CTRL-G CTRL-J	cursor one line down, insert start column    *i_CTRL-G_CTRL-J*
+<Left>		cursor one character left		     *i_<Left>*
+<Right>		cursor one character right		     *i_<Right>*
+<S-Left>	cursor one word back (like "b" command)	     *i_<S-Left>*
+<C-Left>	cursor one word back (like "b" command)	     *i_<C-Left>*
+<S-Right>	cursor one word forward (like "w" command)   *i_<S-Right>*
+<C-Right>	cursor one word forward (like "w" command)   *i_<C-Right>*
+<Home>		cursor to first char in the line	     *i_<Home>*
+<End>		cursor to after last char in the line	     *i_<End>*
+<C-Home>	cursor to first char in the file	     *i_<C-Home>*
+<C-End>		cursor to after last char in the file	     *i_<C-End>*
+<LeftMouse>	cursor to position of mouse click	     *i_<LeftMouse>*
+<S-Up>		move window one page up			     *i_<S-Up>*
+<PageUp>	move window one page up			     *i_<PageUp>*
+<S-Down>	move window one page down		     *i_<S-Down>*
+<PageDown>	move window one page down		     *i_<PageDown>*
+<ScrollWheelDown>    move window three lines down	*i_<ScrollWheelDown>*
+<S-ScrollWheelDown>  move window one page down		*i_<S-ScrollWheelDown>*
+<ScrollWheelUp>      move window three lines up		*i_<ScrollWheelUp>*
+<S-ScrollWheelUp>    move window one page up		*i_<S-ScrollWheelUp>*
+<ScrollWheelLeft>    move window six columns left	*i_<ScrollWheelLeft>*
+<S-ScrollWheelLeft>  move window one page left		*i_<S-ScrollWheelLeft>*
+<ScrollWheelRight>   move window six columns right	*i_<ScrollWheelRight>*
+<S-ScrollWheelRight> move window one page right		*i_<S-ScrollWheelRight>*
+CTRL-O		execute one command, return to Insert mode   *i_CTRL-O*
+CTRL-\ CTRL-O	like CTRL-O but don't move the cursor	     *i_CTRL-\_CTRL-O*
+CTRL-G u	close undo sequence, start new change	     *i_CTRL-G_u*
+CTRL-G U	don't start a new undo block with the next   *i_CTRL-G_U*
+		left/right cursor movement, if the cursor
+		stays within the same line
 
 
+
+*24.2*	Showing matches
+
+When you type a ) it would be nice to see with which ( it matches.  To make
+Vim do that use this command: >
+
+	:set showmatch
+
+When you now type a text like "(example)", as soon as you type the ) Vim will
+briefly move the cursor to the matching (, keep it there for half a second,
+and move back to where you were typing.
+   In case there is no matching (, Vim will beep.  Then you know that you
+might have forgotten the ( somewhere, or typed a ) too many.
+   The match will also be shown for [] and {} pairs.  You don't have to wait
+with typing the next character, as soon as Vim sees it the cursor will move
+back and inserting continues as before.
+   You can change the time Vim waits with the 'matchtime' option.  For
+example, to make Vim wait one and a half second: >
+
+	:set matchtime=15
 

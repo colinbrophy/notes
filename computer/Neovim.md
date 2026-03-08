@@ -209,14 +209,14 @@ Need to look at getting a start page with recently used files.
   * [ ] 21.5 Views (SKIM/REF)
   * [ ] 21.6 Modelines (READ)
 
-* [ ] usr_22.txt Finding the file to edit (READ)
+* [x] usr_22.txt Finding the file to edit (READ)
 
   * [ ] 22.1 File explorer (SKIM)
   * [ ] 22.2 The current directory (READ)
   * [ ] 22.3 Finding a file (READ)
   * [ ] 22.4 The buffer list (READ)
 
-* [ ] usr_23.txt Editing other files (SKIM)
+* [x] usr_23.txt Editing other files (SKIM)
 
   * [ ] 23.1 DOS, Mac and Unix files (READ)
   * [ ] 23.2 Files on the internet (DATED)

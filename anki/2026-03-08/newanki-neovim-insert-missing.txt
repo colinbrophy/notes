@@ -1,0 +1,16 @@
+Insert-mode special keys do what?	Temporarily stop Insert mode, run an action, then resume Insert mode.
+Undo granularity around Insert special keys	Changes before and after a special key are undone separately.
+Redo behavior after Insert special-key edits	Only the last change can be redone, and it behaves like an `i` insert.
+Insert mode: move up while keeping insert start column	Ctrl-g k (also Ctrl-g Ctrl-k or Ctrl-g <Up>)
+Insert mode: move down while keeping insert start column	Ctrl-g j (also Ctrl-g Ctrl-j or Ctrl-g <Down>)
+Insert mode: jump to first character of file	<C-Home>
+Insert mode: jump to after last character of file	<C-End>
+showmatch behavior when no matching opener exists	Vim beeps.
+showmatch supports which bracket pairs besides ()?	[] and {}
+What unit does 'matchtime' use?	Tenths of a second.
+Command-line <Tab> with multiple completion matches	Vim beeps and inserts the first match.
+Repeating <Tab> during command-line completion	Cycles forward through matches and eventually returns to the original typed text.
+After missing a prefix-filtered history match, how to recover typed text?	Press <Down> to return to what you typed.
+:rshada! merge precedence	With !, information from the ShaDa file overrides current state.
+:rshada without ! merge behavior	Only information that is currently unset is loaded.
+Exit marks: what happens to '0 and older exit marks?	'0 becomes the last exit position; older exit marks shift to '1..'9.

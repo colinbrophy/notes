@@ -1,0 +1,12 @@
+Insert mode: one Normal command without moving cursor	Ctrl-\ Ctrl-o
+Insert mode: start a new undo sequence	Ctrl-g u
+Insert mode: keep next left/right move in current undo block	Ctrl-g U
+Option to show matching bracket while typing	:set showmatch
+:set matchtime=15 equals how long?	1.5 seconds
+ShaDa option @ stores	Number of input-line history entries
+ShaDa option r does what?	Do not store marks for removable media
+ShaDa option ! stores	Uppercase global variables
+ShaDa option h does what?	Disable hlsearch highlighting on startup
+ShaDa option c does what?	Convert when reading/writing ShaDa across encodings
+ShaDa option n does what?	Set ShaDa file name (must be last in shada option)
+Visual mode key to uppercase selected text	U
