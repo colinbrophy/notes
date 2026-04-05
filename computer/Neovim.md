@@ -223,7 +223,7 @@ Need to look at getting a start page with recently used files.
   * [ ] 23.3 Binary files (REF)
   * [ ] 23.4 Compressed files (REF)
 
-* [ ] usr_24.txt Inserting quickly (READ)
+* [x] usr_24.txt Inserting quickly (READ)
 
   * [ ] 24.1 Making corrections (READ)
   * [ ] 24.2 Showing matches (SKIM)
@@ -236,7 +236,7 @@ Need to look at getting a start page with recently used files.
   * [ ] 24.9 Digraphs (DATED/REF)
   * [ ] 24.10 Normal mode commands (READ)
 
-* [ ] usr_25.txt Editing formatted text (READ)
+* [x] usr_25.txt Editing formatted text (READ)
 
   * [ ] 25.1 Breaking lines (READ)
   * [ ] 25.2 Aligning text (READ)
@@ -244,14 +244,14 @@ Need to look at getting a start page with recently used files.
   * [ ] 25.4 Dealing with long lines (READ)
   * [ ] 25.5 Editing tables (SKIM)
 
-* [ ] usr_26.txt Repeating (READ)
+* [x] usr_26.txt Repeating (READ)
 
   * [ ] 26.1 Repeat with Visual mode (READ)
   * [ ] 26.2 Add and subtract (READ)
   * [ ] 26.3 Make a change in many files (READ)
   * [ ] 26.4 Using Vim from a shell script (REF)
 
-* [ ] usr_27.txt Search commands and patterns (READ)
+* [x] usr_27.txt Search commands and patterns (READ)
 
   * [ ] 27.1 Ignoring case (READ)
   * [ ] 27.2 Wrapping around the end of the file (SKIM)
@@ -263,7 +263,7 @@ Need to look at getting a start page with recently used files.
   * [ ] 27.8 Matching a line break (READ)
   * [ ] 27.9 Examples (READ)
 
-* [ ] usr_28.txt Folding (READ)
+* [x] usr_28.txt Folding (READ)
 
   * [ ] 28.1 What is folding? (READ)
   * [ ] 28.2 Manual folding (SKIM)
@@ -276,7 +276,7 @@ Need to look at getting a start page with recently used files.
   * [ ] 28.9 Folding unchanged lines (REF)
   * [ ] 28.10 Which fold method? (READ)
 
-* [ ] usr_29.txt Moving through programs (READ)
+* [x] usr_29.txt Moving through programs (READ)
 
   * [ ] 29.1 Using tags (SKIM)
   * [ ] 29.2 The preview window (READ)
@@ -284,7 +284,7 @@ Need to look at getting a start page with recently used files.
   * [ ] 29.4 Finding global identifiers (READ)
   * [ ] 29.5 Finding local identifiers (READ)
 
-* [ ] usr_30.txt Editing programs (READ)
+* [x] usr_30.txt Editing programs (READ)
 
   * [ ] 30.1 Compiling (SKIM)
   * [ ] 30.2 Indenting C files (DATED)

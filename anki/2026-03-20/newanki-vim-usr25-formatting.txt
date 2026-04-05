@@ -1,0 +1,47 @@
+Does 'wrap' insert line breaks into the file?	No. 'wrap' only affects display; it does not modify file text.
+Reformat text from cursor to end of current paragraph	gq}
+Reformat current line and next 4 lines with gq	gq4j
+Ex command to center a line range	:{range}center [width]
+:center default width when omitted	Uses 'textwidth' (or 80 if 'textwidth' is 0).
+Ex command to right-align a line range	:{range}right [width]
+In :{range}left [margin], what is the numeric argument?	Left margin (indent), not target line length.
+Ex command to left-align a line range	:{range}left [margin]
+Does Vim have built-in full text justification?	No; use a plugin or external formatter.
+Load optional justify package	:packadd justify
+Vimrc form to load justify package	:packadd! justify
+Visual command added by justify package	_j
+Filter whole buffer through external fmt	:%!fmt
+Option to copy previous line's indent on newline	:set autoindent
+Normal-mode command to increase current line indent	>>
+Insert-mode key to increase indent	<C-t>
+Option that controls indent size for > and >>	'shiftwidth'
+Set indent width to 4 columns	:set shiftwidth=4
+Make Tab use 4-column soft stops	:set softtabstop=4
+Recommended portable value for 'tabstop'	Keep 'tabstop' at 8.
+Enable GUI horizontal scrollbar	:set guioptions+=b
+Scroll viewport one character right	zh
+Scroll viewport one character left	zl
+Scroll viewport half a window right	zH
+Scroll viewport half a window left	zL
+Scroll so cursor ends at right edge of window	ze
+Scroll so cursor ends at left edge of window	zs
+With nowrap, jump to first visible character in line	g0
+With nowrap, jump to first non-blank visible character	g^
+With nowrap, jump to middle of screen line	gm
+With nowrap, jump to middle of text in current line	gM
+With nowrap, jump to last visible character in line	g$
+Wrap display at word boundaries without changing file	:set linebreak
+Option that lists characters where a display break may occur	'breakat'
+Option that sets prefix shown for wrapped continuation lines	'showbreak'
+Move down/up by display line instead of file line	gj and gk
+Map arrow keys to display-line motion	:map <Up> gk and :map <Down> gj
+Join each empty-line-separated paragraph into one line	:g/./,/^$/join
+Join paragraphs even when separator lines contain spaces/tabs	:g/\S/,/^\s*$/join
+Allow cursor movement in virtual space for table editing	:set virtualedit=all
+Return to normal (non-virtual) cursor movement	:set virtualedit=
+Replace one character while preserving table alignment	gr{char}
+Enter Virtual Replace mode (layout-preserving replace)	gR
+Temporarily fix display of 4-column-tab tables	:set tabstop=4
+Retab table text back to tabstop 8 while preserving appearance	:retab 8
+Why :retab can be risky in code files	It may change whitespace inside string constants.
+Safer way to represent tabs inside string constants	Use \t instead of a literal tab.

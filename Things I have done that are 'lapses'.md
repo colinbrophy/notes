@@ -1,0 +1,1 @@
+- I just had a look at [[Reddit]] on my phone out of FOMO, it wasn't my morning check and there was no pressing moderation issue that needed resolving. Time: 5/4/25 11pm.

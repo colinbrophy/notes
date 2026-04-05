@@ -1,0 +1,49 @@
+What does `:make {arguments}` do?	Runs `make` with the given arguments and captures the results for quickfix.
+After `:make` finds errors, where does Vim jump?	To the first error location.
+What does `:cc` do in a quickfix session?	Shows the full current error message.
+What does `:clist` show?	Recognized errors with file and line numbers.
+What does `:clist!` show?	All messages in the current error list, including unrecognized lines.
+What does `:cfirst` do?	Jumps to the first error.
+What does `:clast` do?	Jumps to the last error.
+What does `:cc 3` do?	Jumps to error number 3.
+What does `:colder` do?	Moves to the previous error list.
+What does `:cnewer` do?	Moves to the next error list.
+How many error lists does Vim remember?	10
+Which option defines the program run by `:make`?	`'makeprg'`
+Which option defines the format of compiler error messages?	`'errorformat'`
+What does `:compiler msvc` do?	Loads the `msvc` compiler settings.
+What does `:cfile {filename}` do?	Reads error messages from a file into quickfix.
+What command enables C-style auto-indenting with 4-space levels?	`:set cindent shiftwidth=4`
+If typing `}` gives more indent than expected, what is a likely cause?	A matching earlier `}` is missing.
+What does `==` do in Vim?	Reindents the current line.
+What does `=a{` do in Vim?	Reindents the current `{}` block.
+What does `gg=G` do in Vim?	Reindents the whole file.
+Which option customizes C indentation style?	`'cinoptions'`
+What does `:set cinoptions+={2` do?	Makes opening braces use a two-space indent in that C indent style.
+What does `:filetype indent on` do?	Enables filetype detection and filetype-specific indenting.
+What does `:filetype indent off` do?	Disables filetype-specific automatic indenting.
+Which buffer variable disables loading an indent script for a filetype?	`b:did_indent`
+Where do you put a custom indent override for one filetype?	`{first runtimepath entry}/indent/{filetype}.vim`
+What does `smartindent` add beyond `autoindent`?	It adjusts indent for `{`, `}`, and words in `cinwords`.
+With `smartindent`, what happens to lines that start with `#`?	Their indentation is removed so they start in column 1.
+In Insert mode, what does `CTRL-D` do while indenting?	Removes one `shiftwidth` of indent.
+What does `>i{` do?	Indents inside the current `{}` block without changing the braces.
+What does `>a{` do?	Indents the current `{}` block including the braces.
+What does `:set expandtab` do?	Makes the Tab key insert spaces instead of hard tabs.
+What does `smarttab` do?	Uses `shiftwidth` for Tab in leading indent, and a real Tab after the first non-blank.
+After `:set expandtab`, what does `:%retab` do?	Converts indentation tabs to spaces, but keeps tabs after the first non-blank character.
+What does `:%retab!` do?	Converts tabs even after non-blank characters.
+How do you convert spaces back to tabs?	`:set noexpandtab` followed by `:%retab!`
+What does `gq]/` do?	Formats text from the cursor to the end of the current comment.
+Which `formatoptions` flag continues the comment leader when you press Enter in Insert mode?	`r`
+Which `formatoptions` flag continues the comment leader for `o` and `O`?	`o`
+Which `formatoptions` flag wraps comment text at `textwidth`?	`c`
+What does the `comments` option define?	What a comment looks like.
+How do you tell Vim that `//` starts a comment?	`:set comments=://`
+What is the general item format in `comments`?	`{flags}:{text}`
+What does the `n` flag mean in `comments`?	The comment type nests.
+How do you define nested `>` and `!` comments?	`:set comments=n:>,n:!`
+How do you define a C three-part comment in `comments`?	`:set comments=s1:/*,mb:*,ex:*/`
+In `s1:/*`, what does flag `1` mean?	The middle part is offset by one space.
+In `mb:*`, what does flag `b` mean?	A blank must follow the `*`.
+In `ex:*/`, what does flag `x` mean?	Typing `/` removes the extra space after an auto-inserted `*`.

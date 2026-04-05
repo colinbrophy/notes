@@ -1,0 +1,53 @@
+What is a Vim tag?	A location where an identifier is defined.
+Which external tool is used to generate a Vim tags file?	ctags.
+Which ctags implementation is preferred in usr_29?	Universal ctags.
+What is the command to generate tags for all C files in the current directory?	ctags *.c
+What does :tag {tagname} do?	Jumps to the definition of the named tag.
+What does :tags show?	The list (stack) of traversed tags.
+What does :tag with no argument do?	Jumps to the tag on top of the tag list.
+What does :[count]tag do?	Jumps forward [count] entries in the tag list.
+What is the shorthand command to split a window and jump to a tag?	:stag {tagname}
+How do you split the current window and jump to the tag under cursor?	CTRL-W ]
+With a count before CTRL-W ], what does the count control?	The height of the new window.
+How can 'tags' be set to search current dir, parent dir, and subdirs?	:set tags=./tags,./../tags,./*/tags
+How do you set 'tags' to search a whole project tree for tags files?	:set tags=~/proj/**/tags
+What command builds one recursive tags file for a project?	ctags -R .
+How do you point Vim to one project-wide tags file?	:set tags=~/proj/tags
+If a tag has multiple matches, which match does :tag prefer first?	A match in the current file (otherwise the first match).
+Which command jumps to the next match for the same tag?	:tnext
+Which command lets you choose from multiple matches interactively?	:tselect {tagname}
+Which command jumps to the first matching tag?	:tfirst
+Which command jumps to the previous matching tag?	:[count]tprevious
+Which command jumps to the next matching tag?	:[count]tnext
+Which command jumps to the last matching tag?	:tlast
+How do you make :tag treat its argument as a pattern?	Prefix the argument with / (for example: :tag /block).
+In a tag pattern, what does ^ mean?	Match start of tag name.
+In a tag pattern, what does $ mean?	Match end of tag name.
+What command can generate a functions list file for a C tags browser?	ctags --c-types=f -f functions *.c
+What Vim command opens the functions list in a vertical split?	:vsplit functions
+What local setting is suggested to clean up display in the functions list window?	:setlocal ts=99
+What 'tagcase' value makes tag name matching case-insensitive?	ignore
+If 'tagcase' is followic, which option makes tag lookup ignore case?	'ignorecase'
+What does the 'tagbsearch' option indicate?	Whether the tags file is sorted for binary search.
+Why is a sorted tags file useful with default tag search behavior?	Tag lookup is much faster.
+What does the 'taglength' option control?	The number of significant characters in a tag.
+What does :ptag {tagname} do?	Shows the tag in a preview window, then returns to original position.
+How do you preview the definition of the word under cursor?	CTRL-W }
+How do you close the preview window?	:pclose
+How do you edit a specific file in the preview window?	:pedit {file}
+What does :psearch {word} do?	Searches current and included files and shows a match in the preview window.
+Which option sets preview window height when opened?	'previewheight'
+In C preprocessor blocks, what does % jump between?	Matching #ifdef/#else/#endif items.
+What command jumps to the start of the current #if/#ifdef block?	[#
+What command jumps forward to the next #else or #endif?	]#
+How do [# and ]# behave with nested conditional blocks?	They skip over nested #if-#endif blocks.
+What does [[ do in C-style code navigation?	Moves to the start of the outer code block.
+What does ][ do in C-style code navigation?	Moves to the end of the outer code block.
+For [[ and ][, what formatting assumption is made?	The { and } are in the first column.
+What does [{ do in C-style code navigation?	Moves to the start of the current block.
+What does ]} do in C-style code navigation?	Moves to the end of the current block.
+In C++/Java class navigation, what does [m do?	Moves to the previous method start.
+In C++/Java class navigation, what does ]m do?	Moves to the next method start.
+What does [] do in function navigation?	Moves backward to the end of a function.
+What does ]] do in function navigation?	Moves forward to the start of the next function.
+For [] and ]], how is a function end recognized?	By a } in the first column.

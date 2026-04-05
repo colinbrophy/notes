@@ -1,0 +1,47 @@
+What does Vim folding change in a buffer?	Only how lines are displayed on screen; buffer text stays unchanged.
+Main purpose of folding in Vim?	Improve structural overview by collapsing sections to one line.
+Command to create a fold for the current paragraph	zfap
+In Vim, what kind of command is zf?	An operator.
+What can zf be combined with to create a fold?	Any motion command.
+Can zf create folds from a Visual selection?	Yes.
+Command to reduce folding one level (open more folds)	zr
+Command to fold more (close one more level)	zm
+Command to open all folds in the current window	zR
+Command to close all folds in the current window	zM
+Command to temporarily disable folding	zn
+Command to restore folding state after zn	zN
+Command to toggle folding enabled/disabled	zi
+Show fold indicators in a left column	:set foldcolumn=4
+In foldcolumn, what does + mean?	A closed fold.
+In foldcolumn, what does - mean?	The start line of an open fold.
+In foldcolumn, what does | mean?	A continuation line inside an open fold.
+Command to open all folds at the cursor line	zO
+Command to close all folds at the cursor line	zC
+Command to delete the fold at the cursor line	zd
+Command to delete all folds at the cursor line	zD
+In Insert mode, what happens to the fold at the cursor line?	It is kept open (never closed).
+Option to always open folds for movement/jump commands	:set foldopen=all
+How to reset 'foldopen' to its default	:set foldopen&
+Option to auto-close folds after moving out of them	:set foldclose=all
+Folding state scope in Vim	Window-local (different windows on same buffer can differ).
+Enable indent-based folding	:set foldmethod=indent
+In indent folding, what increases fold depth by one level?	Each 'shiftwidth' worth of indent.
+What does :set foldlevel=3 do?	Closes folds at level 3 and deeper.
+How does foldlevel affect visibility?	Lower foldlevel means more folds are closed.
+What does foldlevel=0 mean?	All folds are closed.
+With foldmethod=indent, can you manually define folds with zf?	No.
+Enable marker-based folding	:set foldmethod=marker
+Main disadvantage of marker folding	It requires modifying the file text.
+In marker folding, what does a marker like {{{2 specify?	Start a fold at level 2.
+At a numbered marker, what happens to higher-level folds?	Any fold at a higher level stops there.
+Enable expression-based folding	:set foldmethod=expr
+In expression folding, what must 'foldexpr' compute?	The fold level for each line.
+In the quoted-email foldexpr example, what determines fold level?	The number of leading > characters after whitespace is removed.
+How to inspect the final stored value of a complex foldexpr	:set foldexpr
+When foldexpr becomes complex, recommended approach	Move logic into a function and set 'foldexpr' to call it.
+Command to fold unchanged lines in diff mode	:setlocal diff foldmethod=diff scrollbind nowrap foldlevel=1
+If syntax folding exists for a language, which method is usually best?	Syntax folding (foldmethod=syntax).
+Best use case for manual folding	Unstructured text.
+Why can marker folding be unsuitable in shared/company files?	You may not be allowed to add markers to file content.
+Good use case for indent folding from chapter guidance	Outlining with one 'shiftwidth' per nesting level.
+If expr folds are close but not perfect, what workflow is suggested?	Switch to manual; existing folds remain, then tweak manually.

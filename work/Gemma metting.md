@@ -1,0 +1,11 @@
+
+- We are introducing network level block lists to all servers soon.
+- Won't use WSL, 
+	- Keeps all the scripts outside the automation repo, (to be fair some were commited)
+- Moves all the servers around.
+	- I just don't heard about it till later.
+- No assigned tasks really.
+- PHP upgrade, I did this in the first week it got blocked by lack of acess.
+	- The months laters just starts working on this on his own with an AI generated script.
+- When asked it all "This is your departments to do thinings your way."
+- Did the whole backup setup, but didn't get deployed.

@@ -1,0 +1,519 @@
+#separator:tab
+#html:true
+#tags column:3
+Open help for keyword	:help keyword	vim::Global
+Save file as	:saveas file	vim::Global
+Close Current Pane (but don't close vim)	:close<br><br>NOTE: :q or ZZ also works but closes vim too	vim::Global
+Open man page for word under cursor	K	leech vim::Global
+Move Cursor Left	h	vim::Cursor vim::Movement
+Move Cursor Down	j	leech vim::Cursor vim::Movement
+Move Cursor Up	k	leech vim::Cursor vim::Movement
+Move Cursor Right	l	vim::Cursor vim::Movement
+Move to top of screen	H	leech vim::Cursor vim::Movement
+Move to middle of screen	M	leech vim::Cursor vim::Movement
+Move to bottom of screen	L	leech vim::Cursor vim::Movement
+Jump forwards to the start of a word	w	vim::Cursor vim::Movement
+Jump forwards to the start of a word (words can contain punctuation)	W	vim::Cursor vim::Movement
+Jump forwards to the end of a word	e	vim::Cursor vim::Movement
+Jump forwards to the end of a word (words can contain punctuation)	E	vim::Cursor vim::Movement
+Jump backwards to the start of a word	b	vim::Cursor vim::Movement
+Jump backwards to the start of a word (words can contain punctuation)	B	vim::Cursor vim::Movement
+Move to matching character (default supported pairs: '()', '{}', '[]' - use :h matchpairs in vim for more info)	%	vim::Cursor vim::Movement
+Jump to the start of the line	0	vim::Cursor vim::Movement
+Jump to the first non-blank character of the line	^	leech vim::Cursor vim::Movement
+Jump to the end of the line	$	vim::Cursor vim::Movement
+Jump to the last non-blank character of the line	g_	leech vim::Cursor vim::Movement
+Go the first line of the document	gg	leech vim::Cursor vim::Movement
+Go to the last line of the document	G	vim::Cursor vim::Movement
+Go to line 5	5G	vim::Cursor vim::Movement
+Jump to the next occurrence of character x	fx	vim::Cursor vim::Movement
+Jump to before next occurrence of character x	tx	vim::Cursor vim::Movement
+Jump to previous occurence of character x	Fx	vim::Cursor vim::Movement
+Jump to after previous occurrence of character x	Tx	vim::Cursor vim::Movement
+Repeat previous f, t, F, or T movement	;	leech vim::Cursor vim::Movement
+Repeat previous f, t, F, or T movement, backwards	,	leech vim::Cursor vim::Movement
+Jump to next paragraph (or function/block, when editing code)	}	vim::Cursor vim::Movement
+Jump to previous paragraph (or function/block, when editing code)	{	vim::Cursor vim::Movement
+Center cursor on screen	zz	leech vim::Cursor vim::Movement
+Move screen down one line (without moving cursor)	Ctrl + e	leech vim::Cursor vim::Movement
+Move screen up one line (without moving cursor)	Ctrl + y	leech vim::Cursor vim::Movement
+Move back one full screen	Ctrl + b	leech vim::Cursor vim::Movement
+Move forward one full screen	Ctrl + f	leech vim::Cursor vim::Movement
+Move forward 1/2 a screen	Ctrl + d	leech vim::Cursor vim::Movement
+Move back 1/2 a screen	Ctrl + u	leech vim::Cursor vim::Movement
+Insert before the cursor	i	vim::Insert vim::Mode
+Insert at the beginning of the line	I	vim::Insert vim::Mode
+Insert (append) after the cursor	a	vim::Insert vim::Mode
+Insert (append) at the end of the line	A	vim::Insert vim::Mode
+Append (open) a new line below the current line	o	vim::Insert vim::Mode
+Append (open) a new line above the current line	O	vim::Insert vim::Mode
+Insert (append) at the end of the word	ea	vim::Insert vim::Mode
+Exit insert mode	Esc	vim::Insert vim::Mode
+Replace a single character	r	vim::Editing
+Join line below to the current one with one space in between	J	vim::Editing
+Join line below to the current one without space in between	gJ	vim::Editing
+Reflow Paragraph	gwip	vim::Editing
+Change (replace) entire line<br />	cc	leech vim::Editing
+Change (replace) to the end of the line	c$ (or C)	vim::Editing
+Change (replace) entire word	ciw	vim::Editing
+Change (replace) to the end of the word	cw	vim::Editing
+Delete character and substitute text	s	notused vim::Editing
+Delete line and substitute text (same as cc)	S	vim::Editing
+Transpose two letters (delete and paste)	xp	vim::Editing
+Undo	u	vim::Editing
+Redo	Ctrl + r	vim::Editing
+Repeat last command	.	vim::Editing
+Start visual mode, mark lines, then do a command (like y-yank)	v	bad vim::(VisualMode) vim::MarkingText
+Start linewise visual mode	V	vim::(VisualMode) vim::MarkingText
+Start visual block mode	Ctrl + v	vim::(VisualMode) vim::MarkingText
+Move to other corner of block	O or o	vim::(VisualMode) vim::MarkingText
+Mark a word (in visual mode, not normal mode)	aw (iw to exclude punctuation)	vim::(VisualMode) vim::MarkingText
+select around block with () in visual mode	ab	leech vim::(VisualMode) vim::MarkingText
+mark a block with {} in visual mode	aB	vim::(VisualMode) vim::MarkingText
+select inner block with () in visual mode	ib	vim::(VisualMode) vim::MarkingText
+Select inner block with {} in visual mode	iB	vim::(VisualMode) vim::MarkingText
+Exit visual mode	Esc	vim::(VisualMode) vim::MarkingText
+Shift text right	&gt;	vim::VisualCommands
+Shift text left	&lt;	vim::VisualCommands
+Yank (copy) marked text	y	vim::VisualCommands
+Delete marked text	d	vim::VisualCommands
+Switch case	~	vim::VisualCommands
+Show registers content	:reg	vim::Registers
+Yank into register x	"""xy"	leech vim::Registers
+Paste contents of register x	"""xp"	vim::Registers
+List of marks	:marks	vim::Marks
+Set current position for mark A	ma	vim::Marks
+Jump to position of mark A	'a	vim::Marks
+Record macro a	qa	vim::Macros
+Stop recording macro	q	vim::Macros
+Run macro a	@a	leech vim::Macros
+Rerun last run macro	@@	vim::Macros
+Yank (copy) a line	yy	vim::CutandPaste
+Yank (copy) 2 lines	2yy	vim::CutandPaste
+Yank (copy) the characters of the word from the cursor position to the start of the next word	yw	vim::CutandPaste
+Yank (copy) to end of line	y$	vim::CutandPaste
+Put (paste) the clipboard after cursor	p	vim::CutandPaste
+Put (paste) before cursor	P	vim::CutandPaste
+Delete (cut) a line	dd	vim::CutandPaste
+Delete (cut) 2 lines	2dd	vim::CutandPaste
+Delete (cut) the characters of the word from the cursor position to the start of the next word	dw	vim::CutandPaste
+Delete (cut) to the end of the line	d$ or D	vim::CutandPaste
+Delete (cut) character	x	vim::CutandPaste
+Write (save) the file, but don't exit	:w	vim::Exiting
+Write out the current file using sudo	:w !sudo tee %	vim::Exiting
+Write (save) and quit	:wq or :x or ZZ	leech vim::Exiting
+Quit (fails if there are unsaved changes)	:q	vim::Exiting
+Quit and throw away unsaved changes	:q! or ZQ	vim::Exiting
+Write (save) and quit on all tabs	:wqa	vim::Exiting
+Search for a pattern	/pattern	vim::SearchandReplace
+Search backward for pattern	?pattern	vim::SearchandReplace
+'Very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)	\vpattern	vim::SearchandReplace
+Repeat search in same direction	n	vim::SearchandReplace
+Repeat search in opposite direction	N	vim::SearchandReplace
+Replace all old with new throughout file	:%s/old/new/g	vim::SearchandReplace
+Replace all old with new throughout file with confirmations	:%s/old/new/gc	vim::SearchandReplace
+Remove highlighting of search &nbsp;matches	:noh	leech vim::SearchandReplace
+Search for pattern in multiple files	:vimgrep /pattern/ {file}	vim::Files vim::Multiple vim::Search vimgrep
+Jump to the next match (in vimgrep)	:cn	vim::Files vim::Multiple vim::Search vimgrep
+Jump to the previous match (in vimgrep)	:cp	vim::Files vim::Multiple vim::Search vimgrep
+Open a window containing the list of matches (in vimgrep)	:copen	vim::Files vim::Multiple vim::Search vimgrep
+Edit a file in a new buffer	:e file	vim::WorkingWithMultipleFiles
+Go to the next buffer	:bnext or :bn	vim::WorkingWithMultipleFiles
+Go to the previous buffer	:bprev or :bp	vim::WorkingWithMultipleFiles
+Delete a buffer (close a file)	:bd	leech vim::WorkingWithMultipleFiles
+List all open buffers	:ls	vim::WorkingWithMultipleFiles
+Open a file in a new buffer and split window	:sp file	leech vim::WorkingWithMultipleFiles
+Open a file in a new buffer and vertically split window	:vsp file	vim::WorkingWithMultipleFiles
+Split (current) window horizontally	Ctrl + ws	vim::WorkingWithMultipleFiles
+Switch windows (cycle through windows)	Ctrl + ww	vim::WorkingWithMultipleFiles
+Quit a window	Ctrl + wq	leech vim::WorkingWithMultipleFiles
+Split window vertically<br />	Ctrl + wv	leech vim::WorkingWithMultipleFiles
+Move cursor to the left window (vertical split)	Ctrl + wh	vim::WorkingWithMultipleFiles
+Move cursor to the right window (vertical split)	Ctrl + wl	vim::WorkingWithMultipleFiles
+Move cursor to the window below (horizontal split)	Ctrl + wj	leech vim::WorkingWithMultipleFiles
+Enter Replace mode (overwrite text until Esc)	R	vim::Editing
+Jump to older cursor position (back in jumplist)	Ctrl + o	vim::Navigation
+Jump to newer cursor position (forward in jumplist)	Ctrl + i	vim::Navigation
+Show file name and cursor position (line/col/%)	Ctrl + g	vim::Status
+Run an external shell command	:!command	vim::External
+Read file FILENAME into current buffer below cursor	:r FILENAME	vim::External
+Read output of external command into buffer	:r !command	vim::External
+Write current buffer to a new filename (keep current buffer name)	:w FILENAME	vim::External
+Enable case-insensitive search	:set ic	leech vim::Settings
+Disable case-insensitive search	:set noic	vim::Settings
+Enable search result highlighting	:set hls	vim::Settings
+Disable search result highlighting	:set nohls	leech vim::Settings
+Enable incremental search	:set is	vim::Settings
+Disable incremental search	:set nois	leech vim::Settings
+On command-line, list possible completions for current command or argument	Ctrl + d	vim::CommandLine
+On command-line, cycle forward through completion matches	Tab	vim::CommandLine
+On command-line, cycle backward through completion matches	Shift + Tab	vim::CommandLine
+Open your vimrc / Neovim config file	:e $MYVIMRC	vim::Config
+Insert contents of register x while in Insert mode	Ctrl + r then x	vim::Registers
+Insert result of an expression while in Insert mode	Ctrl + r then =	vim::Registers
+Which register always holds the last yank?	Register 0	vim::Registers
+Which registers hold the most recent whole-line deletions (dd)?	Registers 1–9	vim::Registers
+"&nbsp; &nbsp; To substitute phrases between two line numbers (#)"	"&nbsp; &nbsp; &nbsp; &nbsp; :#,#s/old/new/g"	
+Write to &lt;filename&gt;	:w &lt;filename&gt;	
+How do you save only selected text to a file in Vim?	"<ol><li>Press <code>v</code> to enter visual mode</li>
+<li>Move cursor to select text</li>
+<li>Type <code>:w FILENAME</code></li>
+</ol>
+<div>(Results in <code>:'&lt;,'&gt;w FILENAME</code>)</div>"	
+How do you insert the output of a shell command into Vim?	"<div>
+<code>:r !command</code></div>
+<div>Example: <code>:r !ls</code> inserts the directory listing below the cursor.</div>"	
+Undo all changes on the current line	U	
+Jump to tag/hyperlink under cursor	Ctrl + ]	
+Pop tag (go back after jumping to tag)	Ctrl + t	
+Search all help pages for pattern	:helpgrep pattern	
+Help prefix for insert mode commands	i_ (e.g., :help i_CTRL-W)	
+Help prefix for visual mode commands	v_ (e.g., :help v_o)	
+Help prefix for command-line commands	c_ (e.g., :help c_CTRL-R)	
+Help prefix for ex-commands	: (e.g., :help :s)	
+Help format for options	"&#x27;option&#x27; with quotes (e.g., :help &#x27;list&#x27;)"	
+Help prefix for registers	quote (e.g., :help quote:)	
+Quickfix commands prefix vs location list prefix	:c for quickfix, :l for location list	
+Search forward for word under cursor	*	leech
+Search backward for word under cursor	"#"	
+Search forward for partial word under cursor	g*	
+Search backward for partial word under cursor	"g#"	
+Word boundary (end of word) in search pattern	\&gt;	
+Word boundary (start of word) in search pattern	\&lt;	
+Match beginning of line in search pattern	^	
+Match end of line in search pattern	$	
+Match any single character in search pattern	.	
+Escape special character in search pattern	\ before character	
+Jump back to line before last jump	"&#x27;&#x27; (two apostrophes)"	leech
+List all jump positions	:jumps	
+Jump to position when you last left file	`&quot;	leech
+Jump to position of last change	`. or '.	leech
+Set global mark A (works across files)	mA (uppercase)	
+Jump to global mark A	"&#x27;A or `A"	
+Delete character before cursor	X	
+Delete backward to start of word	db	
+Delete inner word (excluding whitespace)	diw	
+Delete a word (including whitespace)	daw	
+Delete to end of file	dG	
+Delete to start of file	dgg	
+Yank to end of word (no trailing space)	ye	
+Inner sentence text object	is (e.g., cis, dis)	
+A sentence text object (includes trailing space)	as (e.g., das)	
+Yank to system clipboard	"*y<br>Paste from system clipboard	*p"	notused
+Redraw/refresh the screen	Ctrl + l	
+Switch to alternate (previous) file	Ctrl + ^	
+Stop search at end/start of file (no wrap)	:set nowrapscan	
+Allow search to wrap around file (default)	:set wrapscan	
+Add surrounding to inner word with ()	saiw)	vim::mini.nvim vim::mini.surround vim::neovim
+Delete surrounding double quotes	"sd"""	vim::mini.nvim vim::mini.surround vim::neovim
+Delete surrounding (any quote type)	sdq	vim::mini.nvim vim::mini.surround vim::neovim
+Replace surrounding () with []	sr)]	vim::mini.nvim vim::mini.surround vim::neovim
+Delete surrounding function call	sdf	vim::mini.nvim vim::mini.surround vim::neovim
+Replace surrounding ) with tag	sr)t then enter tag name	vim::mini.nvim vim::mini.surround vim::neovim
+Add surrounding with custom left/right (user prompt)	saiw? then enter left, then right	vim::mini.nvim vim::mini.surround vim::neovim
+mini.surround: difference between ( and ) as output	"( adds spaces: ( text ), ) doesn&#x27;t: (text)"	vim::mini.nvim vim::mini.surround vim::neovim
+Find next surrounding )	sfn)	vim::mini.nvim vim::mini.surround vim::neovim
+Find previous/last surrounding )	sfl)	vim::mini.nvim vim::mini.surround vim::neovim
+Highlight surrounding bracket	sh)	vim::mini.nvim vim::mini.surround vim::neovim
+Change inside argument	cia	vim::mini.ai vim::mini.nvim vim::neovim
+Delete around any bracket type	dab	vim::mini.ai vim::mini.nvim vim::neovim
+Select inside next argument	vina	vim::mini.ai vim::mini.nvim vim::neovim
+Select around last/previous bracket	val)	vim::mini.ai vim::mini.nvim vim::neovim
+Jump to left edge of textobject	g[	vim::mini.ai vim::mini.nvim vim::neovim
+Jump to right edge of textobject	g]	vim::mini.ai vim::mini.nvim vim::neovim
+mini.ai: difference between i( and i)	i( excludes edge whitespace, i) includes it	vim::mini.ai vim::mini.nvim vim::neovim
+mini.nvim identifier: b	Alias for ), ], or }	vim::mini.ai vim::mini.nvim vim::mini.surround vim::neovim
+mini.nvim identifier: q	"Alias for "", ', or `"	vim::mini.ai vim::mini.nvim vim::mini.surround vim::neovim
+mini.nvim identifier: f	Function call	vim::mini.ai vim::mini.nvim vim::mini.surround vim::neovim
+mini.nvim identifier: a	Argument (mini.ai only)	vim::mini.ai vim::mini.nvim vim::neovim
+mini.nvim identifier: t	Tag	vim::mini.ai vim::mini.nvim vim::mini.surround vim::neovim
+mini.nvim identifier: ?	User prompt for custom delimiters	vim::mini.ai vim::mini.nvim vim::mini.surround vim::neovim
+Move to previous end of word	ge	
+Move to previous end of WORD (whitespace-separated)	gE	
+Put cursor line at top of screen	zt	
+Put cursor line at bottom of screen	zb	
+Go to a line at N percent through the file (example: 50%)	N%	
+Show absolute line numbers	:set number	
+Hide absolute line numbers	:set nonumber	
+Show cursor position in statusline	:set ruler	
+Hide cursor position in statusline	:set noruler	leech
+Always keep N context lines above and below cursor	:set scrolloff=N (example: :set scrolloff=5)	
+Reset an option to its default value	:set {option}&amp;	
+Disable line wrapping	:set nowrap	
+Set horizontal scroll context to N characters	:set sidescroll=N	
+Show invisible characters (tabs, trailing spaces)	:set list	
+Customise how invisible characters are displayed	:set listchars=tab:&gt;-,trail:-	
+Include dash (-) as part of a word	:set iskeyword+=-	
+Remove underscore (_) from word characters	:set iskeyword-=_	
+Set number of lines used for command messages	:set cmdheight=N	
+Control whether cursor wraps across lines	:set whichwrap=...	
+Discard changes and reload file	<code>:edit! {file}</code>	
+Go to next file in argument list	<code>:next</code>	
+Go to next file, discarding current changes	<code>:next!</code>	
+Write current file, then go to next in argument list	<code>:wnext</code>	
+Show current argument list	<code>:args</code>	
+Go to previous file in argument list	<code>:previous</code>	
+Write current file, then go to previous in argument list	<code>:wprevious</code>	
+Go to first file in argument list	<code>:first</code>	
+Go to last file in argument list	<code>:last</code>	
+Skip N files forward in argument list	<code>:{N}next</code>	
+Skip N files backward in argument list	<code>:{N}previous</code>	
+Automatically write modified files when switching (arglist, etc.)	<code>:set autowrite</code>	
+Turn off automatic writing	<code>:set noautowrite</code>	
+Redefine the argument list	<code>:args file1 file2 ...</code>	
+Redefine the argument list using a wildcard	<code>:args *.txt</code>	
+Redefine the argument list, discarding current changes	<code>:args!</code>	
+Quit warning when you haven't edited the last arglist file	<code>E173: {n} more files to edit</code> (run the quit command again to force quit)	
+What is the alternate file?	The file you were previously editing (toggle with <code>CTRL-^</code>).	
+Lowercase vs uppercase marks	Lowercase marks (<code>ma</code>) are local to a file. Uppercase marks (<code>mA</code>) are global and can be jumped to from any file.	
+Show locations of specific marks	<code>:marks A</code> or <code>:marks MCP</code>	
+Append current buffer (or selected range) to end of a file	<code>:write &gt;&gt; {file}</code> (use Visual mode to append only selected lines)	
+Start Vim in read-only mode	<code>vim -R {file}</code>	
+Unix shortcut to open a file read-only	<code>view {file}</code>	
+Forbid modifications completely (no changes allowed)	<code>vim -M {file}</code>	
+Force writing a read-only buffer	<code>:write!</code> (or <code>:w!</code>)	
+Open a new window on an empty buffer	<code>:new</code>	
+Open a horizontal split with a specific height and edit a file	<code>:{height}split {file}</code> (example: <code>:3split alpha.c</code>)	
+Increase current window height	<code>CTRL-W +</code> (count adds multiple lines)	
+Decrease current window height	<code>CTRL-W -</code> (count subtracts multiple lines)	
+Set current window height to N lines	<code>{N}CTRL-W _</code>	
+Maximise current window height	<code>CTRL-W _</code> (no count)	
+Open a vertical split on a new, empty buffer	<code>:vnew</code>	
+Force a split command to be vertical	<code>:vertical {cmd}</code> (e.g. <code>:vertical new</code>, <code>:vertical diffsplit file</code>)	
+Jump to the top window / bottom window	<code>CTRL-W t</code> (top), <code>CTRL-W b</code> (bottom)	
+Auto-equalise window sizes when opening/closing windows	<code>:set equalalways</code>	
+Move current window to top/bottom/left/right edge	<code>CTRL-W K</code> (top), <code>CTRL-W J</code> (bottom), <code>CTRL-W H</code> (left), <code>CTRL-W L</code> (right)	
+Start Vim with a split per file (horizontal)	<code>vim -o file1 file2 ...</code>	
+Start Vim with a split per file (vertical)	<code>vim -O file1 file2 ...</code>	leech
+Open a window for each file in the current argument list	<code>:all</code>	
+Open a vertical window for each file in the current argument list	<code>:vertical all</code>	
+Start Neovim in diff mode for two files	<code>nvim -d oldfile newfile</code>	
+Open and close folds in diff view	<code>zo</code> (open fold), <code>zc</code> (close fold)	
+Diff inside Vim: compare current file with another	<code>:diffsplit {file}</code> (use <code>:vertical diffsplit {file}</code> for a vertical split)	
+Diff inside Vim using a patch file	<code>:diffpatch {patch.diff}</code> (use <code>:vertical diffpatch {patch.diff}</code> for a vertical split; patch must contain only one patch for the file you're editing)	
+Disable scroll binding in diff windows	<code>:set noscrollbind</code>	
+Jump to next/previous change in diff	<code>]c</code> (next), <code>[c</code> (previous). Use a count to jump further.	
+Refresh diff highlighting	<code>:diffupdate</code>	
+Diff: put current change into other window	<code>dp</code> (diff put)	
+Diff: obtain change from other window	<code>do</code> (diff obtain)	
+Split placement modifiers (used before a split command)	<code>:leftabove</code>/<code>:aboveleft</code> (left or above)<br><code>:rightbelow</code>/<code>:belowright</code> (right or below)<br><code>:topleft</code> (top or left of Vim)<br><code>:botright</code> (bottom or right of Vim)	fix
+Go to next tab page	<code>gt</code>	
+Open current window in a new tab page	<code>:tab split</code>	
+Open help in a new tab page	<code>:tab help {topic}</code>	
+Open any window-opening command in a new tab	Prefix it with <code>:tab</code>, e.g. <code>:tab help gt</code>	
+Close all tabs except the current one	<code>:tabonly</code>	
+Close all other windows	<code>:only</code>	
+Quit all windows	<code>:qall</code>	
+Write all modified buffers	<code>:wall</code>	
+Write all buffers and quit	<code>:wqall</code>	
+Quit all windows, discarding changes	<code>:qall!</code>	
+Set default split placement	<code>:set splitbelow</code> (new splits open below), <code>:set splitright</code> (new splits open right)	
+Split and edit the alternate file	<code>CTRL-W CTRL-^</code>	
+Enable backup files	<code>:set backup</code>	
+Set backup file extension	<code>:set backupext={suffix}</code>	french::rare
+Keep oldest version using patchmode	<code>:set patchmode={suffix}</code>	
+Rename the current buffer (change its file name)	<code>:file {newname}</code>	
+Append to a register (keep existing register contents)	"Use an uppercase register name, e.g. <code>""Ayy</code> appends to register <code>a</code>."	
+"<div>Go to the <strong>second next file</strong> in the argument list.</div>
+<div></div>"	:2next	
+Run macro a N times (count prefix)	<code>{N}@a</code> (example: <code>3@a</code> runs macro <code>a</code> three times)	
+Lowercase vs uppercase register names	"Lowercase replaces the register (<code>""ayy</code> overwrites <code>a</code>); uppercase appends (<code>""Ayy</code> appends to <code>a</code>)."	
+Can a yank/delete overwrite a macro in the same register?	Yes. Macros are stored in registers too. Writing to a lowercase register (yank/delete/record) replaces its contents.	
+Append to an existing macro register	Use uppercase when recording: <code>qA</code> appends new keystrokes to register <code>a</code> (instead of overwriting like <code>qa</code>).	
+General form of :substitute / :s	<code>:[range]s/{from}/{to}/[flags]</code>	
+What does <code>%</code> mean in <code>:%s</code>?	<code>%</code> means “all lines” (whole file), e.g. <code>:%s/old/new/</code>	
+Default behaviour of <code>:s</code> on a line	Replaces only the <strong>first</strong> match per line (use <code>g</code> to replace all matches on each line).	
+Confirm each substitution (interactive replace)	Add the <code>c</code> flag, e.g. <code>:%s/old/new/c</code> (or <code>gc</code> for global+confirm).	
+Substitute confirm prompt choices	At the <code>c</code> prompt: <code>y</code>=yes, <code>n</code>=no, <code>a</code>=all, <code>q</code>=quit, <code>l</code>=last, <code>Ctrl-E</code>/<code>Ctrl-Y</code>=scroll.	
+Use a different delimiter for <code>:s</code> when text contains <code>/</code>	Example: <code>:s+one/two+one or two+</code> (avoids escaping <code>/</code>).	
+Print after substitution with <code>p</code> flag	<code>:s/old/new/p</code> prints the last line changed (combine with other flags as needed).	fix
+Ex command range (line1,line2) syntax	<code>:{start},{end}{cmd}</code> (example: <code>:1,5s/this/that/g</code> affects lines 1-5, inclusive).	
+Ex address for current line	<code>.</code> refers to the current line (example: <code>:.,$s/yes/no/</code>).	
+Ex address for last line	<code>$</code> refers to the last line (example: <code>:.,$s/yes/no/</code>).	
+What does <code>%</code> mean as an Ex range?	<code>%</code> is shorthand for <code>1,$</code> (whole file).	
+Search-based ranges in Ex commands	Use <code>?pattern?</code> (search backward) and <code>/pattern/</code> (search forward) as addresses (example: <code>:?^Chapter?,/^Chapter/s=grey=gray=g</code>).	
+Offsets in Ex ranges	Use <code>+N</code> / <code>-N</code> after an address (example: <code>/Chapter/-1</code> means “line above the match”).	
+Range with relative offsets	Example: <code>:.+3,$-5</code> means “3 lines below cursor through 5 lines before EOF”.	
+Range between marks	<code>:'t,'b</code> addresses lines between marks <code>t</code> and <code>b</code> (inclusive).	
+Range for last Visual selection	<code>:'&lt;,'&gt;</code> (marks for start/end of the last Visual selection).	
+Use a count before <code>:</code> to prefill a range	Typing <code>5:</code> expands to <code>:.,.+4</code> (five lines: current through four lines down).	
+General form of <code>:global</code>	<code>:[range]g/{pattern}/{command}</code> (short: <code>:g</code>).	
+Default range of <code>:global</code>	Whole file (if you omit <code>[range]</code>).	
+Run Normal-mode keys via <code>:global</code>	Use <code>:normal</code> (example: <code>:g/pat/normal {keys}</code>).	
+Visual block: insert at left edge on each line	Select block with <code>CTRL-V</code>, then <code>I{text}&lt;Esc&gt;</code>.	
+Visual block: replace the selected block on each line	With block selected: <code>c{text}&lt;Esc&gt;</code>.	
+Visual block: change from block start to end-of-line	With block selected: <code>C{text}&lt;Esc&gt;</code>.	
+Visual block: fill block with one character	With block selected: <code>r{x}</code>.	
+Visual block: append at end of each line (even if lengths differ)	Select block, use <code>$</code> to extend to EOL, then <code>A{text}&lt;Esc&gt;</code>.	
+Filter text through an external command (replace by output)	<code>!{motion}{cmd}</code> (example: <code>!5Gsort&lt;Enter&gt;</code>).	
+Filter current line through an external command	<code>!!{cmd}</code> (example: <code>!!date&lt;Enter&gt;</code>).	
+Read a file above the first line	<code>:0read {file}</code>	
+Read a file below the last line	<code>:$read {file}</code> (or <code>:$r {file}</code>).	
+Write a range of lines to a file	Example: <code>:.,$write tempo</code>	
+Overwrite when writing a range	Use <code>:write!</code> with no space (example: <code>:.,$write! tempo</code>).	
+Set text width for automatic line breaking	<code>:set textwidth=78</code>	
+Format current paragraph	<code>gqap</code>	
+Format whole file	<code>gggqG</code>	
+Uppercase with operator	<code>gU{motion}</code> (example: <code>gUw</code> uppercases a word).	
+Lowercase with motion 	<code>gu{motion}</code> (example: <code>guw</code> lowercases a word).	
+Swap case with operator	<code>g~{motion}</code> (example: <code>g~~</code> swaps case on the line).	
+Uppercase the whole line	<code>gUU</code>	
+Lowercase the whole line	<code>guu</code>	
+List recoverable swap files for the current directory	<code>vim -r</code> (no filename).	
+Recover using a specific swap file	<code>vim -r {swapfile}</code>	
+Recover from inside Vim (when swap exists)	<code>:recover</code>	
+Safest first step after recovery	<code>:write {file}.recovered</code> (save recovered text under a new name).	
+Swap file warning when one already exists	<code>E325: ATTENTION</code>	
+Where Vim may store swap files	Option <code>'directory'</code> (aka <code>'dir'</code>).	
+Why the very latest edits may be missing after recovery	Swap flush timing is controlled by <code>'updatetime'</code> and <code>'updatecount'</code>.	
+E325 dialog choices (swap exists)	(O)pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort, (D)elete.	
+In <code>:s</code>, make “no match” not an error	Add the <code>e</code> flag, e.g. <code>:%s/\&lt;GetResp\&gt;/GetAnswer/ge</code>.	
+Substitute backreference: use captured group 1 / 2 in replacement	In <code>:s</code> replacement: <code>\1</code>.. <code>\9</code> refer to <code>\( ... \)</code> groups (example: <code>:%s/\([^,]*\), \(.*\)/\2 \1/</code>).	
+Substitute backreference for whole match	<code>\0</code> stands for the whole matched pattern in <code>:s</code> replacement.	
+Reverse all lines in a file with <code>:global</code>	<code>:g/^/m 0</code>	
+Show word count for a selection	Select text in Visual mode, then <code>g&lt;C-g&gt;</code>.	
+Trim trailing whitespace on every line	<code>:%s/\s\+$//</code>	
+Search across files into quickfix list (external grep)	<code>:grep {pattern} *.c</code> (uses <code>'grepprg'</code>).	vimgrep
+Quickfix navigation after <code>:grep</code>	<code>:cnext</code>, <code>:cprev</code>, <code>:clist</code>	vimgrep
+"<div>How do you run a substitute command only on the visually selected characters (not the whole line) in Vim?</div>
+<div></div>"	"<div>Use the special regex atom <code>\%V</code>, which restricts matches to the current Visual selection.</div>
+<div>Example:<br>
+<code>:'&lt;,'&gt;s/\%Vold/new/g</code></div>
+<div></div>"	
+Repeat last substitution	&amp;	leech
+Increment/decrement number under cursor	"Ctrl-a increments, Ctrl-x decrements (see &#x27;nrformats&#x27;)"	
+Run one Normal-mode command from Insert mode	Ctrl-o	
+Insert register contents in Insert mode	Ctrl-r {register}	
+Insert register literally (avoid indent issues)	Ctrl-r Ctrl-p {register}	
+Delete previous character in Insert mode	Ctrl-h	
+Delete previous word in Insert mode	Ctrl-w	
+Delete to start of line in Insert mode	Ctrl-u	
+Enter Select mode	Ctrl-g	
+Reselect previous Visual selection	gv	
+Next misspelling (spell check)	]s	
+Previous misspelling (spell check)	[s	
+Spell suggestions for word under cursor	z=	
+Add word to personal dictionary (spellfile)	zg	
+Mark word as wrong for spell check	zw	
+Personal spellfile location	~/.config/nvim/spell/*.add	dontlearn
+Vimdiff take change from other buffer	:diffget (or :dg)	
+Vimdiff put change into other buffer	:diffput (or :dp)	
+Vimdiff apply entire diff hunk	cursor in hunk then :diffget	
+Vimdiff take from specific buffer	:diffget {bufnr} (see :ls)	
+Vimdiff mappings (if enabled)	do = :diffget, dp = :diffput	
+wrapmargin (wm) meaning	Chars from right window border where wrapping starts; typing beyond inserts EOL and continues on next line	
+wrapmargin default and scope	Default 0; local to buffer	french::rare
+wrapmargin ignored when	'textwidth' is non-zero	
+Copy command (Ex)	:t	
+Move command (Ex)	:m	
+Run Normal-mode commands (Ex)	:normal	
+Repeat last Ex command	@:	
+Insert word/WORD under cursor (Insert mode)	Ctrl-r Ctrl-w = word; Ctrl-r Ctrl-a = WORD	needsfixing
+Command-line window keys	q: (Ex), q/ (search), Ctrl-f, &lt;CR&gt;	needsfixing
+Current file name in cmdline	%	
+Open shell	:shell	
+Difference: :write ! vs :write!	:write ! {cmd} pipes buffer to command; :write! forces write	
+Filter line range through external command	:[range]!{cmd}	
+Buffer list symbols: % and +	% = current buffer; + = modified	
+First/last buffer	:bfirst / :blast	
+Switch to buffer by number/name	:b {number|name}	
+Run command across all buffers	:bufdo {cmd}	
+Delete buffer by number/name	:bd {number|name}	
+Args from command output	:args `cmd`	
+Window close/only	Ctrl-w c = close window; Ctrl-w o = close others	
+Maximize window width	Ctrl-w |	
+Go to top-left window	Ctrl-w t	
+Set local working directory (window)	:lcd {path}	
+Tab navigation (Normal mode)	{N}gt = tab N; gt = next; gT = previous	needsfixing
+Ex tab next/previous	:tabnext / :tabprevious	
+Move tab (Ex)	:tabm {N}	needsfixing
+Show current working directory (Ex)	:pwd	
+"Open current file&#x27;s directory in netrw (Ex)"	:edit %:h	
+"Find file in &#x27;path&#x27; (Ex)"	:find {file}	
+"Set &#x27;path&#x27; option for :find (Ex)"	:set path=...	
+Set command-line completion mode (Ex)	:set wildmode=...	needsfixing
+Netrw open file/enter directory	&lt;Enter&gt;	
+Netrw go up directory	-	
+"<div>How do you open a specific man page in Neovim?</div>
+<div></div>"	:Man &lt;manpage&gt;	
+"<div>How do you search for a string across multiple files in Vim?</div>
+<div></div>"	"<code>:grep &lt;pattern&gt; &lt;files&gt;</code><br>
+Example: <code>:grep error_string *.c</code>"	
+Command-line delete previous word	Ctrl-w	
+Command-line clear whole line	Ctrl-u	
+"Command Line: Toggle between inserting characters and replacing the
+existing ones."	&lt;Insert&gt;	
+Command-line cancel without executing	Ctrl-c or &lt;Esc&gt;	
+Command-line jump to start/end	Ctrl-b or &lt;Home&gt;; Ctrl-e or &lt;End&gt;	
+Command-line move by word	&lt;S-Left&gt; or &lt;C-Left&gt;; &lt;S-Right&gt; or &lt;C-Right&gt;	
+Command-line completion cycle backward	Ctrl-p	
+Completion after :set iskeyword=	Inserts current option value	
+List : command history	:history	
+List search history	:history /	
+History previous/next regardless of typed text	Ctrl-p / Ctrl-n	
+Open command line window	q:	
+Execute line under cursor in cmdline window	&lt;Enter&gt; (works in Normal or Insert mode)	
+Configure ShaDa option	:set shada=... (comma-separated option+arg pairs)	
+Return to last exit position	'0 (mark)	
+List recently edited files	:oldfiles	
+oldfiles: pick entry by index	":e #&lt;2 (works where filename accepted)"	
+Split with oldfiles entry	":split #&lt;3"	
+Interactive oldfiles picker	:browse oldfiles	
+Write ShaDa to file	:wshada! /tmp/shada	
+Read ShaDa from file	:rshada! /tmp/shada	
+Session save command	:mksession file	
+Session restore command	:source file	
+Start Vim with session	vim -S file	
+Include Vim window size in session	:set sessionoptions+=resize	
+What does a view store?	Window-local state for a single file (options, folds, cursor)	
+Load view for current file	:loadview [optional number]	
+Store numbered view	:mkview 1 (1-9 plus unnumbered)	
+Load numbered view	:loadview 1	
+Store view in named file	:mkview ~/.config/nvim/main.vim	
+Load named view file	:source ~/.config/nvim/main.vim	
+Command-line start: what does &lt;BS&gt; do?	Cancels command (deletes leading : or /)	
+Netrw open in horizontal split	o	
+Netrw open in vertical split	v	
+Netrw preview window	p	
+Netrw edit in previous window	P	
+Netrw open in new tab	t	
+Netrw cycle listing style	i	
+Netrw cycle sort key	s	
+Netrw reverse sort order	r	
+Netrw rename item	R	
+Netrw delete item	D	
+Netrw make/goto bookmark	mb / gb	
+Open netrw browser (Ex)	:Explore [dir]	
+Change global current directory (Vim)	:cd {dir}	
+Jump to previous directory	:cd -	
+If window has local dir, what does :cd do?	Resets it to the shared global dir	
+Set tab-local directory	:tcd {dir}	
+Open file under cursor	gf	
+Open file under cursor in new window	Ctrl-w f	
+Open found file in split	:sfind	
+Run command with hidden buffer behavior	:hide {cmd}	bad dontlearn
+Setting that makes abandoned buffers hidden	'hidden'	bad dontlearn
+List buffers	:buffers	
+Open buffer in split	:sbuffer {bufnr|name}	
+Remove buffer from list	:bdelete {bufnr|name}	
+Insert mode: one Normal command without moving cursor	Ctrl-\ Ctrl-o	
+Insert mode: start a new undo sequence	Ctrl-g u	
+Insert mode: keep next left/right move in current undo block	Ctrl-g U	
+Option to show matching bracket while typing	:set showmatch	
+Visual mode key to uppercase selected text	U	
+Insert-mode special keys do what?	Temporarily stop Insert mode, run an action, then resume Insert mode.	
+Undo granularity around Insert special keys	Changes before and after a special key are undone separately.	
+Redo behavior after Insert special-key edits	Only the last change can be redone, and it behaves like an `i` insert.	
+Insert mode: move up while keeping insert start column	Ctrl-g k (also Ctrl-g Ctrl-k or Ctrl-g <Up>)	
+Insert mode: move down while keeping insert start column	Ctrl-g j (also Ctrl-g Ctrl-j or Ctrl-g <Down>)	
+Insert mode: jump to first character of file	<C-Home>	
+Insert mode: jump to after last character of file	<C-End>	
+showmatch behavior when no matching opener exists	Vim beeps.	
+showmatch supports which bracket pairs besides ()?	[] and {}	
+What unit does 'matchtime' use?	Tenths of a second.	
+Command-line <Tab> with multiple completion matches	Vim beeps and inserts the first match.	
+Repeating <Tab> during command-line completion	Cycles forward through matches and eventually returns to the original typed text.	
+After missing a prefix-filtered history match, how to recover typed text?	Press <Down> to return to what you typed.	
+:rshada! merge precedence	With !, information from the ShaDa file overrides current state.	
+:rshada without ! merge behavior	Only information that is currently unset is loaded.	
+Exit marks: what happens to '0 and older exit marks?	'0 becomes the last exit position; older exit marks shift to '1..'9.	

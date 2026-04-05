@@ -1,0 +1,20 @@
+What does `[/` do in Vim?	Move backward to the start of a `/* ... */` comment.
+What does `]/` do in Vim?	Move forward to the end of a `/* ... */` comment.
+Which comment style do `[/` and `]/` work for?	Only `/* ... */` comments.
+What does `[I` do in Vim?	List matching lines for the identifier under the cursor in the current file and included files.
+Which option must be correct for `[I` to understand include lines?	`'include'`.
+What does `:checkpath` do?	Lists included files that cannot be found in `'path'`.
+What is a key limitation of `:checkpath` with preprocessor conditionals?	It follows every `#include`, even ones after a false conditional such as `#if NEVER`.
+How do you add `/usr/local/X11` to Vim's `'path'`?	`:set path+=/usr/local/X11`.
+In Vim's `'path'`, what does `*` match?	A single directory level.
+In Vim's `'path'`, what does `**` do?	Search recursively through all subdirectories.
+What does `:checkpath!` do?	Lists the included files Vim actually finds, along with their include tree.
+After using `[I`, how do you jump to the first listed match?	`[<Tab>`.
+After using `[I`, how do you jump to the third listed match?	`3[<Tab>`.
+Which command only lists the first `[I` match?	`[i`.
+Which command only lists `[I` matches below the cursor?	`]I`.
+What does `[D` do in Vim?	Find macros defined with `#define`, including in included files.
+Which option tells `[D` what a definition line looks like?	`'define'`.
+What does `gD` do in Vim?	Search the current file only and jump to the first occurrence of the word under the cursor.
+What does `gd` do in Vim?	Search only within the current function and jump to the first occurrence of the word under the cursor.
+How does `gd` approximate the start of the current function?	By searching backward to an empty line above a `{` in the first column.

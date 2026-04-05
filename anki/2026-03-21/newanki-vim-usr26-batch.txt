@@ -1,0 +1,18 @@
+Run one Ex command for every file in the argument list	:argdo {cmd}
+Example: replace whole-word x_cnt across arglist, then save changed files	:argdo %s/\<x_cnt\>/x_counter/ge | update
+In Ex commands, what does | do?	Separates multiple commands on one command line.
+What does :update do?	Writes the current file only if it was changed.
+Run one Ex command in every open window	:windo {cmd}
+Why be careful with :bufdo?	It runs on all buffers, which may include more files than expected.
+Vim CLI flag for Ex mode	-e
+With -e, what does -s mean?	Silent mode (suppress prompts/output noise).
+Batch-run Ex commands from a file on each target file	vim -e -s {file} < change.vim
+Read editable text from standard input	vim -
+Use a startup script while reading buffer text from stdin	producer | vim -S change.vim -
+Without -e, what does -s mean in Vim?	Execute the given script as Normal-mode commands.
+Run a Normal-mode script against one or more files	vim -s script file.txt ...
+In a Normal-mode script file, a line break is interpreted as	Pressing <Enter>.
+Record typed keystrokes to a script while editing	vim -w script file.txt ...
+What does vim -w do if the script file already exists?	Appends to it.
+How to overwrite an existing script when recording keys	vim -W script file.txt ...
+What does lpr -r tempfile do in the example workflow?	Prints tempfile, then removes it.

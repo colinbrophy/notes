@@ -1,0 +1,10 @@
+What does `[(` do in Vim code navigation?	Moves to the start of the current `()` block.
+What does `])` do in Vim code navigation?	Moves to the end of the current `()` block.
+Which command only lists the first identifier match below the cursor?	`]i`
+Which command only lists the first `[D` match?	`[d`
+Which command only lists `[D` matches below the cursor?	`]D`
+Which command only lists the first `[D` match below the cursor?	`]d`
+What does a count before `CTRL-T` do in tag navigation?	Jump back that many tags.
+If you omit `[count]` in `:tprevious` or `:tnext`, what count is used?	`1`
+When is `:psearch` especially useful?	When using library functions that do not have a tags file.
+What happens if Vim assumes a sorted tags file but the tags file is not sorted?	Tag search will not work correctly.

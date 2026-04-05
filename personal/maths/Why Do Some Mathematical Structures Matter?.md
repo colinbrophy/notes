@@ -83,5 +83,3 @@ Zone 2a (rigid + core) → mainstream maths, physics, prestige.
 Zone 2b (rigid but niche) → structured curiosities.
 
 Zone 3 (weird axioms) → dead ends.
-
-Mathematics thrives because a tiny island of fruitful axioms sits in a vast ocean of unfruitful ones — and it’s here, on this island, that we find the structures that explain numbers, space, and the physical world.

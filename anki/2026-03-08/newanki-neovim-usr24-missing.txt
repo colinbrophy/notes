@@ -1,0 +1,81 @@
+Insert mode: Del key does what?	Deletes the character under (after) the cursor.
+Insert mode Ctrl-u keeps what while deleting?	Keeps the indent and text after the cursor; deletes from first non-blank to cursor.
+Insert-mode special key: PageUp	Moves one screenful up.
+Insert-mode special key: PageDown	Moves one screenful down.
+Insert-mode special key: Home	Moves to start of line.
+Insert-mode special key: End	Moves to end of line.
+Insert-mode special key: Shift-Left or Ctrl-Left	Moves one word left.
+Insert-mode special key: Shift-Right or Ctrl-Right	Moves one word right.
+showmatch visual jump duration in docs example	About half a second.
+Insert completion: previous match key	Ctrl-p.
+Insert completion: next match key	Ctrl-n.
+Insert completion with empty prefix uses what?	The nearest previous word before the cursor.
+Insert completion search wraps where?	Around the end of the file.
+Insert completion when matches are exhausted	Returns to the original typed text.
+Option that customizes insert completion source order	'complete'.
+Default insert completion source #1	Current file.
+Default insert completion source #2	Files in other windows.
+Default insert completion source #3	Other loaded files (hidden buffers).
+Default insert completion source #4	Files not loaded (inactive buffers).
+Default insert completion source #5	Tag files.
+Default insert completion source #6	Files included by the current file.
+Completion option used to ignore case while matching	'ignorecase'.
+What does infercase do in insert completion?	Uses typed-case style while matching case-insensitively (requires ignorecase).
+Insert completion for file names	Ctrl-x Ctrl-f.
+Insert completion for whole lines	Ctrl-x Ctrl-l.
+Insert completion for macro definitions	Ctrl-x Ctrl-d.
+Insert completion for current and included files	Ctrl-x Ctrl-i.
+Insert completion for dictionary words	Ctrl-x Ctrl-k.
+Insert completion for thesaurus words	Ctrl-x Ctrl-t.
+Insert completion for tags	Ctrl-x Ctrl-].
+Insert completion for Vim command-line entries	Ctrl-x Ctrl-v.
+After a Ctrl-x completion command, cycle matches with	Ctrl-n (next) and Ctrl-p (previous).
+What does Ctrl-x Ctrl-f scan by default?	The current directory for matching file names.
+Filename completion ordering	Sorted alphabetically.
+Absolute-path file completion behavior	With an absolute prefix (for example /u), it can search the filesystem.
+Go one directory deeper during Ctrl-x Ctrl-f completion	Press Ctrl-x Ctrl-f again after accepting a directory prefix.
+Omni completion key	Ctrl-x Ctrl-o.
+Omni completion returns what kind of matches?	Context-aware items valid at the cursor position.
+Enable filetype plugins for Omni completion	Use :filetype plugin on (or :filetype plugin indent on).
+Which option indicates Omni completion support for a filetype?	'omnifunc'.
+C Omni completion prerequisites	Create a tags file and set the 'tags' option.
+Insert mode: repeat previous inserted text	Ctrl-a.
+Insert mode: repeat previous insert and exit Insert mode	Ctrl-@.
+Insert mode: copy character from line above	Ctrl-y.
+Insert mode: copy character from line below	Ctrl-e.
+Insert mode Ctrl-r {register} with special chars	Special characters are interpreted as if typed from keyboard.
+Insert register literally without interpreting special chars	Ctrl-r Ctrl-r {register}.
+Define an Insert-mode abbreviation	:iabbrev {lhs} {rhs}.
+Short form of :iabbrev	:iab.
+What triggers abbreviation expansion?	Typing a non-word character (for example, space).
+Do abbreviations expand inside longer words?	No; only whole words are expanded.
+Can one abbreviation expand to multiple words?	Yes.
+List all abbreviations	:abbreviate.
+Abbreviation list prefix i means	Insert mode.
+Abbreviation list prefix c means	Command-line mode.
+Abbreviation list prefix ! means	Active in both Insert and Command-line modes.
+Define a Command-line-mode abbreviation	:cabbrev {lhs} {rhs}.
+Remove one abbreviation	:unabbreviate {lhs}.
+Remove all abbreviations	:abclear.
+Insert-mode abbreviation remove/clear commands	:iunabbreviate and :iabclear.
+Command-line abbreviation remove/clear commands	:cunabbreviate and :cabclear.
+Abbreviation command that avoids remapping result text	:noreabbrev.
+Insert the next character literally	Ctrl-v.
+Windows alternative to Ctrl-v literal insert	Ctrl-q.
+Insert a character by decimal code	Ctrl-v {digits}.
+Decimal/hex Ctrl-v insertion limit in this context	Up to character 255.
+How to avoid typing a non-digit terminator with Ctrl-v decimal	Zero-pad to three digits (for example 009).
+Insert a character by hexadecimal code	Ctrl-v x{hex}.
+Insert a character by octal code	Ctrl-v o{octal}.
+Insert a 16-bit codepoint	Ctrl-v u{hex4}.
+Insert a 32-bit codepoint	Ctrl-v U{hex8}.
+Insert a digraph character	Ctrl-k {char1}{char2}.
+Digraph example for copyright symbol	Ctrl-k Co.
+List available digraphs	:digraphs.
+When can you swap digraph character order?	When the swapped pair is not itself a defined digraph.
+What does digraph availability depend on?	The current character set/encoding.
+Define a custom digraph by character	:digraph {chars} {character}.
+Define a custom digraph by decimal code	:digraph {chars} {number}.
+Insert mode Ctrl-o command limitation	Executes one Normal-mode command, but that command may include a count or register.
+Insert mode: delete to end of line without leaving Insert mode	Ctrl-o D.
+Insert mode Ctrl-o with register and count example	Ctrl-o "g3dw deletes up to the third word into register g.

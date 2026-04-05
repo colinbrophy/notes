@@ -1,0 +1,53 @@
+In Vim search patterns, what does * mean?	The previous item matches zero or more times.
+Why can /a* match the empty string?	Because * allows zero occurrences.
+In the pattern /ab*/, what does * apply to?	Only the b.
+How do you repeat a multi-character group in Vim regex?	Wrap it in \( ... \) before adding a quantifier.
+Pattern for repeating "ab" zero or more times	/\(ab\)*
+In Vim regex, what does \+ mean?	One or more occurrences of the previous item.
+Does /ab\+/ match "a" with no trailing b?	No.
+In Vim regex, what does \= mean?	Zero or one occurrence (optional).
+What does /folders\= match?	Both "folder" and "folders".
+What does \{n,m} specify in Vim regex?	Match the previous item from n to m times (inclusive).
+Are \{n,m} bounds inclusive?	Yes.
+If n is omitted in \{,m}, what is the default?	0.
+If m is omitted in \{n,}, what is the default?	Infinity (no upper limit).
+What does \{n} mean?	Exactly n matches.
+What is \{0,1} equivalent to?	\=
+What is \{0,} equivalent to?	*
+What is \{1,} equivalent to?	\+
+Minimal-match count form in Vim regex	\{-n,m}
+What does \{-} mean?	Zero or more matches, as few as possible.
+On "axbxb", what does /a.\{-}b match?	axb
+On "axbxb", what does /a.*b match?	axbxb
+What is the alternation operator in Vim regex?	\|
+What does /one\|two\|three match?	one, two, or three.
+How do you apply a quantifier to alternatives like foo|bar?	Group them with \( ... \), then apply the quantifier.
+What does /\(foo\|bar\)\+ match?	One or more consecutive "foo"/"bar" chunks.
+What does /end\(if\|while\|for\) match?	endif, endwhile, and endfor.
+What does \& require in a pattern?	Both sub-patterns must match at the same position.
+With \&, which alternative determines the returned match text?	The last alternative.
+What does /forever\&... match in "forever"?	for
+What does a [] range match?	A single character from the set/range.
+What does /[0-9a-f]/ match?	One character that is 0-9 or a-f.
+How do you match a literal - inside []?	Put - first or last in the range.
+What does ^ mean at the start of []?	Complement the set (match any character not listed).
+What does /"[^"]*"/ match?	A double-quoted string on one line, without inner double quotes.
+What is \a equivalent to?	[a-zA-Z]
+What is \d equivalent to?	[0-9]
+What is \x equivalent to?	[0-9a-fA-F]
+Can predefined ranges like \d and \l be used inside []?	No.
+How do you match "digit or lowercase alpha" using predefined ranges?	\(\d\|\l\)
+Predefined ranges vs explicit [] ranges in Vim search speed	Predefined ranges are faster.
+What does \i match?	Identifier characters (defined by 'isident').
+What does \k match?	Keyword characters (defined by 'iskeyword').
+What does \p match?	Printable characters (defined by 'isprint').
+What does \n match in a Vim search pattern?	A line break at that position.
+What does /one\ntwo match?	"one" at end of a line followed by "two" at start of next line.
+What does \_s match?	Whitespace or a line break.
+What does /one\_s\+two allow between "one" and "two"?	Any amount of whitespace, including line breaks.
+Difference between \s and \_s	\s matches whitespace; \_s matches whitespace or a line break.
+What does prefixing an item with \_ do?	Makes that item also match line breaks.
+What does \_. match?	Any character, including a line break.
+Why be careful with \_.*?	It can match until end-of-file and make searches very slow.
+What is \_[]?	A character range that also includes line breaks.
+What does /"\_[^"]*"/ find?	Double-quoted text that can span multiple lines.

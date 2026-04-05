@@ -1,0 +1,26 @@
+Is Vim search case-sensitive by default?	Yes; searches are case-sensitive unless 'ignorecase' is enabled.
+Enable smart case behavior together with ignorecase	:set ignorecase smartcase
+With ignorecase+smartcase, what does pattern "word" match?	Any case variant (word, Word, WORD, etc.).
+With ignorecase+smartcase, what does an uppercase letter in the pattern do?	Makes the search case-sensitive.
+With ignorecase+smartcase, what does pattern "Word" match?	Only "Word".
+Force case-insensitive matching for one search pattern	Prepend \c to the pattern.
+Force case-sensitive matching for one search pattern	Prepend \C to the pattern.
+What do \c and \C override?	The 'ignorecase' and 'smartcase' options.
+Why are \c and \C useful with search history?	Case behavior stays attached to the pattern when reused.
+Forward search offset syntax	/pattern/offset
+What does /default/2 do?	Moves cursor to the start of the second line after the match.
+With a numeric search offset, cursor lands where?	At the start of the target line.
+In numeric search offsets, what does +N do?	Moves down N lines from the match.
+In numeric search offsets, what does -N do?	Moves up N lines from the match.
+What does /const/e do?	Places cursor on the last character of the match.
+What does /const/e+1 do?	Moves cursor to the character immediately after the match.
+With e offsets, what does a negative number do?	Moves left from the end of the match.
+What does /const/b+2 do?	Moves to the beginning of the match, then two characters right.
+Repeat previous search pattern with a different offset	//e
+Repeat previous search pattern with the same offset	/
+Repeat previous search pattern but remove prior offset	//
+Backward search offset syntax	?pattern?offset
+In backward search offsets, do b and e change meaning?	No. b is beginning and e is end of match.
+Which option affects meaning of backslash items in search patterns?	'magic'
+On Unix, how do you interrupt a long-running search?	CTRL-C
+On MS-Windows, how do you interrupt a long-running search?	CTRL-Break

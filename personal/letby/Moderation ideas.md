@@ -1,0 +1,2 @@
+- [ ] Create a message or use the community guide to get people to read the rules before commenting.
+- [ ] Write a message that encourages people to contribute to the Wiki. Point out how ephemeral discussion is otherwise.
