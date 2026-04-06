@@ -1,0 +1,15 @@
+How do you go back to the state from the last file write in Vim?	`:earlier 1f`
+In `:earlier 1f`, what does `f` mean?	`file`
+How do you move forward again after `:earlier 1f`?	`:later 1f`
+Do `:earlier` and `:later` move by branch position or by time sequence?	Time sequence.
+When does Vim create a new branch in the undo tree?	When you undo some changes and then make a new change.
+In Vim's undo tree, are undo and redo themselves counted as changes?	No.
+After branching, which branch does `CTRL-R` redo follow?	The branch that was last used.
+How do you jump to below a specific change number in the undo tree?	`:undo {change-number}`
+What does `g-` do in undo-tree navigation?	Moves backward in time through changes.
+What does `g+` do in undo-tree navigation?	Moves forward in time through changes.
+When are `g-` and `g+` especially useful compared with `:undo {change-number}`?	When you do not know the exact change number.
+Can `g-` and `g+` take a count?	Yes.
+What does `:undolist` show?	The leaf changes in each undo-tree branch and when they were made.
+Which time units does `:earlier` use for time travel?	`s` for seconds, `m` for minutes, `h` for hours, and `d` for days.
+Which function returns detailed undo-tree information in Vim?	`undotree()`

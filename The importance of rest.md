@@ -18,3 +18,9 @@ The biggest issue is these are designed to be addictive, ***so you lose control 
 They should be used sparingly to find ***new topics to learn*** as that is where the recommendation algorithm is strong, but they aren't that useful to actually learn things. 
 
 Tools like [[Anki]], and [[Personal Knowledge Management]], combined with [[Textbooks]] are where to focus. But when you feel bored or tired of them, just rest don't go to the above worse sources.
+
+Even if it feels "important" the information coming in from these sources:
+
+1. It probably isn't, these sites are designed to make things seem important that aren't.
+2. Even if it was, there is no urgency normally.
+3. If you don't idle you won't abosrb it anyway.

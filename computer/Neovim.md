@@ -142,7 +142,7 @@ Need to look at getting a start page with recently used files.
   * [x] 07.6 Viewing a file (SKIM)
   * [x] 07.7 Changing the file name (SKIM)
 
-* [ ] usr_08.txt Splitting windows (READ)
+* [x] usr_08.txt Splitting windows (READ)
 
   * [x] 08.1 Split a window (READ)
   * [x] 08.2 Split a window on another file (READ)
@@ -301,7 +301,7 @@ Need to look at getting a start page with recently used files.
   * [ ] 31.4 Window position and size (DATED)
   * [ ] 31.5 Various (DATED/REF)
 
-* [ ] usr_32.txt The undo tree (READ)
+* [x] usr_32.txt The undo tree (READ)
 
   * [ ] 32.1 Undo up to a file write (READ)
   * [ ] 32.2 Numbering changes (SKIM)
@@ -499,34 +499,6 @@ Need to look at getting a start page with recently used files.
 - [ ] Phase C: cmdline, pattern-searches, windows, diff, terminal
 - [ ] Phase D: lua-guide, autocmd, api, health, lsp, treesitter
 - [ ] Phase E: Everything marked REF or DATED as needed
-
-usr_07 (Multiple files) - Major gaps:
-
-    :next / :previous / :wnext / :wprevious
-    :first / :last
-    :args (show argument list)
-    :set autowrite
-    :file {name} (rename current buffer)
-    :set backup / :set backupext / :set patchmode
-    Appending to registers with uppercase ("Ayy)
-    :write >> {file} (append to file)
-
-usr_08 (Windows) - Substantial gaps:
-
-    :only (close all other windows)
-    :new / :vnew
-    :vertical {cmd} modifier
-    CTRL-W + / CTRL-W - (resize)
-    {height}CTRL-W _ (set window height)
-    CTRL-W t / CTRL-W b (top/bottom window)
-    CTRL-W H/J/K/L (move window to edge)
-    :qall / :wall / :wqall / :qall!
-    vim -o / vim -O (start with splits)
-    vimdiff: :diffsplit, ]c/[c, dp/do
-    zo / zc (open/close fold)
-    :set splitbelow / :set splitright
-    CTRL-W CTRL-^ (split + alternate file)
-
 
 ## Plugin ideas
 
