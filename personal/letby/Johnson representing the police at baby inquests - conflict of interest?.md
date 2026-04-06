@@ -13,3 +13,12 @@ The system already has legal privilege, so there is no risk of them 'exposing' a
 Also excluding people on these grounds would mean excluding anyone that actually has already researched the cases. This might lower the competence of the counsel. This seems a stronger countervailing point.
 
 There is no actual evidence of it, if speculative conspiracies became arguments, the system would collapse, anyone can come up with those.
+
+**Core rule:** a barrister must not mislead the court, even if it harms the client.
+
+* **Can’t lie for the client**
+* **Must cite law against your own case**
+* **No hopeless or dishonest arguments**
+* **Can’t help perjury**
+* **Must correct the court if misled**
+

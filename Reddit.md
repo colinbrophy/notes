@@ -11,3 +11,13 @@ Well nothing really, these are quite trivial when you lay them out like this. It
 Most discussion points do have some element of countervailing principles, and most of these debates are just people picking one side or the other of the debate, often according to which side supports their "tribe".
 
 What makes these debates not deep is that no new principles are formed, it's just rehashing the same ones over and over again. But it can feel deep as you feel like supporting whichever side you happen to support.
+
+You aren't going to defeat "the other side", they are just people will slightly different intuitions, that won't go away because of a Reddit thread.
+
+What actually changes things are:
+- **Real-world conditions** change (money, safety, services)
+- **Events happen** that people can’t ignore
+- **Leaders and institutions signal** what’s acceptable
+- **Media changes how issues are framed**
+- **Generations change over time**
+- **People experience policies working or failing**
