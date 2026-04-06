@@ -2,17 +2,19 @@
 
 ## Project Structure & Module Organization
 - This repo is a plain **Obsidian vault**: Markdown notes plus a few local attachments (PDF/PNG/DOCX).
-- Thematic folders: `computer/`, `maths/`, `letby/`, `languages/`, `productivity/`, `external_dumps/`, `diary/`.
+- Main areas: `computer/`, `productivity/`, `personal/`, `work/`, `rough_notes/`, `external_dumps/`, `anki/`.
+- `personal/` currently contains `diary/`, `letby/`, `maths/`, `languages/`, and `law/`.
+- Many general notes still live at the vault root; treat that as valid existing structure and do not move notes between root and folders unless explicitly asked.
 - Anki exports live in `anki/YYYY-MM-DD/` (date-based subfolders).
 - Scratch work lives in `rough_notes/` (don’t treat as curated unless explicitly asked).
-- Keep attachments next to the note that references them (e.g., `letby/Baby C floor.png` linked via `![[Baby C floor.png]]`).
+- Keep attachments next to the note that references them (e.g., `personal/letby/Baby C floor.png` linked via `![[Baby C floor.png]]`).
 - `.obsidian/` is editor config; avoid committing machine-specific state unless intentional.
 
 ## Coding Style & Naming Conventions
 - Markdown: hierarchical headings, hyphen bullets, and fenced code blocks with language hints (e.g., ```bash).
 - Directories: lowercase with underscores (already normalized).
 - Files:
-  - Daily notes: `diary/YYYY-MM-DD.md`
+  - Daily notes: `personal/diary/YYYY-MM-DD.md`
   - Everything else: short, descriptive titles (spaces allowed). Avoid renaming files to preserve backlinks.
 - Notes: prefer **atomic concept notes** (one main idea per note). Avoid creating mixed-topic notes (e.g., “LLM (shell pipes)”)—instead add a section to an existing concept note and link out to other concepts.
 - Note length: keep notes brief enough to read in one sitting, roughly 1–2 screens of text as a soft guideline.
@@ -23,7 +25,7 @@
   - **Concepts** → empty notes as stable anchors (e.g., `Go (programming language).md`).
   - Prefer Obsidian `[[wikilinks]]` for concepts so ideas stay linkable and discoverable.
   - Do **not** automatically create placeholder/stub notes for every linked concept; only create new concept notes when explicitly asked or when the concept is central to the current work.
-  - **Properties/states** → tags (e.g., `#todo`, `#draft`, `#question`, `#low-confidence`).
+  - **Properties/states** → tags (e.g., `#todo`, `#draft`, `#archive`, `#source`).
   - Tags: check `Tags.md` before inventing new tags; if a new tag is needed, document it there.
   - AI-assisted writing: tag notes written primarily by an AI assistant with `#ai-written` (and treat as rough until verified/edited).
   - Division of labour: you decide what matters (selection); the assistant focuses on translation (remove fluff, restructure, rephrase) rather than inventing importance hierarchies.
@@ -37,7 +39,7 @@
 - Commit messages:
   - Bulk sync: `vault backup: YYYY-MM-DD HH:MM:SS`
   - Focused edits: short, imperative (e.g., `add tag system`, `fix broken links`)
-- Keep commits scoped; avoid mixing unrelated areas (especially `diary/` with refactors).
+- Keep commits scoped; avoid mixing unrelated areas (especially `personal/diary/` with refactors).
 - **Never discard changes without asking**: do not run `git restore`, `git checkout -- <file>`, `git reset`, or similar on files the user didn’t explicitly ask you to revert. If unrelated edits are present, ask whether to keep them, split them into a separate commit, or discard them.
 
 ## Security & Privacy
