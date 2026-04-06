@@ -207,4 +207,3 @@ SEE ALSO
        nal(7), system_data_types(7), unix(7), user_namespaces(7), sudo(8)
 
 Linux man-pages 6.13               2024-05-02                    credentials(7)
-
