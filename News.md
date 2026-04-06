@@ -1,0 +1,2 @@
+
+Try to avoid following every last detail in the news, just a rough summary from the [[RSS]] feed. You will end up wasting time on things that are long forgotten and don't really change anything long term, i.e no major political change or new principles discovered.
