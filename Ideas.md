@@ -1,5 +1,7 @@
 #todo
 
+Note also [[Moderation ideas]] for the Letby case.
+- [ ] Claude code source leak, figure out what is going on there.
 1.   Understand fzf
 2.   MCP, on fedora
 3.   Brave blocks sleep home laptop
@@ -30,10 +32,9 @@
 27. Need code review with AI.
 28. https://developer.hashicorp.com/terraform/mcp-server
 29. Understand Gel wax etc
-30. Coop card
-31. Style ideas, work with AI.
-32. Change my brower usgae, less tabs.
-33. Water flosser
+30. Style ideas, work with AI.
+31. Change my brower usgae, less tabs.
+32. Water flosser
 
 RAG for LETBY case with a query engine
 Look at the PDF metadata to see where it came from
