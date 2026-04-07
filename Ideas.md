@@ -1,6 +1,8 @@
 #todo
 
 Note also [[Moderation ideas]] for the Letby case.
+
+- [  ] need to fix amki generation of cards and bad cads
 - [ ] Claude code source leak, figure out what is going on there.
 1.   Understand fzf
 2.   MCP, on fedora

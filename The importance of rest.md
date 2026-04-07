@@ -4,6 +4,8 @@
 
 This might feel weird at first, but you will get used to it. Your brain needs time to adjust to feeling nothing.
 
+Good rhythm, study, get tired, do nothing until a thought arises. Write it down if new and interesting.  Wait until borderm and repeat. 
+
 Low stimulation stuff includes:
 - [[YouTube]]
 - [[Reddit]]

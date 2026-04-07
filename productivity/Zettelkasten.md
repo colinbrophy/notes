@@ -1,3 +1,10 @@
+
+Externalising information can actually lower retention. 
+
+- [ ] Research if the evidence actually backs up the idea a 'second brain' helps.
+
+---
+# AI slop below
 ### Context
 
 Selecting a single, evidence-based book to guide principle-led note-taking applicable to Obsidian or any other tool.

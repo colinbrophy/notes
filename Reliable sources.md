@@ -1,0 +1,2 @@
+- How do we at heart know for example the BBC is (mostly) reliable but Russia Today isn't?
+	- It surely has to be more than cultural bias? Need to think more about this, but not now.

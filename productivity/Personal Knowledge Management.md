@@ -1,3 +1,13 @@
+The reason I want one is to **record thoughts I have**, so they don't keep going round in loops. This helps provide a sense of closure to my thoughts, we can say: We thought about this, but we have come to a decision for now. It can also help me notice patterns in my own thinking, so it might hint we need to revisit the topic.
+
+It also allows us to record where we feel our thinking on a topic is incomplete or there are possible actions and tasks to do in relation to it.
+
+It can also help us create [[Anki]] cards, for things that we really need to be able to recall quick for clear thinking. Or just personal knowledge of things that isn't public stuff, but we don't need to actually make cards for.
+
+It's not for some kind of [[Zettelkasten]] cult.
+
+---
+# This is all AI slop, ignore
 ## What's Gone Wrong
 
 The internet still looks functional — but in practice:
@@ -5,24 +15,6 @@ The internet still looks functional — but in practice:
 - Google results are filled with SEO-choked content
 - Most "answers" are AI-regurgitated summaries of other summaries
 - Depth is rare, subtlety is discouraged, and originality is buried
-
-> "Google still works technically — but what it shows you is often just plausible noise."
-
-## The Subtle Decay
-
-- Pages say _something_ but rarely say _anything new_
-- There's more advice, but less understanding
-- There are more lists, but fewer arguments
-- Everything is optimised for engagement, not thought
-
-## Why This Matters for a Vault
-
-Your note system isn’t just about remembering.  
-It’s about rebuilding a space where:
-
-- Ideas are allowed to stay complex
-- Questions aren’t flattened into answers
-- You trust _your own synthesis_ over algorithmic consensus
 
 ## PKM vs Internet (Library vs Compounding)
 

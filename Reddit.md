@@ -21,3 +21,6 @@ What actually changes things are:
 - **Media changes how issues are framed**
 - **Generations change over time**
 - **People experience policies working or failing**
+
+
+If you want to post there, don't start with "I have an idea for a reddit psot". Write a personal note on the topic first then maybe adapt.

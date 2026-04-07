@@ -1,1 +1,2 @@
-- I just had a look at [[Reddit]] on my phone out of FOMO, it wasn't my morning check and there was no pressing moderation issue that needed resolving. Time: 5/4/25 11pm.
+- I just had a look at [[Reddit]] on my phone out of FOMO, it wasn't my morning check and there was no pressing moderation issue that needed resolving. Time: 5/4/26 11pm.
+- similar to the above 7/4/26 8:30pm. I thought i needed to check if anyone replied to my knox post. I didn't. 
