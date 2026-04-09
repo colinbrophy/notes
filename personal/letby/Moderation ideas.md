@@ -4,3 +4,4 @@
 - [ ] read Sally calrke judgments
 - [ ] https://www.bailii.org/uk/cases/UKPC/2015/9.html
 	- [ ] Read this judgement and the prof gudissusion issue.
+ She went on to qualify to work with intensive care babies from March or April 2015, she told the court.

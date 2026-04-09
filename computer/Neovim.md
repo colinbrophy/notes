@@ -1,5 +1,8 @@
 #todo
 
+- [ ] List all the plugins we need to review in [[Neovim Plugins]]
+- [ 
+- [ ] Learn [[Netrw]]
 - [ ] https://github.com/github/copilot.vim
 
 - Best editor in pracitce as degrades well and most portable.
@@ -9,7 +12,17 @@
 Have a look at vimgolf
 Repeat substitution is with ampersand
 
+Caps.lock key
+
+Try to use ctrl o more
+
 Try to use `.` a bit more, you don't use it enough.
+
+Consider:
+
+Commentary
+Textobj-entire
+
 
 READ THIS!!!
 

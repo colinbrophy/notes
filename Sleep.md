@@ -1,0 +1,5 @@
+- make sure you gett up atthe same time every day.
+- dont toss and turn un bed, get up  if you can't sleep.
+- Just go to bed when sleepy, not before.
+- don't go on the Internet or screens close to bedtime.
+- dont worry about getting a fix number of hours of sleep.

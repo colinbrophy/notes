@@ -1,10 +1,10 @@
 #human-written
  
- In order to be able to consolidate learning, you need to when you don't feel like learning any more, not just switch to low stimulation stuff. What you need to do is just sit there with nothing.
+ In order to be able to consolidate learning, you need to when you don't feel like learning any more, not just switch to low stimulation stuff. What you need to do is just sit there with nothing. This applies at work too, just rest when you don't have anything left, ***do nothing!*** 
 
 This might feel weird at first, but you will get used to it. Your brain needs time to adjust to feeling nothing.
 
-Good rhythm, study, get tired, do nothing until a thought arises. Write it down if new and interesting.  Wait until borderm and repeat. 
+Good rhythm, study, get tired, do nothing until a thought arises. Write it down if new and interesting.  Wait until boredom and repeat. 
 
 Low stimulation stuff includes:
 - [[YouTube]]
