@@ -1,7 +1,14 @@
 #todo
 
 - [ ] List all the plugins we need to review in [[Neovim Plugins]]
-- [ 
+- [ ] / search in ex commands
+- [ ] wildmode and wildmenu
+- [ ] ctrl r ctrl w or ctrl a check if we have a card yet
+- [ ] same for q/ ctrl f
+- [ ] and % as im Current fileea
+- [ ] :shells and tip 35 review
+- [ ] command history update conf
+- [ ] 
 - [ ] Learn [[Netrw]]
 - [ ] https://github.com/github/copilot.vim
 

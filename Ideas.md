@@ -1,8 +1,11 @@
 #todo
 
-Note also [[Moderation ideas]] for the Letby case.
+Note also [[Mode ideas]] for the Letby case.
+- auto sync anki
 
 - [  ] need to fix amki generation of cards and bad cads
+- sort out phone keyboard 
+- what will be wil be
 - [ ] Claude code source leak, figure out what is going on there.
 1.   Understand fzf
 2.   MCP, on fedora

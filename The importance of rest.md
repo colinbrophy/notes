@@ -11,7 +11,8 @@ Low stimulation stuff includes:
 - [[Reddit]]
 - [[X/Twitter]]
 - [[ChatGPT]]
-- [[Wikipedia]] if just browsing without purpose.
+- [[Wikipedia]] if just browsing without purpose
+- Could even include podcasts if not careful
 
 Even if these feel like learning, the issue is they actually fragment attention and so block consolidation. Also they are designed to grab attention, so even when they feel educational, they are hard to absorb. Their number one priority is not education but stimulation. 
 
@@ -25,4 +26,4 @@ Even if it feels "important" the information coming in from these sources:
 
 1. It probably isn't, these sites are designed to make things seem important that aren't.
 2. Even if it was, there is no urgency normally.
-3. If you don't idle you won't abosrb it anyway.
+3. If you don't idle you won't absorb it anyway.
