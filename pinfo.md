@@ -1,0 +1,1 @@
+- [x] Set it up with vim keybindings.

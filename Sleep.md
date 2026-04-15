@@ -1,5 +1,8 @@
-- make sure you gett up atthe same time every day.
-- dont toss and turn un bed, get up  if you can't sleep.
+- Make sure you get up at the same time every day.
+- Don't toss and turn in bed, get up if you can't sleep.
 - Just go to bed when sleepy, not before.
-- don't go on the Internet or screens close to bedtime.
-- dont worry about getting a fix number of hours of sleep.
+- Don't go on the Internet or screens close to bedtime.
+- Don't worry about getting a fixed number of hours of sleep, just go when sleepy.
+- Get light in your eyes early (even grey daylight helps)
+    - Use light box.
+- Avoid bright light late at night

@@ -1,0 +1,2 @@
+- The most efficient way of learning, just takes you through what you need to know in a structured way.
+- No attention economy nonsense or loops of forgetting.

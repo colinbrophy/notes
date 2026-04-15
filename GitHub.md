@@ -1,0 +1,1 @@
+- Don't always trust people when they say an issue is a duplicate.
