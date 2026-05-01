@@ -1,0 +1,30 @@
+Less: Exit less.	q :q Q :Q ZZ
+Less: Display less help.	h H
+Less: Page forward one window.	f ^F ^V SPACE *
+Less: Page backward one window.	b ^B ESC-v *
+Less: Page forward and set the window size.	z *
+Less: Page backward and set the window size.	w *
+Less: Scroll forward half a window.	d ^D *
+Less: Scroll backward half a window.	u ^U *
+Less: Scroll right half a screen width.	ESC-) RightArrow *
+Less: Scroll left half a screen width.	ESC-( LeftArrow *
+Less: Jump to the last displayed column.	ESC-} ^RightArrow
+Less: Jump to the first column.	ESC-{ ^LeftArrow
+Less: Follow a file like tail -f.	F
+Less: Follow a file until a search match is found.	ESC-F
+Less: Show only lines matching a pattern.	&pattern *
+Less: Repeat the previous search across files.	ESC-n *
+Less: Repeat the previous search across files in reverse.	ESC-N *
+Less: Open the next file from the command line list.	:n *
+Less: Open the previous file from the command line list.	:p *
+Less: Print the current file name.	= ^G :f
+Less: Save the current input to a file.	s file
+Less: Edit the current file in $VISUAL or $EDITOR.	v
+Less: Show line numbers in less.	-N --LINE-NUMBERS
+Less: Chop long lines instead of wrapping.	-S --chop-long-lines
+Less: Ignore case in searches without uppercase.	-i --ignore-case
+Less: Quit immediately if the file fits on one screen.	-F --quit-if-one-screen
+Less: Preserve ANSI colors and other raw control chars.	-R --RAW-CONTROL-CHARS
+Less: Don't clear the screen when less exits.	-X --no-init
+Less: Start at the first match for a pattern.	-p pattern --pattern=[pattern]
+Less: Squeeze multiple blank lines.	-s --squeeze-blank-lines

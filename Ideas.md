@@ -3,9 +3,11 @@
 Note also [[Mode ideas]] for the Letby case.
 - auto sync anki
 
+- [polymarket](https://www.theguardian.com/business/2026/apr/11/polymarket-gamblers-betting-iran-war-ukraine-news-truth)
 - [  ] need to fix amki generation of cards and bad cads
 - sort out phone keyboard 
 - what will be wil be
+- do a full manual pass
 - [ ] Claude code source leak, figure out what is going on there.
 1.   Understand fzf
 2.   MCP, on fedora

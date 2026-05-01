@@ -1,0 +1,177 @@
+Less: Display this help.	h H
+Less: Exit.	q :q Q :Q ZZ
+Less: Forward one line (or N lines).	e ^E j ^N CR *
+Less: Backward one line (or N lines).	y ^Y k ^K ^P *
+Less: Forward one file line (or N file lines).	ESC-j *
+Less: Backward one file line (or N file lines).	ESC-k *
+Less: Forward one window (or N lines).	f ^F ^V SPACE *
+Less: Backward one window (or N lines).	b ^B ESC-v *
+Less: Forward one window (and set window to N).	z *
+Less: Backward one window (and set window to N).	w *
+Less: Forward one window, but don't stop at end-of-file.	ESC-SPACE *
+Less: Backward one window, but don't stop at beginning-of-file.	ESC-b *
+Less: Forward one half-window (and set half-window to N).	d ^D *
+Less: Backward one half-window (and set half-window to N).	u ^U *
+Less: Right one half screen width (or N positions).	ESC-) RightArrow *
+Less: Left one half screen width (or N positions).	ESC-( LeftArrow *
+Less: Right to last column displayed.	ESC-} ^RightArrow
+Less: Left to first column.	ESC-{ ^LeftArrow
+Less: Forward forever; like "tail -f".	F
+Less: Like F but stop when search pattern is found.	ESC-F
+Less: Repaint screen.	r ^R ^L
+Less: Repaint screen, discarding buffered input.	R
+Less: Search forward for (N-th) matching line.	/pattern *
+Less: Search backward for (N-th) matching line.	?pattern *
+Less: Repeat previous search (for N-th occurrence).	n *
+Less: Repeat previous search in reverse direction.	N *
+Less: Repeat previous search, spanning files.	ESC-n *
+Less: Repeat previous search, reverse dir. & spanning files.	ESC-N *
+Less: Search forward for (N-th) OSC8 hyperlink.	^O^N ^On *
+Less: Search backward for (N-th) OSC8 hyperlink.	^O^P ^Op *
+Less: Jump to the currently selected OSC8 hyperlink.	^O^L ^Ol
+Less: Undo (toggle) search highlighting.	ESC-u
+Less: Clear search highlighting.	ESC-U
+Less: Display only matching lines.	&pattern *
+Less: Search for NON-matching lines.	^N or !
+Less: Search multiple files (pass thru END OF FILE).	^E or *
+Less: Start search at FIRST file (for /) or last file (for ?).	^F or @
+Less: Highlight matches, but don't move (KEEP position).	^K
+Less: Don't use REGULAR EXPRESSIONS.	^R
+Less: Search for match in n-th parenthesized subpattern.	^S n
+Less: WRAP search if no match found.	^W
+Less: Enter next character literally into pattern.	^L
+Less: Go to first line in file (or line N).	g < ESC-< *
+Less: Go to last line in file (or line N).	G > ESC-> *
+Less: Go to beginning of file (or N percent into file).	p % *
+Less: Go to the (N-th) next tag.	t *
+Less: Go to the (N-th) previous tag.	T *
+Less: Find close bracket } ) ].	{ ( [ *
+Less: Find open bracket { ( [.	} ) ] *
+Less: Find close bracket <c2>.	ESC-^F <c1> <c2> *
+Less: Find open bracket <c1>.	ESC-^B <c1> <c2> *
+Less: Mark the current top line with <letter>.	m<letter>
+Less: Mark the current bottom line with <letter>.	M<letter>
+Less: Go to a previously marked position.	'<letter>
+Less: Go to the previous position.	''
+Less: Same as '.	^X^X
+Less: Clear a mark.	ESC-m<letter>
+Less: Examine a new file.	:e [file]
+Less: Same as :e.	^X^V
+Less: Examine the (N-th) next file from the command line.	:n *
+Less: Examine the (N-th) previous file from the command line.	:p *
+Less: Examine the first (or N-th) file from the command line.	:x *
+Less: Open the currently selected OSC8 hyperlink.	^O^O
+Less: Delete the current file from the command line list.	:d
+Less: Print current file name.	= ^G :f
+Less: Toggle a command line option [see OPTIONS below].	-<flag>
+Less: Toggle a command line option, by name.	--<name>
+Less: Display the setting of a command line option.	_<flag>
+Less: Display the setting of an option, by name.	__<name>
+Less: Execute the less cmd each time a new file is examined.	+cmd
+Less: Execute the shell command with $SHELL.	!command
+Less: Execute the shell command, expanded like a prompt.	#command
+Less: Pipe file between current pos & mark X to shell command.	|Xcommand
+Less: Save input to a file.	s file
+Less: Edit the current file with $VISUAL or $EDITOR.	v
+Less: Print version number of "less".	V
+Less: Display help (from command line).	-?  --help
+Less: Search skips current screen.	-a  --search-skip-screen
+Less: Search starts just after target line.	-A  --SEARCH-SKIP-SCREEN
+Less: Number of buffers.	-b [N]  --buffers=[N]
+Less: Don't automatically allocate buffers for pipes.	-B  --auto-buffers
+Less: Repaint by clearing rather than scrolling.	-c  -C  --clear-screen --CLEAR-SCREEN
+Less: Dumb terminal.	-d  --dumb
+Less: Set screen colors.	-D xcolor  --color=xcolor
+Less: Quit at end of file.	-e  -E  --quit-at-eof  --QUIT-AT-EOF
+Less: Force open non-regular files.	-f  --force
+Less: Quit if entire file fits on first screen.	-F  --quit-if-one-screen
+Less: Highlight only last match for searches.	-g  --hilite-search
+Less: Don't highlight any matches for searches.	-G  --HILITE-SEARCH
+Less: Revert to the old bottom of screen behavior.	--old-bot
+Less: Backward scroll limit.	-h [N]  --max-back-scroll=[N]
+Less: Ignore case in searches that do not contain uppercase.	-i  --ignore-case
+Less: Ignore case in all searches.	-I  --IGNORE-CASE
+Less: Screen position of target lines.	-j [N]  --jump-target=[N]
+Less: Display a status column at left edge of screen.	-J  --status-column
+Less: Use a compiled lesskey file.	-k file  --lesskey-file=file
+Less: Exit less in response to ctrl-C.	-K  --quit-on-intr
+Less: Ignore the LESSOPEN environment variable.	-L  --no-lessopen
+Less: Set prompt style.	-m  -M  --long-prompt  --LONG-PROMPT
+Less: Suppress line numbers in prompts and messages.	-n  --line-numbers
+Less: Display line number at start of each line.	-N  --LINE-NUMBERS
+Less: Copy to log file (standard input only).	-o [file]  --log-file=[file]
+Less: Copy to log file (unconditionally overwrite).	-O [file]  --LOG-FILE=[file]
+Less: Start at pattern (from command line).	-p pattern  --pattern=[pattern]
+Less: Define new prompt.	-P [prompt]  --prompt=[prompt]
+Less: Quiet the terminal bell.	-q  -Q  --quiet  --QUIET  --silent --SILENT
+Less: Output "raw" control characters.	-r  -R  --raw-control-chars  --RAW-CONTROL-CHARS
+Less: Squeeze multiple blank lines.	-s  --squeeze-blank-lines
+Less: Chop (truncate) long lines rather than wrapping.	-S  --chop-long-lines
+Less: Find a tag.	-t tag  --tag=[tag]
+Less: Use an alternate tags file.	-T [tagsfile] --tag-file=[tagsfile]
+Less: Change handling of backspaces, tabs and carriage returns.	-u  -U  --underline-special  --UNDERLINE-SPECIAL
+Less: Display the version number of "less".	-V  --version
+Less: Highlight first new line after forward-screen.	-w  --hilite-unread
+Less: Highlight first new line after any forward movement.	-W  --HILITE-UNREAD
+Less: Set tab stops.	-x [N[,...]]  --tabs=[N[,...]]
+Less: Don't use termcap init/deinit strings.	-X  --no-init
+Less: Forward scroll limit.	-y [N]  --max-forw-scroll=[N]
+Less: Set size of window.	-z [N]  --window=[N]
+Less: Set shell quote characters.	-" [c[c]]  --quotes=[c[c]]
+Less: Don't display tildes after end of file.	-~  --tilde
+Less: Set horizontal scroll amount (0 = one half screen width).	-# [N]  --shift=[N]
+Less: Exit F command on a pipe when writer closes pipe.	--exit-follow-on-close
+Less: Automatically determine the size of the input file.	--file-size
+Less: The F command changes files if the input file is renamed.	--follow-name
+Less: Stop scrolling when a form feed character is reached.	--form-feed
+Less: Use L lines (starting at line N) and C columns as headers.	--header=[L[,C[,N]]]
+Less: Search file as each pattern character is typed in.	--incsearch
+Less: Use C instead of ^X to interrupt a read.	--intr=[C]
+Less: Use lesskey source file contents.	--lesskey-context=text
+Less: Use a lesskey source file.	--lesskey-src=file
+Less: Set the width of the -N line number field to N characters.	--line-num-width=[N]
+Less: Show at least N characters to the left of a search match.	--match-shift=[N]
+Less: Read N lines from the input file and look for vim modelines.	--modelines=[N]
+Less: Enable mouse input.	--mouse
+Less: Don't warn when using v command on a file opened via LESSOPEN.	--no-edit-warn
+Less: Don't send termcap keypad init/deinit strings.	--no-keypad
+Less: Remove duplicates from command history.	--no-histdups
+Less: Don't give line numbers to header lines.	--no-number-headers
+Less: Ignore pasted input.	--no-paste
+Less: Searches do not include header lines.	--no-search-header-lines
+Less: Searches do not include header columns.	--no-search-header-columns
+Less: Searches do not include header lines or columns.	--no-search-headers
+Less: Disable the terminal's visual bell.	--no-vbell
+Less: Redraw final screen when quitting.	--redraw-on-quit
+Less: Set the character used to mark truncated lines.	--rscroll=[C]
+Less: Retain marks across invocations of less.	--save-marks
+Less: Set default options for every search.	--search-options=[EFKNRW-]
+Less: Display a message if preprocessor exits with an error status.	--show-preproc-errors
+Less: Process backspaces for bold/underline.	--proc-backspace
+Less: Treat backspaces as control characters.	--PROC-BACKSPACE
+Less: Delete carriage returns before newline.	--proc-return
+Less: Treat carriage returns as control characters.	--PROC-RETURN
+Less: Expand tabs to spaces.	--proc-tab
+Less: Treat tabs as control characters.	--PROC-TAB
+Less: Set the width of the -J status column to N characters.	--status-col-width=[N]
+Less: Highlight or color the entire line containing a mark.	--status-line
+Less: Subsequent options use backslash as escape char.	--use-backslash
+Less: Enables colored text.	--use-color
+Less: Each click of the mouse wheel moves N lines.	--wheel-lines=[N]
+Less: Wrap lines at spaces.	--wordwrap
+Less: Move cursor right one character.	RightArrow  ESC-l
+Less: Move cursor left one character.	LeftArrow  ESC-h
+Less: Move cursor right one word.	ctrl-RightArrow  ESC-RightArrow  ESC-w
+Less: Move cursor left one word.	ctrl-LeftArrow  ESC-LeftArrow  ESC-b
+Less: Move cursor to start of line.	HOME  ESC-0
+Less: Move cursor to end of line.	END  ESC-$
+Less: Delete char to left of cursor.	BACKSPACE
+Less: Delete char under cursor.	DELETE  ESC-x
+Less: Delete word to left of cursor.	ctrl-BACKSPACE  ESC-BACKSPACE
+Less: Delete word under cursor.	ctrl-DELETE  ESC-DELETE  ESC-X
+Less: Delete entire line.	ctrl-U  ESC (MS-DOS only)
+Less: Retrieve previous command line.	UpArrow  ESC-k
+Less: Retrieve next command line.	DownArrow  ESC-j
+Less: Complete filename & cycle.	TAB
+Less: Complete filename & reverse cycle.	SHIFT-TAB  ESC-TAB
+Less: Complete filename, list all.	ctrl-L

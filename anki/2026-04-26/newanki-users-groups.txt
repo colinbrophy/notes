@@ -1,0 +1,69 @@
+Show a long listing with permissions, owner, and group.	ls -l /path
+Display full file status with stat.	stat path
+Follow a symlink and show the target's status.	stat -L path
+Display file system status instead of file status.	stat -f path
+Print stat output in terse form.	stat -t path
+Use a custom stat output format.	stat -c 'FORMAT' path
+Use stat with escapes and no automatic trailing newline.	stat --printf='FORMAT' path
+In stat format strings: permission bits in octal.	%a
+In stat format strings: permission bits and file type, human-readable.	%A
+In stat format strings: file type.	%F
+In stat format strings: owner UID.	%u
+In stat format strings: owner user name.	%U
+In stat format strings: owner GID.	%g
+In stat format strings: owner group name.	%G
+In stat format strings: inode number.	%i
+In stat format strings: total size in bytes.	%s
+In stat format strings: file name.	%n
+In stat format strings: quoted file name, dereferencing symlinks.	%N
+In stat format strings: mount point.	%m
+In stat format strings: time of last access, human-readable.	%x
+In stat format strings: time of last data modification, human-readable.	%y
+In stat format strings: time of last status change, human-readable.	%z
+In stat format strings: time of file birth, human-readable.	%w
+Show the owning user of a file or directory.	stat -c %U path
+Show the owning group of a file or directory.	stat -c %G path
+Show the access rights of a file or directory.	stat -c %A path
+Find files owned by a group name.	find / -group groupname
+Find files owned by a user.	find / -user user
+Change a file's owning user and group.	chown user:group path
+Change a file's permission bits.	chmod mode path
+Secure user account information file.	/etc/shadow
+User account information file.	/etc/passwd
+Group membership file.	/etc/group
+Shadowed group account information file.	/etc/gshadow
+Create a normal user with a home directory, extra groups, and a shell.	useradd -m -G additional_groups -s login_shell username
+Create a normal user with defaults and a home directory.	useradd -m username
+Set or change a user's password.	passwd username
+Polite non-login shell for service accounts.	/usr/bin/nologin
+Create a system user without shell access.	useradd --system -s /usr/bin/nologin username
+Create a system user with a specific UID and GID.	useradd --system -u UID -g GID -s /usr/bin/nologin username
+Show the default settings used by useradd.	useradd --defaults
+List valid login shells.	chsh -l
+File that a login shell must appear in to satisfy pam_shells.	/etc/shells
+Skeleton directory copied into new home directories.	/etc/skel
+Change a user's home directory and move existing files.	usermod -d /my/new/home -m username
+Rename a user's login name.	usermod -l newname oldname
+Change a user's login shell.	usermod -s /usr/bin/bash username
+Set the GECOS/comment field interactively.	chfn username
+Set the GECOS/comment field non-interactively.	usermod -c "Comment" username
+Force a user to change their password at next login.	chage -d 0 username
+Delete a user together with home directory and mail spool.	userdel -r username
+Make files created in a shared directory inherit the parent directory's group.	chmod g+s our_shared_directory
+Temporarily switch the default GID for newly created files.	newgrp groupname
+Record format of a line in /etc/passwd.	account:password:UID:GID:GECOS:directory:shell
+In /etc/passwd, what marks the password as shadowed?	x
+First normal user UID on Arch by default.	1000
+Show a user's group memberships.	groups user
+Show a user's UID, primary GID, and supplementary groups.	id user
+Create a new group.	groupadd group
+Add a user to an existing group.	gpasswd -a user group
+Add supplementary groups without dropping existing memberships.	usermod -aG additional_groups username
+Rename a group.	groupmod -n new_group old_group
+Delete a group.	groupdel group
+Remove a user from a group.	gpasswd -d user group
+Verify the passwd database and sort users by UID.	pwck -s
+Safely edit /etc/passwd with database locking.	vipw
+Safely edit /etc/group with database locking.	vigr
+Read a specific NSS record, such as a group entry.	getent group tty
+Common admin group used for privilege elevation on Arch.	wheel
