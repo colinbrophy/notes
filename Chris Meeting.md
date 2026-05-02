@@ -1,0 +1,7 @@
+- Need to be more open on the code?
+- Need to cancel: 
+	- MOsaic
+- Need to look at cut costs.
+	- Server costs.
+- GEt a list of things to do.
+- Review OVH costs carefully.
