@@ -3,8 +3,13 @@
 
 Everything from your system's PATH, categorised.
 
-- First of all learn meta commands like man and apropos.
 ## TIER 1: Core daily drivers (you almost certainly know these)
+
+**Docs / discovery**
+- [ ] `man`: primary system manuals
+- [ ] `apropos`: find commands by keyword
+- [ ] `whatis`: one-line command descriptions
+- [ ] `info`: GNU manuals when `man` is thin
 
 **Shell basics**
 - [ ] `bash`: your shell
@@ -29,10 +34,36 @@ Everything from your system's PATH, categorised.
 - [x] `echo`: print text
 - [ ] `printf`: formatted print
 - [ ] `read`: read input in scripts
+- [ ] `time`: measure how long a command takes
 - [x] `test`: conditional evaluation ([ ])
 - [x] `true`: exit 0
 - [x] `false`: exit 1
 - [x] `yes`: repeat string forever
+
+**Shell language / builtins**
+- [x] `type`: show whether something is a shell builtin, alias, function, or binary
+- [ ] `help`: shell builtin docs
+- [ ] `command`: run command bypassing shell functions/aliases
+- [ ] `builtin`: run shell builtin explicitly
+- [x] `alias`: define/list aliases
+- [x] `unalias`: remove aliases
+- [x] `export`: put variables into environment
+- [ ] `unset`: remove variable/function
+- [ ] `set`: shell options + positional parameters
+- [ ] `shopt`: Bash-specific shell options
+- [x] `source`: run file in current shell
+- [x] `.`: POSIX source
+- [ ] `exec`: replace current shell/process
+- [ ] `trap`: handle signals/cleanup in scripts
+- [ ] `return`: return from function/sourced script
+- [ ] `exit`: exit shell/script
+- [ ] `shift`: shift positional parameters
+- [ ] `getopts`: parse shell script flags
+- [ ] `ulimit`: shell resource limits
+- [ ] `history`: shell history
+- [ ] `fc`: edit/re-run previous commands
+- [ ] `bindkey`: zsh keybindings
+- [ ] `bind`: bash/readline keybindings
 
 **Text processing**
 - [x] `grep`: pattern search
@@ -62,7 +93,7 @@ Everything from your system's PATH, categorised.
 - [ ] `nl`: number lines
 
 **File operations**
-- [ ] `find`: search filesystem
+- [x] `find`: search filesystem
 - [x] `chmod`: change permissions
 - [x] `chown`: change ownership
 - [x] `chgrp`: change group
@@ -77,10 +108,38 @@ Everything from your system's PATH, categorised.
 - [ ] `link`: create hard link
 - [ ] `unlink`: remove single file
 
+**Permissions / identity / access**
+- [x] `umask`: default permissions for newly created files
+- [ ] `getfacl`: view POSIX ACLs
+- [ ] `setfacl`: set POSIX ACLs
+- [ ] `namei`: follow path components and permissions
+- [ ] `capsh`: inspect Linux capabilities
+- [ ] `getcap`: view file capabilities
+- [ ] `setcap`: set file capabilities
+
 **Archiving/compression**
 - [x] `tar`: tape archive (tar czf, tar xzf)
+- [x] `gzip`: gzip compression
+- [x] `gunzip`: decompress gzip
+- [x] `zcat`: cat compressed files
+- [x] `bzip2`: bzip2 compression
+- [x] `xz`: xz compression
+- [x] `zip`: create zip archives
+- [x] `unzip`: extract zip archives
+
+**Checksums / encoding / binary inspection**
+- [ ] `sha256sum`: verify file hash
+- [ ] `sha512sum`: verify file hash
+- [ ] `md5sum`: legacy checksum
+- [ ] `cksum`: POSIX checksum
+- [ ] `base64`: encode/decode base64
+- [ ] `xxd`: hex dump / reverse hex dump
+- [ ] `hexdump`: inspect binary data
+- [ ] `strings`: extract printable strings from binaries
+
 **Process management**
 - [x] `ps`: process list
+- [x] `pstree`: process tree view - parent/child relationships at a glance
 - [x] `kill`: send signal
 - [x] `killall`: kill by name
 - [x] `pgrep`: find process by pattern
@@ -97,28 +156,52 @@ Everything from your system's PATH, categorised.
 - [x] `renice`: change priority
 - [ ] `timeout`: run with time limit
 
+**Terminal / TTY**
+- [ ] `stty`: terminal line settings
+- [ ] `tty`: print current terminal device
+- [ ] `reset`: reset broken terminal
+- [x] `clear`: clear terminal screen
+- [ ] `script`: record terminal session
+
 **System info**
 - [ ] `uname`: system info
 - [ ] `hostname`: hostname
 - [ ] `hostnamectl`: systemd hostname management
 - [x] `uptime`: load/uptime
+- [ ] `free`: quick memory + swap usage
+- [ ] `vmstat`: fast CPU, memory, I/O, and run queue snapshot
+- [ ] `lscpu`: CPU topology and virtualization flags
+- [ ] `lsmem`: memory layout/topology
+- [ ] `nproc`: number of available processing units
 - [ ] `date`: date/time
 - [ ] `cal`: calendar
 - [x] `who`: logged in users
 - [x] `whoami`: current user
 - [x] `id`: user/group IDs
-- [ ] `groups`: group membership
+- [x] `groups`: group membership
 - [x] `env`: environment variables
 - [x] `printenv`: print env vars
+
+**Login/session/account state**
+- [x] `last`: login history
+- [x] `lastlog`: last login per user
+- [x] `w`: logged-in users + what they are doing
+- [ ] `logname`: original login name
+- [ ] `newgrp`: switch current group
+- [ ] `chage`: password ageing
+- [ ] `getent`: query passwd/group/hosts/services via NSS
 
 **Disk/filesystem**
 - [x] `df`: disk free space
 - [x] `du`: disk usage
 - [x] `mount`: mount filesystems
 - [x] `umount`: unmount
+- [ ] `mountpoint`: check whether a path is a mountpoint
 - [x] `lsblk`: block device list
 - [x] `blkid`: filesystem UUIDs/types
 - [x] `findmnt`: show mount tree
+- [ ] `swapon`: enable/list swap devices
+- [ ] `swapoff`: disable swap devices
 - [x] `sync`: flush writes
 
 **Networking core**
@@ -132,6 +215,22 @@ Everything from your system's PATH, categorised.
 - [x] `host`: simple DNS lookup
 - [ ] `curl`: HTTP client
 - [x] `wget`: download files
+
+**DNS / resolver debugging**
+- [ ] `resolvectl`: inspect/query systemd-resolved
+- [ ] `getent hosts`: resolve through the system NSS stack
+- [ ] `getent ahosts`: show IPv4/IPv6 address resolution
+
+**Network utilities**
+- [ ] `nc`: netcat, basic TCP/UDP testing
+- [ ] `ncat`: nmap's better netcat
+- [ ] `socat`: bidirectional data relay, socket plumbing
+- [ ] `openssl s_client`: TLS connection debugging
+- [ ] `whois`: domain/IP registry lookup
+
+**File transfer / sync**
+- [x] `rsync`: serious file copy/sync
+- [x] `rsync --dry-run`: preview sync safely
 
 **User management**
 - [x] `useradd`: create user
@@ -154,9 +253,31 @@ Everything from your system's PATH, categorised.
 - [ ] `hostnamectl`: hostname (listed above too)
 - [ ] `coredumpctl`: manage core dumps
 
+**Systemd practical extras**
+- [ ] `systemctl status`
+- [ ] `systemctl list-units`
+- [ ] `systemctl cat`
+- [ ] `systemctl edit`
+- [ ] `systemctl daemon-reload`
+- [ ] `systemd-delta`: compare local unit overrides against vendor units
+- [ ] `journalctl -u`
+- [ ] `journalctl -b`
+- [ ] `journalctl -f`
+
+**Cron / scheduling**
+- [ ] `crontab`: cron job management
+
 **Package management**
 - [x] `dnf`: Fedora/RHEL package manager
 - [x] `rpm`: low-level rpm operations
+
+**Fedora/RHEL package tooling**
+- [ ] `dnf repoquery`: query packages/repos
+- [ ] `dnf provides`: find package that owns a file/command
+- [ ] `rpm -qf`: find which package owns a file
+- [ ] `rpm -ql`: list package files
+- [ ] `rpm -qc`: list config files from package
+- [ ] `rpm -V`: verify package-installed files
 
 **Git**
 - [ ] `git`: version control
@@ -168,6 +289,7 @@ Everything from your system's PATH, categorised.
 
 **SSH**
 - [ ] `ssh`: remote shell
+- [ ] `mosh`: roaming remote shell for flaky/high-latency connections
 - [ ] `scp`: remote copy
 - [ ] `sftp`: remote file transfer
 - [ ] `ssh-keygen`: key generation
@@ -184,17 +306,68 @@ Everything from your system's PATH, categorised.
 - [x] `vi`: minimal vim
 - [x] `view`: read-only vim
 
+**Concepts to learn as concepts, not binaries**
+- [ ] shell expansion order
+- [x] quoting rules
+- [ ] PATH lookup
+- [ ] Kubernetes model: pods, deployments, services, ingress, secrets, volumes
+- [ ] fast doc lookup: official docs first, then `site:` search by tool/vendor
+- [ ] Terraform lookup model: language docs vs provider docs vs registry module docs
+- [ ] browser keyword search shortcuts / DevDocs for fast web-doc lookup
+- [ ] login/session chain: `systemd` -> `getty` -> `login` -> shell/session
+- [ ] boot/initramfs/rescue chain: kernel -> initramfs -> `systemd` -> units
+- [ ] cgroups vs namespaces vs systemd units
+- [ ] systemd unit lifecycle
+- [ ] journalctl query model
+- [ ] file ownership vs permissions vs ACLs
+- [ ] DNS lookup path: hosts/NSS/resolved/DNS
+- [ ] process/session/job distinction
+- [ ] mount source vs mount target
+- [ ] block device vs filesystem vs mountpoint
+- [ ] package ownership: which package installed this file?
+
+**Important config locations**
+- [x] `/etc/passwd`, `/etc/group`, `/etc/shadow`
+- [x] `/etc/sudoers`, `/etc/sudoers.d/`
+- [x] `/etc/fstab`
+- [x] `/etc/hosts`
+- [x] `/etc/resolv.conf`
+- [x] `/etc/ssh/sshd_config`
+- [x] `/etc/systemd/system/`
+- [x] `/usr/lib/systemd/system/`
+- [x] `/etc/profile`, `~/.profile`, `~/.bashrc`, `~/.zshrc`
+- [x] `/var/log/`
+- [x] `/proc/`
+- [x] `/sys/`
+
 ## TIER 2: High-value tools to invest in learning
+
+**If you only internalise a subset first**
+- [ ] `fd`, `rg`, `fzf`, `zoxide`, `bat`
+- [ ] `jq`, `yq`
+- [ ] `rsync`, `just`
+- [ ] `watch`, `lsof` or `lsfd`
+- [ ] `systemctl`, `journalctl`, `ip`, `ss`
 
 **Modern CLI replacements — big quality-of-life wins**
 - [ ] `fd`: fast, intuitive find replacement. Pairs with fzf
 - [ ] `rg`: ripgrep — fast recursive grep with sane defaults
 - [ ] `bat`: cat with syntax highlighting and git integration
+- [ ] `eza`: modern `ls` replacement
 - [ ] `fzf`: fuzzy finder — transforms how you navigate
 - [ ] `fzf-tmux`: fzf inside tmux panes
+- [ ] `atuin`: much better shell history/search
 - [ ] `zoxide`: smarter cd with frecency tracking
 - [ ] `delta`: beautiful git diffs, pairs with lazygit
+- [ ] `hyperfine`: benchmark commands properly
+- [ ] `sd`: simpler search/replace than `sed`
+- [ ] `duf`: nicer `df`
+- [ ] `dust`: nicer `du`
+- [ ] `procs`: nicer `ps`
+- [ ] `xh`: friendlier HTTP client than `curl`
+- [ ] `zellij`: modern terminal workspace/multiplexer
 - [ ] `btop`: gorgeous process/resource monitor
+- [ ] `btm`: another modern process/resource monitor (`bottom`)
 - [ ] `ncdu`: interactive disk usage explorer — find what's eating space
 - [ ] `lazygit`: TUI git client you already use
 - [ ] `tree`: directory tree view
@@ -203,7 +376,16 @@ Everything from your system's PATH, categorised.
 - [ ] `shellcheck`: static analysis for shell scripts — catches real bugs
 - [ ] `shfmt`: shell script formatter (use with conform.nvim)
 - [ ] `envsubst`: substitute env vars in templates — handy for deploy scripts
+- [ ] `flock`: prevent overlapping cron/systemd jobs with a lockfile
 - [ ] `parallel`: GNU parallel — run jobs in parallel properly
+
+**Ansible**
+- [ ] `ansible`: ad-hoc automation
+- [ ] `ansible-playbook`: run playbooks
+- [ ] `ansible-inventory`: inspect inventory
+- [ ] `ansible-vault`: encrypted secrets
+- [ ] `ansible-galaxy`: roles/collections
+- [ ] `ansible-lint`: lint playbooks
 
 **Data wrangling**
 - [ ] `jq`: JSON query/transform — essential for API work, terraform state
@@ -212,7 +394,9 @@ Everything from your system's PATH, categorised.
 
 **Infrastructure debugging**
 - [ ] `lsof`: what has this file/port/socket open
+- [ ] `lsfd`: modern file descriptor/socket inspection
 - [ ] fuser
+- [ ] `inotifywait`: watch file changes/events for automation and debugging
 - [ ] `strace`: (via stap/dtrace) — syscall tracing, find why things hang
 - [ ] `tcpdump`: packet capture — the ground truth for network issues
 - [ ] `nmap`: network scanner/port auditor
@@ -274,10 +458,25 @@ Everything from your system's PATH, categorised.
 
 **Containers (Fedora native)**
 - [ ] `podman`: rootless containers — docker-compatible
+- [ ] `docker`: still the lingua franca even if you prefer podman
+- [ ] `docker compose`: local multi-container stacks
+- [ ] `podman compose`: compose-style podman workflow
 - [ ] `skopeo`: inspect/copy container images without pulling
+- [ ] `lsns`: inspect Linux namespaces
+- [ ] `nsenter`: enter container/process namespaces for debugging
+- [ ] `unshare`: create a fresh namespace view for testing/isolation
 - [ ] `buildah`: (not listed but related) build OCI images
+- [ ] `trivy`: image/filesystem/IaC security scanning
 - [ ] `crun`: container runtime (low-level)
 - [ ] `conmon`: container monitor (low-level)
+- [ ] `journalctl -u container-*`: if using podman/systemd units
+
+**Kubernetes**
+- [ ] `kubectl`: Kubernetes CLI
+- [ ] `helm`: Kubernetes package manager
+- [ ] `k9s`: Kubernetes TUI
+- [ ] `stern`: tail logs from multiple pods
+- [ ] `kustomize`: patch and compose Kubernetes manifests
 
 **Virtualisation (Proxmox/libvirt work)**
 - [ ] `virsh`: libvirt CLI — VM management
@@ -294,6 +493,13 @@ Everything from your system's PATH, categorised.
 - [ ] `trust`: manage system trust store
 - [ ] `update-ca-trust`: refresh CA bundle
 - [ ] `p11-kit`: PKCS#11 module management
+
+**Secrets / credentials**
+- [ ] `gpg`: encryption/signing
+- [ ] `pass`: Unix password manager
+- [ ] `bw`: Bitwarden CLI
+- [ ] `age`: modern file encryption
+- [ ] `sops`: encrypted config/secrets, often with age/KMS
 
 **Backup/recovery (your ReaR + restic stack)**
 - [ ] `rear`: Relax-and-Recover — bare metal DR
@@ -338,6 +544,13 @@ Everything from your system's PATH, categorised.
 - [ ] `coresched`: core scheduling
 - [ ] `chrt`: real-time scheduling
 
+**Boot / kernel / initramfs**
+- [ ] `grubby`: manage default kernel/boot args on Fedora/RHEL
+- [ ] `dracut`: build initramfs
+- [ ] `lsinitrd`: inspect initramfs
+- [ ] `bootctl`: systemd-boot management, where relevant
+- [ ] `efibootmgr`: UEFI boot entries
+
 **Audit/logging (server hardening)**
 - [ ] `auditctl`: audit rule management
 - [ ] `auditd`: audit daemon
@@ -345,14 +558,40 @@ Everything from your system's PATH, categorised.
 - [ ] `ausearch`: search audit logs
 - [ ] `augenrules`: generate audit rules from files
 
+**Logs**
+- [ ] `logrotate`: rotate logs
+- [ ] `logger`: write message to syslog/journal
+
+**Cloud CLIs**
+- [ ] `aws`: AWS CLI
+- [ ] `aws-vault`: safer AWS credential handling
+- [ ] `gcloud`: Google Cloud CLI
+- [ ] `az`: Azure CLI
+
+**Language/runtime tooling**
+- [x] `python3`: Python interpreter
+- [x] `pip`: Python package installer
+- [x] `pipx`: install Python CLI apps cleanly
+- [x] `venv`: Python virtual environments
+- [x] `node`: JavaScript runtime
+- [x] `npm`: Node package manager
+- [x] `go`: Go toolchain
+
+**Build / compile basics**
+- [x] `make`: build automation
+- [x] `gcc`: C compiler
+- [x] `ldd`: show shared library dependencies
+- [x] `ldconfig`: configure dynamic linker cache
+- [x] `pkg-config`: compiler/linker flags for libraries
+
 **Misc high-value**
-- [ ] `tmux`: terminal multiplexer
-- [ ] `screen`: (not listed but tmux is better)
+- [x] `tmux`: terminal multiplexer
+- [x] `screen`: (not listed but tmux is better)
 - [ ] `watch`: repeat command and watch output
 - [ ] `ipcalc`: subnet calculator
-- [ ] `openconnect`: VPN client (if you use it)
+- [ ] `gh`: GitHub CLI
+- [x] `openconnect`: VPN client (if you use it)
 - [ ] `chronyc`: NTP client management
-- [ ] `timedatectl`: (listed above) time sync status
 
 ---
 
@@ -389,14 +628,20 @@ Everything from your system's PATH, categorised.
 
 **Disk / filesystem edge cases**
 - [ ] `badblocks`: scan for bad blocks
+- [ ] `udevadm`: inspect devices and udev events/rules
 
 **Cron / scheduling**
-- [ ] `crontab`: (tier 1 really) cron job management
 - [ ] `anacron`: run missed cron jobs
 - [ ] `at`: one-shot scheduled command
 - [ ] `atq`: list at queue
 - [ ] `atrm`: remove at job
 - [ ] `batch`: run when load is low
+
+**Mail/server notifications**
+- [ ] `mailx`: send/read simple mail
+- [ ] `sendmail`: sendmail-compatible interface
+- [ ] `postqueue`: inspect Postfix queue
+- [ ] `postfix`: Postfix control
 
 **Systemd extended**
 - [ ] `systemd-analyze`: boot performance analysis
@@ -433,22 +678,27 @@ Everything from your system's PATH, categorised.
 **Misc useful**
 - [ ] `cloc`: count lines of code
 - [ ] `croc`: simple encrypted file transfer between machines
+- [ ] `jrnl`: simple personal diary app
 - [ ] `just`: command runner (you already use this)
 - [ ] `stow`: symlink farm manager (your dotfiles)
 - [ ] `direnv`: per-directory env vars
+- [ ] `pv`: monitor progress through a pipe / long data stream
 - [ ] `mods`: AI in the terminal (if you use it)
 - [ ] `ollama`: local LLM inference (your GPU passthrough setup)
-- [ ] `gh`: GitHub CLI
 - [ ] `yt-dlp`: video downloader
 - [ ] `rclone`: cloud storage sync (S3, etc.)
 - [ ] `terraform`: infrastructure as code (your stack)
+- [ ] `terraform-docs`: generate docs for Terraform modules
 - [ ] `terraform-ls`: terraform language server
+- [ ] `tfsec`: Terraform static security scanning
 - [ ] `vagrant`: VM provisioning (your ansible testing)
 - [ ] `syncthing`: p2p file sync
 - [ ] `jd`: JSON diff
 - [ ] `w3m`: terminal web browser
 - [ ] `glow`: terminal markdown renderer
 - [ ] `cheat`: cheat sheets in terminal
+- [ ] `tldr`: short, example-first command docs
+- [ ] `cht.sh`: curlable cheat sheets / quick examples
 
 ---
 
