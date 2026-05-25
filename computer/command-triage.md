@@ -3,25 +3,29 @@
 
 Everything from your system's PATH, categorised.
 
+NOTE: We also need to do [[zsh]] and [[Firefox]] too.
+
 ## TIER 1: Core daily drivers (you almost certainly know these)
 
 **Docs / discovery**
-- [ ] `man`: primary system manuals
-- [ ] `apropos`: find commands by keyword
-- [ ] `whatis`: one-line command descriptions
-- [ ] `info`: GNU manuals when `man` is thin
+- [x] `man`: primary system manuals
+- [x] `apropos`: find commands by keyword
+- [x] `whatis`: one-line command descriptions
+- [x] `whereis`
+- [x] `info`: GNU manuals when `man` is thin
 
 **Shell basics**
-- [ ] `bash`: your shell
+- [ ] `bash`: your shell            
 - [ ] `zsh`: alternative shell (fish also listed) (learn lne editing here)
-- [ ] `fish`: friendly interactive shell
+- [x] `fish`: friendly interactive shell
 - [x] `cd`: change directory
 - [x] `pwd`: print working directory
 - [x] `ls`: list files
 - [x] `dir`: basically ls
 - [x] `vdir`: verbose ls
-- [x] `cp`: copy - [x] `mv`: move/rename
-- [x] `rm`: remove
+- [x] `cp`: copy 
+- [x] `mv`: move/rename
+ - [x] `rm`: remove
 - [x] `rmdir`: remove empty dirs
 - [x] `mkdir`: make dirs
 - [x] `ln`: links (hard + symlinks)
@@ -32,90 +36,104 @@ Everything from your system's PATH, categorised.
 - [x] `head`: first N lines
 - [x] `tail`: last N lines (tail -f for log following)
 - [x] `echo`: print text
-- [ ] `printf`: formatted print
-- [ ] `read`: read input in scripts
-- [ ] `time`: measure how long a command takes
+- [x] `printf`: formatted print
+- [x] `read`: read input in scripts
+- [x] `time`: measure how long a command takes
 - [x] `test`: conditional evaluation ([ ])
-- [x] `true`: exit 0
+- [x] `true`: exit 0Unlike something like Kubernetes or Neovim, tmux does not have a massive evolving abstraction stack on top of it. The architecture is stable, small, and old-school Unix-y.
+
+
 - [x] `false`: exit 1
 - [x] `yes`: repeat string forever
+- [x] `seq`: generate numeric sequences for loops, filenames, and quick test data
 
 **Shell language / builtins**
 - [x] `type`: show whether something is a shell builtin, alias, function, or binary
-- [ ] `help`: shell builtin docs
-- [ ] `command`: run command bypassing shell functions/aliases
-- [ ] `builtin`: run shell builtin explicitly
+- [x] `help`: shell builtin docs
+- [x] `command`: run command bypassing shell functions/aliases
+- [x] `builtin`: run shell builtin explicitly
 - [x] `alias`: define/list aliases
 - [x] `unalias`: remove aliases
 - [x] `export`: put variables into environment
-- [ ] `unset`: remove variable/function
-- [ ] `set`: shell options + positional parameters
-- [ ] `shopt`: Bash-specific shell options
+- [x] `unset`: remove variable/function
+- [x] `set`: shell options + positional parameters
+- [x] `shopt`: Bash-specific shell options
 - [x] `source`: run file in current shell
 - [x] `.`: POSIX source
-- [ ] `exec`: replace current shell/process
-- [ ] `trap`: handle signals/cleanup in scripts
-- [ ] `return`: return from function/sourced script
-- [ ] `exit`: exit shell/script
-- [ ] `shift`: shift positional parameters
-- [ ] `getopts`: parse shell script flags
-- [ ] `ulimit`: shell resource limits
-- [ ] `history`: shell history
-- [ ] `fc`: edit/re-run previous commands
+- [x] `pushd`: push the current directory onto the stack and switch directories
+- [x] `popd`: pop a directory off the stack and switch back to it
+- [x] `dirs`: show or manipulate the shell directory stack
+- [x] `exec`: replace current shell/process
+- [x] `trap`: handle signals/cleanup in scripts
+- [x] `return`: return from function/sourced script
+- [x] `exit`: exit shell/script
+- [x] `shift`: shift positional parameters
+- [x] `getopts`: parse shell script flags
+- [x] `ulimit`: shell resource limits
+- [x] `history`: shell history
+- [x] `fc`: edit/re-run previous commands
 - [ ] `bindkey`: zsh keybindings
-- [ ] `bind`: bash/readline keybindings
-
+- [x] `bind`: bash/readline keybindings
+- [x] declare
 **Text processing**
 - [x] `grep`: pattern search
 - [x] `egrep`: extended regex grep (deprecated, use grep -E)
 - [x] `fgrep`: fixed-string grep (deprecated, use grep -F)
-- [ ] `sed`: stream editor
+- [ ] `sed`: stream editor [Read this](https://www.grymoire.com/Unix/Sed.html)
 - [ ] `awk`: pattern/action language
 - [ ] `gawk`: GNU awk
 - [x] `sort`: sort lines
 - [x] `uniq`: deduplicate adjacent lines
 - [x] `wc`: word/line/byte count
 - [x] `cut`: extract fields
-- [ ] `tr`: translate/delete characters
+- [x] `tr`: translate/delete characters
 - [x] `tee`: split stdout to file + pipe
-- [ ] `xargs`: build commands from stdin
-- [ ] `diff`: compare files
-- [ ] `patch`: apply diffs
-- [ ] `comm`: compare sorted files line by line
-- [ ] `paste`: merge lines side by side
+- [x] `xargs`: build commands from stdin
+- [x] `diff`: compare files
+- [x] `patch`: apply diffs
+- [x] `comm`: compare sorted files line by line
+- [x] `paste`: merge lines side by side
+- [x] `join`: join sorted text files on a shared field
 - [ ] `column`: format into columns
-- [ ] `fold`: wrap lines
-- [ ] `fmt`: simple text formatter
+- [ ] `numfmt`: convert numbers to/from human-readable units
+- [x] `fold`: wrap lines
+- [x] `fmt`: simple text formatter
 - [ ] `expand`: tabs to spaces
 - [ ] `unexpand`: spaces to tabs
-- [ ] `rev`: reverse lines
-- [ ] `tac`: reverse file (cat backwards)
-- [ ] `nl`: number lines
+- [x] `cmp`
+- [x] `shuf`
+- [x] `rev`: reverse lines
+- [x] `tac`: reverse file (cat backwards)
+- [x] `nl`: number lines
 
 **File operations**
 - [x] `find`: search filesystem
+- [x] `locate`: fast filename lookup via a prebuilt database
+- [x] `updatedb`: refresh the `locate` database
 - [x] `chmod`: change permissions
 - [x] `chown`: change ownership
 - [x] `chgrp`: change group
 - [x] `stat`: file metadata
 - [x] `file`: detect file type
-- [ ] `realpath`: resolve symlinks
-- [ ] `readlink`: read symlink target
-- [ ] `basename`: strip directory from path
-- [ ] `dirname`: strip filename from path
-- [ ] `mktemp`: create temp file/dir
-- [ ] `install`: copy with permissions
-- [ ] `link`: create hard link
-- [ ] `unlink`: remove single file
+- [x] `realpath`: resolve symlinks
+- [x] `readlink`: read symlink target
+- [x] `basename`: strip directory from path
+- [x] `dirname`: strip filename from path
+- [x] `mktemp`: create temp file/dir
+- [ ] `split`: split a file into smaller chunks
+- [ ] `truncate`: shrink or extend a file to a specific size
+- [x] `install`: copy with permissions
+- [x] `link`: create hard link
+- [x] `unlink`: remove single file
 
 **Permissions / identity / access**
 - [x] `umask`: default permissions for newly created files
-- [ ] `getfacl`: view POSIX ACLs
-- [ ] `setfacl`: set POSIX ACLs
-- [ ] `namei`: follow path components and permissions
-- [ ] `capsh`: inspect Linux capabilities
-- [ ] `getcap`: view file capabilities
-- [ ] `setcap`: set file capabilities
+- [x] `getfacl`: view POSIX ACLs
+- [x] `setfacl`: set POSIX ACLs
+- [x] `namei`: follow path components and permissions
+- [x] `capsh`: inspect Linux capabilities
+- [x] `getcap`: view file capabilities
+- [x] `setcap`: set file capabilities
 
 **Archiving/compression**
 - [x] `tar`: tape archive (tar czf, tar xzf)
@@ -128,14 +146,15 @@ Everything from your system's PATH, categorised.
 - [x] `unzip`: extract zip archives
 
 **Checksums / encoding / binary inspection**
-- [ ] `sha256sum`: verify file hash
-- [ ] `sha512sum`: verify file hash
-- [ ] `md5sum`: legacy checksum
-- [ ] `cksum`: POSIX checksum
-- [ ] `base64`: encode/decode base64
-- [ ] `xxd`: hex dump / reverse hex dump
-- [ ] `hexdump`: inspect binary data
-- [ ] `strings`: extract printable strings from binaries
+- [x] `sha256sum`: verify file hash
+- [x] `sha512sum`: verify file hash
+- [x] `md5sum`: legacy checksum
+- [x] `cksum`: POSIX checksum
+- [x] `base64`: encode/decode base64
+- [x] `xxd`: hex dump / reverse hex dump
+- [x] `hexdump`: inspect binary data
+- [x] `od`: byte/word dumps with precise numeric formatting
+- [x] `strings`: extract printable strings from binaries
 
 **Process management**
 - [x] `ps`: process list
@@ -164,8 +183,8 @@ Everything from your system's PATH, categorised.
 - [ ] `script`: record terminal session
 
 **System info**
-- [ ] `uname`: system info
-- [ ] `hostname`: hostname
+- [x] `uname`: system info
+- [x] `hostname`: hostname
 - [ ] `hostnamectl`: systemd hostname management
 - [x] `uptime`: load/uptime
 - [ ] `free`: quick memory + swap usage
@@ -173,8 +192,8 @@ Everything from your system's PATH, categorised.
 - [ ] `lscpu`: CPU topology and virtualization flags
 - [ ] `lsmem`: memory layout/topology
 - [ ] `nproc`: number of available processing units
-- [ ] `date`: date/time
-- [ ] `cal`: calendar
+- [x] `date`: date/time
+- [x] `cal`: calendar
 - [x] `who`: logged in users
 - [x] `whoami`: current user
 - [x] `id`: user/group IDs
@@ -227,6 +246,7 @@ Everything from your system's PATH, categorised.
 - [ ] `socat`: bidirectional data relay, socket plumbing
 - [ ] `openssl s_client`: TLS connection debugging
 - [ ] `whois`: domain/IP registry lookup
+- [ ] `iperf3`: measure network throughput and diagnose path issues
 
 **File transfer / sync**
 - [x] `rsync`: serious file copy/sync
@@ -240,9 +260,14 @@ Everything from your system's PATH, categorised.
 - [x] `groupdel`: delete group
 - [x] `groupmod`: modify group
 - [x] `passwd`: change password
+- [ ] `chfn`: change a user's GECOS/full-name information
+- [ ] `chsh`: change a user's login shell
 - [x] `su`: switch user
 - [x] `sudo`: execute as root
 - [x] `visudo`: edit sudoers safely
+- [ ] `sudoedit`: edit root-owned files safely through sudo
+- [ ] `vipw`: safely edit `/etc/passwd` and related account files
+- [ ] `vigr`: safely edit `/etc/group` and related group files
 
 **Systemd**
 - [ ] `systemctl`: service/unit management
@@ -252,6 +277,9 @@ Everything from your system's PATH, categorised.
 - [ ] `localectl`: locale settings
 - [ ] `hostnamectl`: hostname (listed above too)
 - [ ] `coredumpctl`: manage core dumps
+- [ ] `shutdown`: schedule or trigger shutdown/reboot on modern systemd systems
+- [ ] `reboot`: trigger an immediate reboot
+- [ ] `poweroff`: power the system down immediately
 
 **Systemd practical extras**
 - [ ] `systemctl status`
@@ -268,8 +296,8 @@ Everything from your system's PATH, categorised.
 - [ ] `crontab`: cron job management
 
 **Package management**
-- [x] `dnf`: Fedora/RHEL package manager
-- [x] `rpm`: low-level rpm operations
+- [ ] `dnf`: Fedora/RHEL package manager
+- [ ] `rpm`: low-level rpm operations
 
 **Fedora/RHEL package tooling**
 - [ ] `dnf repoquery`: query packages/repos
@@ -331,7 +359,7 @@ Everything from your system's PATH, categorised.
 - [x] `/etc/sudoers`, `/etc/sudoers.d/`
 - [x] `/etc/fstab`
 - [x] `/etc/hosts`
-- [x] `/etc/resolv.conf`
+- [ ] `/etc/resolv.conf`
 - [x] `/etc/ssh/sshd_config`
 - [x] `/etc/systemd/system/`
 - [x] `/usr/lib/systemd/system/`
@@ -356,7 +384,7 @@ Everything from your system's PATH, categorised.
 - [ ] `eza`: modern `ls` replacement
 - [ ] `fzf`: fuzzy finder — transforms how you navigate
 - [ ] `fzf-tmux`: fzf inside tmux panes
-- [ ] `atuin`: much better shell history/search
+- [x] `atuin`: much better shell history/search
 - [ ] `zoxide`: smarter cd with frecency tracking
 - [ ] `delta`: beautiful git diffs, pairs with lazygit
 - [ ] `hyperfine`: benchmark commands properly
@@ -379,6 +407,10 @@ Everything from your system's PATH, categorised.
 - [ ] `flock`: prevent overlapping cron/systemd jobs with a lockfile
 - [ ] `parallel`: GNU parallel — run jobs in parallel properly
 
+**Repo hygiene / linting**
+- [ ] `pre-commit`: run the same local hooks as CI
+- [ ] `yamllint`: catch YAML syntax/structure/style issues
+
 **Ansible**
 - [ ] `ansible`: ad-hoc automation
 - [ ] `ansible-playbook`: run playbooks
@@ -392,7 +424,16 @@ Everything from your system's PATH, categorised.
 - [ ] `yq`: YAML equivalent of jq — critical for ansible debugging
 - [ ] `column`: (listed above) tabular formatting
 
+**Terraform / image build**
+- [ ] `terraform`: core workflow (`fmt`, `validate`, `plan`, `apply`, `output`, `state`, `console`, `import`)
+- [ ] `tflint`: lint Terraform and catch provider-specific mistakes
+- [ ] `packer`: build AMIs and other machine images
+
 **Infrastructure debugging**
+- [ ] `iostat`: CPU and disk I/O trends (sysstat)
+- [ ] `mpstat`: per-CPU usage and steal time (sysstat)
+- [ ] `pidstat`: per-process CPU, memory, and I/O (sysstat)
+- [ ] `sar`: historical system activity from sysstat
 - [ ] `lsof`: what has this file/port/socket open
 - [ ] `lsfd`: modern file descriptor/socket inspection
 - [ ] fuser
@@ -501,10 +542,25 @@ Everything from your system's PATH, categorised.
 - [ ] `age`: modern file encryption
 - [ ] `sops`: encrypted config/secrets, often with age/KMS
 
+**Databases / cache**
+- [ ] `psql`: PostgreSQL shell for inspection and admin
+- [ ] `pg_isready`: fast PostgreSQL readiness/connectivity check
+- [ ] `pg_dump`: logical backup of a PostgreSQL database
+- [ ] `pg_restore`: restore `pg_dump` custom/directory backups
+- [ ] `pg_dumpall`: dump all PostgreSQL databases plus global objects like roles
+- [ ] `createdb`: create a PostgreSQL database from the CLI
+- [ ] `createuser`: create PostgreSQL roles/users from the CLI
+- [ ] `vacuumdb`: run vacuum/analyze/maintenance without opening `psql`
+- [ ] `reindexdb`: rebuild indexes when debugging corruption or bloat issues
+- [ ] `mysql`: MySQL/MariaDB shell for inspection and admin
+- [ ] `mysqldump`: logical backup of a MySQL/MariaDB database
+- [ ] `mysqladmin`: quick admin/status operations without opening the full shell
+- [ ] `redis-cli`: Redis inspection and debugging
+
 **Backup/recovery (your ReaR + restic stack)**
 - [ ] `rear`: Relax-and-Recover — bare metal DR
 - [ ] `restic`: deduplicated encrypted backups
-- [ ] `rsync`: file sync (also listed in tier 1)
+- [x] `rsync`: file sync (also listed in tier 1)
 
 **Samba/CIFS (law firm Windows interop)**
 - [ ] `smbclient`: SMB file access
@@ -561,18 +617,58 @@ Everything from your system's PATH, categorised.
 **Logs**
 - [ ] `logrotate`: rotate logs
 - [ ] `logger`: write message to syslog/journal
+- [ ] `lnav`: interactive log viewer for mixed log files and timestamps
 
 **Cloud CLIs**
 - [ ] `aws`: AWS CLI
 - [ ] `aws-vault`: safer AWS credential handling
-- [ ] `gcloud`: Google Cloud CLI
-- [ ] `az`: Azure CLI
+- [x] `gcloud`: Google Cloud CLI
+- [x] `az`: Azure CLI
+
+**Terminal mail**
+- [ ] `mutt`: text-based mail client when staying in the terminal is faster than context-switching to a browser
+- [ ] `mail`: minimal text-based mail client for simple send/read flows
+- [ ] `mailq`: inspect the local outgoing mail queue
+
+**AWS practical workflows**
+- [ ] `aws sts get-caller-identity`: fastest identity/account sanity check
+- [ ] `aws sso login`: authenticate with AWS IAM Identity Center / SSO
+- [ ] `aws configure sso`: initial SSO profile setup
+- [ ] `aws configure list-profiles`: list configured AWS profiles
+- [ ] `aws s3 ls`: quick bucket/object listing sanity checks
+- [ ] `aws s3 cp`: ad hoc uploads/downloads and one-off copies
+- [ ] `aws s3 sync`: sync directories to or from S3 safely
+- [ ] `aws ssm start-session`: shell access without SSH bastions/keys
+- [ ] `aws ssm send-command`: run remote commands through SSM
+- [ ] `aws logs tail`: follow CloudWatch logs from the CLI
+- [ ] `aws ecr get-login-password`: authenticate to ECR
+- [ ] `aws ecr describe-images`: inspect pushed image tags and digests
+- [ ] `aws ec2 describe-instances`: inspect EC2 state and metadata
+- [ ] `aws ec2 describe-security-groups`: inspect firewall rules and attached groups
+- [ ] `aws ec2 describe-network-interfaces`: inspect ENIs, private IPs, and attachments
+- [ ] `aws rds describe-db-instances`: inspect RDS instance state and endpoints
+- [ ] `aws route53 list-resource-record-sets`: inspect DNS records
+- [ ] `aws acm list-certificates`: inspect certificate inventory
+- [ ] `aws elbv2 describe-target-health`: debug target group health
+- [ ] `aws elbv2 describe-listeners`: inspect listener ports, certificates, and actions
+- [ ] `aws elbv2 describe-rules`: inspect listener rules and routing conditions
+- [ ] `aws cloudfront create-invalidation`: flush cached objects after deploys
+- [ ] `aws autoscaling describe-auto-scaling-groups`: inspect autoscaling state
+- [ ] `aws secretsmanager get-secret-value`: inspect secret values/versions
+- [ ] `aws kms decrypt`: debug KMS-backed secret workflows
+
+**ECS / Fargate (if used)**
+- [ ] `aws ecs update-service`: deploy or roll a service
+- [ ] `aws ecs describe-services`: inspect service state/events
+- [ ] `aws ecs execute-command`: shell/command into a running task
+- [ ] `aws ecs list-tasks`: enumerate running/stopped tasks
+- [ ] `aws ecs describe-tasks`: inspect task state and failures
 
 **Language/runtime tooling**
-- [x] `python3`: Python interpreter
-- [x] `pip`: Python package installer
-- [x] `pipx`: install Python CLI apps cleanly
-- [x] `venv`: Python virtual environments
+- [ ] `python3`: Python interpreter
+- [ ] `pip`: Python package installer
+- [ ] `pipx`: install Python CLI apps cleanly
+- [ ] `venv`: Python virtual environments
 - [x] `node`: JavaScript runtime
 - [x] `npm`: Node package manager
 - [x] `go`: Go toolchain
@@ -597,8 +693,15 @@ Everything from your system's PATH, categorised.
 
 ## TIER 3: Good to know exist, learn when needed
 
+**Shell / legacy scripting**
+- [ ] `expr`: legacy arithmetic/string evaluator you still see in older shell scripts
+
+**CLI calculators**
+- [ ] `bc`: arbitrary-precision calculator for shell math, unit conversions, and quick ops arithmetic
+- [ ] `dc`: reverse-polish stack calculator; mostly worth recognizing rather than prioritizing
+
 **Text/doc conversion**
-- [ ] `pandoc`: universal doc converter — markdown to PDF, docx, etc.
+- [x] `pandoc`: universal doc converter — markdown to PDF, docx, etc.
 - [ ] `img2pdf`: images to PDF
 - [ ] `ocrmypdf`: OCR + PDF optimization — useful for law firm doc scanning
 - [ ] `tesseract`: OCR engine behind ocrmypdf
@@ -606,6 +709,14 @@ Everything from your system's PATH, categorised.
 - [ ] `unix2dos`: create Windows line endings
 - [ ] `iconv`: character encoding conversion
 - [ ] `uchardet`: detect character encoding
+
+**Spell checking / writing**
+- [ ] `aspell`: interactive CLI spell checker for prose, notes, and Markdown
+- [ ] `hunspell`: dictionary-based spell checker used by many editors and language packs
+- [ ] `codespell`: catch common misspellings in code, docs, and config files
+- [ ] `typos`: fast repo-wide spell checker for source, filenames, and CI
+- [ ] `vale`: prose/style linter for Markdown and documentation
+- [ ] `look`: prefix lookup in sorted word lists/dictionaries; handy, but much lower priority than actual spell checkers
 
 **Network situational**
 - [ ] `bridge`: bridge management
@@ -639,6 +750,7 @@ Everything from your system's PATH, categorised.
 
 **Mail/server notifications**
 - [ ] `mailx`: send/read simple mail
+- [ ] `swaks`: scriptable SMTP test client for mail delivery debugging
 - [ ] `sendmail`: sendmail-compatible interface
 - [ ] `postqueue`: inspect Postfix queue
 - [ ] `postfix`: Postfix control
@@ -676,6 +788,7 @@ Everything from your system's PATH, categorised.
 - [ ] `setquota`: set quota non-interactively
 
 **Misc useful**
+- [ ] `chafa`: render images in the terminal; handy for quickly inspecting screenshots without leaving the shell
 - [ ] `cloc`: count lines of code
 - [ ] `croc`: simple encrypted file transfer between machines
 - [ ] `jrnl`: simple personal diary app
@@ -687,7 +800,6 @@ Everything from your system's PATH, categorised.
 - [ ] `ollama`: local LLM inference (your GPU passthrough setup)
 - [ ] `yt-dlp`: video downloader
 - [ ] `rclone`: cloud storage sync (S3, etc.)
-- [ ] `terraform`: infrastructure as code (your stack)
 - [ ] `terraform-docs`: generate docs for Terraform modules
 - [ ] `terraform-ls`: terraform language server
 - [ ] `tfsec`: Terraform static security scanning
