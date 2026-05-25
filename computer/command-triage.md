@@ -15,7 +15,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `info`: GNU manuals when `man` is thin
 
 **Shell basics**
-- [ ] `bash`: your shell            
+- [x] `bash`: your shell            
 - [ ] `zsh`: alternative shell (fish also listed) (learn lne editing here)
 - [x] `fish`: friendly interactive shell
 - [x] `cd`: change directory
@@ -94,12 +94,12 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `comm`: compare sorted files line by line
 - [x] `paste`: merge lines side by side
 - [x] `join`: join sorted text files on a shared field
-- [ ] `column`: format into columns
-- [ ] `numfmt`: convert numbers to/from human-readable units
+- [x] `column`: format into columns
+- [x] `numfmt`: convert numbers to/from human-readable units
 - [x] `fold`: wrap lines
 - [x] `fmt`: simple text formatter
-- [ ] `expand`: tabs to spaces
-- [ ] `unexpand`: spaces to tabs
+- [x] `expand`: tabs to spaces
+- [x] `unexpand`: spaces to tabs
 - [x] `cmp`
 - [x] `shuf`
 - [x] `rev`: reverse lines
@@ -120,8 +120,8 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `basename`: strip directory from path
 - [x] `dirname`: strip filename from path
 - [x] `mktemp`: create temp file/dir
-- [ ] `split`: split a file into smaller chunks
-- [ ] `truncate`: shrink or extend a file to a specific size
+- [x] `split`: split a file into smaller chunks
+- [x] `truncate`: shrink or extend a file to a specific size
 - [x] `install`: copy with permissions
 - [x] `link`: create hard link
 - [x] `unlink`: remove single file
@@ -173,21 +173,21 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `wait`: wait for background jobs
 - [x] `nice`: set priority
 - [x] `renice`: change priority
-- [ ] `timeout`: run with time limit
+- [x] `timeout`: run with time limit
 
 **Terminal / TTY**
-- [ ] `stty`: terminal line settings
-- [ ] `tty`: print current terminal device
-- [ ] `reset`: reset broken terminal
+- [x] `stty`: terminal line settings
+- [x] `tty`: print current terminal device
+- [x] `reset`: reset broken terminal
 - [x] `clear`: clear terminal screen
-- [ ] `script`: record terminal session
+- [x] `script`: record terminal session
 
 **System info**
 - [x] `uname`: system info
 - [x] `hostname`: hostname
 - [ ] `hostnamectl`: systemd hostname management
 - [x] `uptime`: load/uptime
-- [ ] `free`: quick memory + swap usage
+- [x] `free`: quick memory + swap usage
 - [ ] `vmstat`: fast CPU, memory, I/O, and run queue snapshot
 - [ ] `lscpu`: CPU topology and virtualization flags
 - [ ] `lsmem`: memory layout/topology
@@ -205,9 +205,9 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `last`: login history
 - [x] `lastlog`: last login per user
 - [x] `w`: logged-in users + what they are doing
-- [ ] `logname`: original login name
-- [ ] `newgrp`: switch current group
-- [ ] `chage`: password ageing
+- [x] `logname`: original login name
+- [x] `newgrp`: switch current group
+- [x] `chage`: password ageing
 - [ ] `getent`: query passwd/group/hosts/services via NSS
 
 **Disk/filesystem**
@@ -215,12 +215,12 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `du`: disk usage
 - [x] `mount`: mount filesystems
 - [x] `umount`: unmount
-- [ ] `mountpoint`: check whether a path is a mountpoint
+- [x] `mountpoint`: check whether a path is a mountpoint
 - [x] `lsblk`: block device list
 - [x] `blkid`: filesystem UUIDs/types
 - [x] `findmnt`: show mount tree
-- [ ] `swapon`: enable/list swap devices
-- [ ] `swapoff`: disable swap devices
+- [x] `swapon`: enable/list swap devices
+- [x] `swapoff`: disable swap devices
 - [x] `sync`: flush writes
 
 **Networking core**
@@ -231,7 +231,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `tracepath`: similar, no root needed
 - [x] `dig`: DNS lookup
 - [x] `nslookup`: older DNS lookup
-- [x] `host`: simple DNS lookup
+- [x] `host`: simple D￼￼￼￼￼ ￼￼pg_restore￼￼: restore ￼￼pg_dump￼￼ custom/directory backupsNS lookup
 - [ ] `curl`: HTTP client
 - [x] `wget`: download files
 
@@ -261,13 +261,13 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `groupmod`: modify group
 - [x] `passwd`: change password
 - [ ] `chfn`: change a user's GECOS/full-name information
-- [ ] `chsh`: change a user's login shell
+- [x] `chsh`: change a user's login shell
 - [x] `su`: switch user
 - [x] `sudo`: execute as root
 - [x] `visudo`: edit sudoers safely
-- [ ] `sudoedit`: edit root-owned files safely through sudo
-- [ ] `vipw`: safely edit `/etc/passwd` and related account files
-- [ ] `vigr`: safely edit `/etc/group` and related group files
+- [x] `sudoedit`: edit root-owned files safely through sudo
+- [x] `vipw`: safely edit `/etc/passwd` and related account files
+- [x] `vigr`: safely edit `/etc/group` and related group files
 
 **Systemd**
 - [ ] `systemctl`: service/unit management
@@ -293,7 +293,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `journalctl -f`
 
 **Cron / scheduling**
-- [ ] `crontab`: cron job management
+- [x] `crontab`: cron job management
 
 **Package management**
 - [ ] `dnf`: Fedora/RHEL package manager
@@ -401,8 +401,8 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `tree`: directory tree view
 
 **Shell scripting quality**
-- [ ] `shellcheck`: static analysis for shell scripts — catches real bugs
-- [ ] `shfmt`: shell script formatter (use with conform.nvim)
+- [x] `shellcheck`: static analysis for shell scripts — catches real bugs
+- [x] `shfmt`: shell script formatter (use with conform.nvim)
 - [ ] `envsubst`: substitute env vars in templates — handy for deploy scripts
 - [ ] `flock`: prevent overlapping cron/systemd jobs with a lockfile
 - [ ] `parallel`: GNU parallel — run jobs in parallel properly
@@ -422,7 +422,6 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Data wrangling**
 - [ ] `jq`: JSON query/transform — essential for API work, terraform state
 - [ ] `yq`: YAML equivalent of jq — critical for ansible debugging
-- [ ] `column`: (listed above) tabular formatting
 
 **Terraform / image build**
 - [ ] `terraform`: core workflow (`fmt`, `validate`, `plan`, `apply`, `output`, `state`, `console`, `import`)
@@ -461,13 +460,8 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `wipefs`: clear filesystem signatures before repurposing disks
 - [ ] `blkdiscard`: TRIM/discard entire block device
 - [ ] `fstrim`: periodic TRIM for SSDs
-- [ ] `resize2fs`: resize ext filesystems
-- [ ] `xfs_growfs`: grow XFS filesystem
-- [ ] `xfs_repair`: repair XFS
-- [ ] `xfs_info`: XFS filesystem info
+- [ ] `resize2fs`: resize ext **filesystems**
 - [ ] `btrfs`: btrfs management (if you use it on Fedora)
-- [ ] `e2fsck`: ext filesystem check
-- [ ] `dumpe2fs`: ext filesystem info
 - [ ] `dd`: block copy (careful with this one)
 - [ ] `losetup`: loop device management
 
@@ -676,9 +670,9 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Build / compile basics**
 - [x] `make`: build automation
 - [x] `gcc`: C compiler
-- [x] `ldd`: show shared library dependencies
-- [x] `ldconfig`: configure dynamic linker cache
-- [x] `pkg-config`: compiler/linker flags for libraries
+- [ ] `ldd`: show shared library dependencies
+- [ ] `ldconfig`: configure dynamic linker cache
+- [ ] `pkg-config`: compiler/linker flags for libraries
 
 **Misc high-value**
 - [x] `tmux`: terminal multiplexer
@@ -742,11 +736,11 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `udevadm`: inspect devices and udev events/rules
 
 **Cron / scheduling**
-- [ ] `anacron`: run missed cron jobs
-- [ ] `at`: one-shot scheduled command
-- [ ] `atq`: list at queue
-- [ ] `atrm`: remove at job
-- [ ] `batch`: run when load is low
+- [x] `anacron`: run missed cron jobs
+- [x] `at`: one-shot scheduled command
+- [x] `atq`: list at queue
+- [x] `atrm`: remove at job
+- [x] `batch`: run when load is low
 
 **Mail/server notifications**
 - [ ] `mailx`: send/read simple mail

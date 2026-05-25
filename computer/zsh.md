@@ -1,151 +1,139 @@
-
-
-## Completion
-
-| Key | Widget | Action |
-|-----|--------|--------|
-| `TAB` | `expand-or-complete` | Complete |
-| `M-^D` | `list-choices` | List completions |
-
-## Misc
-
-| Key    | Widget              | Action                              |
-| ------ | ------------------- | ----------------------------------- |
-| `^L`   | `clear-screen`      | Clear screen                        |
-| `^G`   | `send-break`        | Abort                               |
-| `^V`   | `quoted-insert`     | Insert next char literally          |
-| `^X^E` | `edit-command-line` | Edit in $EDITOR (requires autoload) |
-
-`^` = Ctrl, `M-` = Alt (or Esc prefix)
-
 ## Learning Checklist
 
-Use zsh as the interactive shell and Bash as the scripting shell. For now, only learn zsh for interactive use: completion, prompt, history, line editing, navigation, globbing, and `.zshrc`. Skip generic shell grammar unless zsh behaves differently.
+### Stance
 
-For scripts, prefer `#!/usr/bin/env bash` and Bash/POSIX habits over zsh-specific syntax. Zsh knowledge is mainly for the command line and `.zshrc`.
+Use zsh as the interactive shell and Bash as the scripting shell.
 
-### What to actually learn
+- Learn zsh where it is zsh-only or materially different from Bash: startup files, options, completion, prompt, history, line editing, navigation, globbing/expansion, and `.zshrc`.
+- Do not learn zsh as a scripting language for now.
+- For scripts, prefer `#!/usr/bin/env bash` and Bash/POSIX habits.
+- Read the zsh manual as a delta from Bash, not as a second shell-programming manual.
+- Treat "zsh-only" and "worth learning now" as different filters: some zsh-only systems are niche.
 
-Learn zsh as an interactive command-line UI, not as a scripting language. Also know what the cool stuff is, so it is available when a command-line annoyance appears.
+### Reading filter
 
-Interactive core:
+- Learn now: zsh-only or zsh-different behaviour that affects daily interactive use.
+- Notice/reference: zsh-only features that are powerful but only needed when customising `.zshrc` deeply.
+- Skim/skip: generic shell grammar and scripting concepts already covered by Bash.
+- Ignore for now: obsolete, niche, or documentation-administration material.
 
-- [ ] `5.1 Startup/Shutdown Files` - know which file does what; mostly put interactive config in `.zshrc`.
-- [x] `16 Options` - learn options that change interactive behaviour, especially globbing, completion, history, and Bash-compat surprises.
-- [ ] `18 Zsh Line Editor` - command-line editing, widgets, keybindings, vi/emacs mode, `bindkey`, `edit-command-line`.
-- [ ] `19 Completion Widgets`
-- [ ] `20 Completion System` - `compinit`, completion styles, matchers, menus, and completion function locations.
-- [ ] `13 Prompt Expansion` - enough to customise prompts or understand prompt frameworks.
-- [ ] `14 Expansion` - only enough to understand interactive expansion surprises.
-- [ ] `26.3 Remembering Recent Directories` - useful for faster navigation.
+### Learn now - interactive core
 
-Cool stuff to know exists, excluding items already in the interactive core list:
+- [ ] `5.1 Startup/Shutdown Files` - know where config belongs; keep `.zshenv` minimal and put interactive config in `.zshrc`.
+- [x] `16 Options` - behaviour toggles for globbing, completion, history, and Bash-compat surprises.
+- [ ] `18 Zsh Line Editor` - ZLE, widgets, keybindings, vi/emacs mode, `bindkey`, `edit-command-line`.
+- [ ] `19 Completion Widgets` - how completion behaves at the prompt.
+- [ ] `20 Completion System` - `compinit`, styles, matchers, menus, and completion function locations.
+- [ ] `13 Prompt Expansion` - zsh prompt `%` escapes; enough to customise prompts or understand prompt frameworks.
+- [ ] `14 Expansion` - interactive parts: history expansion, filename generation, glob operators, recursive globbing, glob qualifiers, named directories, `=` expansion, and expansion surprises.
+- [ ] `15 Parameters` - only zsh differences that appear in config: arrays, subscripts, special parameters, tied parameters like `PATH`/`path`, and `FPATH`/`fpath`.
+- [ ] `26.3 Remembering Recent Directories` - faster directory navigation.
 
-- [ ] `14.8.7 Glob Qualifiers` - filter matches by file type, size, age, permissions, etc.
-- [ ] `14.8.6 Recursive Globbing` - use `**` patterns for tree-wide matches.
-- [ ] `14.8.5 Approximate Matching` - tolerate typos in glob/completion matches.
-- [ ] `14.7.1 Dynamic named directories`
-- [ ] `14.7.2 Static named directories` - shortcuts for important paths.
-- [ ] `14.7.3 '=' expansion` - expand command names to their full path.
-- [ ] `14.3.1 Parameter Expansion Flags` - powerful transformations at the prompt; do not build scripts around them for now.
-- [ ] `7.2 Multios` - redirect output to multiple places.
-- [ ] `18.4 User-Defined Widgets` - custom interactive commands bound to keys.
-- [ ] `26.5 Gathering information from version control systems` - only if building your own prompt.
-- [ ] `26.6 Prompt Themes` - only if building your own prompt.
+### Zsh-only / zsh-different feature map
 
-Main Bash-to-zsh differences to watch for:
+These are bookmarks for zsh-specific features, not a second reading pass. If the parent chapter is already in the interactive core list, treat the subsection as something to notice while reading that chapter.
 
+Config/loading:
+
+- `5.2 Files` - reference for zsh support/config files once `.zshrc` grows.
+- `9.1 Autoloading Functions` - how zsh loads functions from `$fpath`, including completion functions.
+- `20.8 Completion Directories` - where zsh completion functions live.
+- `17 Shell Builtin Commands` - reference for zsh config builtins such as `setopt`, `autoload`, `zstyle`, `bindkey`, and `emulate`.
+- `22 Zsh Modules` - loadable features; use only when a plugin/function asks for one.
+
+Command-line syntax and aliases:
+
+- `6.2 Precommand Modifiers` - `noglob` to disable globbing for one command.
+- `6.4 Alternate Forms For Complex Commands` - zsh shorthand syntax; recognise, do not adopt for scripts.
+- `6.8.1 Alias difficulties` - alias expansion happens early; use functions when aliases get weird.
+
+Redirection extras:
+
+- `7.1 Opening file descriptors using parameters` - zsh-specific fd allocation style.
+- `7.2 Multios` - redirect output to multiple places.
+- `7.3 Redirections with no command` - zsh-specific shorthand; reference only.
+
+Expansion/globbing:
+
+- `14.2 Process Substitution` - Bash has `<(...)`; zsh also has `=(...)` when a command needs a real temporary file.
+- `14.3.1 Parameter Expansion Flags` - powerful string/list transformations, especially in prompts and config.
+- `14.7.1 Dynamic named directories` - directory shortcuts generated dynamically.
+- `14.7.2 Static named directories` - named path shortcuts.
+- `14.7.3 '=' expansion` - expand command names to their full path.
+- `14.8.1 Glob Operators` - zsh glob syntax, especially with `EXTENDED_GLOB`.
+- `14.8.2 ksh-like Glob Operators` - recognise if `KSH_GLOB` is enabled; do not use as default style.
+- `14.8.4 Globbing Flags` - per-pattern flags such as case-insensitive matching.
+- `14.8.5 Approximate Matching` - tolerate typos in glob/completion matches.
+- `14.8.6 Recursive Globbing` - recursive matching with patterns like `**/`.
+- `14.8.7 Glob Qualifiers` - filter matches by file type, size, age, permissions, etc.
+
+Parameters:
+
+- `15.2 Array Parameters` - zsh array and subscript rules that differ from Bash.
+- `15.5 Parameters Set By The Shell` - special parameters useful in prompts and config.
+- `15.6 Parameters Used By The Shell` - shell-controlled parameters such as `path`, `fpath`, and history/prompt variables.
+
+Prompt, completion, and line editor:
+
+- `18.5 User-Defined Widgets` - custom interactive commands bound to keys.
+- `18.7 Character Highlighting` - highlight text in the line editor.
+- `26.4 Abbreviated dynamic references to directories` - more directory-navigation shortcuts.
+- `26.5 Gathering information from version control systems` - useful when building your own prompt.
+- `26.6 Prompt Themes` - useful if not using an external prompt tool.
+- `26.7 ZLE Functions` - packaged helper functions for the line editor.
+
+### Bash-to-zsh gotchas
+
+- `.zshenv` is sourced very broadly; do not put slow or interactive-only setup there.
+- Prompt syntax is zsh `%` escapes, not Bash `PS1` backslash escapes.
 - Zsh arrays are 1-indexed by default.
 - Zsh does not do Bash-style word splitting by default.
 - Unmatched globs error by default via `NOMATCH`.
+- Use glob qualifiers like `(N)` or options like `NULL_GLOB` intentionally; do not assume Bash's unmatched-glob behaviour.
 - Zsh has much richer globbing; use it interactively, avoid it in scripts.
-- Aliases can be weird because expansion happens early.
+- Aliases can be weird because expansion happens early; see `6.8.1 Alias difficulties` if this bites.
 - `$path` and `$PATH` are tied; zsh has array versions of some colon-separated variables.
+- `$fpath` controls where autoloaded functions and completion functions are found.
 - Completion is a whole system, not just a Bash-style add-on.
 
-Skip unless needed:
+### Skim or skip - Bash covers this
 
-- Full shell grammar.
-- Command execution model.
-- Job control basics.
-- Arithmetic.
-- Most builtins.
-- Restricted shell.
-- `compctl`.
-- Zsh as a scripting language.
+These are useful shell concepts, but not worth relearning through zsh while Bash is the scripting target.
 
-### Bash already covers this - skim/skip for zsh
+- [ ] `4.1 Invocation` - skim only for zsh-only flags.
+- [ ] `4.3 Restricted Shell`
+- [ ] `6 Shell Grammar` - simple commands, lists, pipelines, compound commands, loops, conditionals, functions; only read zsh extras listed above.
+- [ ] `7 Redirection` - skip the basics; only read zsh extras listed above.
+- [ ] `8 Command Execution` - expansion, command lookup, environment, status, traps/signals.
+- [ ] `9 Functions` - skip general function syntax until writing non-trivial `.zshrc` helpers; see `9.1` above for autoloading.
+- [ ] `10 Jobs & Signals` - same interactive job-control basics.
+- [ ] `11 Arithmetic Evaluation`
+- [ ] `12 Conditional Expressions`
 
-These map closely onto Bash scripting knowledge. Since Bash is the scripting target, don't spend much zsh time here except to notice interactive differences.
+### Optional later - zsh-specific but not daily
 
-- [ ] `4.1 Invocation` - same job as Bash invocation; skim for zsh-only flags.
-- [ ] `4.3 Restricted Shell` - same concept as Bash restricted shell.
-- [ ] `6 Shell Grammar` - mostly the same grammar: simple commands, lists, pipelines, compound commands, loops, conditionals, functions.
-- [ ] `7 Redirection` - same baseline redirection model: `<`, `>`, `>>`, `2>`, descriptor duplication, here-docs, here-strings.
-- [ ] `8 Command Execution` - same broad model: expansion, command lookup, environment, status, traps/signals.
-- [ ] `9 Functions` - same basic function idea; read only the zsh-specific subsections below.
-- [ ] `10 Jobs & Signals` - same interactive job-control concepts: jobs, foreground/background, signals.
-- [ ] `11 Arithmetic Evaluation` - same shell arithmetic role.
-- [ ] `12 Conditional Expressions` - same `[[ ... ]]` style tests with zsh-specific operators worth skimming.
-- [ ] `17 Shell Builtin Commands` - many familiar builtins; use as reference, not cover-to-cover reading.
-
-### Learn for interactive zsh
-
-These are either zsh-specific, substantially richer in zsh, or common sources of Bash-to-zsh surprises at the interactive prompt.
-
-- [ ] `4.2 Compatibility` - which Bash/sh/ksh behaviours zsh emulates and where it does not.
-- [ ] `5.1 Startup/Shutdown Files` - `.zshenv`, `.zprofile`, `.zshrc`, `.zlogin`, `.zlogout` differ from Bash startup files.
-- [ ] `5.2 Files` - reference for zsh's config and support files.
-- [ ] `6.2 Precommand Modifiers` - `noglob`, `exec`, `command`, `builtin`, etc.
-- [ ] `6.4 Alternate Forms For Complex Commands` - zsh's extra shorthand forms.
-- [ ] `6.8.1 Alias difficulties` - aliases expand early and can surprise you.
-- [ ] `7.1 Opening file descriptors using parameters`
-- [ ] `7.2 Multios` - zsh can redirect one stream to multiple files/processes.
-- [ ] `7.3 Redirections with no command`
+- [ ] `4.2 Compatibility` - Bash/sh/ksh emulation and divergences.
 - [ ] `9.2 Anonymous Functions`
 - [ ] `9.3 Special Functions`
-- [ ] `13 Prompt Expansion` - zsh prompt escapes and conditional prompt syntax.
-- [ ] `14 Expansion` - high-value section; zsh expansion differs a lot from Bash.
-- [ ] `14.3.1 Parameter Expansion Flags`
-- [ ] `14.7.1 Dynamic named directories`
-- [ ] `14.7.2 Static named directories`
-- [ ] `14.7.3 '=' expansion`
-- [ ] `14.8.5 Approximate Matching`
-- [ ] `14.8.6 Recursive Globbing`
-- [ ] `14.8.7 Glob Qualifiers`
-- [ ] `15 Parameters` - zsh parameter attributes, arrays, tied parameters.
-- [ ] `15.2 Array Parameters` - zsh arrays are 1-indexed by default; this is a Bash difference worth learning.
-- [ ] `16 Options` - zsh behaviour is option-heavy; many Bash-like behaviours are toggles.
-- [ ] `16.3 Option Aliases`
-- [ ] `16.4 Single Letter Options`
-- [ ] `18 Zsh Line Editor` - zle replaces Bash/readline as the main editing model.
-- [ ] `18.7 Character Highlighting`
-- [ ] `19 Completion Widgets`
-- [ ] `20 Completion System` - modern zsh completion: `compinit`, styles, matchers, functions.
-- [ ] `20.8 Completion Directories`
-- [ ] `22 Zsh Modules` - only as needed.
 - [ ] `26.2 Utilities`
-- [ ] `26.3 Remembering Recent Directories`
-- [ ] `26.4 Abbreviated dynamic references to directories`
-- [ ] `26.5 Gathering information from version control systems`
-- [ ] `26.6 Prompt Themes`
-- [ ] `26.7 ZLE Functions`
 - [ ] `26.8 Exception Handling`
 - [ ] `26.9 MIME Functions`
 - [ ] `26.10 Mathematical Functions`
 - [ ] `26.11 User Configuration Functions`
 - [ ] `26.12 Other Functions`
 
-### Lazy learn - mostly legacy / niche in 2026
+### Legacy / niche
 
-- `compctl` is here because modern zsh completion is built around `compinit` + the compsys framework (`20 Completion System`). `compctl` still exists, but it is the older interface and most current configs, examples, and third-party completion definitions assume compsys instead.
+- `compctl` is here because modern zsh completion is built around `compinit` + the compsys framework (`20 Completion System`). `compctl` still exists, but it is the older interface.
 
 - [ ] `21 Completion Using compctl`
 - [ ] `23 Calendar Function System`
 - [ ] `24 TCP Function System`
 - [ ] `25 Zftp Function System`
 
-### Don't learn
+### Don't read cover-to-cover
+
+Manual front matter and indexes are lookup tools, not learning targets.
 
 - [ ] `1 The Z Shell Manual`
 - [ ] `1.1 Producing documentation from zsh.texi`
