@@ -1,4 +1,4 @@
-#ai-written 
+***#ai-written 
 # Command Triage: What to Learn vs Ignore
 
 Everything from your system's PATH, categorised.
@@ -45,10 +45,12 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 - [x] `false`: exit 1
 - [x] `yes`: repeat string forever
+- [ ] `sleep`: delay for a fixed duration
 - [x] `seq`: generate numeric sequences for loops, filenames, and quick test data
 
 **Shell language / builtins**
 - [x] `type`: show whether something is a shell builtin, alias, function, or binary
+- [ ] `which`: locate a command in `PATH`; prefer `type` for shell-aware lookup
 - [x] `help`: shell builtin docs
 - [x] `command`: run command bypassing shell functions/aliases
 - [x] `builtin`: run shell builtin explicitly
@@ -88,8 +90,10 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `cut`: extract fields
 - [x] `tr`: translate/delete characters
 - [x] `tee`: split stdout to file + pipe
+- [ ] `stdbuf`: adjust stdio buffering in pipelines
 - [x] `xargs`: build commands from stdin
 - [x] `diff`: compare files
+- [ ] `sdiff`: side-by-side diff
 - [x] `patch`: apply diffs
 - [x] `comm`: compare sorted files line by line
 - [x] `paste`: merge lines side by side
@@ -120,11 +124,14 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `basename`: strip directory from path
 - [x] `dirname`: strip filename from path
 - [x] `mktemp`: create temp file/dir
+- [ ] `mkfifo`: create named pipes
 - [x] `split`: split a file into smaller chunks
 - [x] `truncate`: shrink or extend a file to a specific size
 - [x] `install`: copy with permissions
 - [x] `link`: create hard link
 - [x] `unlink`: remove single file
+- [ ] `chattr`: change Linux extended file attributes
+- [ ] `lsattr`: list Linux extended file attributes
 
 **Permissions / identity / access**
 - [x] `umask`: default permissions for newly created files
@@ -134,16 +141,21 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `capsh`: inspect Linux capabilities
 - [x] `getcap`: view file capabilities
 - [x] `setcap`: set file capabilities
+- [ ] `runuser`: run command as another user, often from root scripts
 
 **Archiving/compression**
-- [x] `tar`: tape archive (tar czf, tar xzf)
+- [ ] `tar`: tape archive (tar czf, tar xzf)
 - [x] `gzip`: gzip compression
 - [x] `gunzip`: decompress gzip
 - [x] `zcat`: cat compressed files
-- [x] `bzip2`: bzip2 compression
-- [x] `xz`: xz compression
-- [x] `zip`: create zip archives
-- [x] `unzip`: extract zip archives
+- [ ] `bzip2`: bzip2 compression
+- [ ] `xz`: xz compression
+- [ ] `zip`: create zip archives
+- [ ] `unzip`: extract zip archives
+- [ ] `zstd`: modern fast compression
+- [ ] `zstdcat`: stream decompressed zstd data
+- [ ] `zipinfo`: inspect zip archive contents/metadata
+- [ ] `7z`: handle 7-Zip and many archive formats
 
 **Checksums / encoding / binary inspection**
 - [x] `sha256sum`: verify file hash
@@ -171,6 +183,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `jobs`: list shell jobs
 - [x] `nohup`: survive logout
 - [x] `wait`: wait for background jobs
+- [ ] `setsid`: run a command in a new session
 - [x] `nice`: set priority
 - [x] `renice`: change priority
 - [x] `timeout`: run with time limit
@@ -185,14 +198,17 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **System info**
 - [x] `uname`: system info
 - [x] `hostname`: hostname
-- [ ] `hostnamectl`: systemd hostname management
 - [x] `uptime`: load/uptime
 - [x] `free`: quick memory + swap usage
-- [ ] `vmstat`: fast CPU, memory, I/O, and run queue snapshot
-- [ ] `lscpu`: CPU topology and virtualization flags
-- [ ] `lsmem`: memory layout/topology
-- [ ] `nproc`: number of available processing units
+- [x] `vmstat`: fast CPU, memory, I/O, and run queue snapshot
+- [x] `lscpu`: CPU topology and virtualization flags
+- [x] `lsmem`: memory layout/topology
+- [ ] `lsmod`: list loaded kernel modules
+- [ ] `modprobe`: load/unload kernel modules with dependency handling
+- [ ] `modinfo`: inspect kernel module metadata
+- [x] `nproc`: number of available processing units
 - [x] `date`: date/time
+- [ ] `hwclock`: inspect/set hardware clock
 - [x] `cal`: calendar
 - [x] `who`: logged in users
 - [x] `whoami`: current user
@@ -219,8 +235,13 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `lsblk`: block device list
 - [x] `blkid`: filesystem UUIDs/types
 - [x] `findmnt`: show mount tree
+- [ ] `fdisk`: classic disk partition editor
+- [ ] `parted`: partition editor, especially for GPT workflows
+- [ ] `mkfs`: create filesystems
+- [ ] `fsck`: check/repair filesystems
 - [x] `swapon`: enable/list swap devices
 - [x] `swapoff`: disable swap devices
+- [ ] `mkswap`: initialise swap space
 - [x] `sync`: flush writes
 
 **Networking core**
@@ -247,6 +268,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `openssl s_client`: TLS connection debugging
 - [ ] `whois`: domain/IP registry lookup
 - [ ] `iperf3`: measure network throughput and diagnose path issues
+- [ ] `nmcli`: NetworkManager CLI
 
 **File transfer / sync**
 - [x] `rsync`: serious file copy/sync
@@ -310,10 +332,15 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Git**
 - [ ] `git`: version control
 - [ ] `gitk`: GUI log viewer
-- [ ] `git-receive-pack`: server-side git
-- [ ] `git-upload-pack`: server-side git
-- [ ] `git-upload-archive`: server-side git
-- [ ] `git-shell`: restricted shell for git-only SSH
+- [ ] `git reflog`: recover from bad moves and find previous branch/head states
+- [ ] `git bisect`: binary-search for the commit that introduced a bug
+- [ ] `git worktree`: keep multiple checkouts of one repo
+- [ ] `git stash`: temporary work-in-progress storage
+- [ ] `git rebase`: rewrite/replay commits deliberately
+- [ ] `git cherry-pick`: copy specific commits between branches
+- [ ] `git blame`: inspect line-level authorship/history
+- [ ] `git restore`: restore paths from index/commits without old `checkout` ambiguity
+- [ ] `git switch`: switch branches without old `checkout` ambiguity
 
 **SSH**
 - [ ] `ssh`: remote shell
@@ -353,6 +380,8 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] mount source vs mount target
 - [ ] block device vs filesystem vs mountpoint
 - [ ] package ownership: which package installed this file?
+- [ ] ODIC and oatuh flow
+
 
 **Important config locations**
 - [x] `/etc/passwd`, `/etc/group`, `/etc/shadow`
@@ -369,6 +398,12 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `/sys/`
 
 ## TIER 2: High-value tools to invest in learning
+
+**Current focus: AWS + PostgreSQL/MySQL**
+- [ ] `aws`, `jq`, `aws logs tail`, `aws ssm start-session`
+- [ ] `aws rds describe-db-instances`, `aws secretsmanager get-secret-value`, `aws kms decrypt`
+- [ ] `psql`, `pg_isready`, `pg_dump`, `pg_restore`, `mysql`, `mysqldump`, `mysqladmin`
+- [ ] `dig`, `getent hosts`, `nc`, `openssl s_client` for endpoint/connectivity checks
 
 **If you only internalise a subset first**
 - [ ] `fd`, `rg`, `fzf`, `zoxide`, `bat`
@@ -418,6 +453,8 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `ansible-vault`: encrypted secrets
 - [ ] `ansible-galaxy`: roles/collections
 - [ ] `ansible-lint`: lint playbooks
+- [ ] `ansible-doc`: inspect Ansible module/plugin docs locally
+- [ ] `ansible-config`: inspect effective Ansible configuration
 
 **Data wrangling**
 - [ ] `jq`: JSON query/transform — essential for API work, terraform state
@@ -425,6 +462,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 **Terraform / image build**
 - [ ] `terraform`: core workflow (`fmt`, `validate`, `plan`, `apply`, `output`, `state`, `console`, `import`)
+- [ ] `tofu`: OpenTofu, Terraform-compatible IaC workflow
 - [ ] `tflint`: lint Terraform and catch provider-specific mistakes
 - [ ] `packer`: build AMIs and other machine images
 
@@ -441,29 +479,10 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `tcpdump`: packet capture — the ground truth for network issues
 - [ ] `nmap`: network scanner/port auditor
 - [ ] `ncat`: netcat from nmap — TCP/UDP swiss army knife
-- [ ] `arping`: ARP-level ping — find IP conflicts on L2
-- [ ] `ethtool`: NIC stats, driver info, link detection
 - [ ] `iotop`: per-process I/O usage
-- [ ] `nethogs`: per-process bandwidth usage
 - [ ] `mtr`: traceroute + ping combined, ongoing
 - [ ] `dmesg`: kernel ring buffer — hardware events, driver issues
-- [ ] `dmidecode`: hardware inventory from BIOS tables
-- [ ] `lshw`: detailed hardware listing
-- [ ] `lspci`: PCI devices (GPUs, NICs, storage controllers)
-- [ ] `lsusb`: USB devices
-- [ ] `smartctl`: disk SMART health data — critical for your RAID setups
-- [ ] `hdparm`: disk parameters and benchmarks
-
-**Disk/storage (relevant to your Proxmox + RAID + ZFS work)**
-- [ ] `mdadm`: software RAID management
-- [ ] `cryptsetup`: LUKS disk encryption
-- [ ] `wipefs`: clear filesystem signatures before repurposing disks
-- [ ] `blkdiscard`: TRIM/discard entire block device
-- [ ] `fstrim`: periodic TRIM for SSDs
-- [ ] `resize2fs`: resize ext **filesystems**
-- [ ] `btrfs`: btrfs management (if you use it on Fedora)
 - [ ] `dd`: block copy (careful with this one)
-- [ ] `losetup`: loop device management
 
 **Firewall/security (directly relevant to your iptables_autoblock work)**
 - [ ] `iptables`: legacy packet filtering (your current autoblock script)
@@ -473,61 +492,24 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `nft`: nftables — the modern replacement
 - [ ] `firewall-cmd`: firewalld CLI
 - [ ] `iptables-nft`: iptables syntax over nftables backend
-- [ ] `ebtables`: ethernet bridge filtering
 - [ ] `ipset`: IP sets for efficient rule matching
-- [ ] `arptables`: ARP table filtering
 
 **SELinux (Rocky Linux means you deal with this)**
 - [ ] `getenforce`: check SELinux mode
-- [ ] `setenforce`: set SELinux mode
 - [ ] `sestatus`: SELinux status
-- [ ] `semanage`: manage SELinux policy
 - [ ] `restorecon`: fix file contexts
-- [ ] `chcon`: change file context
-- [ ] `setsebool`: set SELinux booleans
-- [ ] `getsebool`: get SELinux booleans
-- [ ] `audit2allow`: generate policy from denials
 - [ ] `audit2why`: explain SELinux denials
-- [ ] `semodule`: manage SELinux modules
-- [ ] `matchpathcon`: check expected context for path
 
 **Containers (Fedora native)**
 - [ ] `podman`: rootless containers — docker-compatible
 - [ ] `docker`: still the lingua franca even if you prefer podman
 - [ ] `docker compose`: local multi-container stacks
 - [ ] `podman compose`: compose-style podman workflow
-- [ ] `skopeo`: inspect/copy container images without pulling
-- [ ] `lsns`: inspect Linux namespaces
-- [ ] `nsenter`: enter container/process namespaces for debugging
-- [ ] `unshare`: create a fresh namespace view for testing/isolation
-- [ ] `buildah`: (not listed but related) build OCI images
-- [ ] `trivy`: image/filesystem/IaC security scanning
-- [ ] `crun`: container runtime (low-level)
-- [ ] `conmon`: container monitor (low-level)
-- [ ] `journalctl -u container-*`: if using podman/systemd units
-
-**Kubernetes**
-- [ ] `kubectl`: Kubernetes CLI
-- [ ] `helm`: Kubernetes package manager
-- [ ] `k9s`: Kubernetes TUI
-- [ ] `stern`: tail logs from multiple pods
-- [ ] `kustomize`: patch and compose Kubernetes manifests
-
-**Virtualisation (Proxmox/libvirt work)**
-- [ ] `virsh`: libvirt CLI — VM management
-- [ ] `virt-install`: create VMs
-- [ ] `virt-clone`: clone VMs
-- [ ] `virt-manager`: GUI VM manager
-- [ ] `qemu-img`: disk image creation/conversion
-- [ ] `qemu-kvm`: KVM hypervisor
-- [ ] `qemu-system-x86_64`: full system emulator
 
 **Certificate/TLS (relevant to your Caddy + internal PKI work)**
 - [ ] `openssl`: cert inspection, CSR generation, TLS debugging
-- [ ] `certtool`: GnuTLS cert tool
 - [ ] `trust`: manage system trust store
 - [ ] `update-ca-trust`: refresh CA bundle
-- [ ] `p11-kit`: PKCS#11 module management
 
 **Secrets / credentials**
 - [ ] `gpg`: encryption/signing
@@ -550,6 +532,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `mysqldump`: logical backup of a MySQL/MariaDB database
 - [ ] `mysqladmin`: quick admin/status operations without opening the full shell
 - [ ] `redis-cli`: Redis inspection and debugging
+- [ ] `sqlite3`: inspect and query SQLite databases
 
 **Backup/recovery (your ReaR + restic stack)**
 - [ ] `rear`: Relax-and-Recover — bare metal DR
@@ -562,51 +545,12 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `cifscreds`: manage CIFS credentials
 - [ ] `smbcacls`: SMB ACLs
 
-**NFS (if used between Proxmox nodes)**
-- [ ] `mount.nfs`: NFS mount
-- [ ] `mount.nfs4`: NFSv4 mount
-- [ ] `nfsstat`: NFS statistics
-- [ ] `showmount`: list NFS exports
-- [ ] `exportfs`: manage NFS exports
-- [ ] `rpcinfo`: RPC service info
-
-**LVM (likely on your OVH servers)**
-- [ ] `pvcreate`: create physical volume
-- [ ] `vgcreate`: create volume group
-- [ ] `lvcreate`: create logical volume
-- [ ] `pvs`: list PVs
-- [ ] `vgs`: list VGs
-- [ ] `lvs`: list LVs
-- [ ] `pvdisplay`: PV detail
-- [ ] `vgdisplay`: VG detail
-- [ ] `lvdisplay`: LV detail
-- [ ] `lvextend`: grow LV
-- [ ] `lvresize`: resize LV
-- [ ] `lvremove`: delete LV
-- [ ] `vgextend`: add PV to VG
-
 **Process/resource tuning**
 - [ ] `sysctl`: kernel parameter tuning
 - [ ] `ionice`: I/O priority
 - [ ] `taskset`: CPU affinity
-- [ ] `ulimit`: resource limits
+- [x] `ulimit`: resource limits
 - [ ] `prlimit`: per-process limits
-- [ ] `coresched`: core scheduling
-- [ ] `chrt`: real-time scheduling
-
-**Boot / kernel / initramfs**
-- [ ] `grubby`: manage default kernel/boot args on Fedora/RHEL
-- [ ] `dracut`: build initramfs
-- [ ] `lsinitrd`: inspect initramfs
-- [ ] `bootctl`: systemd-boot management, where relevant
-- [ ] `efibootmgr`: UEFI boot entries
-
-**Audit/logging (server hardening)**
-- [ ] `auditctl`: audit rule management
-- [ ] `auditd`: audit daemon
-- [ ] `aureport`: audit reports
-- [ ] `ausearch`: search audit logs
-- [ ] `augenrules`: generate audit rules from files
 
 **Logs**
 - [ ] `logrotate`: rotate logs
@@ -696,6 +640,11 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 **Text/doc conversion**
 - [x] `pandoc`: universal doc converter — markdown to PDF, docx, etc.
+- [ ] `pdftotext`: extract text from PDFs
+- [ ] `pdfinfo`: inspect PDF metadata/page info
+- [ ] `qpdf`: inspect, repair, split, merge, and transform PDFs
+- [ ] `exiftool`: inspect/edit metadata on documents, images, and media
+- [ ] `magick`: ImageMagick entry point for image conversion and manipulation
 - [ ] `img2pdf`: images to PDF
 - [ ] `ocrmypdf`: OCR + PDF optimization — useful for law firm doc scanning
 - [ ] `tesseract`: OCR engine behind ocrmypdf
@@ -723,7 +672,6 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `iw`: wireless config
 - [ ] `wpa_cli`: WPA supplicant control
 - [ ] `wpa_supplicant`: WPA auth daemon
-- [ ] `nmcli`: NetworkManager CLI
 - [ ] `nm-online`: wait for network
 - [ ] `rfkill`: enable/disable radios
 - [ ] `dnsmasq`: lightweight DNS/DHCP server
@@ -789,6 +737,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `just`: command runner (you already use this)
 - [ ] `stow`: symlink farm manager (your dotfiles)
 - [ ] `direnv`: per-directory env vars
+- [ ] `xdg-open`: open a file/URL with the desktop default app
 - [ ] `pv`: monitor progress through a pipe / long data stream
 - [ ] `mods`: AI in the terminal (if you use it)
 - [ ] `ollama`: local LLM inference (your GPU passthrough setup)

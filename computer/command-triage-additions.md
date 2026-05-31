@@ -5,15 +5,10 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ## Disk / Filesystem Basics
 
-- [ ] `fdisk`: classic disk partition editor
 - [ ] `cfdisk`: friendlier TUI partition editor
 - [ ] `sfdisk`: scriptable partition table tool
-- [ ] `parted`: partition editor, especially for GPT workflows
 - [ ] `partprobe`: ask the kernel to re-read partition tables
 - [ ] `partx`: add/remove partition mappings from the kernel
-- [ ] `mkfs`: create filesystems
-- [ ] `fsck`: check/repair filesystems
-- [ ] `mkswap`: initialise swap space
 - [ ] `tune2fs`: inspect/tune ext filesystems
 - [ ] `debugfs`: low-level ext filesystem inspection
 - [ ] `xfs_db`: inspect/debug XFS metadata
@@ -42,39 +37,23 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ## Kernel / Modules / Hardware
 
-- [ ] `lsmod`: list loaded kernel modules
-- [ ] `modprobe`: load/unload kernel modules with dependency handling
-- [ ] `modinfo`: inspect kernel module metadata
 - [ ] `rmmod`: remove a loaded kernel module directly
 - [ ] `insmod`: insert a kernel module directly
 - [ ] `depmod`: generate module dependency metadata
-- [ ] `hwclock`: inspect/set hardware clock
-- [ ] `sensors`: read hardware sensor data
 - [ ] `powertop`: power usage diagnosis and tuning
 - [ ] `turbostat`: CPU frequency, C-state, and power diagnostics
 
 ## Core Unix Odds And Ends
 
-- [ ] `sleep`: delay for a fixed duration
-- [ ] `which`: locate a command in `PATH`; prefer `type` for shell-aware lookup
-- [ ] `mkfifo`: create named pipes
 - [ ] `mknod`: create device nodes/FIFOs manually
-- [ ] `stdbuf`: adjust stdio buffering in pipelines
-- [ ] `sdiff`: side-by-side diff
 - [ ] `csplit`: split files by context/pattern
 - [ ] `tsort`: topological sort
-- [ ] `chattr`: change Linux extended file attributes
-- [ ] `lsattr`: list Linux extended file attributes
 - [ ] `getfattr`: read extended file attributes
 - [ ] `setfattr`: set extended file attributes
 - [ ] `setpriv`: run a program with modified Linux privileges
-- [ ] `runuser`: run command as another user, often from root scripts
-- [ ] `setsid`: run a command in a new session
 
 ## Desktop / Fedora Plumbing
 
-- [ ] `nmcli`: NetworkManager CLI; worth promoting from situational to core networking
-- [ ] `xdg-open`: open a file/URL with the desktop default app
 - [ ] `xdg-mime`: inspect/set MIME associations
 - [ ] `gio`: GLib/GVfs file and metadata operations
 - [ ] `busctl`: inspect and call D-Bus services
@@ -85,14 +64,9 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ## PDF / Document / Media Work
 
-- [ ] `pdftotext`: extract text from PDFs
-- [ ] `pdfinfo`: inspect PDF metadata/page info
 - [ ] `pdfimages`: extract images from PDFs
 - [ ] `pdfunite`: concatenate PDFs
 - [ ] `pdfgrep`: grep through PDF text
-- [ ] `qpdf`: inspect, repair, split, merge, and transform PDFs
-- [ ] `exiftool`: inspect/edit metadata on documents, images, and media
-- [ ] `magick`: ImageMagick entry point for image conversion and manipulation
 - [ ] `identify`: inspect image metadata
 - [ ] `mogrify`: batch-modify images in place
 - [ ] `soffice`: LibreOffice CLI for document conversion/printing
@@ -100,33 +74,27 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ## Compression
 
-- [ ] `zstd`: modern fast compression
-- [ ] `zstdcat`: stream decompressed zstd data
 - [ ] `zstdgrep`: grep compressed zstd files
 - [ ] `zstdless`: page compressed zstd files
 - [ ] `lz4`: very fast compression
 - [ ] `lz4cat`: stream decompressed lz4 data
 - [ ] `xzcat`: stream decompressed xz data
 - [ ] `bzcat`: stream decompressed bzip2 data
-- [ ] `zipinfo`: inspect zip archive contents/metadata
-- [ ] `7z`: handle 7-Zip and many archive formats
 
 ## Infra / Kubernetes Extras
 
-- [ ] `tofu`: OpenTofu, Terraform-compatible IaC workflow
 - [ ] `tofu-ls`: OpenTofu/Terraform language server
 - [ ] `kind`: local Kubernetes clusters in Docker/Podman containers
 - [ ] `minikube`: local Kubernetes cluster manager
 - [ ] `crictl`: inspect/debug CRI container runtimes
 - [ ] `ctr`: containerd CLI
+- [ ] `crun`: container runtime (low-level)
+- [ ] `conmon`: container monitor (low-level)
 - [ ] `kubectx`: switch Kubernetes contexts quickly
 - [ ] `kubens`: switch Kubernetes namespaces quickly
-- [ ] `ansible-doc`: inspect Ansible module/plugin docs locally
-- [ ] `ansible-config`: inspect effective Ansible configuration
 
 ## Dev / Data
 
-- [ ] `sqlite3`: inspect and query SQLite databases
 - [ ] `npx`: run Node package binaries without permanent install
 - [ ] `yarn`: alternative Node package manager
 - [ ] `uv`: fast Python package/project tool
@@ -137,17 +105,127 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `java`: JVM launcher
 - [ ] `zig`: Zig compiler/toolchain
 
-## Git Workflows To Learn As Concepts
+## Git Server Plumbing
 
-- [ ] `git reflog`: recover from bad moves and find previous branch/head states
-- [ ] `git bisect`: binary-search for the commit that introduced a bug
-- [ ] `git worktree`: keep multiple checkouts of one repo
-- [ ] `git stash`: temporary work-in-progress storage
-- [ ] `git rebase`: rewrite/replay commits deliberately
-- [ ] `git cherry-pick`: copy specific commits between branches
-- [ ] `git blame`: inspect line-level authorship/history
-- [ ] `git restore`: restore paths from index/commits without old `checkout` ambiguity
-- [ ] `git switch`: switch branches without old `checkout` ambiguity
+- [ ] `git-receive-pack`: server-side git
+- [ ] `git-upload-pack`: server-side git
+- [ ] `git-upload-archive`: server-side git
+- [ ] `git-shell`: restricted shell for git-only SSH
+
+## Process / Boot / Certificate Niche
+
+- [ ] `coresched`: core scheduling
+- [ ] `chrt`: real-time scheduling
+- [ ] `bootctl`: systemd-boot management, where relevant
+- [ ] `certtool`: GnuTLS cert tool
+- [ ] `p11-kit`: PKCS#11 module management
+
+## Deferred Platform Areas
+
+Useful if the work shifts back toward Proxmox, Kubernetes, ZFS/RAID, VM hosts, or deeper server hardening. Not current AWS + PostgreSQL/MySQL learning focus.
+
+### Hardware / Network / Storage Diagnostics
+
+- [ ] `arping`: ARP-level ping — find IP conflicts on L2
+- [ ] `ethtool`: NIC stats, driver info, link detection
+- [ ] `nethogs`: per-process bandwidth usage
+- [ ] `dmidecode`: hardware inventory from BIOS tables
+- [ ] `sensors`: read hardware sensor data
+- [ ] `lshw`: detailed hardware listing
+- [ ] `lspci`: PCI devices (GPUs, NICs, storage controllers)
+- [ ] `lsusb`: USB devices
+- [ ] `smartctl`: disk SMART health data — critical for RAID/storage work
+- [ ] `hdparm`: disk parameters and benchmarks
+
+### Disk / Storage / RAID
+
+- [ ] `mdadm`: software RAID management
+- [ ] `cryptsetup`: LUKS disk encryption
+- [ ] `wipefs`: clear filesystem signatures before repurposing disks
+- [ ] `blkdiscard`: TRIM/discard entire block device
+- [ ] `fstrim`: periodic TRIM for SSDs
+- [ ] `resize2fs`: resize ext **filesystems**
+- [ ] `btrfs`: btrfs management
+- [ ] `losetup`: loop device management
+
+### Deep SELinux
+
+- [ ] `setenforce`: set SELinux mode
+- [ ] `semanage`: manage SELinux policy
+- [ ] `chcon`: change file context
+- [ ] `setsebool`: set SELinux booleans
+- [ ] `getsebool`: get SELinux booleans
+- [ ] `audit2allow`: generate policy from denials
+- [ ] `semodule`: manage SELinux modules
+- [ ] `matchpathcon`: check expected context for path
+
+### Advanced Containers
+
+- [ ] `skopeo`: inspect/copy container images without pulling
+- [ ] `lsns`: inspect Linux namespaces
+- [ ] `nsenter`: enter container/process namespaces for debugging
+- [ ] `unshare`: create a fresh namespace view for testing/isolation
+- [ ] `buildah`: build OCI images
+- [ ] `trivy`: image/filesystem/IaC security scanning
+- [ ] `journalctl -u container-*`: if using podman/systemd units
+
+### Kubernetes
+
+- [ ] `kubectl`: Kubernetes CLI
+- [ ] `helm`: Kubernetes package manager
+- [ ] `k9s`: Kubernetes TUI
+- [ ] `stern`: tail logs from multiple pods
+- [ ] `kustomize`: patch and compose Kubernetes manifests
+
+### Virtualisation / Proxmox / Libvirt
+
+- [ ] `virsh`: libvirt CLI — VM management
+- [ ] `virt-install`: create VMs
+- [ ] `virt-clone`: clone VMs
+- [ ] `virt-manager`: GUI VM manager
+- [ ] `qemu-img`: disk image creation/conversion
+- [ ] `qemu-kvm`: KVM hypervisor
+- [ ] `qemu-system-x86_64`: full system emulator
+
+### NFS
+
+- [ ] `mount.nfs`: NFS mount
+- [ ] `mount.nfs4`: NFSv4 mount
+- [ ] `nfsstat`: NFS statistics
+- [ ] `showmount`: list NFS exports
+- [ ] `exportfs`: manage NFS exports
+- [ ] `rpcinfo`: RPC service info
+
+### LVM
+
+- [ ] `pvcreate`: create physical volume
+- [ ] `vgcreate`: create volume group
+- [ ] `lvcreate`: create logical volume
+- [ ] `pvs`: list PVs
+- [ ] `vgs`: list VGs
+- [ ] `lvs`: list LVs
+- [ ] `pvdisplay`: PV detail
+- [ ] `vgdisplay`: VG detail
+- [ ] `lvdisplay`: LV detail
+- [ ] `lvextend`: grow LV
+- [ ] `lvresize`: resize LV
+- [ ] `lvremove`: delete LV
+- [ ] `vgextend`: add PV to VG
+
+### Boot / Kernel / Initramfs
+
+- [ ] `grubby`: manage default kernel/boot args on Fedora/RHEL
+- [ ] `dracut`: build initramfs
+- [ ] `lsinitrd`: inspect initramfs
+- [ ] `efibootmgr`: UEFI boot entries
+
+### Audit Hardening
+
+- [ ] `auditctl`: audit rule management
+- [ ] `auditd`: audit daemon
+- [ ] `aureport`: audit reports
+- [ ] `ausearch`: search audit logs
+- [ ] `augenrules`: generate audit rules from files
 
 ## Second-Pass Lower-Priority Additions
 
@@ -363,6 +441,8 @@ Mostly niche, but still commands a person might deliberately run. This section i
 - [ ] `arptables-save`: dump ARP filtering rules
 - [ ] `arptables-restore`: restore ARP filtering rules
 - [ ] `arptables-translate`: translate ARP rules to nftables form
+- [ ] `arptables`: ARP table filtering
+- [ ] `ebtables`: ethernet bridge filtering
 - [ ] `clockdiff`: measure clock difference between hosts
 - [ ] `delv`: DNS lookup with DNSSEC validation
 - [ ] `dhcpcd`: DHCP client
