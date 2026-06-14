@@ -36,5 +36,10 @@
 
 - Consolidate, all the DNS?
 
-
 - Forward the losses service credits to Daryl and ARis.
+
+
+
+
+- Setup loggin for vpc and abl
+- Setup enchanged mointoring

@@ -45,12 +45,14 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 - [x] `false`: exit 1
 - [x] `yes`: repeat string forever
-- [ ] `sleep`: delay for a fixed duration
-- [x] `seq`: generate numeric sequences for loops, filenames, and quick test data
+- [x] `sleep`: delay for a fixed duration
+- [x] `seq`: generate numeric sequences for loops, filenames, and quick tsed is worth learning to fluency in its core operations. But awk rewards going further, because it remains readable much longer. Variables, arrays, fields, BEGIN, END, conditions, formatted printing: these are all genuinely useful rather than “look upon my hold-space incantation and despair.”
+
+est data
 
 **Shell language / builtins**
 - [x] `type`: show whether something is a shell builtin, alias, function, or binary
-- [ ] `which`: locate a command in `PATH`; prefer `type` for shell-aware lookup
+- [x] `which`: locate a command in `PATH`; prefer `type` for shell-aware lookup
 - [x] `help`: shell builtin docs
 - [x] `command`: run command bypassing shell functions/aliases
 - [x] `builtin`: run shell builtin explicitly
@@ -81,7 +83,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `grep`: pattern search
 - [x] `egrep`: extended regex grep (deprecated, use grep -E)
 - [x] `fgrep`: fixed-string grep (deprecated, use grep -F)
-- [ ] `sed`: stream editor [Read this](https://www.grymoire.com/Unix/Sed.html)
+- [x] `sed`: stream editor [Read this](https://www.grymoire.com/Unix/Sed.html)
 - [ ] `awk`: pattern/action language
 - [ ] `gawk`: GNU awk
 - [x] `sort`: sort lines
@@ -90,10 +92,10 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `cut`: extract fields
 - [x] `tr`: translate/delete characters
 - [x] `tee`: split stdout to file + pipe
-- [ ] `stdbuf`: adjust stdio buffering in pipelines
+- [x] `stdbuf`: adjust stdio buffering in pipelines
 - [x] `xargs`: build commands from stdin
 - [x] `diff`: compare files
-- [ ] `sdiff`: side-by-side diff
+- [x] `sdiff`: side-by-side diff
 - [x] `patch`: apply diffs
 - [x] `comm`: compare sorted files line by line
 - [x] `paste`: merge lines side by side
@@ -124,14 +126,14 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `basename`: strip directory from path
 - [x] `dirname`: strip filename from path
 - [x] `mktemp`: create temp file/dir
-- [ ] `mkfifo`: create named pipes
+- [x] `mkfifo`: create named pipes
 - [x] `split`: split a file into smaller chunks
 - [x] `truncate`: shrink or extend a file to a specific size
 - [x] `install`: copy with permissions
 - [x] `link`: create hard link
 - [x] `unlink`: remove single file
-- [ ] `chattr`: change Linux extended file attributes
-- [ ] `lsattr`: list Linux extended file attributes
+- [x] `chattr`: change Linux extended file attributes
+- [x] `lsattr`: list Linux extended file attributes
 
 **Permissions / identity / access**
 - [x] `umask`: default permissions for newly created files
@@ -141,21 +143,21 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `capsh`: inspect Linux capabilities
 - [x] `getcap`: view file capabilities
 - [x] `setcap`: set file capabilities
-- [ ] `runuser`: run command as another user, often from root scripts
-
+- [x] `runuser`: run command as another user, often from root scripts
+[]()
 **Archiving/compression**
 - [ ] `tar`: tape archive (tar czf, tar xzf)
-- [x] `gzip`: gzip compression
-- [x] `gunzip`: decompress gzip
+- [ ] `gzip`: gzip compression
+- [ ] `gunzip`: decompress gzip
 - [x] `zcat`: cat compressed files
-- [ ] `bzip2`: bzip2 compression
-- [ ] `xz`: xz compression
-- [ ] `zip`: create zip archives
-- [ ] `unzip`: extract zip archives
-- [ ] `zstd`: modern fast compression
-- [ ] `zstdcat`: stream decompressed zstd data
-- [ ] `zipinfo`: inspect zip archive contents/metadata
-- [ ] `7z`: handle 7-Zip and many archive formats
+- [x] `bzip2`: bzip2 compression
+- [x] `xz`: xz compression
+- [x] `zip`: create zip archives
+- [x] `unzip`: extract zip archives
+- [x] `zstd`: modern fast compression
+- [x] `zstdcat`: stream decompressed zstd data
+- [x] `zipinfo`: inspect zip archive contents/metadata
+- [x] `7z`: handle 7-Zip and many archive formats
 
 **Checksums / encoding / binary inspection**
 - [x] `sha256sum`: verify file hash
@@ -203,9 +205,9 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `vmstat`: fast CPU, memory, I/O, and run queue snapshot
 - [x] `lscpu`: CPU topology and virtualization flags
 - [x] `lsmem`: memory layout/topology
-- [ ] `lsmod`: list loaded kernel modules
-- [ ] `modprobe`: load/unload kernel modules with dependency handling
-- [ ] `modinfo`: inspect kernel module metadata
+- [x] `lsmod`: list loaded kernel modules
+- [x] `modprobe`: load/unload kernel modules with dependency handling
+- [x] `modinfo`: inspect kernel module metadata
 - [x] `nproc`: number of available processing units
 - [x] `date`: date/time
 - [ ] `hwclock`: inspect/set hardware clock
@@ -343,17 +345,17 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `git switch`: switch branches without old `checkout` ambiguity
 
 **SSH**
-- [ ] `ssh`: remote shell
+- [x] `ssh`: remote shell
 - [ ] `mosh`: roaming remote shell for flaky/high-latency connections
-- [ ] `scp`: remote copy
-- [ ] `sftp`: remote file transfer
-- [ ] `ssh-keygen`: key generation
-- [ ] `ssh-copy-id`: deploy public key
-- [ ] `ssh-agent`: key agent
-- [ ] `ssh-add`: add key to agent
-- [ ] `ssh-keyscan`: grab host keys
-- [ ] `sshd`: SSH daemon
-- [ ] `sshpass`: non-interactive SSH password (use keys instead)
+- [x] `scp`: remote copy
+- [x] `sftp`: remote file transfer
+- [x] `ssh-keygen`: key generation
+- [x] `ssh-copy-id`: deploy public key
+- [x] `ssh-agent`: key agent
+- [x] `ssh-add`: add key to agent
+- [x] `ssh-keyscan`: grab host keys
+- [x] `sshd`: SSH daemon
+- [x] `sshpass`: non-interactive SSH password (use keys instead)
 
 **Editors**
 - [x] `nvim`: your editor
@@ -603,10 +605,10 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `aws ecs describe-tasks`: inspect task state and failures
 
 **Language/runtime tooling**
-- [ ] `python3`: Python interpreter
-- [ ] `pip`: Python package installer
-- [ ] `pipx`: install Python CLI apps cleanly
-- [ ] `venv`: Python virtual environments
+- [x] `python3`: Python interpreter
+- [x] `pip`: Python package installer
+- [x] `pipx`: install Python CLI apps cleanly
+- [x] `venv`: Python virtual environments
 - [x] `node`: JavaScript runtime
 - [x] `npm`: Node package manager
 - [x] `go`: Go toolchain
@@ -614,9 +616,9 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Build / compile basics**
 - [x] `make`: build automation
 - [x] `gcc`: C compiler
-- [ ] `ldd`: show shared library dependencies
-- [ ] `ldconfig`: configure dynamic linker cache
-- [ ] `pkg-config`: compiler/linker flags for libraries
+- [x] `ldd`: show shared library dependencies
+- [x] `ldconfig`: configure dynamic linker cache
+- [x] `pkg-config`: compiler/linker flags for libraries
 
 **Misc high-value**
 - [x] `tmux`: terminal multiplexer
