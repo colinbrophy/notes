@@ -154,16 +154,6 @@ Need to look at getting a start page with recently used files.
 - [ ] gui External graphical UIs (SKIM/REF)
 - [ ] signs Signs in the gutter (SKIM)
 
-### Multilingual support
-- [ ] digraph List of available digraphs (REF)
-- [ ] mbyte.txt Multibyte text support (REF)
-- [ ] mlang.txt Non-English language support (REF)
-- [ ] rileft.txt Right-to-left editing mode (REF)
-- [ ] l10n-arabic.txt Arabic support (REF)
-- [ ] l10n-hebrew.txt Hebrew support (REF)
-- [ ] l10n-russian.txt Russian support (REF)
-- [ ] l10n-vietnamese.txt Vietnamese support (REF)
-
 ### Interop
 - [ ] provider Builtin remote plugin hosts (READ)
 - [ ] if_perl Perl interface (DATED/REF)

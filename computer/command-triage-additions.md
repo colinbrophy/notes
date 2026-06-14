@@ -342,7 +342,7 @@ Mostly niche, but still commands a person might deliberately run. This section i
 - [ ] `pcre2test`: test/debug PCRE2 regular expressions
 - [ ] `sum`: old checksum tool; recognise, prefer stronger hashes
 - [ ] `b2sum`: BLAKE2 checksums
-- [ ] `base32`: base32 encode/decode
+- [x] `base32`: base32 encode/decode
 - [ ] `basenc`: encode/decode base16/base32/base64 variants
 - [ ] `col`: filter reverse line feeds from old formatter output
 - [ ] `colrm`: remove columns from text
