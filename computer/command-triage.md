@@ -16,13 +16,10 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 **Shell basics**
 - [x] `bash`: your shell            
-- [ ] `zsh`: alternative shell (fish also listed) (learn lne editing here)
-- [x] `fish`: friendly interactive shell
+- [ ] `zsh`: alternative shell (learn lne editing here)
 - [x] `cd`: change directory
 - [x] `pwd`: print working directory
 - [x] `ls`: list files
-- [x] `dir`: basically ls
-- [x] `vdir`: verbose ls
 - [x] `cp`: copy 
 - [x] `mv`: move/rename
  - [x] `rm`: remove
@@ -32,7 +29,6 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `touch`: create/update timestamps
 - [x] `cat`: concatenate/display files
 - [x] `less`: pager
-- [x] `more`: worse pager
 - [x] `head`: first N lines
 - [x] `tail`: last N lines (tail -f for log following)
 - [x] `echo`: print text
@@ -40,15 +36,11 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `read`: read input in scripts
 - [x] `time`: measure how long a command takes
 - [x] `test`: conditional evaluation ([ ])
-- [x] `true`: exit 0Unlike something like Kubernetes or Neovim, tmux does not have a massive evolving abstraction stack on top of it. The architecture is stable, small, and old-school Unix-y.
-
-
+- [x] `true`: exit 0
 - [x] `false`: exit 1
 - [x] `yes`: repeat string forever
 - [x] `sleep`: delay for a fixed duration
-- [x] `seq`: generate numeric sequences for loops, filenames, and quick tsed is worth learning to fluency in its core operations. But awk rewards going further, because it remains readable much longer. Variables, arrays, fields, BEGIN, END, conditions, formatted printing: these are all genuinely useful rather than “look upon my hold-space incantation and despair.”
-
-est data
+- [x] `seq`: generate numeric sequences for loops, filenames, and quick tsed is worth learning to fluency in its core operations. 
 
 **Shell language / builtins**
 - [x] `type`: show whether something is a shell builtin, alias, function, or binary
@@ -81,8 +73,6 @@ est data
 - [x] declare
 **Text processing**
 - [x] `grep`: pattern search
-- [x] `egrep`: extended regex grep (deprecated, use grep -E)
-- [x] `fgrep`: fixed-string grep (deprecated, use grep -F)
 - [x] `sed`: stream editor [Read this](https://www.grymoire.com/Unix/Sed.html)
 - [ ] `awk`: pattern/action language
 - [ ] `gawk`: GNU awk
@@ -123,6 +113,7 @@ est data
 - [x] `file`: detect file type
 - [x] `realpath`: resolve symlinks
 - [x] `readlink`: read symlink target
+- [x] `gio`: GLib/GVfs file and metadata operations
 - [x] `basename`: strip directory from path
 - [x] `dirname`: strip filename from path
 - [x] `mktemp`: create temp file/dir
@@ -144,20 +135,13 @@ est data
 - [x] `getcap`: view file capabilities
 - [x] `setcap`: set file capabilities
 - [x] `runuser`: run command as another user, often from root scripts
-[]()
+
 **Archiving/compression**
 - [ ] `tar`: tape archive (tar czf, tar xzf)
-- [ ] `gzip`: gzip compression
-- [ ] `gunzip`: decompress gzip
+- [x] `gzip`: gzip compression
+- [x] `gunzip`: decompress gzip
 - [x] `zcat`: cat compressed files
-- [x] `bzip2`: bzip2 compression
-- [x] `xz`: xz compression
-- [x] `zip`: create zip archives
-- [x] `unzip`: extract zip archives
-- [x] `zstd`: modern fast compression
-- [x] `zstdcat`: stream decompressed zstd data
-- [x] `zipinfo`: inspect zip archive contents/metadata
-- [x] `7z`: handle 7-Zip and many archive formats
+- [ ] `unzip`: extract zip archives
 
 **Checksums / encoding / binary inspection**
 - [x] `sha256sum`: verify file hash
@@ -210,7 +194,6 @@ est data
 - [x] `modinfo`: inspect kernel module metadata
 - [x] `nproc`: number of available processing units
 - [x] `date`: date/time
-- [ ] `hwclock`: inspect/set hardware clock
 - [x] `cal`: calendar
 - [x] `who`: logged in users
 - [x] `whoami`: current user
@@ -225,8 +208,6 @@ est data
 - [x] `w`: logged-in users + what they are doing
 - [x] `logname`: original login name
 - [x] `newgrp`: switch current group
-- [x] `chage`: password ageing
-- [ ] `getent`: query passwd/group/hosts/services via NSS
 
 **Disk/filesystem**
 - [x] `df`: disk free space
@@ -237,40 +218,40 @@ est data
 - [x] `lsblk`: block device list
 - [x] `blkid`: filesystem UUIDs/types
 - [x] `findmnt`: show mount tree
-- [ ] `fdisk`: classic disk partition editor
-- [ ] `parted`: partition editor, especially for GPT workflows
-- [ ] `mkfs`: create filesystems
-- [ ] `fsck`: check/repair filesystems
+- [x] `smartctl`: disk SMART health checks
+- [ ] `cryptsetup`: LUKS disk encryption
+- [x] `fdisk`: classic disk partition editor
 - [x] `swapon`: enable/list swap devices
 - [x] `swapoff`: disable swap devices
-- [ ] `mkswap`: initialise swap space
 - [x] `sync`: flush writes
+- [x] `chroot`: run a shell/command with a different root directory
+- [ ] `snapper`: filesystem snapshot management
 
-**Networking core**
-- [x] `ip`: modern network config (replaces ifconfig)
-- [x] `ss`: socket statistics (replaces netstat)
-- [x] `ping`: ICMP echo
+**Networking / connectivity**
+- [x] `ip`: addresses, routes, links, and neighbours
+- [x] `ss`: sockets, listening ports, and connections
+- [x] `ping`: ICMP reachability
 - [x] `traceroute`: trace packet path
-- [x] `tracepath`: similar, no root needed
+- [x] `tracepath`: trace path without needing root
 - [x] `dig`: DNS lookup
 - [x] `nslookup`: older DNS lookup
-- [x] `host`: simple D￼￼￼￼￼ ￼￼pg_restore￼￼: restore ￼￼pg_dump￼￼ custom/directory backupsNS lookup
-- [ ] `curl`: HTTP client
-- [x] `wget`: download files
-
-**DNS / resolver debugging**
+- [x] `host`: simple DNS lookup
 - [ ] `resolvectl`: inspect/query systemd-resolved
-- [ ] `getent hosts`: resolve through the system NSS stack
-- [ ] `getent ahosts`: show IPv4/IPv6 address resolution
+- [ ] `curl`: HTTP/API checks
+- [x] `wget`: simple downloads
 
-**Network utilities**
-- [ ] `nc`: netcat, basic TCP/UDP testing
-- [ ] `ncat`: nmap's better netcat
-- [ ] `socat`: bidirectional data relay, socket plumbing
-- [ ] `openssl s_client`: TLS connection debugging
+**Network probes / debugging**
+- [ ] `nc`: basic TCP/UDP testing
+- [ ] `ncat`: richer netcat from nmap
+- [ ] `socat`: bidirectional socket/data plumbing
+- [ ] `openssl s_client`: TLS endpoint debugging
 - [ ] `whois`: domain/IP registry lookup
-- [ ] `iperf3`: measure network throughput and diagnose path issues
-- [ ] `nmcli`: NetworkManager CLI
+- [ ] `iperf3`: network throughput measurement
+- [ ] `tcpdump`: packet capture
+- [ ] `nmap`: host/port discovery
+- [ ] `mtr`: ongoing path quality
+- [ ] `nethogs`: per-process bandwidth usage
+- [ ] `ipcalc`: subnet calculator
 
 **File transfer / sync**
 - [x] `rsync`: serious file copy/sync
@@ -284,7 +265,6 @@ est data
 - [x] `groupdel`: delete group
 - [x] `groupmod`: modify group
 - [x] `passwd`: change password
-- [ ] `chfn`: change a user's GECOS/full-name information
 - [x] `chsh`: change a user's login shell
 - [x] `su`: switch user
 - [x] `sudo`: execute as root
@@ -293,28 +273,10 @@ est data
 - [x] `vipw`: safely edit `/etc/passwd` and related account files
 - [x] `vigr`: safely edit `/etc/group` and related group files
 
-**Systemd**
-- [ ] `systemctl`: service/unit management
-- [ ] `journalctl`: log viewer
-- [ ] `loginctl`: session management
-- [ ] `timedatectl`: time/timezone
-- [ ] `localectl`: locale settings
-- [ ] `hostnamectl`: hostname (listed above too)
-- [ ] `coredumpctl`: manage core dumps
-- [ ] `shutdown`: schedule or trigger shutdown/reboot on modern systemd systems
-- [ ] `reboot`: trigger an immediate reboot
-- [ ] `poweroff`: power the system down immediately
-
-**Systemd practical extras**
-- [ ] `systemctl status`
-- [ ] `systemctl list-units`
-- [ ] `systemctl cat`
-- [ ] `systemctl edit`
-- [ ] `systemctl daemon-reload`
-- [ ] `systemd-delta`: compare local unit overrides against vendor units
-- [ ] `journalctl -u`
-- [ ] `journalctl -b`
-- [ ] `journalctl -f`
+**Systemd / logs**
+- [ ] `systemctl`: service/unit management (`status`, `list-units`, `cat`, `edit`, `daemon-reload`)
+- [ ] `journalctl`: log viewer (`-u`, `-b`, `-f`)
+- [ ] `timedatectl`: time/timezone/NTP state
 
 **Cron / scheduling**
 - [x] `crontab`: cron job management
@@ -323,30 +285,12 @@ est data
 - [ ] `dnf`: Fedora/RHEL package manager
 - [ ] `rpm`: low-level rpm operations
 
-**Fedora/RHEL package tooling**
-- [ ] `dnf repoquery`: query packages/repos
-- [ ] `dnf provides`: find package that owns a file/command
-- [ ] `rpm -qf`: find which package owns a file
-- [ ] `rpm -ql`: list package files
-- [ ] `rpm -qc`: list config files from package
-- [ ] `rpm -V`: verify package-installed files
-
 **Git**
 - [ ] `git`: version control
 - [ ] `gitk`: GUI log viewer
-- [ ] `git reflog`: recover from bad moves and find previous branch/head states
-- [ ] `git bisect`: binary-search for the commit that introduced a bug
-- [ ] `git worktree`: keep multiple checkouts of one repo
-- [ ] `git stash`: temporary work-in-progress storage
-- [ ] `git rebase`: rewrite/replay commits deliberately
-- [ ] `git cherry-pick`: copy specific commits between branches
-- [ ] `git blame`: inspect line-level authorship/history
-- [ ] `git restore`: restore paths from index/commits without old `checkout` ambiguity
-- [ ] `git switch`: switch branches without old `checkout` ambiguity
 
 **SSH**
 - [x] `ssh`: remote shell
-- [ ] `mosh`: roaming remote shell for flaky/high-latency connections
 - [x] `scp`: remote copy
 - [x] `sftp`: remote file transfer
 - [x] `ssh-keygen`: key generation
@@ -362,12 +306,12 @@ est data
 - [x] `vim`: fallback
 - [x] `vi`: minimal vim
 - [x] `view`: read-only vim
+- [ ] `ctags`: generate source navigation tags
 
 **Concepts to learn as concepts, not binaries**
 - [ ] shell expansion order
 - [x] quoting rules
 - [ ] PATH lookup
-- [ ] Kubernetes model: pods, deployments, services, ingress, secrets, volumes
 - [ ] fast doc lookup: official docs first, then `site:` search by tool/vendor
 - [ ] Terraform lookup model: language docs vs provider docs vs registry module docs
 - [ ] browser keyword search shortcuts / DevDocs for fast web-doc lookup
@@ -377,6 +321,7 @@ est data
 - [ ] systemd unit lifecycle
 - [ ] journalctl query model
 - [ ] file ownership vs permissions vs ACLs
+- [ ] filesystem quotas: user/group/project quotas, soft vs hard limits, grace periods
 - [ ] DNS lookup path: hosts/NSS/resolved/DNS
 - [ ] process/session/job distinction
 - [ ] mount source vs mount target
@@ -405,34 +350,26 @@ est data
 - [ ] `aws`, `jq`, `aws logs tail`, `aws ssm start-session`
 - [ ] `aws rds describe-db-instances`, `aws secretsmanager get-secret-value`, `aws kms decrypt`
 - [ ] `psql`, `pg_isready`, `pg_dump`, `pg_restore`, `mysql`, `mysqldump`, `mysqladmin`
-- [ ] `dig`, `getent hosts`, `nc`, `openssl s_client` for endpoint/connectivity checks
+- [ ] `dig`, `nc`, `openssl s_client` for endpoint/connectivity checks
 
 **If you only internalise a subset first**
 - [ ] `fd`, `rg`, `fzf`, `zoxide`, `bat`
 - [ ] `jq`, `yq`
 - [ ] `rsync`, `just`
-- [ ] `watch`, `lsof` or `lsfd`
+- [ ] `watch`, `lsof`
 - [ ] `systemctl`, `journalctl`, `ip`, `ss`
 
 **Modern CLI replacements — big quality-of-life wins**
 - [ ] `fd`: fast, intuitive find replacement. Pairs with fzf
 - [ ] `rg`: ripgrep — fast recursive grep with sane defaults
 - [ ] `bat`: cat with syntax highlighting and git integration
-- [ ] `eza`: modern `ls` replacement
 - [ ] `fzf`: fuzzy finder — transforms how you navigate
 - [ ] `fzf-tmux`: fzf inside tmux panes
 - [x] `atuin`: much better shell history/search
 - [ ] `zoxide`: smarter cd with frecency tracking
 - [ ] `delta`: beautiful git diffs, pairs with lazygit
 - [ ] `hyperfine`: benchmark commands properly
-- [ ] `sd`: simpler search/replace than `sed`
-- [ ] `duf`: nicer `df`
-- [ ] `dust`: nicer `du`
-- [ ] `procs`: nicer `ps`
-- [ ] `xh`: friendlier HTTP client than `curl`
-- [ ] `zellij`: modern terminal workspace/multiplexer
 - [ ] `btop`: gorgeous process/resource monitor
-- [ ] `btm`: another modern process/resource monitor (`bottom`)
 - [ ] `ncdu`: interactive disk usage explorer — find what's eating space
 - [ ] `lazygit`: TUI git client you already use
 - [ ] `tree`: directory tree view
@@ -440,6 +377,7 @@ est data
 **Shell scripting quality**
 - [x] `shellcheck`: static analysis for shell scripts — catches real bugs
 - [x] `shfmt`: shell script formatter (use with conform.nvim)
+- [ ] `bats`: Bash Automated Testing System
 - [ ] `envsubst`: substitute env vars in templates — handy for deploy scripts
 - [ ] `flock`: prevent overlapping cron/systemd jobs with a lockfile
 - [ ] `parallel`: GNU parallel — run jobs in parallel properly
@@ -466,39 +404,21 @@ est data
 - [ ] `terraform`: core workflow (`fmt`, `validate`, `plan`, `apply`, `output`, `state`, `console`, `import`)
 - [ ] `tofu`: OpenTofu, Terraform-compatible IaC workflow
 - [ ] `tflint`: lint Terraform and catch provider-specific mistakes
-- [ ] `packer`: build AMIs and other machine images
 
 **Infrastructure debugging**
 - [ ] `iostat`: CPU and disk I/O trends (sysstat)
-- [ ] `mpstat`: per-CPU usage and steal time (sysstat)
 - [ ] `pidstat`: per-process CPU, memory, and I/O (sysstat)
-- [ ] `sar`: historical system activity from sysstat
 - [ ] `lsof`: what has this file/port/socket open
-- [ ] `lsfd`: modern file descriptor/socket inspection
 - [ ] fuser
-- [ ] `inotifywait`: watch file changes/events for automation and debugging
 - [ ] `strace`: (via stap/dtrace) — syscall tracing, find why things hang
-- [ ] `tcpdump`: packet capture — the ground truth for network issues
-- [ ] `nmap`: network scanner/port auditor
-- [ ] `ncat`: netcat from nmap — TCP/UDP swiss army knife
 - [ ] `iotop`: per-process I/O usage
-- [ ] `mtr`: traceroute + ping combined, ongoing
 - [ ] `dmesg`: kernel ring buffer — hardware events, driver issues
 - [ ] `dd`: block copy (careful with this one)
-
-**Firewall/security (directly relevant to your iptables_autoblock work)**
-- [ ] `iptables`: legacy packet filtering (your current autoblock script)
-- [ ] `iptables-save`: dump rules
-- [ ] `iptables-restore`: load rules
-- [ ] `ip6tables`: same for IPv6
-- [ ] `nft`: nftables — the modern replacement
-- [ ] `firewall-cmd`: firewalld CLI
-- [ ] `iptables-nft`: iptables syntax over nftables backend
-- [ ] `ipset`: IP sets for efficient rule matching
 
 **SELinux (Rocky Linux means you deal with this)**
 - [ ] `getenforce`: check SELinux mode
 - [ ] `sestatus`: SELinux status
+- [ ] `setenforce`: set SELinux mode
 - [ ] `restorecon`: fix file contexts
 - [ ] `audit2why`: explain SELinux denials
 
@@ -507,6 +427,8 @@ est data
 - [ ] `docker`: still the lingua franca even if you prefer podman
 - [ ] `docker compose`: local multi-container stacks
 - [ ] `podman compose`: compose-style podman workflow
+- [ ] `skopeo`: inspect/copy container images without pulling
+- [ ] `trivy`: image/filesystem/IaC security scanning
 
 **Certificate/TLS (relevant to your Caddy + internal PKI work)**
 - [ ] `openssl`: cert inspection, CSR generation, TLS debugging
@@ -515,6 +437,7 @@ est data
 
 **Secrets / credentials**
 - [ ] `gpg`: encryption/signing
+- [ ] `secret-tool`: query/store secrets via libsecret
 - [ ] `pass`: Unix password manager
 - [ ] `bw`: Bitwarden CLI
 - [ ] `age`: modern file encryption
@@ -536,16 +459,9 @@ est data
 - [ ] `redis-cli`: Redis inspection and debugging
 - [ ] `sqlite3`: inspect and query SQLite databases
 
-**Backup/recovery (your ReaR + restic stack)**
-- [ ] `rear`: Relax-and-Recover — bare metal DR
+**Backup/recovery**
 - [ ] `restic`: deduplicated encrypted backups
 - [x] `rsync`: file sync (also listed in tier 1)
-
-**Samba/CIFS (law firm Windows interop)**
-- [ ] `smbclient`: SMB file access
-- [ ] `mount.cifs`: mount SMB shares
-- [ ] `cifscreds`: manage CIFS credentials
-- [ ] `smbcacls`: SMB ACLs
 
 **Process/resource tuning**
 - [ ] `sysctl`: kernel parameter tuning
@@ -562,8 +478,6 @@ est data
 **Cloud CLIs**
 - [ ] `aws`: AWS CLI
 - [ ] `aws-vault`: safer AWS credential handling
-- [x] `gcloud`: Google Cloud CLI
-- [x] `az`: Azure CLI
 
 **Terminal mail**
 - [ ] `mutt`: text-based mail client when staying in the terminal is faster than context-switching to a browser
@@ -574,35 +488,6 @@ est data
 - [ ] `aws sts get-caller-identity`: fastest identity/account sanity check
 - [ ] `aws sso login`: authenticate with AWS IAM Identity Center / SSO
 - [ ] `aws configure sso`: initial SSO profile setup
-- [ ] `aws configure list-profiles`: list configured AWS profiles
-- [ ] `aws s3 ls`: quick bucket/object listing sanity checks
-- [ ] `aws s3 cp`: ad hoc uploads/downloads and one-off copies
-- [ ] `aws s3 sync`: sync directories to or from S3 safely
-- [ ] `aws ssm start-session`: shell access without SSH bastions/keys
-- [ ] `aws ssm send-command`: run remote commands through SSM
-- [ ] `aws logs tail`: follow CloudWatch logs from the CLI
-- [ ] `aws ecr get-login-password`: authenticate to ECR
-- [ ] `aws ecr describe-images`: inspect pushed image tags and digests
-- [ ] `aws ec2 describe-instances`: inspect EC2 state and metadata
-- [ ] `aws ec2 describe-security-groups`: inspect firewall rules and attached groups
-- [ ] `aws ec2 describe-network-interfaces`: inspect ENIs, private IPs, and attachments
-- [ ] `aws rds describe-db-instances`: inspect RDS instance state and endpoints
-- [ ] `aws route53 list-resource-record-sets`: inspect DNS records
-- [ ] `aws acm list-certificates`: inspect certificate inventory
-- [ ] `aws elbv2 describe-target-health`: debug target group health
-- [ ] `aws elbv2 describe-listeners`: inspect listener ports, certificates, and actions
-- [ ] `aws elbv2 describe-rules`: inspect listener rules and routing conditions
-- [ ] `aws cloudfront create-invalidation`: flush cached objects after deploys
-- [ ] `aws autoscaling describe-auto-scaling-groups`: inspect autoscaling state
-- [ ] `aws secretsmanager get-secret-value`: inspect secret values/versions
-- [ ] `aws kms decrypt`: debug KMS-backed secret workflows
-
-**ECS / Fargate (if used)**
-- [ ] `aws ecs update-service`: deploy or roll a service
-- [ ] `aws ecs describe-services`: inspect service state/events
-- [ ] `aws ecs execute-command`: shell/command into a running task
-- [ ] `aws ecs list-tasks`: enumerate running/stopped tasks
-- [ ] `aws ecs describe-tasks`: inspect task state and failures
 
 **Language/runtime tooling**
 - [x] `python3`: Python interpreter
@@ -622,12 +507,8 @@ est data
 
 **Misc high-value**
 - [x] `tmux`: terminal multiplexer
-- [x] `screen`: (not listed but tmux is better)
 - [ ] `watch`: repeat command and watch output
-- [ ] `ipcalc`: subnet calculator
 - [ ] `gh`: GitHub CLI
-- [x] `openconnect`: VPN client (if you use it)
-- [ ] `chronyc`: NTP client management
 
 ---
 
@@ -642,18 +523,14 @@ est data
 
 **Text/doc conversion**
 - [x] `pandoc`: universal doc converter — markdown to PDF, docx, etc.
+- [ ] `pdfgrep`: grep through PDF text
 - [ ] `pdftotext`: extract text from PDFs
 - [ ] `pdfinfo`: inspect PDF metadata/page info
 - [ ] `qpdf`: inspect, repair, split, merge, and transform PDFs
 - [ ] `exiftool`: inspect/edit metadata on documents, images, and media
-- [ ] `magick`: ImageMagick entry point for image conversion and manipulation
-- [ ] `img2pdf`: images to PDF
 - [ ] `ocrmypdf`: OCR + PDF optimization — useful for law firm doc scanning
-- [ ] `tesseract`: OCR engine behind ocrmypdf
 - [ ] `dos2unix`: fix Windows line endings
-- [ ] `unix2dos`: create Windows line endings
 - [ ] `iconv`: character encoding conversion
-- [ ] `uchardet`: detect character encoding
 
 **Spell checking / writing**
 - [ ] `aspell`: interactive CLI spell checker for prose, notes, and Markdown
@@ -663,26 +540,7 @@ est data
 - [ ] `vale`: prose/style linter for Markdown and documentation
 - [ ] `look`: prefix lookup in sorted word lists/dictionaries; handy, but much lower priority than actual spell checkers
 
-**Network situational**
-- [ ] `bridge`: bridge management
-- [ ] `tc`: traffic control (QoS)
-- [ ] `dcb`: data centre bridging
-- [ ] `devlink`: devlink device management
-- [ ] `rdma`: RDMA management
-- [ ] `vdpa`: vDPA management
-- [ ] `tipc`: TIPC protocol
-- [ ] `iw`: wireless config
-- [ ] `wpa_cli`: WPA supplicant control
-- [ ] `wpa_supplicant`: WPA auth daemon
-- [ ] `nm-online`: wait for network
-- [ ] `rfkill`: enable/disable radios
-- [ ] `dnsmasq`: lightweight DNS/DHCP server
-- [ ] `avahi-daemon`: mDNS/DNS-SD daemon
-- [ ] `avahi-browse`: browse mDNS services
-- [ ] `avahi-resolve`: resolve mDNS names
-
 **Disk / filesystem edge cases**
-- [ ] `badblocks`: scan for bad blocks
 - [ ] `udevadm`: inspect devices and udev events/rules
 
 **Cron / scheduling**
@@ -698,38 +556,6 @@ est data
 - [ ] `sendmail`: sendmail-compatible interface
 - [ ] `postqueue`: inspect Postfix queue
 - [ ] `postfix`: Postfix control
-
-**Systemd extended**
-- [ ] `systemd-analyze`: boot performance analysis
-- [ ] `systemd-cgls`: cgroup tree
-- [ ] `systemd-cgtop`: cgroup resource usage
-- [ ] `systemd-run`: transient units
-- [ ] `systemd-nspawn`: lightweight container
-- [ ] `systemd-resolve`: DNS resolution debugging (resolvectl)
-- [ ] `systemd-cat`: pipe to journal
-- [ ] `systemd-escape`: escape strings for unit names
-- [ ] `systemd-tmpfiles`: manage temp files
-- [ ] `systemd-sysusers`: manage system users declaratively
-- [ ] `systemd-mount`: mount via systemd
-- [ ] `systemd-dissect`: inspect disk images
-- [ ] `systemd-creds`: credential management
-- [ ] `systemd-cryptenroll`: LUKS2 token enrollment
-- [ ] `systemd-repart`: declarative partitioning
-- [ ] `systemd-detect-virt`: detect virtualisation type
-- [ ] `machinectl`: manage containers/VMs (systemd-nspawn)
-- [ ] `portablectl`: portable services
-- [ ] `homectl`: systemd-homed user management
-- [ ] `importctl`: import VM/container images
-- [ ] `resolvectl`: DNS resolver management
-
-**Quota management (multi-tenant servers)**
-- [ ] `quota`: show quotas
-- [ ] `quotacheck`: scan filesystem for quotas
-- [ ] `quotaon`: enable quotas
-- [ ] `quotaoff`: disable quotas
-- [ ] `edquota`: edit user quotas
-- [ ] `repquota`: quota report
-- [ ] `setquota`: set quota non-interactively
 
 **Misc useful**
 - [ ] `chafa`: render images in the terminal; handy for quickly inspecting screenshots without leaving the shell

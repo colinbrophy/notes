@@ -20,7 +20,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `e2fsck`: ext filesystem check
 - [ ] `dumpe2fs`: ext filesystem infoXFS filesystem info quotas
 - [ ] `zramctl`: inspect/configure compressed RAM block devices
-- [ ] `snapper`: filesystem snapshot management, especially on Btrfs/openSUSE-style setups
 
 ## ZFS / Proxmox
 
@@ -45,6 +44,10 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ## Core Unix Odds And Ends
 
+- [ ] `fish`: friendly interactive shell
+- [ ] `dir`: basically `ls`
+- [ ] `vdir`: verbose `ls`
+- [ ] `more`: older pager, mostly superseded by `less`
 - [ ] `mknod`: create device nodes/FIFOs manually
 - [ ] `csplit`: split files by context/pattern
 - [ ] `tsort`: topological sort
@@ -55,18 +58,15 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 ## Desktop / Fedora Plumbing
 
 - [ ] `xdg-mime`: inspect/set MIME associations
-- [ ] `gio`: GLib/GVfs file and metadata operations
 - [ ] `busctl`: inspect and call D-Bus services
 - [ ] `gdbus`: D-Bus inspection/calling from GLib tooling
 - [ ] `dbus-monitor`: watch D-Bus messages
-- [ ] `secret-tool`: query/store secrets via libsecret
 - [ ] `toolbox`: Fedora containerised development environments
 
 ## PDF / Document / Media Work
 
 - [ ] `pdfimages`: extract images from PDFs
 - [ ] `pdfunite`: concatenate PDFs
-- [ ] `pdfgrep`: grep through PDF text
 - [ ] `identify`: inspect image metadata
 - [ ] `mogrify`: batch-modify images in place
 - [ ] `soffice`: LibreOffice CLI for document conversion/printing
@@ -74,6 +74,13 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ## Compression
 
+- [ ] `bzip2`: bzip2 compression
+- [ ] `xz`: xz compression
+- [ ] `zip`: create zip archives
+- [ ] `zstd`: modern fast compression
+- [ ] `zstdcat`: stream decompressed zstd data
+- [ ] `zipinfo`: inspect zip archive contents/metadata
+- [ ] `7z`: handle 7-Zip and many archive formats
 - [ ] `zstdgrep`: grep compressed zstd files
 - [ ] `zstdless`: page compressed zstd files
 - [ ] `lz4`: very fast compression
@@ -84,6 +91,8 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 ## Infra / Kubernetes Extras
 
 - [ ] `tofu-ls`: OpenTofu/Terraform language server
+- [ ] `packer`: build AMIs and other machine images
+- [ ] Kubernetes model: pods, deployments, services, ingress, secrets, volumes
 - [ ] `kind`: local Kubernetes clusters in Docker/Podman containers
 - [ ] `minikube`: local Kubernetes cluster manager
 - [ ] `crictl`: inspect/debug CRI container runtimes
@@ -104,6 +113,20 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `rustc`: Rust compiler
 - [ ] `java`: JVM launcher
 - [ ] `zig`: Zig compiler/toolchain
+
+## Cloud CLIs
+
+- [ ] `gcloud`: Google Cloud CLI
+- [ ] `az`: Azure CLI
+
+## Modern CLI Replacement Leftovers
+
+- [ ] `eza`: modern `ls` replacement
+- [ ] `sd`: simpler search/replace than `sed`
+- [ ] `duf`: nicer `df`
+- [ ] `dust`: nicer `du`
+- [ ] `procs`: nicer `ps`
+- [ ] `xh`: friendlier HTTP client than `curl`
 
 ## Git Server Plumbing
 
@@ -128,19 +151,18 @@ Useful if the work shifts back toward Proxmox, Kubernetes, ZFS/RAID, VM hosts, o
 
 - [ ] `arping`: ARP-level ping — find IP conflicts on L2
 - [ ] `ethtool`: NIC stats, driver info, link detection
-- [ ] `nethogs`: per-process bandwidth usage
 - [ ] `dmidecode`: hardware inventory from BIOS tables
 - [ ] `sensors`: read hardware sensor data
 - [ ] `lshw`: detailed hardware listing
 - [ ] `lspci`: PCI devices (GPUs, NICs, storage controllers)
 - [ ] `lsusb`: USB devices
-- [ ] `smartctl`: disk SMART health data — critical for RAID/storage work
+- [ ] `lsscsi`: list SCSI/SATA/SAS devices
+- [ ] `nvme`: inspect/manage NVMe devices
 - [ ] `hdparm`: disk parameters and benchmarks
 
 ### Disk / Storage / RAID
 
 - [ ] `mdadm`: software RAID management
-- [ ] `cryptsetup`: LUKS disk encryption
 - [ ] `wipefs`: clear filesystem signatures before repurposing disks
 - [ ] `blkdiscard`: TRIM/discard entire block device
 - [ ] `fstrim`: periodic TRIM for SSDs
@@ -150,7 +172,6 @@ Useful if the work shifts back toward Proxmox, Kubernetes, ZFS/RAID, VM hosts, o
 
 ### Deep SELinux
 
-- [ ] `setenforce`: set SELinux mode
 - [ ] `semanage`: manage SELinux policy
 - [ ] `chcon`: change file context
 - [ ] `setsebool`: set SELinux booleans
@@ -161,13 +182,15 @@ Useful if the work shifts back toward Proxmox, Kubernetes, ZFS/RAID, VM hosts, o
 
 ### Advanced Containers
 
-- [ ] `skopeo`: inspect/copy container images without pulling
 - [ ] `lsns`: inspect Linux namespaces
 - [ ] `nsenter`: enter container/process namespaces for debugging
 - [ ] `unshare`: create a fresh namespace view for testing/isolation
 - [ ] `buildah`: build OCI images
-- [ ] `trivy`: image/filesystem/IaC security scanning
 - [ ] `journalctl -u container-*`: if using podman/systemd units
+
+### Backup / Recovery
+
+- [ ] `rear`: Relax-and-Recover — bare metal DR
 
 ### Kubernetes
 
@@ -183,6 +206,12 @@ Useful if the work shifts back toward Proxmox, Kubernetes, ZFS/RAID, VM hosts, o
 - [ ] `virt-install`: create VMs
 - [ ] `virt-clone`: clone VMs
 - [ ] `virt-manager`: GUI VM manager
+- [ ] `guestfish`: inspect/edit VM disk images via libguestfs
+- [ ] `virt-cat`: read files from VM disk images
+- [ ] `virt-ls`: list files in VM disk images
+- [ ] `virt-edit`: edit files inside VM disk images
+- [ ] `virt-df`: show disk usage for VM images
+- [ ] `virt-sysprep`: prepare/clean VM images for cloning
 - [ ] `qemu-img`: disk image creation/conversion
 - [ ] `qemu-kvm`: KVM hypervisor
 - [ ] `qemu-system-x86_64`: full system emulator
@@ -215,6 +244,8 @@ Useful if the work shifts back toward Proxmox, Kubernetes, ZFS/RAID, VM hosts, o
 ### Boot / Kernel / Initramfs
 
 - [ ] `grubby`: manage default kernel/boot args on Fedora/RHEL
+- [ ] `grub2-mkconfig`: regenerate GRUB configuration
+- [ ] `grub2-install`: install GRUB bootloader
 - [ ] `dracut`: build initramfs
 - [ ] `lsinitrd`: inspect initramfs
 - [ ] `efibootmgr`: UEFI boot entries
@@ -230,6 +261,13 @@ Useful if the work shifts back toward Proxmox, Kubernetes, ZFS/RAID, VM hosts, o
 ## Second-Pass Lower-Priority Additions
 
 These are still non-junk, but mostly become important when a specific debugging, build, media, storage, or admin task makes them relevant.
+
+### Infrastructure Debugging Leftovers
+
+- [ ] `mpstat`: per-CPU usage and steal time (sysstat)
+- [ ] `sar`: historical system activity from sysstat
+- [ ] `lsfd`: modern file descriptor/socket inspection
+- [ ] `inotifywait`: watch file changes/events for automation and debugging
 
 ### Debug / Build Internals
 
@@ -256,6 +294,9 @@ These are still non-junk, but mostly become important when a specific debugging,
 - [ ] `blockdev`: inspect/set block device parameters
 - [ ] `resizepart`: resize a partition entry without recreating it
 - [ ] `iscsiadm`: manage iSCSI discovery, login, and sessions
+- [ ] `nbdinfo`: inspect Network Block Device exports
+- [ ] `nbdcopy`: copy data to/from Network Block Device exports
+- [ ] `nbdkit`: serve disk images/data as Network Block Devices
 - [ ] `networkctl`: inspect systemd-networkd link state
 - [ ] `nsupdate`: dynamic DNS update client
 - [ ] `tcptraceroute`: traceroute over TCP instead of ICMP/UDP
@@ -271,6 +312,9 @@ These are still non-junk, but mostly become important when a specific debugging,
 
 ### Misc System / Userland
 
+- [ ] `sos`: collect RHEL/Fedora diagnostic bundles
+- [ ] `alternatives`: manage default implementations on Fedora/RHEL
+- [ ] `chronyc`: NTP client management
 - [ ] `update-alternatives`: manage default implementations for commands
 - [ ] `rtcwake`: suspend/hibernate until a scheduled wake time
 - [ ] `wall`: broadcast a message to logged-in users
@@ -284,6 +328,8 @@ Mostly niche, but still commands a person might deliberately run. This section i
 ### Core / GNU / Text Leftovers
 
 - [ ] `arch`: print machine architecture, similar to `uname -m`
+- [ ] `egrep`: extended regex grep; deprecated, use `grep -E`
+- [ ] `fgrep`: fixed-string grep; deprecated, use `grep -F`
 - [ ] `dircolors`: configure `ls` colour output
 - [ ] `factor`: factor integers; mostly a curiosity, occasionally useful for quick maths
 - [ ] `hostid`: print numeric host identifier
@@ -315,11 +361,14 @@ Mostly niche, but still commands a person might deliberately run. This section i
 ### Accounts / Auth / Admin
 
 - [ ] `adduser`: friendlier user creation wrapper on some systems
+- [ ] `chage`: password ageing
+- [ ] `chfn`: change a user's GECOS/full-name information
 - [ ] `chpasswd`: update passwords in batch
 - [ ] `chgpasswd`: update group passwords in batch
-- [ ] `chroot`: run a shell/command with a different root directory
 - [ ] `cvtsudoers`: convert sudoers files between formats
 - [ ] `authselect`: select/manage Fedora/RHEL authentication profiles
+- [ ] `realm`: join/manage identity domains such as AD/FreeIPA
+- [ ] `sss_cache`: clear SSSD cached identity/auth data
 - [ ] `groupmems`: manage supplementary group membership
 - [ ] `pwck`: check passwd/shadow file integrity
 - [ ] `grpck`: check group/gshadow file integrity
@@ -348,6 +397,7 @@ Mostly niche, but still commands a person might deliberately run. This section i
 
 ### Kernel / Console / Hardware Extras
 
+- [ ] `hwclock`: inspect/set hardware clock
 - [ ] `choom`: inspect/adjust OOM killer score
 - [ ] `cpupower`: inspect/tune CPU power management
 - [ ] `chcpu`: configure CPUs online/offline
@@ -374,6 +424,7 @@ Mostly niche, but still commands a person might deliberately run. This section i
 ### Storage / Filesystem Leftovers
 
 - [ ] `addpart`: tell the kernel about a partition
+- [ ] `badblocks`: scan for bad blocks
 - [ ] `delpart`: tell the kernel to forget a partition
 - [ ] `dmsetup`: low-level device-mapper management
 - [ ] `dmstats`: device-mapper statistics
@@ -388,6 +439,7 @@ Mostly niche, but still commands a person might deliberately run. This section i
 - [ ] `e4defrag`: defragment ext4 filesystems
 - [ ] `filefrag`: report file fragmentation
 - [ ] `fsfreeze`: suspend/resume filesystem writes
+- [ ] `fsck`: check/repair filesystems
 - [ ] `kpartx`: create device maps from partition tables
 - [ ] `fuse-overlayfs`: userspace overlay filesystem, common for rootless containers
 - [ ] `fuse2fs`: mount ext filesystems through FUSE
@@ -395,6 +447,7 @@ Mostly niche, but still commands a person might deliberately run. This section i
 - [ ] `fusermount3`: unmount FUSE3 filesystems
 - [ ] `mount.fuse`: mount FUSE filesystems
 - [ ] `mount.fuse3`: mount FUSE3 filesystems
+- [ ] `mkfs`: create filesystems
 - [ ] `mkfs.exfat`: create exFAT filesystems
 - [ ] `mkfs.f2fs`: create F2FS filesystems
 - [ ] `mkfs.vfat`: create FAT/VFAT filesystems
@@ -408,7 +461,19 @@ Mostly niche, but still commands a person might deliberately run. This section i
 - [ ] `ntfsls`: list NTFS filesystem contents
 - [ ] `ntfsresize`: resize NTFS filesystems
 - [ ] `ntfsundelete`: recover deleted files from NTFS
+- [ ] `parted`: partition editor, especially for GPT workflows
+- [ ] `mkswap`: initialise swap space
 - [ ] `swaplabel`: read/set swap area label/UUID
+
+### Quota Management Leftovers
+
+- [ ] `quota`: show quotas
+- [ ] `quotacheck`: scan filesystem for quotas
+- [ ] `quotaon`: enable quotas
+- [ ] `quotaoff`: disable quotas
+- [ ] `edquota`: edit user quotas
+- [ ] `repquota`: quota report
+- [ ] `setquota`: set quota non-interactively
 
 ### Btrfs / Thin-Provisioning Edge Cases
 
@@ -431,42 +496,93 @@ Mostly niche, but still commands a person might deliberately run. This section i
 
 ### Networking / Services Leftovers
 
+#### HTTP / Service Leftovers
+
 - [ ] `ab`: ApacheBench HTTP benchmarking
 - [ ] `GET`: simple command-line HTTP GET client from libwww-perl
 - [ ] `HEAD`: simple command-line HTTP HEAD client from libwww-perl
 - [ ] `POST`: simple command-line HTTP POST client from libwww-perl
 - [ ] `apachectl`: control Apache/httpd
+
+#### Legacy / DNS / Resolver Leftovers
+
 - [ ] `arp`: inspect/manipulate ARP cache; mostly legacy beside `ip neigh`
 - [ ] `arpaname`: convert IP addresses to reverse-DNS ARPA names
-- [ ] `arptables-save`: dump ARP filtering rules
-- [ ] `arptables-restore`: restore ARP filtering rules
-- [ ] `arptables-translate`: translate ARP rules to nftables form
-- [ ] `arptables`: ARP table filtering
-- [ ] `ebtables`: ethernet bridge filtering
 - [ ] `clockdiff`: measure clock difference between hosts
 - [ ] `delv`: DNS lookup with DNSSEC validation
 - [ ] `dhcpcd`: DHCP client
 - [ ] `dnsdomainname`: show DNS domain name
+- [ ] `dnsmasq`: lightweight DNS/DHCP server
 - [ ] `dnstap-read`: read dnstap DNS logs
+- [ ] `getent`: query passwd/group/hosts/services via NSS
+- [ ] `getent hosts`: resolve through the system NSS stack
+- [ ] `getent ahosts`: show IPv4/IPv6 address resolution
 - [ ] `ipmaddr`: inspect multicast addresses; mostly legacy
-- [ ] `iptables-nft-save`: save nft-backed iptables rules
-- [ ] `iptables-nft-restore`: restore nft-backed iptables rules
-- [ ] `iptables-translate`: translate iptables rules to nftables syntax
-- [ ] `ip6tables-save`: save IPv6 iptables rules
-- [ ] `ip6tables-restore`: restore IPv6 iptables rules
 - [ ] `mii-tool`: inspect old Ethernet link state; mostly superseded by `ethtool`
 - [ ] `mmcli`: ModemManager CLI
+- [ ] `nmcli`: NetworkManager CLI
 - [ ] `netstat`: legacy network/socket tool; prefer `ss` and `ip`
 - [ ] `nstat`: network statistics counters
 - [ ] `oping`: send ICMP echo requests with richer output
 - [ ] `resolvconf`: manage resolver configuration on systems that use it
 - [ ] `route`: legacy routing table tool; prefer `ip route`
+
+#### Low-Level Network Plumbing Leftovers
+
+- [ ] `bridge`: bridge management
+- [ ] `tc`: traffic control (QoS)
+- [ ] `dcb`: data centre bridging
+- [ ] `devlink`: devlink device management
+- [ ] `rdma`: RDMA management
+- [ ] `vdpa`: vDPA management
+- [ ] `tipc`: TIPC protocol
+- [ ] `teamdctl`: inspect/control network team devices
+
+#### Firewall / Packet Filtering Leftovers
+
+- [ ] `arptables-save`: dump ARP filtering rules
+- [ ] `arptables-restore`: restore ARP filtering rules
+- [ ] `arptables-translate`: translate ARP rules to nftables form
+- [ ] `arptables`: ARP table filtering
+- [ ] `ebtables`: ethernet bridge filtering
+- [ ] `iptables`: legacy packet filtering
+- [ ] `iptables-save`: dump rules
+- [ ] `iptables-restore`: load rules
+- [ ] `ip6tables`: same for IPv6
+- [ ] `firewall-cmd`: firewalld CLI
+- [ ] `iptables-nft`: iptables syntax over nftables backend
+- [ ] `ipset`: IP sets for efficient rule matching
+- [ ] `iptables-nft-save`: save nft-backed iptables rules
+- [ ] `iptables-nft-restore`: restore nft-backed iptables rules
+- [ ] `iptables-translate`: translate iptables rules to nftables syntax
+- [ ] `ip6tables-save`: save IPv6 iptables rules
+- [ ] `ip6tables-restore`: restore IPv6 iptables rules
+- [ ] `nft`: nftables packet filtering
+
+#### File Sharing Leftovers
+
 - [ ] `rpcclient`: Samba/MS-RPC client for Windows/Samba diagnostics
+- [ ] `smbclient`: SMB file access
 - [ ] `smbget`: wget-like SMB downloader
 - [ ] `smbstatus`: inspect Samba sessions/locks
 - [ ] `smbtree`: browse SMB workgroups/shares
-- [ ] `teamdctl`: inspect/control network team devices
+- [ ] `mount.cifs`: mount SMB shares
+- [ ] `cifscreds`: manage CIFS credentials
+- [ ] `smbcacls`: SMB ACLs
+
+#### Wireless / VPN / Local Discovery Leftovers
+
+- [ ] `avahi-daemon`: mDNS/DNS-SD daemon
+- [ ] `avahi-browse`: browse mDNS services
+- [ ] `avahi-resolve`: resolve mDNS names
+- [ ] `iw`: wireless config
+- [ ] `wpa_cli`: WPA supplicant control
+- [ ] `wpa_supplicant`: WPA auth daemon
+- [ ] `nm-online`: wait for network
+- [ ] `rfkill`: enable/disable radios
 - [ ] `wpa_passphrase`: generate WPA/WPA2 PSK config blocks
+- [ ] `mosh`: roaming remote shell for flaky/high-latency connections
+- [ ] `openconnect`: VPN client
 - [ ] `openvpn`: OpenVPN client/server
 - [ ] `vpnc`: Cisco-compatible VPN client
 
@@ -483,9 +599,38 @@ Mostly niche, but still commands a person might deliberately run. This section i
 
 ### Systemd / Boot / Shutdown Leftovers
 
+- [ ] `loginctl`: session management
+- [ ] `localectl`: locale settings
+- [ ] `hostnamectl`: hostname management
+- [ ] `coredumpctl`: manage core dumps
+- [ ] `shutdown`: schedule or trigger shutdown/reboot on modern systemd systems
+- [ ] `reboot`: trigger an immediate reboot
+- [ ] `poweroff`: power the system down immediately
 - [ ] `halt`: halt the machine; usually prefer `systemctl poweroff`
 - [ ] `service`: legacy service wrapper; useful on mixed distros
+- [ ] `systemd-delta`: compare local unit overrides against vendor units
+- [ ] `systemd-analyze`: boot performance analysis
+- [ ] `systemd-cgls`: cgroup tree
+- [ ] `systemd-cgtop`: cgroup resource usage
+- [ ] `systemd-run`: transient units
+- [ ] `systemd-resolve`: DNS resolution debugging (resolvectl)
+- [ ] `systemd-cat`: pipe to journal
+- [ ] `systemd-escape`: escape strings for unit names
+- [ ] `systemd-tmpfiles`: manage temp files
+- [ ] `systemd-sysusers`: manage system users declaratively
+- [ ] `systemd-mount`: mount via systemd
+- [ ] `systemd-dissect`: inspect disk images
+- [ ] `systemd-creds`: credential management
+- [ ] `systemd-cryptenroll`: LUKS2 token enrollment
+- [ ] `systemd-repart`: declarative partitioning
+- [ ] `systemd-detect-virt`: detect virtualisation type
+- [ ] `resolvectl`: DNS resolver management
+- [ ] `systemd-nspawn`: lightweight container
 - [ ] `kernel-install`: install/remove kernel images using systemd conventions
+- [ ] `machinectl`: manage containers/VMs (systemd-nspawn)
+- [ ] `portablectl`: portable services
+- [ ] `homectl`: systemd-homed user management
+- [ ] `importctl`: import VM/container images
 - [ ] `oomctl`: inspect systemd-oomd state
 - [ ] `systemd-firstboot`: initialise basic settings on a new image
 - [ ] `systemd-inhibit`: run a command while blocking sleep/shutdown
@@ -531,7 +676,6 @@ Mostly niche, but still commands a person might deliberately run. This section i
 - [ ] `cpp`: C preprocessor
 - [ ] `gcov`: GCC coverage reporting
 - [ ] `c++filt`: demangle C++ symbols
-- [ ] `ctags`: generate source navigation tags
 - [ ] `gettext`: translate strings / inspect gettext tooling
 - [ ] `gettextize`: add gettext infrastructure to a source tree
 - [ ] `msgfmt`: compile gettext `.po` files
@@ -543,7 +687,6 @@ Mostly niche, but still commands a person might deliberately run. This section i
 - [ ] `dwz`: optimise DWARF debug info
 - [ ] `debuginfod-find`: fetch debug info/source files from debuginfod servers
 - [ ] `dtrace`: user-space static probe generation / tracing frontend
-- [ ] `bats`: Bash Automated Testing System
 - [ ] `check-regexp`: test regular expressions from the command line
 - [ ] `doxygen`: generate API documentation from source
 
@@ -562,12 +705,14 @@ Mostly niche, but still commands a person might deliberately run. This section i
 ### Data / Formats / Documents
 
 - [ ] `chardetect`: detect text encoding
+- [ ] `uchardet`: detect character encoding
 - [ ] `csv2ods`: convert CSV to OpenDocument spreadsheet
 - [ ] `json_pp`: pretty-print JSON
 - [ ] `json_verify`: validate JSON
 - [ ] `markdown_py`: render Markdown via Python-Markdown
 - [ ] `antiword`: extract text from old `.doc` files
 - [ ] `ebook-convert`: convert ebook formats via Calibre
+- [ ] `unix2dos`: create Windows line endings
 - [ ] `ps2pdf`: convert PostScript to PDF
 - [ ] `pdfattach`: attach files to PDFs
 - [ ] `pdfdetach`: extract PDF attachments
@@ -581,11 +726,14 @@ Mostly niche, but still commands a person might deliberately run. This section i
 
 - [ ] `ffplay`: quick media playback/debugging from FFmpeg
 - [ ] `ghostscript`: PostScript/PDF interpreter; usually invoked as `gs`
+- [ ] `magick`: ImageMagick entry point for image conversion and manipulation
 - [ ] `convert`: legacy ImageMagick conversion command; prefer `magick` on newer systems
 - [ ] `compare`: ImageMagick visual/image comparison
 - [ ] `display`: ImageMagick image viewer
 - [ ] `animate`: ImageMagick image sequence viewer
 - [ ] `composite`: ImageMagick image compositing
+- [ ] `img2pdf`: images to PDF
+- [ ] `tesseract`: OCR engine behind ocrmypdf
 - [ ] `cjpeg`: encode JPEG images
 - [ ] `djpeg`: decode JPEG images
 - [ ] `cwebp`: encode WebP images
@@ -636,6 +784,8 @@ Mostly niche, but still commands a person might deliberately run. This section i
 - [ ] `cardos-tool`: inspect CardOS smartcards
 - [ ] `danetool`: GnuTLS DANE helper
 - [ ] `dbxtool`: manage UEFI dbx revocation data
+- [ ] `mokutil`: inspect/manage Secure Boot MOK keys
+- [ ] `update-crypto-policies`: inspect/set Fedora/RHEL system crypto policy
 - [ ] `clevis`: policy-based decryption framework
 - [ ] `clevis-luks-bind`: bind LUKS unlocking to TPM2/Tang/SSS policy
 - [ ] `clevis-luks-list`: list Clevis bindings on a LUKS device
@@ -674,6 +824,9 @@ Mostly niche, but still commands a person might deliberately run. This section i
 
 ### Personal / Interactive Apps Exposed As Commands
 
+- [ ] `screen`: terminal multiplexer, mostly superseded by `tmux`
+- [ ] `zellij`: modern terminal workspace/multiplexer
+- [ ] `btm`: another modern process/resource monitor (`bottom`)
 - [ ] `brave-browser`: launch Brave from the shell
 - [ ] `calibre`: ebook manager
 - [ ] `ebook-viewer`: Calibre ebook viewer
