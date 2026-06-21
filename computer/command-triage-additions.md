@@ -36,6 +36,9 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ## Kernel / Modules / Hardware
 
+- [ ] `lsmod`: list loaded kernel modules
+- [ ] `modprobe`: load/unload kernel modules with dependency handling
+- [ ] `modinfo`: inspect kernel module metadata
 - [ ] `rmmod`: remove a loaded kernel module directly
 - [ ] `insmod`: insert a kernel module directly
 - [ ] `depmod`: generate module dependency metadata
@@ -540,7 +543,7 @@ Mostly niche, but still commands a person might deliberately run. This section i
 
 #### Firewall / Packet Filtering Leftovers
 
-- [ ] `arptables-save`: dump ARP filtering rules
+- [ ] `arptables-save`: dump **ARP**** filtering rules
 - [ ] `arptables-restore`: restore ARP filtering rules
 - [ ] `arptables-translate`: translate ARP rules to nftables form
 - [ ] `arptables`: ARP table filtering

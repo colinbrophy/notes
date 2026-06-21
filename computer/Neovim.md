@@ -1,6 +1,7 @@
 #todo
 
 - [ ] List all the plugins we need to review in [[Neovim Plugins]]
+Editing registers
 - [ ] / search in ex commands
 - [ ] wildmode and wildmenu
 - [ ] ctrl r ctrl w or ctrl a check if we have a card yet
@@ -91,7 +92,6 @@ Need to look at getting a start page with recently used files.
 - [x] user-manual User manual (READ)  
   - Note: covered above via usr_01..usr_45 checklist
 - [ ] message.txt (Error) messages and explanations (REF)
-- [ ] Kuwasha Helping poor children in Uganda (DATED/OPTIONAL)
 
 ### Basic editing
 - [ ] starting Starting Vim, arguments, initialisation (READ)
@@ -163,15 +163,6 @@ Need to look at getting a start page with recently used files.
 ### Versions
 - [ ] deprecated Deprecated features (READ)
 - [ ] vi-differences Differences between Vim and Vi (SKIM)
-
-### Developing nvim
-- [ ] dev Development of Nvim (SKIM)
-- [ ] dev-arch Internal architecture (REF)
-- [ ] dev-style Development style guidelines (REF)
-- [ ] dev-test Writing and running tests (REF)
-- [ ] dev-theme Design guidelines (REF)
-- [ ] dev-tools Tools and techniques for developing Nvim (REF)
-- [ ] dev-vimpatch Merging patches from Vim (REF)
 
 ### Standard plugins
 - [ ] standard-plugin-list (REF)

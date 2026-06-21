@@ -15,7 +15,11 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `info`: GNU manuals when `man` is thin
 
 **Shell basics**
-- [x] `bash`: your shell            
+- [ ] `bash`: your shell            
+	-   ${parameter@operator}
+         Q  The expansion is a string that is the value of parameter
+            quoted in a format that can be reused as input.
+		And other similar
 - [ ] `zsh`: alternative shell (learn lne editing here)
 - [x] `cd`: change directory
 - [x] `pwd`: print working directory
@@ -32,7 +36,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `head`: first N lines
 - [x] `tail`: last N lines (tail -f for log following)
 - [x] `echo`: print text
-- [x] `printf`: formatted print
+- [ ] `printf`: formatted print
 - [x] `read`: read input in scripts
 - [x] `time`: measure how long a command takes
 - [x] `test`: conditional evaluation ([ ])
@@ -124,7 +128,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `link`: create hard link
 - [x] `unlink`: remove single file
 - [x] `chattr`: change Linux extended file attributes
-- [x] `lsattr`: list Linux extended file attributes
+- [ ] `lsattr`: list Linux extended file attributes
 
 **Permissions / identity / access**
 - [x] `umask`: default permissions for newly created files
@@ -146,8 +150,8 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Checksums / encoding / binary inspection**
 - [x] `sha256sum`: verify file hash
 - [x] `sha512sum`: verify file hash
-- [x] `md5sum`: legacy checksum
-- [x] `cksum`: POSIX checksum
+- [ ] `md5sum`: legacy checksum
+- [ ] `cksum`: POSIX checksum
 - [x] `base64`: encode/decode base64
 - [x] `xxd`: hex dump / reverse hex dump
 - [x] `hexdump`: inspect binary data
@@ -189,9 +193,6 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `vmstat`: fast CPU, memory, I/O, and run queue snapshot
 - [x] `lscpu`: CPU topology and virtualization flags
 - [x] `lsmem`: memory layout/topology
-- [x] `lsmod`: list loaded kernel modules
-- [x] `modprobe`: load/unload kernel modules with dependency handling
-- [x] `modinfo`: inspect kernel module metadata
 - [x] `nproc`: number of available processing units
 - [x] `date`: date/time
 - [x] `cal`: calendar
@@ -490,20 +491,20 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `aws configure sso`: initial SSO profile setup
 
 **Language/runtime tooling**
-- [x] `python3`: Python interpreter
-- [x] `pip`: Python package installer
-- [x] `pipx`: install Python CLI apps cleanly
-- [x] `venv`: Python virtual environments
-- [x] `node`: JavaScript runtime
-- [x] `npm`: Node package manager
-- [x] `go`: Go toolchain
+- [ ] `python3`: Python interpreter
+- [ ] `pip`: Python package installer
+- [ ] `pipx`: install Python CLI apps cleanly
+- [ ] `venv`: Python virtual environments
+- [ ] `node`: JavaScript runtime
+- [ ] `npm`: Node package manager
+- [ ] `go`: Go toolchain
 
 **Build / compile basics**
-- [x] `make`: build automation
-- [x] `gcc`: C compiler
-- [x] `ldd`: show shared library dependencies
-- [x] `ldconfig`: configure dynamic linker cache
-- [x] `pkg-config`: compiler/linker flags for libraries
+- [ ] `make`: build automation
+- [ ] `gcc`: C compiler
+- [ ] `ldd`: show shared library dependencies
+- [ ] `ldconfig`: configure dynamic linker cache
+- [ ] `pkg-config`: compiler/linker flags for libraries
 
 **Misc high-value**
 - [x] `tmux`: terminal multiplexer
