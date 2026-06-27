@@ -1,4 +1,5 @@
-***#ai-written 
+
+#ai-written
 # Command Triage: What to Learn vs Ignore
 
 Everything from your system's PATH, categorised.
@@ -15,18 +16,14 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `info`: GNU manuals when `man` is thin
 
 **Shell basics**
-- [ ] `bash`: your shell            
-	-   ${parameter@operator}
-         Q  The expansion is a string that is the value of parameter
-            quoted in a format that can be reused as input.
-		And other similar
-- [ ] `zsh`: alternative shell (learn lne editing here)
+- [x] `bash`: your shell            
+- [ ] `zsh`: alternative shell (learn line editing here)
 - [x] `cd`: change directory
 - [x] `pwd`: print working directory
 - [x] `ls`: list files
 - [x] `cp`: copy 
 - [x] `mv`: move/rename
- - [x] `rm`: remove
+- [x] `rm`: remove
 - [x] `rmdir`: remove empty dirs
 - [x] `mkdir`: make dirs
 - [x] `ln`: links (hard + symlinks)
@@ -44,7 +41,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `false`: exit 1
 - [x] `yes`: repeat string forever
 - [x] `sleep`: delay for a fixed duration
-- [x] `seq`: generate numeric sequences for loops, filenames, and quick tsed is worth learning to fluency in its core operations. 
+- [x] `seq`: generate numeric sequences for loops, filenames, and quick test data
 
 **Shell language / builtins**
 - [x] `type`: show whether something is a shell builtin, alias, function, or binary
@@ -72,14 +69,15 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `ulimit`: shell resource limits
 - [x] `history`: shell history
 - [x] `fc`: edit/re-run previous commands
-- [ ] `bindkey`: zsh keybindings
+- [x] `bindkey`: zsh keybindings
 - [x] `bind`: bash/readline keybindings
-- [x] declare
+- [x] `declare`: set shell variables and attributes
+
 **Text processing**
 - [x] `grep`: pattern search
 - [x] `sed`: stream editor [Read this](https://www.grymoire.com/Unix/Sed.html)
-- [ ] `awk`: pattern/action language
-- [ ] `gawk`: GNU awk
+- [x] `awk`: pattern/action language
+- [x] `gawk`: GNU awk
 - [x] `sort`: sort lines
 - [x] `uniq`: deduplicate adjacent lines
 - [x] `wc`: word/line/byte count
@@ -127,15 +125,13 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `install`: copy with permissions
 - [x] `link`: create hard link
 - [x] `unlink`: remove single file
-- [x] `chattr`: change Linux extended file attributes
-- [ ] `lsattr`: list Linux extended file attributes
+- [x] `lsattr`: list Linux extended file attributes
 
 **Permissions / identity / access**
 - [x] `umask`: default permissions for newly created files
 - [x] `getfacl`: view POSIX ACLs
 - [x] `setfacl`: set POSIX ACLs
 - [x] `namei`: follow path components and permissions
-- [x] `capsh`: inspect Linux capabilities
 - [x] `getcap`: view file capabilities
 - [x] `setcap`: set file capabilities
 - [x] `runuser`: run command as another user, often from root scripts
@@ -145,13 +141,11 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `gzip`: gzip compression
 - [x] `gunzip`: decompress gzip
 - [x] `zcat`: cat compressed files
-- [ ] `unzip`: extract zip archives
+- [x] `unzip`: extract zip archives
 
 **Checksums / encoding / binary inspection**
 - [x] `sha256sum`: verify file hash
 - [x] `sha512sum`: verify file hash
-- [ ] `md5sum`: legacy checksum
-- [ ] `cksum`: POSIX checksum
 - [x] `base64`: encode/decode base64
 - [x] `xxd`: hex dump / reverse hex dump
 - [x] `hexdump`: inspect binary data
@@ -167,13 +161,11 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `pkill`: kill by pattern
 - [x] `top`: process monitor
 - [ ] `htop`: better process monitor
-- [ ] `btop`: even better process monitor
 - [x] `bg`: background job
 - [x] `fg`: foreground job
 - [x] `jobs`: list shell jobs
 - [x] `nohup`: survive logout
 - [x] `wait`: wait for background jobs
-- [ ] `setsid`: run a command in a new session
 - [x] `nice`: set priority
 - [x] `renice`: change priority
 - [x] `timeout`: run with time limit
@@ -237,6 +229,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `dig`: DNS lookup
 - [x] `nslookup`: older DNS lookup
 - [x] `host`: simple DNS lookup
+- [ ] `getent`: query NSS databases, especially hosts/address resolution
 - [ ] `resolvectl`: inspect/query systemd-resolved
 - [ ] `curl`: HTTP/API checks
 - [x] `wget`: simple downloads
@@ -253,6 +246,9 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `mtr`: ongoing path quality
 - [ ] `nethogs`: per-process bandwidth usage
 - [ ] `ipcalc`: subnet calculator
+
+**Firewall / packet filtering**
+- [ ] `firewall-cmd`: firewalld CLI
 
 **File transfer / sync**
 - [x] `rsync`: serious file copy/sync
@@ -328,7 +324,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] mount source vs mount target
 - [ ] block device vs filesystem vs mountpoint
 - [ ] package ownership: which package installed this file?
-- [ ] ODIC and oatuh flow
+- [ ] OIDC and OAuth flow
 
 
 **Important config locations**
@@ -364,7 +360,9 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `fd`: fast, intuitive find replacement. Pairs with fzf
 - [ ] `rg`: ripgrep — fast recursive grep with sane defaults
 - [ ] `bat`: cat with syntax highlighting and git integration
+- [ ] `yazi`: file browser tui
 - [ ] `fzf`: fuzzy finder — transforms how you navigate
+- [ ] `fzf-tab`: zsh plugin for fzf-powered tab completion
 - [ ] `fzf-tmux`: fzf inside tmux panes
 - [x] `atuin`: much better shell history/search
 - [ ] `zoxide`: smarter cd with frecency tracking
@@ -403,14 +401,13 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 **Terraform / image build**
 - [ ] `terraform`: core workflow (`fmt`, `validate`, `plan`, `apply`, `output`, `state`, `console`, `import`)
-- [ ] `tofu`: OpenTofu, Terraform-compatible IaC workflow
 - [ ] `tflint`: lint Terraform and catch provider-specific mistakes
 
 **Infrastructure debugging**
 - [ ] `iostat`: CPU and disk I/O trends (sysstat)
 - [ ] `pidstat`: per-process CPU, memory, and I/O (sysstat)
 - [ ] `lsof`: what has this file/port/socket open
-- [ ] fuser
+- [ ] `fuser`: identify processes using a file, socket, or filesystem
 - [ ] `strace`: (via stap/dtrace) — syscall tracing, find why things hang
 - [ ] `iotop`: per-process I/O usage
 - [ ] `dmesg`: kernel ring buffer — hardware events, driver issues
@@ -429,6 +426,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `docker compose`: local multi-container stacks
 - [ ] `podman compose`: compose-style podman workflow
 - [ ] `skopeo`: inspect/copy container images without pulling
+- [ ] `cosign`: sign and verify container images/artifacts
 - [ ] `trivy`: image/filesystem/IaC security scanning
 
 **Certificate/TLS (relevant to your Caddy + internal PKI work)**
@@ -450,6 +448,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `pg_dump`: logical backup of a PostgreSQL database
 - [ ] `pg_restore`: restore `pg_dump` custom/directory backups
 - [ ] `pg_dumpall`: dump all PostgreSQL databases plus global objects like roles
+- [ ] `pg_basebackup`: physical PostgreSQL backup / replication base backup
 - [ ] `createdb`: create a PostgreSQL database from the CLI
 - [ ] `createuser`: create PostgreSQL roles/users from the CLI
 - [ ] `vacuumdb`: run vacuum/analyze/maintenance without opening `psql`
@@ -462,13 +461,11 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 **Backup/recovery**
 - [ ] `restic`: deduplicated encrypted backups
-- [x] `rsync`: file sync (also listed in tier 1)
 
 **Process/resource tuning**
 - [ ] `sysctl`: kernel parameter tuning
 - [ ] `ionice`: I/O priority
 - [ ] `taskset`: CPU affinity
-- [x] `ulimit`: resource limits
 - [ ] `prlimit`: per-process limits
 
 **Logs**
@@ -497,14 +494,9 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `venv`: Python virtual environments
 - [ ] `node`: JavaScript runtime
 - [ ] `npm`: Node package manager
-- [ ] `go`: Go toolchain
 
 **Build / compile basics**
 - [ ] `make`: build automation
-- [ ] `gcc`: C compiler
-- [ ] `ldd`: show shared library dependencies
-- [ ] `ldconfig`: configure dynamic linker cache
-- [ ] `pkg-config`: compiler/linker flags for libraries
 
 **Misc high-value**
 - [x] `tmux`: terminal multiplexer
@@ -526,12 +518,8 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `pandoc`: universal doc converter — markdown to PDF, docx, etc.
 - [ ] `pdfgrep`: grep through PDF text
 - [ ] `pdftotext`: extract text from PDFs
-- [ ] `pdfinfo`: inspect PDF metadata/page info
-- [ ] `qpdf`: inspect, repair, split, merge, and transform PDFs
-- [ ] `exiftool`: inspect/edit metadata on documents, images, and media
 - [ ] `ocrmypdf`: OCR + PDF optimization — useful for law firm doc scanning
 - [ ] `dos2unix`: fix Windows line endings
-- [ ] `iconv`: character encoding conversion
 
 **Spell checking / writing**
 - [ ] `aspell`: interactive CLI spell checker for prose, notes, and Markdown
@@ -540,9 +528,6 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `typos`: fast repo-wide spell checker for source, filenames, and CI
 - [ ] `vale`: prose/style linter for Markdown and documentation
 - [ ] `look`: prefix lookup in sorted word lists/dictionaries; handy, but much lower priority than actual spell checkers
-
-**Disk / filesystem edge cases**
-- [ ] `udevadm`: inspect devices and udev events/rules
 
 **Cron / scheduling**
 - [x] `anacron`: run missed cron jobs

@@ -1,0 +1,242 @@
+---
+tags:
+  - ai-written
+---
+
+# Tmux plugins
+
+Triage from the tmux awesome list. Prefer native tmux configuration first; use plugins for hard parts like persistence, fuzzy UI, pane text extraction, and non-trivial session management.
+
+Coverage: every item from the pasted `Plugins` section is included. `Tools and session management`, `Themes`, and `Status Bar` are triaged selectively here unless they overlap with plugin-worthy needs.
+
+## Hell Yeah Useful
+
+- [x] Plugin manager - useful once using more than one real plugin.
+  - [x] `tmux-plugins/tpm`
+- [x] Theme/status framework - pick one rather than stacking themes.
+  - [x] `tmux-ukiyo`
+  - [ ] `catppuccin/tmux`
+  - [ ] `dracula/tmux`
+  - [ ] `nord-tmux`
+  - [ ] `rose-pine/tmux`
+  - [ ] `tmux-themepack`
+- [ ] Session persistence - genuinely annoying to implement yourself.
+  - [ ] `tmux-resurrect`
+  - [ ] `tmux-continuum`
+  - [ ] `tmux-lazy-restore`
+- [ ] Fuzzy session switching / session manager - useful once sessions multiply.
+  - [ ] `t`
+  - [ ] `sesh`
+  - [ ] `sessionx`
+  - [ ] `tmux-tea`
+  - [ ] `tmux-session-wizard`
+  - [ ] `tmux-fzf-session-switch`
+  - [ ] `harpoon`
+  - [ ] `tmux-tab`
+  - [ ] `tmux-grip`
+  - [ ] `tmux-tpad`
+- [ ] Project/session layout manager - useful for repeatable multi-pane workspaces.
+  - [ ] `twm`
+  - [ ] `tmux-project`
+  - [ ] `tmuxinator`
+  - [ ] `tmuxp`
+  - [ ] `tmuxifier`
+  - [ ] `smug`
+  - [ ] `teamocil`
+  - [ ] `tmux-up`
+  - [ ] `tmux-canvas`
+- [ ] Pane text extraction/copying - hard enough to be plugin-worthy.
+  - [ ] `tmux-thumbs`
+  - [ ] `tmux-fingers`
+  - [ ] `extrakto`
+  - [ ] `tmux-copytk`
+  - [ ] `tmux-super-fingers`
+- [ ] Search scrollback / pane output with fuzzy UI.
+  - [ ] `tmux-fuzzback`
+  - [ ] `tmux-copycat`
+  - [ ] `tmux-filter`
+- [ ] Open URLs/files from pane text.
+  - [ ] `tmux-open`
+  - [ ] `tmux-fzf-url`
+  - [ ] `tmux-fpp`
+  - [ ] `tmux-open-nvim`
+  - [ ] `tmux-fzf-open-files-nvim`
+- [ ] Vim/Neovim and tmux navigation integration.
+  - [ ] `vim-tmux-navigator`
+  - [ ] `tmux-nav-master`
+- [ ] Hint-based pane navigation - useful if pane targeting is frequent and mouse-free.
+  - [ ] `tmux-easy-motion`
+  - [ ] `tmux-easymotion`
+  - [ ] `tmux-jump`
+- [x] Clipboard integration - already handled natively; plugin only if native clipboard breaks.
+  - [ ] `tmux-yank`
+  - [x] native `set-clipboard on`
+- [ ] Command/process completion notification.
+  - [ ] `tmux-notify`
+- [ ] Better mouse behaviour - only if native mouse support feels rough.
+  - [ ] `tmux-better-mouse-mode`
+  - [ ] `tmux-click-copy`
+- [ ] Nested/remote tmux safety.
+  - [ ] `tmux-suspend`
+
+## Maybe / Native Config First
+
+These are usually best solved with a few lines of `.tmux.conf` before adding plugins.
+
+- [x] Mouse support.
+  - [x] native `set -g mouse on`
+  - [ ] `tmux-better-mouse-mode`
+- [x] Vi-style copy mode.
+  - [x] native `set -g mode-keys vi`
+- [x] Easier copy-mode entry.
+  - [x] native `bind v copy-mode`
+- [x] System clipboard.
+  - [x] native `set -g set-clipboard on`
+  - [ ] `tmux-yank`
+- [x] Terminal title updates.
+  - [x] native `set-titles` and `pane-focus-in` hook
+  - [ ] `tmux-window-name`
+- [x] Status bar position/refresh.
+  - [x] native `status-position top`
+  - [x] native `status-interval 1`
+- [x] Large scrollback.
+  - [x] native `history-limit 100000`
+- [x] Better terminal key handling.
+  - [x] native `extended-keys always`
+  - [x] native `extended-keys-format csi-u`
+  - [ ] `tmux-keybtest`
+- [x] Focus event forwarding.
+  - [x] native `focus-events on`
+- [ ] Config reload on save.
+  - [ ] `tmux-autoreload`
+- [ ] Prefix indicator.
+  - [ ] `tmux-prefix-highlight`
+  - [ ] `tmux-mode-indicator`
+- [ ] Standard pane/window key bindings.
+  - [ ] `tmux-pain-control`
+- [ ] Popup command palette / menus.
+  - [ ] `tmux-command-palette`
+  - [ ] `tmux-menus`
+  - [ ] `tmux-modal`
+  - [ ] `tmux-grimoire`
+- [ ] Scratch popup.
+  - [ ] `tmux-toggle-scratch`
+  - [ ] `tmux-floating-plugin`
+- [ ] Pane zoom/focus helpers.
+  - [ ] `tmux-power-zoom`
+  - [ ] `tmux-pane-focus`
+- [ ] Keybinding lock/safety.
+  - [ ] `tmux-keylocker`
+- [ ] Session utility helpers.
+  - [ ] `tmux-sessionist`
+- [ ] Smooth scrolling.
+  - [ ] `tmux-smooth-scroll`
+
+## Useful If You Use That Tool
+
+- [x] Git context in status bar.
+  - [x] `tmux-ukiyo` with `@ukiyo-plugins "git"`
+  - [ ] `gitmux`
+  - [ ] `tmux-simple-git-status`
+  - [ ] `tmux-gh`
+- [ ] Kubernetes context.
+  - [ ] `tmux-kubectx`
+  - [ ] `kmux-status`
+- [ ] AWS context.
+  - [ ] `aws-tmux`
+- [ ] SSH/remote context.
+  - [ ] `tmux-current-pane-hostname`
+- [ ] CPU/memory/disk status.
+  - [ ] `tmux-cpu`
+  - [ ] `tmux-cpu-info`
+  - [ ] `tmux-cpu-rs`
+  - [ ] `tmux-mem-cpu-load`
+  - [ ] `tmux-df`
+  - [ ] `tmux-task-monitor`
+  - [ ] `tmux-workspace-usage`
+- [ ] Battery/network status.
+  - [ ] `tmux-battery`
+  - [ ] `tmux-online-status`
+  - [ ] `tmux-network-bandwidth`
+  - [ ] `tmux-packet-loss`
+- [ ] VPN status.
+  - [ ] `tmux-mullvad`
+  - [ ] `tmux-nordvpn`
+  - [ ] `tmux-piavpn`
+- [ ] Media/player controls.
+  - [ ] `tmux-player-ctl`
+  - [ ] `tmux-plugin-playerctl`
+  - [ ] `tmux-spotify`
+  - [ ] `tmux-spotify-info`
+  - [ ] `tmux-mpv-info`
+- [ ] AI agent workflows.
+  - [ ] `lazyclaude`
+  - [ ] `marmonitor`
+  - [ ] `tmux-agent-indicator`
+  - [ ] `tmux-claude-sessions`
+  - [ ] `tmux-llm`
+  - [ ] `tmuxai`
+- [ ] Task/build runners and launchers.
+  - [ ] `nunchux`
+  - [ ] `tmux-compile`
+- [ ] Multi-host / pair programming.
+  - [ ] `tmux-cssh`
+  - [ ] `xpanes`
+  - [ ] `tmuxpair`
+  - [ ] `back-in-5`
+- [ ] Development containers.
+  - [ ] `tmux-devcontainers`
+- [ ] Logging / capture.
+  - [ ] `tmux-logging`
+  - [ ] `tmux2html`
+- [ ] Password manager panes.
+  - [ ] `tmux-1password`
+  - [ ] `tmux-bitwarden`
+- [ ] Cheatsheet popup.
+  - [ ] `tmux-cht-sh`
+- [ ] Time tracking.
+  - [ ] `tmux-timetrap`
+- [ ] File transfer.
+  - [ ] `tmux-wormhole`
+- [ ] Port/process inspection.
+  - [ ] `tmux-port`
+
+## Not Useful By Default
+
+Skip unless there is a repeated, concrete use case.
+
+- [ ] Weather/status fluff.
+  - [ ] `tmux-weather`
+  - [ ] `tmux-weather-info-yr`
+  - [ ] `tmux-clima`
+- [ ] Crypto price widgets.
+  - [ ] `tmux-kripto`
+- [ ] Music/status widgets unless tmux is the main media dashboard.
+  - [ ] `tmux-ludanta`
+  - [ ] `tmux-pianobar`
+  - [ ] `tmux-spotify-playlists`
+- [ ] AI novelty/window naming unless the agent workflow is already tmux-heavy.
+  - [ ] `tmux-ai-window-name`
+  - [ ] `ccb`
+- [ ] Mobile or browser control unless deliberately building that workflow.
+  - [ ] `muxile`
+  - [ ] `tmux-browser`
+- [ ] Heavy status bars if native status or `tmux-ukiyo` is enough.
+  - [ ] `powerline`
+  - [ ] `tmux-powerline`
+  - [ ] `tmux-powerkit`
+  - [ ] `tmux2k`
+  - [ ] `muxbar`
+- [ ] Visual/window-manager experiments unless replacing a real tiling workflow.
+  - [ ] `tmux-tilish`
+  - [ ] `tmux-tilit`
+  - [ ] `tabby`
+  - [ ] `opensessions`
+  - [ ] `tmux-sidebar`
+  - [ ] `tmux-mouse-swipe`
+- [ ] Old/unmaintained URL helpers.
+  - [ ] `tmux-urlview`
+- [ ] Development/testing-only resources.
+  - [ ] `tmux-example-plugin`
+  - [ ] `tmux-test`
+  - [ ] `gotmux`
