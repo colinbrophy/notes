@@ -1,12 +1,67 @@
 
-#ai-written
-# Command Triage: What to Learn vs Ignore
-
-Everything from your system's PATH, categorised.
 
 NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 ## TIER 1: Core daily drivers (you almost certainly know these)
+
+**Git**
+- [ ] `git`: version control
+  - [ ] Standalone developer workflow
+    - [x] `git init`: create a new repository
+    - [ ] `git log`: see what happened
+    - [ ] `git switch`, `git branch`: switch and manage branches
+    - [x] `git add`: manage the index/staging area
+    - [ ] `git diff`, `git status`: see what you are in the middle of doing
+    - [ ] `git commit`: advance the current branch
+    - [ ] `git restore`: undo changes
+    - [ ] `git merge`: merge between local branches
+    - [ ] `git rebase`: maintain topic branches
+    - [ ] `git tag`: mark a known point
+  - [ ] Individual developer participant workflow
+    - [ ] `git clone`: prime a local repository from upstream
+    - [ ] `git pull`, `git fetch`: keep up to date with upstream
+    - [ ] `git push`: publish to a shared repository
+- [x] `git worktree`
+- [ ] `gitk`: GUI log
+- [ ] `trufflehog`: scan git history and files for secrets
+- [ ] `gitleaks`: scan repos for committed secrets
+- [ ] `gh`: GitHub CLI
+- [ ] `tig`: terminal Git history/browser
+- [ ] `ghq`: clone/manage many repos under one directory
+- [ ] `gitui`: terminal Git UI
+
+**Modern CLI replacements — big quality-of-life wins**
+- [ ] `fd`: fast, intuitive find replacement. Pairs with fzf
+- [ ] `rg`: ripgrep — fast recursive grep with sane defaults
+- [ ] `rga` / `ripgrep-all`: search PDFs, Office docs, archives, and other rich files with ripgrep-like ergonomics
+- [ ] `bat`: cat with syntax highlighting and git integration
+- [ ] `yazi`: file browser tui
+- [ ] `fzf`: fuzzy finder — transforms how you navigate
+- [ ] `fzf-tab`: zsh plugin for fzf-powered tab completion
+- [ ] `fzf-tmux`: fzf inside tmux panes
+- [ ] `tv`: alterntive fuzzy
+- [x] `atuin`: much better shell history/search
+- [ ] `zoxide`: smarter cd with frecency tracking
+- [ ] `delta`: beautiful git diffs, pairs with lazygit
+- [ ] `hyperfine`: benchmark commands properly
+- [ ] `btop`: gorgeous process/resource monitor
+- [ ] `ncdu`: interactive disk usage explorer — find what's eating space
+- [ ] `lazygit`: TUI git client you already use
+- [ ] `tree`: directory tree view
+
+**Terraform / image build**
+- [ ] `terraform`: core workflow (`fmt`, `validate`, `plan`, `apply`, `output`, `state`, `console`, `import`)
+- [ ] `tflint`: lint Terraform and catch provider-specific mistakes
+- [ ] `terraform-docs`: generate docs for Terraform modules
+- [ ] `terraform-ls`: Terraform language server
+- [ ] `tfsec`: Terraform static security scanning
+
+**AWS**
+- [ ] `aws`: AWS CLI
+- [ ] `aws-vault`: safer AWS credential handling
+- [ ] `aws sts get-caller-identity`: fastest identity/account sanity check
+- [ ] `aws sso login`: authenticate with AWS IAM Identity Center / SSO
+- [ ] `aws configure sso`: initial SSO profile setup
 
 **Docs / discovery**
 - [x] `man`: primary system manuals
@@ -33,7 +88,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `head`: first N lines
 - [x] `tail`: last N lines (tail -f for log following)
 - [x] `echo`: print text
-- [ ] `printf`: formatted print
+- [x] `printf`: formatted print
 - [x] `read`: read input in scripts
 - [x] `time`: measure how long a command takes
 - [x] `test`: conditional evaluation ([ ])
@@ -65,7 +120,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `return`: return from function/sourced script
 - [x] `exit`: exit shell/script
 - [x] `shift`: shift positional parameters
-- [x] `getopts`: parse shell script flags
+- [ ] `getopts`: parse shell script flags
 - [x] `ulimit`: shell resource limits
 - [x] `history`: shell history
 - [x] `fc`: edit/re-run previous commands
@@ -111,6 +166,8 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `chmod`: change permissions
 - [x] `chown`: change ownership
 - [x] `chgrp`: change group
+- [ ] `rename`: batch rename files
+- [ ] `trash-cli`: safer interactive delete workflow than raw `rm`
 - [x] `stat`: file metadata
 - [x] `file`: detect file type
 - [x] `realpath`: resolve symlinks
@@ -137,11 +194,13 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `runuser`: run command as another user, often from root scripts
 
 **Archiving/compression**
-- [ ] `tar`: tape archive (tar czf, tar xzf)
+- [x] `tar`: tape archive (tar czf, tar xzf)
 - [x] `gzip`: gzip compression
+- [ ] `pigz`: parallel gzip for faster compression/decompression
 - [x] `gunzip`: decompress gzip
 - [x] `zcat`: cat compressed files
 - [x] `unzip`: extract zip archives
+- [ ] `unar`: extract many archive formats with fewer flags to remember
 
 **Checksums / encoding / binary inspection**
 - [x] `sha256sum`: verify file hash
@@ -160,7 +219,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `pgrep`: find process by pattern
 - [x] `pkill`: kill by pattern
 - [x] `top`: process monitor
-- [ ] `htop`: better process monitor
+- [x] `htop`: better process monitor
 - [x] `bg`: background job
 - [x] `fg`: foreground job
 - [x] `jobs`: list shell jobs
@@ -176,10 +235,15 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `reset`: reset broken terminal
 - [x] `clear`: clear terminal screen
 - [x] `script`: record terminal session
+- [ ] `asciinema`: record terminal sessions
+- [ ] `agg`: turn asciinema recordings into GIF/video
+- [ ] `vhs`: script terminal demos and recordings
+- [x] `tmux`: terminal multiplexer
 
 **System info**
 - [x] `uname`: system info
 - [x] `hostname`: hostname
+- [x] `hostnamectl`: inspect/set system hostname and related metadata
 - [x] `uptime`: load/uptime
 - [x] `free`: quick memory + swap usage
 - [x] `vmstat`: fast CPU, memory, I/O, and run queue snapshot
@@ -212,13 +276,14 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `blkid`: filesystem UUIDs/types
 - [x] `findmnt`: show mount tree
 - [x] `smartctl`: disk SMART health checks
-- [ ] `cryptsetup`: LUKS disk encryption
+- [x] `cryptsetup`: LUKS disk encryption
 - [x] `fdisk`: classic disk partition editor
+- [x] `fsck`: check/repair filesystems
 - [x] `swapon`: enable/list swap devices
 - [x] `swapoff`: disable swap devices
 - [x] `sync`: flush writes
 - [x] `chroot`: run a shell/command with a different root directory
-- [ ] `snapper`: filesystem snapshot management
+- [x] `snapper`: filesystem snapshot management
 
 **Networking / connectivity**
 - [x] `ip`: addresses, routes, links, and neighbours
@@ -226,33 +291,34 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `ping`: ICMP reachability
 - [x] `traceroute`: trace packet path
 - [x] `tracepath`: trace path without needing root
-- [x] `dig`: DNS lookup
 - [x] `nslookup`: older DNS lookup
 - [x] `host`: simple DNS lookup
-- [ ] `getent`: query NSS databases, especially hosts/address resolution
-- [ ] `resolvectl`: inspect/query systemd-resolved
+- [x] `dig`: DNS lookup and debugging
 - [ ] `curl`: HTTP/API checks
 - [x] `wget`: simple downloads
 
 **Network probes / debugging**
-- [ ] `nc`: basic TCP/UDP testing
-- [ ] `ncat`: richer netcat from nmap
-- [ ] `socat`: bidirectional socket/data plumbing
+- [x] `nc`: basic TCP//UDP testing
+- [x] `socat`: bidirectional socket/data plumbing
 - [ ] `openssl s_client`: TLS endpoint debugging
-- [ ] `whois`: domain/IP registry lookup
-- [ ] `iperf3`: network throughput measurement
-- [ ] `tcpdump`: packet capture
-- [ ] `nmap`: host/port discovery
-- [ ] `mtr`: ongoing path quality
-- [ ] `nethogs`: per-process bandwidth usage
+- [x] `whois`: domain/IP regstry lookup
+- [x] `iperf3`: network throughput measurement
+- [x] `tcpdump`: packet capture
+- [ ] `tshark`: CLI Wireshark packet analysis
+- [x] `nmap`: host/port discovery
+- [x] `mtr`: ongoing path quality
+- [x] `nethogs`: per-process bandwidth usage
 - [ ] `ipcalc`: subnet calculator
+- [ ] `testssl.sh`: practical TLS endpoint audit
+- [ ] `mitmdump`: scriptable HTTP(S) proxy capture/debugging from mitmproxy
 
 **Firewall / packet filtering**
-- [ ] `firewall-cmd`: firewalld CLI
+- [x] `firewall-cmd`: firewalld CLI
+- [ ] `ufw`: simple firewall frontend common on Ubuntu
 
 **File transfer / sync**
-- [x] `rsync`: serious file copy/sync
-- [x] `rsync --dry-run`: preview sync safely
+- [ ] `rsync`: serious file copy/sync
+- [ ] `sshfs`: mount remote directories over SSH
 
 **User management**
 - [x] `useradd`: create user
@@ -261,6 +327,9 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `groupadd`: create group
 - [x] `groupdel`: delete group
 - [x] `groupmod`: modify group
+- [x] `users`: list currently logged-in users
+- [ ] `pinky`: lightweight `finger`-style user info
+- [ ] `adduser`: friendlier user creation wrapper on some systems
 - [x] `passwd`: change password
 - [x] `chsh`: change a user's login shell
 - [x] `su`: switch user
@@ -273,7 +342,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Systemd / logs**
 - [ ] `systemctl`: service/unit management (`status`, `list-units`, `cat`, `edit`, `daemon-reload`)
 - [ ] `journalctl`: log viewer (`-u`, `-b`, `-f`)
-- [ ] `timedatectl`: time/timezone/NTP state
+- [x] `timedatectl`: time/timezone/NTP state
 
 **Cron / scheduling**
 - [x] `crontab`: cron job management
@@ -281,10 +350,10 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Package management**
 - [ ] `dnf`: Fedora/RHEL package manager
 - [ ] `rpm`: low-level rpm operations
-
-**Git**
-- [ ] `git`: version control
-- [ ] `gitk`: GUI log viewer
+- [ ] `brew`: Homebrew package manager, common on macOS and useful via Linuxbrew
+- [ ] `apt`: Debian/Ubuntu package manager
+- [ ] `apt-cache`: query Debian/Ubuntu package metadata
+- [ ] `dpkg`: low-level Debian package operations
 
 **SSH**
 - [x] `ssh`: remote shell
@@ -297,18 +366,22 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `ssh-keyscan`: grab host keys
 - [x] `sshd`: SSH daemon
 - [x] `sshpass`: non-interactive SSH password (use keys instead)
+- [ ] `autossh`: keep SSH tunnels alive
+- [ ] `ssh-audit`: audit SSH server/client crypto configuration
+- [ ] `xxh`: bring your shell environment over SSH without installing dotfiles remotely
 
 **Editors**
 - [x] `nvim`: your editor
 - [x] `vim`: fallback
 - [x] `vi`: minimal vim
 - [x] `view`: read-only vim
-- [ ] `ctags`: generate source navigation tags
+- [x] `ctags`: generate source navigation tags
 
 **Concepts to learn as concepts, not binaries**
 - [ ] shell expansion order
 - [x] quoting rules
-- [ ] PATH lookup
+- [ ] PATH lookuk
+- [ ] Networking understanding, HTTP, TCP, SSL and so on.
 - [ ] fast doc lookup: official docs first, then `site:` search by tool/vendor
 - [ ] Terraform lookup model: language docs vs provider docs vs registry module docs
 - [ ] browser keyword search shortcuts / DevDocs for fast web-doc lookup
@@ -344,45 +417,21 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 ## TIER 2: High-value tools to invest in learning
 
 **Current focus: AWS + PostgreSQL/MySQL**
-- [ ] `aws`, `jq`, `aws logs tail`, `aws ssm start-session`
-- [ ] `aws rds describe-db-instances`, `aws secretsmanager get-secret-value`, `aws kms decrypt`
-- [ ] `psql`, `pg_isready`, `pg_dump`, `pg_restore`, `mysql`, `mysqldump`, `mysqladmin`
-- [ ] `dig`, `nc`, `openssl s_client` for endpoint/connectivity checks
-
-**If you only internalise a subset first**
-- [ ] `fd`, `rg`, `fzf`, `zoxide`, `bat`
-- [ ] `jq`, `yq`
-- [ ] `rsync`, `just`
-- [ ] `watch`, `lsof`
-- [ ] `systemctl`, `journalctl`, `ip`, `ss`
-
-**Modern CLI replacements — big quality-of-life wins**
-- [ ] `fd`: fast, intuitive find replacement. Pairs with fzf
-- [ ] `rg`: ripgrep — fast recursive grep with sane defaults
-- [ ] `bat`: cat with syntax highlighting and git integration
-- [ ] `yazi`: file browser tui
-- [ ] `fzf`: fuzzy finder — transforms how you navigate
-- [ ] `fzf-tab`: zsh plugin for fzf-powered tab completion
-- [ ] `fzf-tmux`: fzf inside tmux panes
-- [x] `atuin`: much better shell history/search
-- [ ] `zoxide`: smarter cd with frecency tracking
-- [ ] `delta`: beautiful git diffs, pairs with lazygit
-- [ ] `hyperfine`: benchmark commands properly
-- [ ] `btop`: gorgeous process/resource monitor
-- [ ] `ncdu`: interactive disk usage explorer — find what's eating space
-- [ ] `lazygit`: TUI git client you already use
-- [ ] `tree`: directory tree view
 
 **Shell scripting quality**
 - [x] `shellcheck`: static analysis for shell scripts — catches real bugs
 - [x] `shfmt`: shell script formatter (use with conform.nvim)
 - [ ] `bats`: Bash Automated Testing System
 - [ ] `envsubst`: substitute env vars in templates — handy for deploy scripts
-- [ ] `flock`: prevent overlapping cron/systemd jobs with a lockfile
+- [ ] `dotenvx`: manage/load `.env` files with encryption support
+- [ ] `dotenv-linter`: catch mistakes in `.env` files
+- [x] `flock`: prevent overlapping cron/systemd jobs with a lockfile
 - [ ] `parallel`: GNU parallel — run jobs in parallel properly
 
-**Repo hygiene / linting**
+**Repo hygiene / CI / linting**
 - [ ] `pre-commit`: run the same local hooks as CI
+- [ ] `act`: run GitHub Actions locally
+- [ ] `actionlint`: lint GitHub Actions workflows
 - [ ] `yamllint`: catch YAML syntax/structure/style issues
 
 **Ansible**
@@ -398,10 +447,12 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Data wrangling**
 - [ ] `jq`: JSON query/transform — essential for API work, terraform state
 - [ ] `yq`: YAML equivalent of jq — critical for ansible debugging
-
-**Terraform / image build**
-- [ ] `terraform`: core workflow (`fmt`, `validate`, `plan`, `apply`, `output`, `state`, `console`, `import`)
-- [ ] `tflint`: lint Terraform and catch provider-specific mistakes
+- [ ] `jc`: convert common command output to JSON for piping into `jq`
+- [ ] `jo`: build JSON objects from shell scripts without quoting hell
+- [ ] `gron`: flatten JSON into greppable assignments
+- [ ] `jless`: interactive JSON viewer
+- [ ] `jqp`: TUI playground for `jq` filters
+- [ ] `jd`: JSON diff
 
 **Infrastructure debugging**
 - [ ] `iostat`: CPU and disk I/O trends (sysstat)
@@ -409,8 +460,10 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `lsof`: what has this file/port/socket open
 - [ ] `fuser`: identify processes using a file, socket, or filesystem
 - [ ] `strace`: (via stap/dtrace) — syscall tracing, find why things hang
+- [ ] `ltrace`: trace dynamic library calls, useful beside `strace`
 - [ ] `iotop`: per-process I/O usage
 - [ ] `dmesg`: kernel ring buffer — hardware events, driver issues
+- [ ] `perf`: Linux performance profiling and low-level CPU/system analysis
 - [ ] `dd`: block copy (careful with this one)
 
 **SELinux (Rocky Linux means you deal with this)**
@@ -420,6 +473,9 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `restorecon`: fix file contexts
 - [ ] `audit2why`: explain SELinux denials
 
+**Security / audit**
+- [ ] `lynis`: Linux security audit/checklist tool
+
 **Containers (Fedora native)**
 - [ ] `podman`: rootless containers — docker-compatible
 - [ ] `docker`: still the lingua franca even if you prefer podman
@@ -428,6 +484,10 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `skopeo`: inspect/copy container images without pulling
 - [ ] `cosign`: sign and verify container images/artifacts
 - [ ] `trivy`: image/filesystem/IaC security scanning
+- [ ] `toolbox`: Fedora containerised development environments
+- [ ] `distrobox`: Linux desktop/dev container workflow, broader than `toolbox`
+- [ ] `lazydocker`: TUI for local Docker/Compose stacks
+- **NOTE:** There are more container tools in [[command-triage-additions]]
 
 **Certificate/TLS (relevant to your Caddy + internal PKI work)**
 - [ ] `openssl`: cert inspection, CSR generation, TLS debugging
@@ -461,6 +521,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 **Backup/recovery**
 - [ ] `restic`: deduplicated encrypted backups
+- [ ] `borg`: deduplicated encrypted backups, good alternative to `restic`
 
 **Process/resource tuning**
 - [ ] `sysctl`: kernel parameter tuning
@@ -473,19 +534,10 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `logger`: write message to syslog/journal
 - [ ] `lnav`: interactive log viewer for mixed log files and timestamps
 
-**Cloud CLIs**
-- [ ] `aws`: AWS CLI
-- [ ] `aws-vault`: safer AWS credential handling
-
 **Terminal mail**
 - [ ] `mutt`: text-based mail client when staying in the terminal is faster than context-switching to a browser
 - [ ] `mail`: minimal text-based mail client for simple send/read flows
 - [ ] `mailq`: inspect the local outgoing mail queue
-
-**AWS practical workflows**
-- [ ] `aws sts get-caller-identity`: fastest identity/account sanity check
-- [ ] `aws sso login`: authenticate with AWS IAM Identity Center / SSO
-- [ ] `aws configure sso`: initial SSO profile setup
 
 **Language/runtime tooling**
 - [ ] `python3`: Python interpreter
@@ -494,14 +546,14 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `venv`: Python virtual environments
 - [ ] `node`: JavaScript runtime
 - [ ] `npm`: Node package manager
+- [ ] `perl`: regular expressions and older scripting glue
 
 **Build / compile basics**
 - [ ] `make`: build automation
-
-**Misc high-value**
-- [x] `tmux`: terminal multiplexer
 - [ ] `watch`: repeat command and watch output
-- [ ] `gh`: GitHub CLI
+- [ ] `watchexec`: rerun commands when files change
+- [ ] `entr`: rerun commands when listed files change
+- [ ] `just`: command runner (you already use this)
 
 ---
 
@@ -543,37 +595,56 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `postqueue`: inspect Postfix queue
 - [ ] `postfix`: Postfix control
 
-**Misc useful**
-- [ ] `chafa`: render images in the terminal; handy for quickly inspecting screenshots without leaving the shell
-- [ ] `cloc`: count lines of code
+**File transfer / sync**
 - [ ] `croc`: simple encrypted file transfer between machines
-- [ ] `jrnl`: simple personal diary app
-- [ ] `just`: command runner (you already use this)
+- [ ] `rclone`: cloud storage sync (S3, etc.)
+- [ ] `syncthing`: p2p file sync
+
+**Code / repo utilities**
+- [ ] `cloc`: count lines of code
+
+**Environment / dotfiles**
 - [ ] `stow`: symlink farm manager (your dotfiles)
 - [ ] `direnv`: per-directory env vars
-- [ ] `xdg-open`: open a file/URL with the desktop default app
+- [ ] `chezmoi`: dotfiles manager for multi-machine setups
+
+**Pipeline helpers**
 - [ ] `pv`: monitor progress through a pipe / long data stream
-- [ ] `mods`: AI in the terminal (if you use it)
-- [ ] `ollama`: local LLM inference (your GPU passthrough setup)
-- [ ] `yt-dlp`: video downloader
-- [ ] `rclone`: cloud storage sync (S3, etc.)
-- [ ] `terraform-docs`: generate docs for Terraform modules
-- [ ] `terraform-ls`: terraform language server
-- [ ] `tfsec`: Terraform static security scanning
-- [ ] `vagrant`: VM provisioning (your ansible testing)
-- [ ] `syncthing`: p2p file sync
-- [ ] `jd`: JSON diff
+- [ ] `sponge`: soak stdin before writing a file, useful in pipelines that update files in place
+
+**Terminal docs / browsing**
 - [ ] `w3m`: terminal web browser
 - [ ] `glow`: terminal markdown renderer
 - [ ] `cheat`: cheat sheets in terminal
 - [ ] `tldr`: short, example-first command docs
-- [ ] `cht.sh`: curlable cheat sheets / quick examples
+- [ ] `cht.sh`: curlable cheat sheets / quick example
+
+**Desktop / media helpers**
+- [ ] `chafa`: render images in the terminal; handy for quickly inspecting screenshots without leaving the shell
+- [ ] `playerctl`: control media players from the shell
+- [ ] `brightnessctl`: control laptop/display brightness from the shell
+- [ ] `xdg-open`: open a file/URL with the desktop default app
+- [ ] `yt-dlp`: video downloader
+
+**AI / local models**
+- [ ] `mods`: AI in the terminal (if you use it)
+- [ ] `ollama`: local LLM inference (your GPU passthrough setup)
+
+**VM / local lab**
+- [ ] `vagrant`: VM provisioning (your ansible testing)
+
+**Personal workflow**
+- [ ] `jrnl`: simple personal diary app
 
 ---
 
 ## TIER 4: Niche / special-purpose (ignore until relevant)
 
 **X11/Wayland tools**
+- [ ] `grim`: Wayland screenshot capture
+- [ ] `slurp`: select a Wayland screen region, often used with `grim`
+- [ ] `swappy`: annotate/edit screenshots from Wayland capture workflows
+- [ ] `wl-screenrec`: Wayland screen recording
 - [ ] `wl-copy`: Wayland clipboard copy
 - [ ] `wl-paste`: Wayland clipboard paste
 

@@ -4,13 +4,16 @@
 Editing registers
 - [ ] / search in ex commands
 - [ ] wildmode and wildmenu
+- [ ] Edit a macro vim
 - [ ] ctrl r ctrl w or ctrl a check if we have a card yet
 - [ ] same for q/ ctrl f
 - [ ] and % as im Current fileea
 - [ ] :shells and tip 35 review
 - [ ] command history update conf
-- [ ] 
+- [ ] vim colorscheme
+- [ ] Read Copilot docs
 - [ ] Learn [[Netrw]]
+- [ ] Fuzzy :r
 - [ ] https://github.com/github/copilot.vim
 
 - Best editor in pracitce as degrades well and most portable.

@@ -21,8 +21,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `arch`: print machine architecture, similar to `uname -m`
 - [ ] `factor`: factor integers; mostly a curiosity, occasionally useful for quick maths
 - [ ] `hostid`: print numeric host identifier
-- [ ] `pinky`: lightweight `finger`-style user info
-- [ ] `users`: list currently logged-in users
 - [ ] `shred`: overwrite a file before deleting it; useful to recognise, limited on SSDs/COW filesystems
 - [ ] `cpio`: archive format/tool still seen in initramfs and legacy Unix contexts
 
@@ -76,7 +74,9 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ### Modern CLI Replacements
 
+- [ ] `choose`: human-friendly field selection, lighter than `cut`/`awk`
 - [ ] `eza`: modern `ls` replacement
+- [ ] `gum`: build polished interactive shell script prompts and menus
 - [ ] `sd`: simpler search/replace than `sed`
 - [ ] `duf`: nicer `df`
 - [ ] `dust`: nicer `du`
@@ -89,6 +89,11 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `git-upload-pack`: server-side git
 - [ ] `git-upload-archive`: server-side git
 - [ ] `git-shell`: restricted shell for git-only SSH
+
+### Git Tools
+
+- [ ] `git-lfs`: Git Large File Storage for repos with large binary assets
+- [ ] `git-filter-repo`: rewrite Git history for cleanup, splitting, or secret removal
 
 ## Storage / Filesystems
 
@@ -133,7 +138,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `e4defrag`: defragment ext4 filesystems
 - [ ] `filefrag`: report file fragmentation
 - [ ] `fsfreeze`: suspend/resume filesystem writes
-- [ ] `fsck`: check/repair filesystems
 
 ### Filesystem Creation / Mounting
 
@@ -307,6 +311,10 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `ethtool`: NIC stats, driver info, link detection
 - [ ] `clockdiff`: measure clock difference between hosts
 - [ ] `delv`: DNS lookup with DNSSEC validation
+- [ ] `doggo`: friendly DNS lookup tool
+- [ ] `getent`: query NSS databases, especially hosts/address resolution
+- [ ] `resolvectl`: inspect/query systemd-resolved
+- [ ] `rdap`: query RDAP registration data for domains and IPs
 - [ ] `dhcpcd`: DHCP client
 - [ ] `dnsdomainname`: show DNS domain name
 - [ ] `dnsmasq`: lightweight DNS/DHCP server
@@ -356,10 +364,18 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `ip6tables-save`: save IPv6 iptables rules
 - [ ] `ip6tables-restore`: restore IPv6 iptables rules
 - [ ] `nft`: nftables packet filtering
+- [ ] `fail2ban-client`: inspect/control Fail2ban jails and bans
 
 ### HTTP / Services
 
 - [ ] `ab`: ApacheBench HTTP benchmarking
+- [ ] `caddy`: Caddy web server CLI and config validation
+- [ ] `certbot`: ACME/Let's Encrypt certificate automation
+- [ ] `grpcurl`: inspect and invoke gRPC APIs from the CLI
+- [ ] `hurl`: run HTTP requests with assertions for API smoke tests
+- [ ] `http`: HTTPie command-line HTTP client
+- [ ] `oha`: modern HTTP load testing
+- [ ] `websocat`: WebSocket client/server for shell pipelines and debugging
 - [ ] `GET`: simple command-line HTTP GET client from libwww-perl
 - [ ] `HEAD`: simple command-line HTTP HEAD client from libwww-perl
 - [ ] `POST`: simple command-line HTTP POST client from libwww-perl
@@ -404,7 +420,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 - [ ] `loginctl`: session management
 - [ ] `localectl`: locale settings
-- [ ] `hostnamectl`: hostname management
 - [ ] `coredumpctl`: manage core dumps
 - [ ] `service`: legacy service wrapper; useful on mixed distros
 - [ ] `systemd-delta`: compare local unit overrides against vendor units
@@ -454,7 +469,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 - [x] `capsh`: inspect Linux capabilities
 - [ ] `pkexec`: run GUI/CLI programs via polkit authorisation
-- [ ] `adduser`: friendlier user creation wrapper on some systems
 - [ ] `chage`: password ageing
 - [ ] `chfn`: change a user's GECOS/full-name information
 - [ ] `chpasswd`: update passwords in batch
@@ -472,6 +486,8 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ### Package / Distro Maintenance
 
+- [ ] `apt-file`: find which Debian/Ubuntu package provides a file
+- [ ] `needrestart`: report services/processes needing restart after package upgrades
 - [ ] `dnf5`: DNF5 package manager frontend
 - [ ] `dnf4`: older DNF4 frontend where installed separately
 - [ ] `dnf-automatic`: automatic DNF update service/config tool
@@ -490,7 +506,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `busctl`: inspect and call D-Bus services
 - [ ] `gdbus`: D-Bus inspection/calling from GLib tooling
 - [ ] `dbus-monitor`: watch D-Bus messages
-- [ ] `toolbox`: Fedora containerised development environments
 - [ ] `sos`: collect RHEL/Fedora diagnostic bundles
 - [ ] `alternatives`: manage default implementations on Fedora/RHEL
 - [ ] `update-alternatives`: manage default implementations for commands
@@ -502,6 +517,8 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 ### Certificates / PKCS / Smartcards
 
 - [ ] `certtool`: GnuTLS cert tool
+- [ ] `mkcert`: create locally trusted development certificates
+- [ ] `step`: Smallstep CLI for certificates, ACME, and internal PKI workflows
 - [ ] `p11-kit`: PKCS#11 module management
 - [ ] `pkcs11-tool`: inspect and use PKCS#11 tokens/smartcards
 - [ ] `openpgp-tool`: inspect/use OpenPGP smartcards
@@ -513,6 +530,7 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ### GPG / Crypto / Passwords
 
+- [ ] `keychain`: manage long-lived `ssh-agent`/`gpg-agent` sessions
 - [ ] `gpg-agent`: GnuPG private-key agent
 - [ ] `gpgconf`: inspect/configure GnuPG components
 - [ ] `gpg-connect-agent`: talk directly to `gpg-agent`
@@ -522,6 +540,12 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `rhash`: compute many hash formats
 - [ ] `unshadow`: combine passwd/shadow for password audit tools
 - [ ] `cracklib-check`: check password strength against cracklib
+
+### Secrets / Policy
+
+- [ ] `vault`: HashiCorp Vault CLI for secrets and identity workflows
+- [ ] `opa`: Open Policy Agent policy evaluation
+- [ ] `conftest`: test config and IaC files with OPA policies
 
 ### Secure Boot / Disk Unlocking / Crypto Policy
 
@@ -585,6 +609,15 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `bwrap`: Bubblewrap sandbox/container setup utility
 - [ ] `criu`: checkpoint/restore in userspace
 
+### Container Build / Registry / Supply Chain
+
+- [ ] `crane`: inspect, copy, and delete container images in registries without Docker
+- [ ] `oras`: push and pull generic OCI registry artifacts
+- [ ] `hadolint`: lint Dockerfiles
+- [ ] `dive`: inspect container image layers and wasted space
+- [ ] `syft`: generate SBOMs for container images and filesystems
+- [ ] `grype`: scan images and filesystems for vulnerabilities
+
 ### Kubernetes
 
 - [ ] Kubernetes model: pods, deployments, services, ingress, secrets, volumes
@@ -593,10 +626,16 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `kubectx`: switch Kubernetes contexts quickly
 - [ ] `kubens`: switch Kubernetes namespaces quickly
 - [ ] `kubectl`: Kubernetes CLI
+- [ ] `krew`: kubectl plugin manager
 - [ ] `helm`: Kubernetes package manager
+- [ ] `helmfile`: manage groups of Helm releases declaratively
 - [ ] `k9s`: Kubernetes TUI
 - [ ] `stern`: tail logs from multiple pods
 - [ ] `kustomize`: patch and compose Kubernetes manifests
+- [ ] `argocd`: Argo CD CLI for GitOps deployments
+- [ ] `flux`: Flux GitOps CLI
+- [ ] `velero`: Kubernetes backup and restore
+- [ ] `kubeseal`: encrypt Kubernetes Secrets for Sealed Secrets
 
 ### Proxmox
 
@@ -651,6 +690,9 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `tofu`: OpenTofu, Terraform-compatible IaC workflow
 - [ ] `tofu-ls`: OpenTofu/Terraform language server
 - [ ] `packer`: build AMIs and other machine images
+- [ ] `terragrunt`: wrapper/orchestration for Terraform and OpenTofu estates
+- [ ] `checkov`: IaC security scanning
+- [ ] `infracost`: estimate Terraform/OpenTofu cloud costs
 
 ### Infrastructure Debugging
 
@@ -659,25 +701,39 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `lsfd`: modern file descriptor/socket inspection
 - [ ] `inotifywait`: watch file changes/events for automation and debugging
 
+### Monitoring / Observability
+
+- [ ] `promtool`: validate Prometheus config and alerting rules
+
 ### Backup / Recovery
 
+- [ ] `kopia`: modern encrypted/deduplicated backup tool
 - [ ] `rear`: Relax-and-Recover — bare metal DR
 
 ## Dev / Build / Languages
+
+### Repo Hygiene / CI / Static Analysis
+
+- [ ] `semgrep`: static analysis and security scanning with code-aware patterns
 
 ### Language / Dev Tooling
 
 - [ ] `npx`: run Node package binaries without permanent install
 - [ ] `yarn`: alternative Node package manager
+- [ ] `mise`: manage language/tool versions per project
+- [ ] `asdf`: language/runtime version manager
+- [ ] `devbox`: reproducible development shells built on Nix
+- [ ] `nix`: package manager and reproducible build/dev environment toolkit
 - [ ] `uv`: fast Python package/project tool
 - [ ] `ruff`: fast Python linter/formatter
 - [ ] `pytest`: Python test runner
+- [ ] `tox`: Python test environment matrix automation
+- [ ] `nox`: Python automation and test sessions
 - [ ] `cargo`: Rust package/build tool
 - [ ] `rustc`: Rust compiler
 - [ ] `java`: JVM launcher
 - [ ] `zig`: Zig compiler/toolchain
 - [ ] `go`: Go toolchain
-- [ ] `perl`: Perl interpreter
 - [ ] `perldoc`: read Perl documentation
 - [ ] `cpan`: install/query Perl modules from CPAN
 - [ ] `corelist`: query which Perl modules shipped with which Perl versions
@@ -689,7 +745,11 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ### Build Systems / Toolchains
 
+- [ ] `ccache`: compiler cache for repeated C/C++ builds
+- [ ] `sccache`: compiler cache for Rust/C/C++ builds
 - [ ] `gcc`: C compiler
+- [ ] `cmake`: generate native build files for C/C++ projects
+- [ ] `ninja`: fast build backend, often generated by CMake or Meson
 - [ ] `pkg-config`: compiler/linker flags for libraries
 - [ ] `autoconf`: generate configure scripts
 - [ ] `autoheader`: generate configure header templates
@@ -763,7 +823,15 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ### Structured Text / Data Formats
 
+- [ ] `dasel`: query and edit JSON, YAML, TOML, XML, and CSV
+- [ ] `htmlq`: extract HTML with CSS selectors
 - [ ] `iconv`: character encoding conversion
+- [ ] `duckdb`: local analytical SQL over CSV, Parquet, JSON, and databases
+- [ ] `mlr`: Miller data wrangling for CSV, TSV, JSON, and tables
+- [ ] `qsv`: fast CSV slicing, filtering, stats, and validation
+- [ ] `sqlite-utils`: inspect, transform, and import data into SQLite databases
+- [ ] `visidata`: terminal spreadsheet/data explorer
+- [ ] `xmlstarlet`: query and edit XML from the CLI
 - [ ] `xmllint`: validate, format, and query XML
 - [ ] `xsltproc`: apply XSLT transforms to XML
 - [ ] `recode-sr-latin`: Serbian Latin recoding helper
@@ -842,6 +910,7 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 ## Personal / Interactive Apps
 
 - [ ] `screen`: terminal multiplexer, mostly superseded by `tmux`
+- [ ] `tmate`: temporary terminal sharing/pairing over SSH
 - [ ] `zellij`: modern terminal workspace/multiplexer
 - [ ] `btm`: another modern process/resource monitor (`bottom`)
 - [ ] `brave-browser`: launch Brave from the shell
