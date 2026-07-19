@@ -1,3 +1,5 @@
+- [ ] **WE HAVE AUDITED THIS FILE: WE HAVE DECIDED WHAT NEEDS TO BE EAGERLY LEARNT; DO NOT AUDIT IT AGAIN.**
+
 #ai-written
 # Command Triage Additions
 
@@ -29,7 +31,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `egrep`: extended regex grep; deprecated, use `grep -E`
 - [ ] `fgrep`: fixed-string grep; deprecated, use `grep -F`
 - [ ] `dircolors`: configure `ls` colour output
-- [ ] `diff3`: three-way file comparison
 - [ ] `pcre2grep`: grep using PCRE2 regular expressions
 - [ ] `pcre2test`: test/debug PCRE2 regular expressions
 - [ ] `md5sum`: legacy checksum
@@ -75,8 +76,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 ### Modern CLI Replacements
 
 - [ ] `choose`: human-friendly field selection, lighter than `cut`/`awk`
-- [ ] `eza`: modern `ls` replacement
-- [ ] `gum`: build polished interactive shell script prompts and menus
 - [ ] `sd`: simpler search/replace than `sed`
 - [ ] `duf`: nicer `df`
 - [ ] `dust`: nicer `du`
@@ -92,8 +91,87 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ### Git Tools
 
+- [ ] `tig`: terminal Git history/browser
+- [ ] `gitui`: terminal Git UI
 - [ ] `git-lfs`: Git Large File Storage for repos with large binary assets
 - [ ] `git-filter-repo`: rewrite Git history for cleanup, splitting, or secret removal
+
+### Git Commands Worth Recognising
+
+- [ ] `git rev-list`: list commits programmatically
+- [ ] `git cat-file`: inspect raw Git objects
+- [ ] `git ls-tree`: inspect tree contents at a commit
+- [ ] `git for-each-ref`: script over branches, tags, and refs
+- [ ] `git update-index`: manipulate index flags, e.g. assume-unchanged/skip-worktree
+- [ ] `git bundle`: package Git history into a single file for offline transfer
+- [ ] `git credential`: inspect/use credential helpers
+- [ ] `git maintenance`: newer background maintenance command
+- [ ] `git notes`: attach notes to commits without changing them
+- [ ] `git replace`: temporarily substitute one object for another
+
+### Git Migration / Patch Workflows
+
+- [ ] `git-cvsimport`: import from CVS
+- [ ] `git-cvsserver`: CVS server emulator backed by Git
+- [ ] `git-svn`: bidirectional Subversion/Git bridge
+- [ ] `git-p4`: import from and submit to Perforce repositories
+- [ ] `git-quiltimport`: apply a quilt patchset onto the current branch
+- [ ] `git-imap-send`: send patches from stdin to an IMAP folder
+- [ ] `git-request-pull`: generate a summary of pending changes for maintainers
+- [ ] `git-send-email`: send patches as email
+
+### Git Low-Level / Plumbing
+
+- [ ] `git-apply`: apply a patch to files and/or the index
+- [ ] `git-checkout-index`: copy files from the index to the working tree
+- [ ] `git-commit-graph`: write/verify commit-graph files
+- [ ] `git-commit-tree`: create a commit object directly
+- [ ] `git-hash-object`: compute or write object IDs from files
+- [ ] `git-index-pack`: build an index for a pack file
+- [ ] `git-merge-file`: run a three-way file merge
+- [ ] `git-merge-index`: run a merge for files needing merging
+- [ ] `git-mktag`: create a tag object with extra validation
+- [ ] `git-mktree`: build a tree object from `ls-tree` formatted text
+- [ ] `git-multi-pack-index`: write/verify multi-pack-indexes
+- [ ] `git-pack-objects`: create a packed archive of objects
+- [ ] `git-prune-packed`: remove loose objects already present in pack files
+- [ ] `git-read-tree`: read tree information into the index
+- [ ] `git-replay`: experimental commit replay on a new base
+- [ ] `git-symbolic-ref`: read/modify/delete symbolic refs
+- [ ] `git-unpack-objects`: unpack objects from a packed archive
+- [ ] `git-update-ref`: safely update refs
+- [ ] `git-write-tree`: create a tree object from the current index
+
+### Git Interrogation / Debugging
+
+- [ ] `git-cherry`: find commits not yet applied upstream
+- [ ] `git-diff-files`: compare working tree files with the index
+- [ ] `git-diff-index`: compare a tree with the working tree or index
+- [ ] `git-diff-tree`: compare blobs found via tree objects
+- [ ] `git-for-each-repo`: run a Git command across multiple repositories
+- [ ] `git-ls-remote`: list refs in a remote repository
+- [ ] `git-merge-base`: find a good common ancestor for a merge
+- [ ] `git-name-rev`: find symbolic names for given revisions
+- [ ] `git-show-ref`: list refs in a local repository
+- [ ] `git-var`: show Git logical variables
+- [ ] `git-verify-pack`: validate packed Git archive files
+
+### Git Internal Helpers
+
+- [ ] `git-check-attr`: display `gitattributes` information
+- [ ] `git-check-ignore`: debug `gitignore` / exclude rules
+- [ ] `git-check-mailmap`: show canonical names/emails from mailmap data
+- [ ] `git-check-ref-format`: check whether a ref name is valid
+- [ ] `git-column`: display data in columns
+- [ ] `git-credential-cache`: temporarily cache credentials in memory
+- [ ] `git-credential-store`: store credentials on disk
+- [ ] `git-fmt-merge-msg`: produce a merge commit message
+- [ ] `git-hook`: run Git hooks
+- [ ] `git-interpret-trailers`: parse/add structured commit-message trailers
+- [ ] `git-mailinfo`: extract patch and authorship from an email
+- [ ] `git-mailsplit`: split mbox input into messages
+- [ ] `git-patch-id`: compute stable patch IDs
+- [ ] `git-stripspace`: remove unnecessary whitespace
 
 ## Storage / Filesystems
 
@@ -314,7 +392,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `doggo`: friendly DNS lookup tool
 - [ ] `getent`: query NSS databases, especially hosts/address resolution
 - [ ] `resolvectl`: inspect/query systemd-resolved
-- [ ] `rdap`: query RDAP registration data for domains and IPs
 - [ ] `dhcpcd`: DHCP client
 - [ ] `dnsdomainname`: show DNS domain name
 - [ ] `dnsmasq`: lightweight DNS/DHCP server
@@ -444,7 +521,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `portablectl`: portable services
 - [ ] `homectl`: systemd-homed user management
 - [ ] `importctl`: import VM/container images
-- [ ] `oomctl`: inspect systemd-oomd state
 - [ ] `systemd-firstboot`: initialise basic settings on a new image
 - [ ] `systemd-inhibit`: run a command while blocking sleep/shutdown
 - [ ] `systemd-notify`: send readiness/status notifications from services
@@ -457,12 +533,7 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ### Shutdown / Rescue / Time
 
-- [ ] `shutdown`: schedule or trigger shutdown/reboot on modern systemd systems
-- [ ] `reboot`: trigger an immediate reboot
-- [ ] `poweroff`: power the system down immediately
-- [ ] `halt`: halt the machine; usually prefer `systemctl poweroff`
 - [ ] `chronyc`: NTP client management
-- [ ] `rtcwake`: suspend/hibernate until a scheduled wake time
 - [ ] `sulogin`: single-user/rescue login shell
 
 ### Accounts / Auth / Admin
@@ -507,8 +578,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `gdbus`: D-Bus inspection/calling from GLib tooling
 - [ ] `dbus-monitor`: watch D-Bus messages
 - [ ] `sos`: collect RHEL/Fedora diagnostic bundles
-- [ ] `alternatives`: manage default implementations on Fedora/RHEL
-- [ ] `update-alternatives`: manage default implementations for commands
 - [ ] `wall`: broadcast a message to logged-in users
 - [ ] `write`: send a message to another logged-in user's terminal
 
@@ -537,7 +606,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `gpgv`: verify OpenPGP signatures only
 - [ ] `keyctl`: manage Linux kernel keyrings
 - [ ] `pinentry`: password/PIN prompt used by GnuPG
-- [ ] `rhash`: compute many hash formats
 - [ ] `unshadow`: combine passwd/shadow for password audit tools
 - [ ] `cracklib-check`: check password strength against cracklib
 
@@ -579,7 +647,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 ### Audit / Accounting
 
 - [ ] `auditctl`: audit rule management
-- [ ] `auditd`: audit daemon
 - [ ] `aureport`: audit reports
 - [ ] `ausearch`: search audit logs
 - [ ] `augenrules`: generate audit rules from files
@@ -692,7 +759,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `packer`: build AMIs and other machine images
 - [ ] `terragrunt`: wrapper/orchestration for Terraform and OpenTofu estates
 - [ ] `checkov`: IaC security scanning
-- [ ] `infracost`: estimate Terraform/OpenTofu cloud costs
 
 ### Infrastructure Debugging
 
@@ -879,7 +945,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 
 ### Printing / Scanning
 
-- [ ] `lp`: submit files to print
 - [ ] `lpadmin`: configure CUPS printers/classes
 - [ ] `lpinfo`: show CUPS devices/drivers
 - [ ] `lpoptions`: inspect/set printer options
@@ -919,7 +984,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `mpv`: media player
 - [ ] `nano`: simple terminal editor
 - [ ] `qwen`: Qwen CLI/local model tool if you use it
-- [ ] `speedtest`: network speed test CLI
 - [ ] `speedtest-cli`: Python speed test CLI
 - [ ] `thunderbird`: launch Thunderbird from the shell
 - [ ] `xsel`: X11 clipboard tool

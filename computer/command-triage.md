@@ -1,4 +1,4 @@
-
+**https**://github.com/facebook/sapling
 
 NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
@@ -7,46 +7,78 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Git**
 - [ ] `git`: version control
   - [ ] Standalone developer workflow
+    - [ ] `git config`: inspect/set identity, defaults, aliases, and tool integration
     - [x] `git init`: create a new repository
-    - [ ] `git log`: see what happened
-    - [ ] `git switch`, `git branch`: switch and manage branches
+    - [x] `git log`: see what happened
+    - [x] `git show`: inspect one commit, tag, or object
+    - [ ] `git reflog`: recover where branches/HEAD used to point
+    - [x] `git switch`
+    - [x] `git branch`: switch and manage branches
     - [x] `git add`: manage the index/staging area
-    - [ ] `git diff`, `git status`: see what you are in the middle of doing
+    - [x] `git diff`
+    - [x] `git status`: see what you are in the middle of doing
     - [ ] `git commit`: advance the current branch
-    - [ ] `git restore`: undo changes
-    - [ ] `git merge`: merge between local branches
-    - [ ] `git rebase`: maintain topic branches
-    - [ ] `git tag`: mark a known point
+		- Got up to --fixup (learn rebase first)
+    - [x] `git restore`: undo changes
+    - [x] `git reset`: move HEAD/index and undo staged work
+    - [x] `git clean`: remove untracked files/directories
+    - [x] `git rm`, `git mv`: remove/rename tracked files
+    - [x] `git stash`: park dirty work temporarily to 
+    - [x] `git merge`: merge between local branches
+	    - [ ] Come back to --cleanup=
+    - [ ] `git rebase`: maintain topic  branches
+    - [x] `git cherry-pick`: apply syelected commits onto the current branch
+    - [x] `git bisect`: find the commit that introduced a regression
+    - [ ] `git blame`: trace which commit last changed lines
+    - [x] `git grep`: search tracked files quickly
+    - [x] `git tag`: mark a known point
   - [ ] Individual developer participant workflow
-    - [ ] `git clone`: prime a local repository from upstream
-    - [ ] `git pull`, `git fetch`: keep up to date with upstream
+    - [x] `git clone`: prime a local repository from upstream
+    - [x] `git remote`: inspect and manage upstream remotes
+    - [x] `git pull`, `git fetch`: keep up to date with upstream
     - [ ] `git push`: publish to a shared repository
+    - [ ] `git submodule`: manage nested external repositories when a project uses them
+  - [ ] Occasional but important Git workflows
+    - [ ] `git mergetool`, `git difftool`: use external tools for conflicts and diffs
+    - [ ] `git ls-files`: show files tracked by Git
+    - [ ] `git rev-parse`: scripting helper for repo roots, refs, and object names
+    - [ ] `git describe`: derive human-readable version strings from tags and commits
+    - [ ] `git filter-repo`: rewrite history for cleanup or secret removal; learn carefully when needed
+    - [ ] `git archive`: export a clean tar/zip snapshot of tracked files at a commit
+    - [ ] `git fsck`: check repository object integrity when diagnosing corruption
+    - [ ] `git format-patch`, `git am`: email/patch-based contribution workflow
 - [x] `git worktree`
+- [ ] `git-absorb`: automatically create `fixup!` commits by matching staged changes to earlier commits
+- [ ] `gitrevisions`: Git revision/range syntax
 - [ ] `gitk`: GUI log
-- [ ] `trufflehog`: scan git history and files for secrets
-- [ ] `gitleaks`: scan repos for committed secrets
 - [ ] `gh`: GitHub CLI
-- [ ] `tig`: terminal Git history/browser
+- [ ] `gh-dash`: terminal dashboard for GitHub pull requests and issues
 - [ ] `ghq`: clone/manage many repos under one directory
-- [ ] `gitui`: terminal Git UI
+- [ ] `hunk`: review-first terminal diff viewer for agent-authored changesets
+- [ ] Worktrunk and similar worktree managers
+- [ ] https://blog.jcoglan.com/2017/05/08/merging-with-diff3/
 
 **Modern CLI replacements — big quality-of-life wins**
-- [ ] `fd`: fast, intuitive find replacement. Pairs with fzf
-- [ ] `rg`: ripgrep — fast recursive grep with sane defaults
+- [x] `fd`: fast, intuitive find replacement. Pairs with fzf
+- [ ] `eza`: modern `ls` replacement
+- [x] `rg`: ripgrep — fast recursive grep with sane defaults
+- [ ] `ast-grep`: search and rewrite code by syntax structure rather than plain text
 - [ ] `rga` / `ripgrep-all`: search PDFs, Office docs, archives, and other rich files with ripgrep-like ergonomics
 - [ ] `bat`: cat with syntax highlighting and git integration
 - [ ] `yazi`: file browser tui
 - [ ] `fzf`: fuzzy finder — transforms how you navigate
 - [ ] `fzf-tab`: zsh plugin for fzf-powered tab completion
 - [ ] `fzf-tmux`: fzf inside tmux panes
-- [ ] `tv`: alterntive fuzzy
 - [x] `atuin`: much better shell history/search
 - [ ] `zoxide`: smarter cd with frecency tracking
 - [ ] `delta`: beautiful git diffs, pairs with lazygit
+- [ ] `difft`: Difftastic syntax-aware structural diff tool ([GitHub](https://github.com/Wilfred/difftastic))
 - [ ] `hyperfine`: benchmark commands properly
+- [ ] `gum`: build polished interactive shell script prompts and menus
 - [ ] `btop`: gorgeous process/resource monitor
 - [ ] `ncdu`: interactive disk usage explorer — find what's eating space
 - [ ] `lazygit`: TUI git client you already use
+-  pull requests?
 - [ ] `tree`: directory tree view
 
 **Terraform / image build**
@@ -55,10 +87,12 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `terraform-docs`: generate docs for Terraform modules
 - [ ] `terraform-ls`: Terraform language server
 - [ ] `tfsec`: Terraform static security scanning
+- [ ] `infracost`: estimate Terraform/OpenTofu cloud costs
 
 **AWS**
 - [ ] `aws`: AWS CLI
 - [ ] `aws-vault`: safer AWS credential handling
+- [ ] `granted`: switch AWS accounts, profiles, and assumed roles
 - [ ] `aws sts get-caller-identity`: fastest identity/account sanity check
 - [ ] `aws sso login`: authenticate with AWS IAM Identity Center / SSO
 - [ ] `aws configure sso`: initial SSO profile setup
@@ -69,6 +103,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `whatis`: one-line command descriptions
 - [x] `whereis`
 - [x] `info`: GNU manuals when `man` is thin
+- [ ] `navi`: interactive, searchable command cheatsheets
 
 **Shell basics**
 - [x] `bash`: your shell            
@@ -132,7 +167,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `grep`: pattern search
 - [x] `sed`: stream editor [Read this](https://www.grymoire.com/Unix/Sed.html)
 - [x] `awk`: pattern/action language
-- [x] `gawk`: GNU awk
+	- [ ] https://catonmat.net/awk-book
 - [x] `sort`: sort lines
 - [x] `uniq`: deduplicate adjacent lines
 - [x] `wc`: word/line/byte count
@@ -142,9 +177,11 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `stdbuf`: adjust stdio buffering in pipelines
 - [x] `xargs`: build commands from stdin
 - [x] `diff`: compare files
+- [ ] `diff3`: three-way file comparison
 - [x] `sdiff`: side-by-side diff
 - [x] `patch`: apply diffs
-- [x] `comm`: compare sorted files line by line
+- [ ] `comm`: compare sorted files line by line
+	- [ ] We need -1,-2,3 as cards.
 - [x] `paste`: merge lines side by side
 - [x] `join`: join sorted text files on a shared field
 - [x] `column`: format into columns
@@ -205,6 +242,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Checksums / encoding / binary inspection**
 - [x] `sha256sum`: verify file hash
 - [x] `sha512sum`: verify file hash
+- [ ] `rhash`: compute many hash formats
 - [x] `base64`: encode/decode base64
 - [x] `xxd`: hex dump / reverse hex dump
 - [x] `hexdump`: inspect binary data
@@ -238,7 +276,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `asciinema`: record terminal sessions
 - [ ] `agg`: turn asciinema recordings into GIF/video
 - [ ] `vhs`: script terminal demos and recordings
-- [x] `tmux`: terminal multiplexer
+- [ ] `tmux`: terminal multiplexer
 
 **System info**
 - [x] `uname`: system info
@@ -294,15 +332,17 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `nslookup`: older DNS lookup
 - [x] `host`: simple DNS lookup
 - [x] `dig`: DNS lookup and debugging
-- [ ] `curl`: HTTP/API checks
-- [x] `wget`: simple downloads
+- [x] `curl`: HTTP/API checks
+- [ ] `wget`: simple downloads
 
 **Network probes / debugging**
 - [x] `nc`: basic TCP//UDP testing
 - [x] `socat`: bidirectional socket/data plumbing
 - [ ] `openssl s_client`: TLS endpoint debugging
 - [x] `whois`: domain/IP regstry lookup
+- [ ] `rdap`: query RDAP registration data for domains and IPs
 - [x] `iperf3`: network throughput measurement
+- [x] `speedtest`: network speed test CLI
 - [x] `tcpdump`: packet capture
 - [ ] `tshark`: CLI Wireshark packet analysis
 - [x] `nmap`: host/port discovery
@@ -310,6 +350,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `nethogs`: per-process bandwidth usage
 - [ ] `ipcalc`: subnet calculator
 - [ ] `testssl.sh`: practical TLS endpoint audit
+- [ ] `mitmproxy`: interactive HTTP(S) proxy for inspecting and modifying traffic ([GitHub](https://github.com/mitmproxy/mitmproxy))
 - [ ] `mitmdump`: scriptable HTTP(S) proxy capture/debugging from mitmproxy
 
 **Firewall / packet filtering**
@@ -342,6 +383,12 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Systemd / logs**
 - [ ] `systemctl`: service/unit management (`status`, `list-units`, `cat`, `edit`, `daemon-reload`)
 - [ ] `journalctl`: log viewer (`-u`, `-b`, `-f`)
+- [ ] `oomctl`: inspect systemd-oomd state
+- [ ] `shutdown`: schedule or trigger shutdown/reboot on modern systemd systems
+- [ ] `reboot`: trigger an immediate reboot
+- [ ] `poweroff`: power the system down immediately
+- [ ] `halt`: halt the machine; usually prefer `systemctl poweroff`
+- [ ] `rtcwake`: suspend/hibernate until a scheduled wake time
 - [x] `timedatectl`: time/timezone/NTP state
 
 **Cron / scheduling**
@@ -350,6 +397,8 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Package management**
 - [ ] `dnf`: Fedora/RHEL package manager
 - [ ] `rpm`: low-level rpm operations
+- [ ] `alternatives`: manage default implementations on Fedora/RHEL
+- [ ] `update-alternatives`: manage default implementations for commands
 - [ ] `brew`: Homebrew package manager, common on macOS and useful via Linuxbrew
 - [ ] `apt`: Debian/Ubuntu package manager
 - [ ] `apt-cache`: query Debian/Ubuntu package metadata
@@ -382,6 +431,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] quoting rules
 - [ ] PATH lookuk
 - [ ] Networking understanding, HTTP, TCP, SSL and so on.
+- [ ] HTTP request/response model: methods, headers, status codes, bodies, redirects, caching, cookies, and auth basics
 - [ ] fast doc lookup: official docs first, then `site:` search by tool/vendor
 - [ ] Terraform lookup model: language docs vs provider docs vs registry module docs
 - [ ] browser keyword search shortcuts / DevDocs for fast web-doc lookup
@@ -394,6 +444,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] filesystem quotas: user/group/project quotas, soft vs hard limits, grace periods
 - [ ] DNS lookup path: hosts/NSS/resolved/DNS
 - [ ] process/session/job distinction
+- [ ] process accounting: recording executed commands and resource usage for after-the-fact audit/debugging (`acct`, `lastcomm`, `sa`)
 - [ ] mount source vs mount target
 - [ ] block device vs filesystem vs mountpoint
 - [ ] package ownership: which package installed this file?
@@ -421,6 +472,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 **Shell scripting quality**
 - [x] `shellcheck`: static analysis for shell scripts — catches real bugs
 - [x] `shfmt`: shell script formatter (use with conform.nvim)
+	- Add this to the pre commit.
 - [ ] `bats`: Bash Automated Testing System
 - [ ] `envsubst`: substitute env vars in templates — handy for deploy scripts
 - [ ] `dotenvx`: manage/load `.env` files with encryption support
@@ -430,8 +482,11 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 **Repo hygiene / CI / linting**
 - [ ] `pre-commit`: run the same local hooks as CI
-- [ ] `act`: run GitHub Actions locally
+  - [ ] `trufflehog`: scan Git history and files for secrets; use as a pre-commit hook
+  - [ ] `gitleaks`: scan repos for committed secrets; use as a pre-commit hook
+- [ ] `act`: run GitHub Actions locallyz
 - [ ] `actionlint`: lint GitHub Actions workflows
+- [ ] `zizmor`: audit GitHub Actions workflows for security problems
 - [ ] `yamllint`: catch YAML syntax/structure/style issues
 
 **Ansible**
@@ -475,6 +530,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 **Security / audit**
 - [ ] `lynis`: Linux security audit/checklist tool
+- [ ] `auditd`: Linux audit daemon
 
 **Containers (Fedora native)**
 - [ ] `podman`: rootless containers — docker-compatible
@@ -504,6 +560,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 **Databases / cache**
 - [ ] `psql`: PostgreSQL shell for inspection and admin
+- [ ] `pgcli`: enhanced PostgreSQL shell with completion and syntax highlighting
 - [ ] `pg_isready`: fast PostgreSQL readiness/connectivity check
 - [ ] `pg_dump`: logical backup of a PostgreSQL database
 - [ ] `pg_restore`: restore `pg_dump` custom/directory backups
@@ -514,6 +571,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `vacuumdb`: run vacuum/analyze/maintenance without opening `psql`
 - [ ] `reindexdb`: rebuild indexes when debugging corruption or bloat issues
 - [ ] `mysql`: MySQL/MariaDB shell for inspection and admin
+- [ ] `mycli`: enhanced MySQL/MariaDB shell with completion and syntax highlighting
 - [ ] `mysqldump`: logical backup of a MySQL/MariaDB database
 - [ ] `mysqladmin`: quick admin/status operations without opening the full shell
 - [ ] `redis-cli`: Redis inspection and debugging
@@ -530,7 +588,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `prlimit`: per-process limits
 
 **Logs**
-- [ ] `logrotate`: rotate logs
+- [ ] `logrotate`: rotat kie logs
 - [ ] `logger`: write message to syslog/journal
 - [ ] `lnav`: interactive log viewer for mixed log files and timestamps
 
@@ -619,6 +677,9 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `tldr`: short, example-first command docs
 - [ ] `cht.sh`: curlable cheat sheets / quick example
 
+**Printing / scanning**
+- [ ] `lp`: submit files to print
+
 **Desktop / media helpers**
 - [ ] `chafa`: render images in the terminal; handy for quickly inspecting screenshots without leaving the shell
 - [ ] `playerctl`: control media players from the shell
@@ -627,7 +688,14 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `yt-dlp`: video downloader
 
 **AI / local models**
-- [ ] `mods`: AI in the terminal (if you use it)
+- [ ] `pi`: coding agent CLI for AI-assisted code/file edits and terminal workflows
+- [ ] `herdr`: terminal workspace for running and monitoring multiple coding agents ([GitHub](https://github.com/ogulcancelik/herdr))
+- [ ] `bd` / Beads: distributed graph issue tracker and persistent structured memory for AI agents ([GitHub](https://github.com/gastownhall/beads))
+- [ ] `aider`: AI pair-programming CLI for editing code in local git repos ([site](https://aider.chat/))
+- [ ] `opencode`: terminal-based AI coding agent
+- [ ] `claude code`: Anthropic's agentic coding CLI
+- [ ] `llm`: CLI and Python library for running prompts, managing models, and logging responses ([GitHub](https://github.com/simonw/llm))
+- [ ] `sgpt` / `shell_gpt`: terminal AI assistant for shell commands, code, and chat ([GitHub](https://github.com/ther1d/shell_gpt))
 - [ ] `ollama`: local LLM inference (your GPU passthrough setup)
 
 **VM / local lab**
@@ -635,6 +703,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
 **Personal workflow**
 - [ ] `jrnl`: simple personal diary app
+- [ ] `tuxedo`: keyboard-driven TUI/CLI for `todo.txt` task lists ([GitHub](https://github.com/webstonehq/tuxedo))
 
 ---
 

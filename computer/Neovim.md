@@ -35,6 +35,9 @@ Commentary
 Textobj-entire
 
 
+ *terminal-osc7*, look at this if we feel the need for syncing up dirs in the terminal with vim.
+
+
 READ THIS!!!
 
 https://lazyvim-ambitious-devs.phillips.codes/
@@ -62,11 +65,11 @@ Need to look at getting a start page with recently used files.
 
 ## Tuning Neovim
 
-* [ ] usr_40.txt Make new commands (READ)
+* [x] usr_40.txt Make new commands (READ)
 
-  * [ ] 40.1 Key mapping (READ)
-  * [ ] 40.2 Defining command-line commands (READ)
-  * [ ] 40.3 Autocommands (READ)
+  * [x] 40.1 Key mapping (READ)
+  * [x] 40.2 Defining command-line commands (READ)
+  * [x] 40.3 Autocommands (READ)
 
 * [ ] usr_43.txt Using filetypes (READ)
   * [ ] 43.1 Using filetype plugins (READ)
@@ -82,13 +85,13 @@ Need to look at getting a start page with recently used files.
 - [x] tutor 30-minute interactive course (READ)
 - [ ] vim-differences Nvim compared to Vim (SKIM)
 - [ ] faq Frequently Asked Questions (SKIM)
-- [ ] tips Various tips (REF)
+- [x] tips Various tips (REF)
 - [ ] bugs Where to send bug reports (REF)
 - [ ] support Supported platforms (REF)
 - [ ] copying About copyrights (DATED/REF)
 
 ### Usage
-- [ ] helphelp Using the :help files (READ)
+- [x] helphelp Using the :help files (READ)
 - [ ] intro Introduction to Vim (SKIM)
 - [ ] quickref Overview of common commands (READ)
 - [ ] index Index of all commands (REF)
@@ -120,7 +123,7 @@ Need to look at getting a start page with recently used files.
 - [ ] spell Spell checking (SKIM)
 - [ ] diff Comparing files (READ)
 - [ ] folding Fold ranges of lines (READ)
-- [ ] terminal Embedded terminal emulator (READ)
+- [x] terminal Embedded terminal emulator (READ)
 
 ### API (extensibility, scripting, plugins)
 - [ ] api Nvim API via RPC, Lua and Vimscript (READ)

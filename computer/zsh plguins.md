@@ -5,6 +5,9 @@ tags:
 
 # ZSH plugins
 
+Reference:
+- [This Zsh config is perhaps my favorite one yet.](https://www.youtube.com/watch?v=ud7YxC33Z3w) - Dreams of Autonomy
+
 Shortlist from the `awesome-zsh-plugins` triage. Prefer one plugin per job; avoid installing duplicate alias packs or overlapping history/navigation tools.
 
 ## Hell Yeah Useful

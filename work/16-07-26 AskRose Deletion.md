@@ -1,0 +1,2 @@
+- Client complaining that number not removed, threatened to go to the ICO.
+	- Over 30 days.
