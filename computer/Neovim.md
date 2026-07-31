@@ -12,9 +12,22 @@ Editing registers
 - [ ] command history update conf
 - [ ] vim colorscheme
 - [ ] Read Copilot docs
-- [ ] Learn [[Netrw]]
 - [ ] Fuzzy :r
 - [ ] https://github.com/github/copilot.vim
+
+                                                  *treesitter-highlight-spell*
+The special `@spell` capture can be used to indicate that a node should be
+spell checked by Nvim's builtin |spell| checker. For example, the following
+capture marks comments as to be checked: >query
+
+    (comment) @spell
+<
+
+There is also `@nospell` which disables spellchecking regions with `@spell`.
+See if you can get this spelling working for tf etc.
+
+TREESITTER LANGUAGE INJECTIONS                *treesitter-language-injections*
+And this
 
 - Best editor in pracitce as degrades well and most portable.
 	- If you know the terminal stack you can debug a broken server for example. You don't get this with [[VsCode]] or [[Jetbrains]]
@@ -143,7 +156,7 @@ Need to look at getting a start page with recently used files.
 ### Programming language support
 - [ ] lsp Language Server Protocol (READ)
 - [ ] diagnostic-api Diagnostic framework (REF)
-- [ ] treesitter Incremental syntax parsing (READ)
+- [x] treesitter Incremental syntax parsing (READ)
 - [ ] indent.txt Automatic indenting for C and other languages (SKIM)
 - [ ] syntax Syntax highlighting (SKIM/REF)
 - [ ] filetype Settings for specific types of files (READ)
@@ -182,7 +195,3 @@ Need to look at getting a start page with recently used files.
 - [ ] Phase C: cmdline, pattern-searches, windows, diff, terminal
 - [ ] Phase D: lua-guide, autocmd, api, health, lsp, treesitter
 - [ ] Phase E: Everything marked REF or DATED as needed
-
-## Plugin ideas
-
-- [[Obsidian]] plugin for Neovim.

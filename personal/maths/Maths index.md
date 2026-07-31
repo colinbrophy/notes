@@ -21,5 +21,6 @@ Entry point for the maths notes.
 
 ## Field choice and mathematical taste
 
+- [[Do not infer depth from omission]]
 - [[The Three Ways of Mathematics]]
 - [[What Makes a Mathematical Field Interesting or Sustainable?]]

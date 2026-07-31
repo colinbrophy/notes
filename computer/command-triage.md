@@ -1,10 +1,20 @@
+# Command Triage
+
 **https**://github.com/facebook/sapling
 
 NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
-## TIER 1: Core daily drivers (you almost certainly know these)
+**Current focus:** AWS + PostgreSQL/MySQL
 
-**Git**
+## Learning modes
+
+- **Learn eagerly:** practise until usable without research. Use for foundational, frequent, dangerous, or under-pressure skills.
+- **Learn the trigger:** remember the problem that should bring the tool to mind and one useful invocation; look up the detailed syntax when needed.
+- **Learn lazily:** know the tool exists, but do not schedule study. Pick it up from `--help` or examples when a task requires it.
+
+The mode on each topic is the default; individual entries can override it.
+
+## Git — Learn eagerly
 - [ ] `git`: version control
   - [ ] Standalone developer workflow
     - [ ] `git config`: inspect/set identity, defaults, aliases, and tool integration
@@ -26,7 +36,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
     - [x] `git stash`: park dirty work temporarily to 
     - [x] `git merge`: merge between local branches
 	    - [ ] Come back to --cleanup=
-    - [ ] `git rebase`: maintain topic  branches
+    - [x] `git rebase`: maintain topic  branches
     - [x] `git cherry-pick`: apply syelected commits onto the current branch
     - [x] `git bisect`: find the commit that introduced a regression
     - [ ] `git blame`: trace which commit last changed lines
@@ -35,45 +45,51 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
   - [ ] Individual developer participant workflow
     - [x] `git clone`: prime a local repository from upstream
     - [x] `git remote`: inspect and manage upstream remotes
-    - [x] `git pull`, `git fetch`: keep up to date with upstream
+    - [ ] `git pull`, `git fetch`: keep up to date with upstream
+		- Read the manual of `fetch` (partiualcly the refspec part) more carefully.
     - [ ] `git push`: publish to a shared repository
     - [ ] `git submodule`: manage nested external repositories when a project uses them
-  - [ ] Occasional but important Git workflows
+    - [ ] `git rev-parse`: scripting helper for repo roots, refs, and object names
+  - [ ] Learn the trigger: occasional but important Git workflows
     - [ ] `git mergetool`, `git difftool`: use external tools for conflicts and diffs
     - [ ] `git ls-files`: show files tracked by Git
-    - [ ] `git rev-parse`: scripting helper for repo roots, refs, and object names
     - [ ] `git describe`: derive human-readable version strings from tags and commits
     - [ ] `git filter-repo`: rewrite history for cleanup or secret removal; learn carefully when needed
     - [ ] `git archive`: export a clean tar/zip snapshot of tracked files at a commit
     - [ ] `git fsck`: check repository object integrity when diagnosing corruption
     - [ ] `git format-patch`, `git am`: email/patch-based contribution workflow
 - [x] `git worktree`
-- [ ] `git-absorb`: automatically create `fixup!` commits by matching staged changes to earlier commits
+- [ ] **Learn the trigger:** `jj` (Jujutsu) is a Git-compatible version-control system with first-class change tracking and automatic working-copy commits
+- [ ] **Learn the trigger:** `git-absorb` automatically creates `fixup!` commits by matching staged changes to earlier commits
 - [ ] `gitrevisions`: Git revision/range syntax
-- [ ] `gitk`: GUI log
+- [ ] `gitignore`
+- [ ] `githooks`
+- [ ] **Learn lazily:** `gitk` GUI log
 - [ ] `gh`: GitHub CLI
-- [ ] `gh-dash`: terminal dashboard for GitHub pull requests and issues
-- [ ] `ghq`: clone/manage many repos under one directory
-- [ ] `hunk`: review-first terminal diff viewer for agent-authored changesets
-- [ ] Worktrunk and similar worktree managers
-- [ ] https://blog.jcoglan.com/2017/05/08/merging-with-diff3/
+- [ ] tuicr
+- [ ] **Learn lazily:** `gh-dash` terminal dashboard for GitHub pull requests and issues
+- [ ] **Learn the trigger:** `ghq` clones and manages many repos under one directory
+- [ ] **Learn the trigger:** `hunk` provides review-first terminal diffs for agent-authored changesets
+- [ ] **Learn the trigger:** Worktrunk and similar worktree managers
+- [ ] **Learn the trigger:** https://blog.jcoglan.com/2017/05/08/merging-with-diff3/
 
-**Modern CLI replacements — big quality-of-life wins**
+## Modern CLI replacements — Learn lazily
 - [x] `fd`: fast, intuitive find replacement. Pairs with fzf
 - [ ] `eza`: modern `ls` replacement
-- [x] `rg`: ripgrep — fast recursive grep with sane defaults
-- [ ] `ast-grep`: search and rewrite code by syntax structure rather than plain text
-- [ ] `rga` / `ripgrep-all`: search PDFs, Office docs, archives, and other rich files with ripgrep-like ergonomics
+- [ ] `rg`: ripgrep — fast recursive grep with sane defaults
+- [ ] **Learn the trigger:** `ast-grep` searches and rewrites code by syntax structure rather than plain text
+- [ ] **Learn the trigger:** `rga` / `ripgrep-all` searches PDFs, Office docs, archives, and other rich files with ripgrep-like ergonomics
 - [ ] `bat`: cat with syntax highlighting and git integration
 - [ ] `yazi`: file browser tui
-- [ ] `fzf`: fuzzy finder — transforms how you navigate
+- [ ] **Learn eagerly:** `fzf` is a composable fuzzy finder that transforms how you navigate
 - [ ] `fzf-tab`: zsh plugin for fzf-powered tab completion
 - [ ] `fzf-tmux`: fzf inside tmux panes
 - [x] `atuin`: much better shell history/search
+- [ ] autin ai setup i
 - [ ] `zoxide`: smarter cd with frecency tracking
 - [ ] `delta`: beautiful git diffs, pairs with lazygit
-- [ ] `difft`: Difftastic syntax-aware structural diff tool ([GitHub](https://github.com/Wilfred/difftastic))
-- [ ] `hyperfine`: benchmark commands properly
+- [ ] **Learn the trigger:** `difft` / Difftastic provides syntax-aware structural diffs ([GitHub](https://github.com/Wilfred/difftastic))
+- [ ] **Learn the trigger:** `hyperfine` benchmarks commands properly
 - [ ] `gum`: build polished interactive shell script prompts and menus
 - [ ] `btop`: gorgeous process/resource monitor
 - [ ] `ncdu`: interactive disk usage explorer — find what's eating space
@@ -81,31 +97,50 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 -  pull requests?
 - [ ] `tree`: directory tree view
 
-**Terraform / image build**
+## Terraform / image build — Learn eagerly
 - [ ] `terraform`: core workflow (`fmt`, `validate`, `plan`, `apply`, `output`, `state`, `console`, `import`)
-- [ ] `tflint`: lint Terraform and catch provider-specific mistakes
-- [ ] `terraform-docs`: generate docs for Terraform modules
-- [ ] `terraform-ls`: Terraform language server
-- [ ] `tfsec`: Terraform static security scanning
-- [ ] `infracost`: estimate Terraform/OpenTofu cloud costs
+- [ ] **Learn the trigger:** `tflint` catches Terraform and provider-specific mistakes
+- [ ] **Learn lazily:** `terraform-docs` generates documentation for Terraform modules
+- [ ] **Learn lazily:** `terraform-ls` is the Terraform language server
+- [ ] **Learn the trigger:** `tfsec` performs Terraform static security scanning
+- [ ] **Learn the trigger:** `infracost` estimates Terraform/OpenTofu cloud costs
 
-**AWS**
+## AWS — Learn eagerly
 - [ ] `aws`: AWS CLI
-- [ ] `aws-vault`: safer AWS credential handling
-- [ ] `granted`: switch AWS accounts, profiles, and assumed roles
+- [ ] **Learn the trigger:** `aws-vault` provides safer AWS credential handling
+- [ ] **Learn the trigger:** `granted` switches AWS accounts, profiles, and assumed roles
 - [ ] `aws sts get-caller-identity`: fastest identity/account sanity check
 - [ ] `aws sso login`: authenticate with AWS IAM Identity Center / SSO
 - [ ] `aws configure sso`: initial SSO profile setup
 
-**Docs / discovery**
+## Databases / cache — Learn eagerly
+- [ ] `psql`: PostgreSQL shell for inspection and admin
+- [ ] **Learn lazily:** `pgcli` is an enhanced PostgreSQL shell with completion and syntax highlighting
+- [ ] **Learn the trigger:** `pg_isready` provides a fast PostgreSQL readiness/connectivity check
+- [ ] `pg_dump`: logical backup of a PostgreSQL database
+- [ ] `pg_restore`: restore `pg_dump` custom/directory backups
+- [ ] **Learn the trigger:** `pg_dumpall` dumps all PostgreSQL databases plus global objects like roles
+- [ ] **Learn the trigger:** `pg_basebackup` performs physical PostgreSQL and replication base backups
+- [x] **Learn lazily:** `createdb` creates a PostgreSQL database from the CLI
+- [ ] **Learn lazily:** `createuser` creates PostgreSQL roles/users from the CLI
+- [ ] **Learn the trigger:** `vacuumdb` runs vacuum/analyze/maintenance without opening `psql`
+- [ ] **Learn the trigger:** `reindexdb` rebuilds indexes when debugging corruption or bloat issues
+- [ ] `mysql`: MySQL/MariaDB shell for inspection and admin
+- [ ] **Learn lazily:** `mycli` is an enhanced MySQL/MariaDB shell with completion and syntax highlighting
+- [ ] `mysqldump`: logical backup of a MySQL/MariaDB database
+- [ ] **Learn the trigger:** `mysqladmin` provides quick admin/status operations without opening the full shell
+- [ ] **Learn lazily:** `redis-cli` supports Redis inspection and debugging
+- [ ] **Learn lazily:** `sqlite3` inspects and queries SQLite databases
+
+## Docs / discovery — Learn eagerly
 - [x] `man`: primary system manuals
 - [x] `apropos`: find commands by keyword
 - [x] `whatis`: one-line command descriptions
 - [x] `whereis`
 - [x] `info`: GNU manuals when `man` is thin
-- [ ] `navi`: interactive, searchable command cheatsheets
+- [ ] **Learn lazily:** `navi` provides interactive, searchable command cheatsheets
 
-**Shell basics**
+## Shell basics — Learn eagerly
 - [x] `bash`: your shell            
 - [ ] `zsh`: alternative shell (learn line editing here)
 - [x] `cd`: change directory
@@ -133,7 +168,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `sleep`: delay for a fixed duration
 - [x] `seq`: generate numeric sequences for loops, filenames, and quick test data
 
-**Shell language / builtins**
+## Shell language / builtins — Learn eagerly
 - [x] `type`: show whether something is a shell builtin, alias, function, or binary
 - [x] `which`: locate a command in `PATH`; prefer `type` for shell-aware lookup
 - [x] `help`: shell builtin docs
@@ -163,7 +198,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `bind`: bash/readline keybindings
 - [x] `declare`: set shell variables and attributes
 
-**Text processing**
+## Text processing — Learn eagerly
 - [x] `grep`: pattern search
 - [x] `sed`: stream editor [Read this](https://www.grymoire.com/Unix/Sed.html)
 - [x] `awk`: pattern/action language
@@ -196,15 +231,15 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `tac`: reverse file (cat backwards)
 - [x] `nl`: number lines
 
-**File operations**
+## File operations — Learn eagerly
 - [x] `find`: search filesystem
 - [x] `locate`: fast filename lookup via a prebuilt database
 - [x] `updatedb`: refresh the `locate` database
 - [x] `chmod`: change permissions
 - [x] `chown`: change ownership
 - [x] `chgrp`: change group
-- [ ] `rename`: batch rename files
-- [ ] `trash-cli`: safer interactive delete workflow than raw `rm`
+- [ ] **Learn lazily:** `rename` batch-renames files
+- [ ] **Learn lazily:** `trash-cli` provides a safer interactive deletion workflow than raw `rm`
 - [x] `stat`: file metadata
 - [x] `file`: detect file type
 - [x] `realpath`: resolve symlinks
@@ -221,7 +256,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `unlink`: remove single file
 - [x] `lsattr`: list Linux extended file attributes
 
-**Permissions / identity / access**
+## Permissions / identity / access — Learn eagerly
 - [x] `umask`: default permissions for newly created files
 - [x] `getfacl`: view POSIX ACLs
 - [x] `setfacl`: set POSIX ACLs
@@ -230,8 +265,8 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `setcap`: set file capabilities
 - [x] `runuser`: run command as another user, often from root scripts
 
-**Archiving/compression**
-- [x] `tar`: tape archive (tar czf, tar xzf)
+## Archiving/compression — Learn lazily
+- [ ] `tar`: tape archive (tar czf, tar xzf)
 - [x] `gzip`: gzip compression
 - [ ] `pigz`: parallel gzip for faster compression/decompression
 - [x] `gunzip`: decompress gzip
@@ -239,7 +274,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `unzip`: extract zip archives
 - [ ] `unar`: extract many archive formats with fewer flags to remember
 
-**Checksums / encoding / binary inspection**
+## Checksums / encoding / binary inspection — Learn the trigger
 - [x] `sha256sum`: verify file hash
 - [x] `sha512sum`: verify file hash
 - [ ] `rhash`: compute many hash formats
@@ -249,7 +284,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `od`: byte/word dumps with precise numeric formatting
 - [x] `strings`: extract printable strings from binaries
 
-**Process management**
+## Process management — Learn eagerly
 - [x] `ps`: process list
 - [x] `pstree`: process tree view - parent/child relationships at a glance
 - [x] `kill`: send signal
@@ -267,18 +302,18 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `renice`: change priority
 - [x] `timeout`: run with time limit
 
-**Terminal / TTY**
+## Terminal / TTY — Learn eagerly
 - [x] `stty`: terminal line settings
 - [x] `tty`: print current terminal device
 - [x] `reset`: reset broken terminal
 - [x] `clear`: clear terminal screen
 - [x] `script`: record terminal session
-- [ ] `asciinema`: record terminal sessions
-- [ ] `agg`: turn asciinema recordings into GIF/video
-- [ ] `vhs`: script terminal demos and recordings
+- [ ] **Learn lazily:** `asciinema` records terminal sessions
+- [ ] **Learn lazily:** `agg` turns asciinema recordings into GIF/video
+- [ ] **Learn lazily:** `vhs` scripts terminal demos and recordings
 - [ ] `tmux`: terminal multiplexer
 
-**System info**
+## System info — Learn eagerly
 - [x] `uname`: system info
 - [x] `hostname`: hostname
 - [x] `hostnamectl`: inspect/set system hostname and related metadata
@@ -297,14 +332,14 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `env`: environment variables
 - [x] `printenv`: print env vars
 
-**Login/session/account state**
+## Login/session/account state — Learn the trigger
 - [x] `last`: login history
 - [x] `lastlog`: last login per user
 - [x] `w`: logged-in users + what they are doing
 - [x] `logname`: original login name
 - [x] `newgrp`: switch current group
 
-**Disk/filesystem**
+## Disk/filesystem — Learn eagerly
 - [x] `df`: disk free space
 - [x] `du`: disk usage
 - [x] `mount`: mount filesystems
@@ -323,7 +358,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `chroot`: run a shell/command with a different root directory
 - [x] `snapper`: filesystem snapshot management
 
-**Networking / connectivity**
+## Networking / connectivity — Learn eagerly
 - [x] `ip`: addresses, routes, links, and neighbours
 - [x] `ss`: sockets, listening ports, and connections
 - [x] `ping`: ICMP reachability
@@ -333,9 +368,9 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `host`: simple DNS lookup
 - [x] `dig`: DNS lookup and debugging
 - [x] `curl`: HTTP/API checks
-- [ ] `wget`: simple downloads
+- [ ] **Learn lazily:** `wget` handles simple downloads
 
-**Network probes / debugging**
+## Network probes / debugging — Learn the trigger
 - [x] `nc`: basic TCP//UDP testing
 - [x] `socat`: bidirectional socket/data plumbing
 - [ ] `openssl s_client`: TLS endpoint debugging
@@ -353,15 +388,15 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `mitmproxy`: interactive HTTP(S) proxy for inspecting and modifying traffic ([GitHub](https://github.com/mitmproxy/mitmproxy))
 - [ ] `mitmdump`: scriptable HTTP(S) proxy capture/debugging from mitmproxy
 
-**Firewall / packet filtering**
+## Firewall / packet filtering — Learn eagerly
 - [x] `firewall-cmd`: firewalld CLI
-- [ ] `ufw`: simple firewall frontend common on Ubuntu
+- [x] **Learn lazily:** `ufw` is a simple firewall frontend common on Ubuntu
 
-**File transfer / sync**
+## File transfer / sync fundamentals — Learn eagerly
 - [ ] `rsync`: serious file copy/sync
-- [ ] `sshfs`: mount remote directories over SSH
+- [ ] **Learn lazily:** `sshfs` mounts remote directories over SSH
 
-**User management**
+## User management — Learn eagerly
 - [x] `useradd`: create user
 - [x] `userdel`: delete user
 - [x] `usermod`: modify user
@@ -369,8 +404,8 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `groupdel`: delete group
 - [x] `groupmod`: modify group
 - [x] `users`: list currently logged-in users
-- [ ] `pinky`: lightweight `finger`-style user info
-- [ ] `adduser`: friendlier user creation wrapper on some systems
+- [ ] **Learn lazily:** `pinky` provides lightweight `finger`-style user information
+- [ ] **Learn lazily:** `adduser` is a friendlier user-creation wrapper on some systems
 - [x] `passwd`: change password
 - [x] `chsh`: change a user's login shell
 - [x] `su`: switch user
@@ -380,21 +415,21 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `vipw`: safely edit `/etc/passwd` and related account files
 - [x] `vigr`: safely edit `/etc/group` and related group files
 
-**Systemd / logs**
+## Systemd / logs — Learn eagerly
 - [ ] `systemctl`: service/unit management (`status`, `list-units`, `cat`, `edit`, `daemon-reload`)
 - [ ] `journalctl`: log viewer (`-u`, `-b`, `-f`)
-- [ ] `oomctl`: inspect systemd-oomd state
-- [ ] `shutdown`: schedule or trigger shutdown/reboot on modern systemd systems
-- [ ] `reboot`: trigger an immediate reboot
-- [ ] `poweroff`: power the system down immediately
-- [ ] `halt`: halt the machine; usually prefer `systemctl poweroff`
-- [ ] `rtcwake`: suspend/hibernate until a scheduled wake time
+- [ ] **Learn the trigger:** `oomctl` inspects systemd-oomd state
+- [x] **Learn lazily:** `shutdown` schedules or triggers shutdown/reboot on modern systemd systems
+- [x] **Learn lazily:** `reboot` triggers an immediate reboot
+- [x] **Learn lazily:** `poweroff` powers the system down immediately
+- [x] **Learn lazily:** `halt` halts the machine; usually prefer `systemctl poweroff`
+- [ ] **Learn the trigger:** `rtcwake` suspends/hibernates until a scheduled wake time
 - [x] `timedatectl`: time/timezone/NTP state
 
-**Cron / scheduling**
+## Cron basics — Learn eagerly
 - [x] `crontab`: cron job management
 
-**Package management**
+## Package management — Learn eagerly
 - [ ] `dnf`: Fedora/RHEL package manager
 - [ ] `rpm`: low-level rpm operations
 - [ ] `alternatives`: manage default implementations on Fedora/RHEL
@@ -404,7 +439,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `apt-cache`: query Debian/Ubuntu package metadata
 - [ ] `dpkg`: low-level Debian package operations
 
-**SSH**
+## SSH — Learn eagerly
 - [x] `ssh`: remote shell
 - [x] `scp`: remote copy
 - [x] `sftp`: remote file transfer
@@ -415,23 +450,24 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `ssh-keyscan`: grab host keys
 - [x] `sshd`: SSH daemon
 - [x] `sshpass`: non-interactive SSH password (use keys instead)
-- [ ] `autossh`: keep SSH tunnels alive
-- [ ] `ssh-audit`: audit SSH server/client crypto configuration
-- [ ] `xxh`: bring your shell environment over SSH without installing dotfiles remotely
+- [ ] **Learn the trigger:** `autossh` keeps SSH tunnels alive
+- [ ] **Learn the trigger:** `ssh-audit` audits SSH server/client crypto configuration
+- [ ] **Learn lazily:** `xxh` brings your shell environment over SSH without installing dotfiles remotely
 
-**Editors**
+## Editors — Learn eagerly
 - [x] `nvim`: your editor
 - [x] `vim`: fallback
 - [x] `vi`: minimal vim
 - [x] `view`: read-only vim
 - [x] `ctags`: generate source navigation tags
 
-**Concepts to learn as concepts, not binaries**
+## Concepts — Learn eagerly
 - [ ] shell expansion order
 - [x] quoting rules
 - [ ] PATH lookuk
 - [ ] Networking understanding, HTTP, TCP, SSL and so on.
-- [ ] HTTP request/response model: methods, headers, status codes, bodies, redirects, caching, cookies, and auth basics
+- [ ] HTTP request/response model: methods, headers, status codes, bodies, redirects, caching, cookies, and auth basics[]()
+
 - [ ] fast doc lookup: official docs first, then `site:` search by tool/vendor
 - [ ] Terraform lookup model: language docs vs provider docs vs registry module docs
 - [ ] browser keyword search shortcuts / DevDocs for fast web-doc lookup
@@ -451,7 +487,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] OIDC and OAuth flow
 
 
-**Important config locations**
+## Important config locations — Learn eagerly
 - [x] `/etc/passwd`, `/etc/group`, `/etc/shadow`
 - [x] `/etc/sudoers`, `/etc/sudoers.d/`
 - [x] `/etc/fstab`
@@ -465,11 +501,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `/proc/`
 - [x] `/sys/`
 
-## TIER 2: High-value tools to invest in learning
-
-**Current focus: AWS + PostgreSQL/MySQL**
-
-**Shell scripting quality**
+## Shell scripting quality — Learn eagerly
 - [x] `shellcheck`: static analysis for shell scripts — catches real bugs
 - [x] `shfmt`: shell script formatter (use with conform.nvim)
 	- Add this to the pre commit.
@@ -480,7 +512,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [x] `flock`: prevent overlapping cron/systemd jobs with a lockfile
 - [ ] `parallel`: GNU parallel — run jobs in parallel properly
 
-**Repo hygiene / CI / linting**
+## Repo hygiene / CI / linting — Learn the trigger
 - [ ] `pre-commit`: run the same local hooks as CI
   - [ ] `trufflehog`: scan Git history and files for secrets; use as a pre-commit hook
   - [ ] `gitleaks`: scan repos for committed secrets; use as a pre-commit hook
@@ -489,7 +521,7 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `zizmor`: audit GitHub Actions workflows for security problems
 - [ ] `yamllint`: catch YAML syntax/structure/style issues
 
-**Ansible**
+## Ansible — Learn eagerly
 - [ ] `ansible`: ad-hoc automation
 - [ ] `ansible-playbook`: run playbooks
 - [ ] `ansible-inventory`: inspect inventory
@@ -499,17 +531,17 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `ansible-doc`: inspect Ansible module/plugin docs locally
 - [ ] `ansible-config`: inspect effective Ansible configuration
 
-**Data wrangling**
+## Data wrangling — Learn eagerly
 - [ ] `jq`: JSON query/transform — essential for API work, terraform state
 - [ ] `yq`: YAML equivalent of jq — critical for ansible debugging
-- [ ] `jc`: convert common command output to JSON for piping into `jq`
-- [ ] `jo`: build JSON objects from shell scripts without quoting hell
-- [ ] `gron`: flatten JSON into greppable assignments
-- [ ] `jless`: interactive JSON viewer
-- [ ] `jqp`: TUI playground for `jq` filters
-- [ ] `jd`: JSON diff
-
-**Infrastructure debugging**
+- [ ] **Learn the trigger:** `jc` converts common command output to JSON for piping into `jq`
+- [ ] **Learn the trigger:** `jo` builds JSON objects from shell scripts without quoting hell
+- [ ] **Learn the trigger:** `gron` flattens JSON into greppable assignments
+- [ ] **Learn lazily:** `jless` is an interactive JSON viewer
+- [ ] **Learn lazily:** `jqp` is a TUI playground for `jq` filters
+- [ ] **Learn the trigger:** `jd` provides JSON diffs
+No
+## Infrastructure debugging — Learn the trigger
 - [ ] `iostat`: CPU and disk I/O trends (sysstat)
 - [ ] `pidstat`: per-process CPU, memory, and I/O (sysstat)
 - [ ] `lsof`: what has this file/port/socket open
@@ -521,36 +553,42 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `perf`: Linux performance profiling and low-level CPU/system analysis
 - [ ] `dd`: block copy (careful with this one)
 
-**SELinux (Rocky Linux means you deal with this)**
+## SELinux — Learn eagerly
+
+Rocky Linux means you deal with this.
 - [ ] `getenforce`: check SELinux mode
 - [ ] `sestatus`: SELinux status
 - [ ] `setenforce`: set SELinux mode
 - [ ] `restorecon`: fix file contexts
 - [ ] `audit2why`: explain SELinux denials
 
-**Security / audit**
+## Security / audit — Learn the trigger
 - [ ] `lynis`: Linux security audit/checklist tool
 - [ ] `auditd`: Linux audit daemon
 
-**Containers (Fedora native)**
+## Containers — Learn eagerly
+
+Fedora-native defaults apply.
 - [ ] `podman`: rootless containers — docker-compatible
 - [ ] `docker`: still the lingua franca even if you prefer podman
 - [ ] `docker compose`: local multi-container stacks
 - [ ] `podman compose`: compose-style podman workflow
-- [ ] `skopeo`: inspect/copy container images without pulling
-- [ ] `cosign`: sign and verify container images/artifacts
-- [ ] `trivy`: image/filesystem/IaC security scanning
-- [ ] `toolbox`: Fedora containerised development environments
-- [ ] `distrobox`: Linux desktop/dev container workflow, broader than `toolbox`
-- [ ] `lazydocker`: TUI for local Docker/Compose stacks
+- [ ] **Learn the trigger:** `skopeo` inspects and copies container images without pulling
+- [ ] **Learn the trigger:** `cosign` signs and verifies container images/artifacts
+- [ ] **Learn the trigger:** `trivy` scans images, filesystems, and IaC for security issues
+- [ ] **Learn lazily:** `toolbox` provides Fedora containerised development environments
+- [ ] **Learn lazily:** `distrobox` provides a broader Linux desktop/dev container workflow than `toolbox`
+- [ ] **Learn lazily:** `lazydocker` is a TUI for local Docker/Compose stacks
 - **NOTE:** There are more container tools in [[command-triage-additions]]
 
-**Certificate/TLS (relevant to your Caddy + internal PKI work)**
+## Certificate/TLS — Learn eagerly
+
+Relevant to your Caddy and internal PKI work.
 - [ ] `openssl`: cert inspection, CSR generation, TLS debugging
 - [ ] `trust`: manage system trust store
 - [ ] `update-ca-trust`: refresh CA bundle
 
-**Secrets / credentials**
+## Secrets / credentials — Learn the trigger
 - [ ] `gpg`: encryption/signing
 - [ ] `secret-tool`: query/store secrets via libsecret
 - [ ] `pass`: Unix password manager
@@ -558,46 +596,27 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `age`: modern file encryption
 - [ ] `sops`: encrypted config/secrets, often with age/KMS
 
-**Databases / cache**
-- [ ] `psql`: PostgreSQL shell for inspection and admin
-- [ ] `pgcli`: enhanced PostgreSQL shell with completion and syntax highlighting
-- [ ] `pg_isready`: fast PostgreSQL readiness/connectivity check
-- [ ] `pg_dump`: logical backup of a PostgreSQL database
-- [ ] `pg_restore`: restore `pg_dump` custom/directory backups
-- [ ] `pg_dumpall`: dump all PostgreSQL databases plus global objects like roles
-- [ ] `pg_basebackup`: physical PostgreSQL backup / replication base backup
-- [ ] `createdb`: create a PostgreSQL database from the CLI
-- [ ] `createuser`: create PostgreSQL roles/users from the CLI
-- [ ] `vacuumdb`: run vacuum/analyze/maintenance without opening `psql`
-- [ ] `reindexdb`: rebuild indexes when debugging corruption or bloat issues
-- [ ] `mysql`: MySQL/MariaDB shell for inspection and admin
-- [ ] `mycli`: enhanced MySQL/MariaDB shell with completion and syntax highlighting
-- [ ] `mysqldump`: logical backup of a MySQL/MariaDB database
-- [ ] `mysqladmin`: quick admin/status operations without opening the full shell
-- [ ] `redis-cli`: Redis inspection and debugging
-- [ ] `sqlite3`: inspect and query SQLite databases
-
-**Backup/recovery**
+## Backup/recovery — Learn the trigger
 - [ ] `restic`: deduplicated encrypted backups
 - [ ] `borg`: deduplicated encrypted backups, good alternative to `restic`
 
-**Process/resource tuning**
+## Process/resource tuning — Learn the trigger
 - [ ] `sysctl`: kernel parameter tuning
 - [ ] `ionice`: I/O priority
 - [ ] `taskset`: CPU affinity
 - [ ] `prlimit`: per-process limits
 
-**Logs**
+## Logs — Learn the trigger
 - [ ] `logrotate`: rotat kie logs
 - [ ] `logger`: write message to syslog/journal
 - [ ] `lnav`: interactive log viewer for mixed log files and timestamps
 
-**Terminal mail**
+## Terminal mail — Learn lazily
 - [ ] `mutt`: text-based mail client when staying in the terminal is faster than context-switching to a browser
 - [ ] `mail`: minimal text-based mail client for simple send/read flows
 - [ ] `mailq`: inspect the local outgoing mail queue
 
-**Language/runtime tooling**
+## Language/runtime tooling — Learn eagerly
 - [ ] `python3`: Python interpreter
 - [ ] `pip`: Python package installer
 - [ ] `pipx`: install Python CLI apps cleanly
@@ -606,32 +625,30 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `npm`: Node package manager
 - [ ] `perl`: regular expressions and older scripting glue
 
-**Build / compile basics**
+## Build / compile basics — Learn eagerly
 - [ ] `make`: build automation
-- [ ] `watch`: repeat command and watch output
-- [ ] `watchexec`: rerun commands when files change
-- [ ] `entr`: rerun commands when listed files change
+- [ ] **Learn lazily:** `watch` repeats a command and displays its changing output
+- [ ] **Learn lazily:** `watchexec` reruns commands when files change
+- [ ] **Learn lazily:** `entr` reruns commands when listed files change
 - [ ] `just`: command runner (you already use this)
 
 ---
 
-## TIER 3: Good to know exist, learn when needed
-
-**Shell / legacy scripting**
+## Shell / legacy scripting — Learn the trigger
 - [ ] `expr`: legacy arithmetic/string evaluator you still see in older shell scripts
 
-**CLI calculators**
+## CLI calculators — Learn lazily
 - [ ] `bc`: arbitrary-precision calculator for shell math, unit conversions, and quick ops arithmetic
-- [ ] `dc`: reverse-polish stack calculator; mostly worth recognizing rather than prioritizing
+- [ ] **Learn the trigger:** `dc` is a reverse-polish stack calculator; mostly worth recognising rather than prioritising
 
-**Text/doc conversion**
+## Text/doc conversion — Learn lazily
 - [x] `pandoc`: universal doc converter — markdown to PDF, docx, etc.
 - [ ] `pdfgrep`: grep through PDF text
 - [ ] `pdftotext`: extract text from PDFs
 - [ ] `ocrmypdf`: OCR + PDF optimization — useful for law firm doc scanning
 - [ ] `dos2unix`: fix Windows line endings
 
-**Spell checking / writing**
+## Spell checking / writing — Learn lazily
 - [ ] `aspell`: interactive CLI spell checker for prose, notes, and Markdown
 - [ ] `hunspell`: dictionary-based spell checker used by many editors and language packs
 - [ ] `codespell`: catch common misspellings in code, docs, and config files
@@ -639,55 +656,55 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `vale`: prose/style linter for Markdown and documentation
 - [ ] `look`: prefix lookup in sorted word lists/dictionaries; handy, but much lower priority than actual spell checkers
 
-**Cron / scheduling**
+## Occasional scheduling — Learn the trigger
 - [x] `anacron`: run missed cron jobs
 - [x] `at`: one-shot scheduled command
 - [x] `atq`: list at queue
 - [x] `atrm`: remove at job
 - [x] `batch`: run when load is low
 
-**Mail/server notifications**
+## Mail/server notifications — Learn the trigger
 - [ ] `mailx`: send/read simple mail
 - [ ] `swaks`: scriptable SMTP test client for mail delivery debugging
 - [ ] `sendmail`: sendmail-compatible interface
 - [ ] `postqueue`: inspect Postfix queue
 - [ ] `postfix`: Postfix control
 
-**File transfer / sync**
-- [ ] `croc`: simple encrypted file transfer between machines
+## Additional file transfer / sync — Learn the trigger
+- [ ] **Learn lazily:** `croc` provides simple encrypted file transfer between machines
 - [ ] `rclone`: cloud storage sync (S3, etc.)
 - [ ] `syncthing`: p2p file sync
 
-**Code / repo utilities**
+## Code / repo utilities — Learn lazily
 - [ ] `cloc`: count lines of code
 
-**Environment / dotfiles**
+## Environment / dotfiles — Learn the trigger
 - [ ] `stow`: symlink farm manager (your dotfiles)
 - [ ] `direnv`: per-directory env vars
 - [ ] `chezmoi`: dotfiles manager for multi-machine setups
 
-**Pipeline helpers**
+## Pipeline helpers — Learn the trigger
 - [ ] `pv`: monitor progress through a pipe / long data stream
 - [ ] `sponge`: soak stdin before writing a file, useful in pipelines that update files in place
 
-**Terminal docs / browsing**
+## Terminal docs / browsing — Learn lazily
 - [ ] `w3m`: terminal web browser
 - [ ] `glow`: terminal markdown renderer
 - [ ] `cheat`: cheat sheets in terminal
 - [ ] `tldr`: short, example-first command docs
 - [ ] `cht.sh`: curlable cheat sheets / quick example
 
-**Printing / scanning**
+## Printing / scanning — Learn lazily
 - [ ] `lp`: submit files to print
 
-**Desktop / media helpers**
+## Desktop / media helpers — Learn lazily
 - [ ] `chafa`: render images in the terminal; handy for quickly inspecting screenshots without leaving the shell
 - [ ] `playerctl`: control media players from the shell
 - [ ] `brightnessctl`: control laptop/display brightness from the shell
 - [ ] `xdg-open`: open a file/URL with the desktop default app
 - [ ] `yt-dlp`: video downloader
 
-**AI / local models**
+## AI / local models — Learn lazily
 - [ ] `pi`: coding agent CLI for AI-assisted code/file edits and terminal workflows
 - [ ] `herdr`: terminal workspace for running and monitoring multiple coding agents ([GitHub](https://github.com/ogulcancelik/herdr))
 - [ ] `bd` / Beads: distributed graph issue tracker and persistent structured memory for AI agents ([GitHub](https://github.com/gastownhall/beads))
@@ -698,18 +715,16 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `sgpt` / `shell_gpt`: terminal AI assistant for shell commands, code, and chat ([GitHub](https://github.com/ther1d/shell_gpt))
 - [ ] `ollama`: local LLM inference (your GPU passthrough setup)
 
-**VM / local lab**
+## VM / local lab — Learn the trigger
 - [ ] `vagrant`: VM provisioning (your ansible testing)
 
-**Personal workflow**
+## Personal workflow — Learn lazily
 - [ ] `jrnl`: simple personal diary app
 - [ ] `tuxedo`: keyboard-driven TUI/CLI for `todo.txt` task lists ([GitHub](https://github.com/webstonehq/tuxedo))
 
 ---
 
-## TIER 4: Niche / special-purpose (ignore until relevant)
-
-**X11/Wayland tools**
+## X11/Wayland tools — Learn lazily
 - [ ] `grim`: Wayland screenshot capture
 - [ ] `slurp`: select a Wayland screen region, often used with `grim`
 - [ ] `swappy`: annotate/edit screenshots from Wayland capture workflows
@@ -717,5 +732,5 @@ NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 - [ ] `wl-copy`: Wayland clipboard copy
 - [ ] `wl-paste`: Wayland clipboard paste
 
-**Flatpak**
+## Flatpak — Learn lazily
 - [ ] `flatpak`: Flatpak package manager
