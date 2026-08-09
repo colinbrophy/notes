@@ -12,7 +12,6 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [ ] https://blog.jcoglan.com/2017/05/08/merging-with-diff3/
 - [ ] [Sapling](https://github.com/facebook/sapling)
 - [ ] `gitk` GUI log
-- [ ] `gh-dash` terminal dashboard for GitHub pull requests and issues
 
 ## Modern CLI replacements
 - [ ] `ast-grep` searches and rewrites code by syntax structure rather than plain text
@@ -236,7 +235,6 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [x] `/sys/`
 
 ## Shell scripting quality
-- [ ] `bats`: Bash Automated Testing System
 - [ ] `envsubst`: substitute env vars in templates — handy for deploy scripts
 - [ ] `dotenvx`: manage/load `.env` files with encryption support
 - [ ] `dotenv-linter`: catch mistakes in `.env` files
@@ -246,14 +244,12 @@ These tools are outside the current stack or do not justify scheduled study. Use
 ## Repo hygiene / CI / linting
 - [ ] `trufflehog`: scan Git history and files for secrets; use as a pre-commit hook
 - [ ] `gitleaks`: scan repos for committed secrets; use as a pre-commit hook
-- [ ] `yamllint`: catch YAML syntax/structure/style issues
 
 ## Ansible
 - [ ] `ansible`: ad-hoc automation
 - [ ] `ansible-inventory`: inspect inventory
 - [ ] `ansible-vault`: encrypted secrets
 - [ ] `ansible-galaxy`: roles/collections
-- [ ] `ansible-lint`: lint playbooks
 - [ ] `ansible-doc`: inspect Ansible module/plugin docs locally
 - [ ] `ansible-config`: inspect effective Ansible configuration
 
@@ -262,7 +258,6 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [ ] `jo` builds JSON objects from shell scripts without quoting hell
 - [ ] `gron` flattens JSON into greppable assignments
 - [ ] `jd` provides JSON diffs
-No
 - [ ] `jless` is an interactive JSON viewer
 - [ ] `jqp` is a TUI playground for `jq` filters
 
@@ -363,7 +358,6 @@ Relevant to your Caddy and internal PKI work.
 ## Additional file transfer / sync
 - [ ] `rclone`: cloud storage sync (S3, etc.)
 - [ ] `syncthing`: p2p file sync
-- [ ] `croc` provides simple encrypted file transfer between machines
 
 ## Environment / dotfiles
 - [ ] `chezmoi`: dotfiles manager for multi-machine setups

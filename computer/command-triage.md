@@ -54,13 +54,10 @@
 ### GitHub and GitHub Actions
 - [ ] `gh`: GitHub CLI
 - [ ] `act`: run GitHub Actions locally
-- [ ] `actionlint`: lint GitHub Actions workflows
-- [ ] `zizmor`: audit GitHub Actions workflows for security problems
+- [ ] `gh-dash`: terminal dashboard for GitHub pull requests and issues
 
 ### Terraform
 - [ ] `terraform`: core workflow (`fmt`, `validate`, `plan`, `apply`, `output`, `state`, `console`, `import`)
-- [ ] `tflint` catches Terraform and provider-specific mistakes
-- [ ] `tfsec` performs Terraform static security scanning
 - [ ] `infracost` estimates Terraform/OpenTofu cloud costs
 - [ ] `terraform-docs` generates documentation for Terraform modules
 - [ ] `terraform-ls` is the Terraform language server
@@ -195,6 +192,9 @@
 - [ ] `tmux`: terminal multiplexer
 - [ ] `wl-copy`: Wayland clipboard copy
 
+### File transfer
+- [ ] `croc` provides simple encrypted file transfer between machines
+
 ### Package management
 - [ ] `dnf`: Fedora/RHEL package manager
 - [ ] `brew`: Homebrew package manager, common on macOS and useful via Linuxbrew
@@ -208,14 +208,28 @@
 - [ ] fast doc lookup: official docs first, then `site:` search by tool/vendor
 - [ ] Terraform lookup model: language docs vs provider docs vs registry module docs
 - [ ] browser keyword search shortcuts / DevDocs for fast web-doc lookup
-- [ ] cgroups vs namespaces vs systemd units
-- [ ] file ownership vs permissions vs ACLs
+- [x] cgroups vs namespaces vs systemd units
+- [x] file ownership vs permissions vs ACLs
 - [ ] process/session/job distinction
 - [ ] package ownership: which package installed this file?
 - [ ] OIDC and OAuth flow
 
 ### Pre-commit
 - [ ] `pre-commit`: run the same local hooks as CI
+- [ ] `tflint` catches Terraform and provider-specific mistakes
+- [ ] `tfsec` performs Terraform static security scanning
+- [ ] `actionlint`: lint GitHub Actions workflows
+- [ ] `zizmor`: audit GitHub Actions workflows for security problems
+- [ ] `yamllint`: catch YAML syntax/structure/style issues
+- [ ] `ansible-lint`: lint playbooks
+- [x] `shellcheck`: static analysis for shell scripts — catches real bugs
+- [x] `shfmt`: shell script formatter (use with conform.nvim)
+	- Add this to the pre commit.
+- [ ] `codespell`: catch common misspellings in code, docs, and config files
+- [ ] `typos`: fast repo-wide spell checker for source, filenames, and CI
+
+### Shell testing
+- [ ] `bats`: Bash Automated Testing System
 
 ### Data wrangling
 - [ ] `jq`: JSON query/transform — essential for API work, terraform state
@@ -264,8 +278,6 @@ Fedora-native defaults apply.
 ### Spell checking / writing
 - [ ] `aspell`: interactive CLI spell checker for prose, notes, and Markdown
 - [ ] `hunspell`: dictionary-based spell checker used by many editors and language packs
-- [ ] `codespell`: catch common misspellings in code, docs, and config files
-- [ ] `typos`: fast repo-wide spell checker for source, filenames, and CI
 
 ### Search and navigation
 - [x] `fzf` is a composable fuzzy finder that transforms how you navigate
@@ -337,13 +349,8 @@ Fedora-native defaults apply.
 ### Important config locations
 - [x] `/etc/profile`, `~/.profile`, `~/.bashrc`, `~/.zshrc`
 
-### Shell scripting quality
-- [x] `shellcheck`: static analysis for shell scripts — catches real bugs
-- [x] `shfmt`: shell script formatter (use with conform.nvim)
-	- Add this to the pre commit.
-
 ## Scope
 
-- Current work: GitHub and GitHub Actions, `pre-commit`, `just`, Terraform, AWS, Ansible playbooks, PostgreSQL, Node.js, Python, containers, Fedora (`dnf` and Flatpak), Homebrew, `bw`, `secret-tool`, `stow`, `direnv`, Pi, and Claude Code.
+- Current work: GitHub and GitHub Actions, `pre-commit`, `just`, Terraform, AWS, Ansible playbooks, Bats, PostgreSQL, Node.js, Python, containers, Fedora (`dnf` and Flatpak), Homebrew, `bw`, `secret-tool`, `stow`, `direnv`, `croc`, Pi, and Claude Code.
 - Universal terminal foundations also stay active: Git, Zsh, shell/Unix fundamentals, editing, `fd`, `rg`, `fzf`, `bc`, and spelling tools.
 - Everything else is parked in [[command-triage-lazy]] unless real work selects it.
