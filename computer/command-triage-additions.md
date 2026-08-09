@@ -173,6 +173,15 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `git-patch-id`: compute stable patch IDs
 - [ ] `git-stripspace`: remove unnecessary whitespace
 
+## Databases
+
+### MySQL / MariaDB
+
+- [ ] `mysql`: MySQL/MariaDB shell for inspection and admin
+- [ ] **Learn lazily:** `mycli` is an enhanced MySQL/MariaDB shell with completion and syntax highlighting
+- [ ] `mysqldump`: logical backup of a MySQL/MariaDB database
+- [ ] **Learn the trigger:** `mysqladmin` provides quick admin/status operations without opening the full shell
+
 ## Storage / Filesystems
 
 ### Partitioning / Block Devices

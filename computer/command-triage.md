@@ -4,7 +4,7 @@
 
 NOTE: We also need to do [[zsh]] and [[Firefox]] too.
 
-**Current focus:** AWS + PostgreSQL/MySQL
+**Current focus:** AWS + PostgreSQL
 
 ## Learning modes
 
@@ -125,10 +125,6 @@ The mode on each topic is the default; individual entries can override it.
 - [ ] **Learn lazily:** `createuser` creates PostgreSQL roles/users from the CLI
 - [ ] **Learn the trigger:** `vacuumdb` runs vacuum/analyze/maintenance without opening `psql`
 - [ ] **Learn the trigger:** `reindexdb` rebuilds indexes when debugging corruption or bloat issues
-- [ ] `mysql`: MySQL/MariaDB shell for inspection and admin
-- [ ] **Learn lazily:** `mycli` is an enhanced MySQL/MariaDB shell with completion and syntax highlighting
-- [ ] `mysqldump`: logical backup of a MySQL/MariaDB database
-- [ ] **Learn the trigger:** `mysqladmin` provides quick admin/status operations without opening the full shell
 - [ ] **Learn lazily:** `redis-cli` supports Redis inspection and debugging
 - [ ] **Learn lazily:** `sqlite3` inspects and queries SQLite databases
 
