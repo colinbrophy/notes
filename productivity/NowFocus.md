@@ -1,11 +1,11 @@
 # Now focus
 
+Treat these as [[Bounded commitment|bounded commitments]], not unlimited duties.
+
 ## Active
 
 - **Health** — restore regular exercise and address the weight gained over the last few months. This is a problem to act on now, not a background aspiration.
 - **French** — resume [[Language Learning]], with native audio comprehension as the main goal. Use vocabulary study and regular listening to make measurable progress.
-- **DevOps through work** — learning no longer needs to be a major separate project. Spend about 30 minutes of work time each day rebuilding fluency and learn the rest as needs arise on the job.
-- Bias towards practical use and durable skills rather than deep system-building or taxonomy; see [[Evergreen skills for AI-assisted coding]].
 
 ## Waiting
 

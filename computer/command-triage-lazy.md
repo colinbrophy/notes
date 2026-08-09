@@ -3,6 +3,16 @@
 These tools are outside the current stack or do not justify scheduled study. Use documentation, `--help`, or examples if a real task calls for them.
 
 ## Git
+- [ ] `git filter-repo`: rewrite history for cleanup or secret removal; learn carefully when needed
+- [ ] `git archive`: export a clean tar/zip snapshot of tracked files at a commit
+- [ ] `git fsck`: check repository object integrity when diagnosing corruption
+- [ ] `git format-patch`, `git am`: email/patch-based contribution workflow
+- [ ] `git describe`: derive human-readable version strings from tags and commits
+- [ ] `git bisect`: find the commit that introduced a regression
+- [ ] `git submodule`: manage nested external repositories when a project uses them
+- [ ] `git rev-parse`: scripting helper for repo roots, refs, and object names
+- [ ] `git mergetool`, `git difftool`: use external tools for conflicts and diffs
+- [ ] `git ls-files`: show files tracked by Git
 - [ ] `jj` (Jujutsu) is a Git-compatible version-control system with first-class change tracking and automatic working-copy commits
 - [ ] `git-absorb` automatically creates `fixup!` commits by matching staged changes to earlier commits
 - [ ] tuicr
@@ -52,7 +62,6 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [x] `halt` halts the machine; usually prefer `systemctl poweroff`
 
 ## Docs / discovery
-- [ ] `navi` provides interactive, searchable command cheatsheets
 
 ## File operations
 - [ ] `rename` batch-renames files
@@ -331,6 +340,9 @@ Relevant to your Caddy and internal PKI work.
 - [ ] `watchexec` reruns commands when files change
 - [ ] `entr` reruns commands when listed files change
 
+## Shell language / builtins
+- [ ] `getopts`: parse shell script flags
+
 ## Shell / legacy scripting
 - [ ] `expr`: legacy arithmetic/string evaluator you still see in older shell scripts
 
@@ -352,7 +364,6 @@ Relevant to your Caddy and internal PKI work.
 - [ ] `postfix`: Postfix control
 
 ## Spell checking / writing
-- [ ] `vale`: prose/style linter for Markdown and documentation
 - [ ] `look`: prefix lookup in sorted word lists/dictionaries; handy, but much lower priority than actual spell checkers
 
 ## Additional file transfer / sync
@@ -418,6 +429,3 @@ Relevant to your Caddy and internal PKI work.
 - [ ] `swappy`: annotate/edit screenshots from Wayland capture workflows
 - [ ] `wl-screenrec`: Wayland screen recording
 - [ ] `wl-paste`: Wayland clipboard paste
-
-## Related
-- [ ] Review [[Firefox]]

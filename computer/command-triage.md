@@ -26,7 +26,6 @@
 	    - [ ] Come back to --cleanup=
     - [x] `git rebase`: maintain topic  branches
     - [x] `git cherry-pick`: apply syelected commits onto the current branch
-    - [x] `git bisect`: find the commit that introduced a regression
     - [ ] `git blame`: trace which commit last changed lines
     - [x] `git grep`: search tracked files quickly
     - [x] `git tag`: mark a known point
@@ -36,16 +35,6 @@
     - [ ] `git pull`, `git fetch`: keep up to date with upstream
 		- Read the manual of `fetch` (partiualcly the refspec part) more carefully.
     - [ ] `git push`: publish to a shared repository
-    - [ ] `git submodule`: manage nested external repositories when a project uses them
-    - [ ] `git rev-parse`: scripting helper for repo roots, refs, and object names
-  - [ ] Occasional but important Git workflows
-    - [ ] `git mergetool`, `git difftool`: use external tools for conflicts and diffs
-    - [ ] `git ls-files`: show files tracked by Git
-    - [ ] `git describe`: derive human-readable version strings from tags and commits
-    - [ ] `git filter-repo`: rewrite history for cleanup or secret removal; learn carefully when needed
-    - [ ] `git archive`: export a clean tar/zip snapshot of tracked files at a commit
-    - [ ] `git fsck`: check repository object integrity when diagnosing corruption
-    - [ ] `git format-patch`, `git am`: email/patch-based contribution workflow
 - [x] `git worktree`
 - [ ] `gitrevisions`: Git revision/range syntax
 - [ ] `gitignore`
@@ -91,6 +80,10 @@
 - [ ] `tldr`: short, example-first command docs
 - [ ] `cht.sh`: curlable cheat sheets / quick example
 - [ ] `xdg-open`: open a file/URL with the desktop default app
+- [ ] `navi` provides interactive, searchable command cheatsheets
+
+### Browser
+- [ ] Review [[Firefox]]
 
 ### Shell basics
 - [x] `bash`: your shell            
@@ -120,41 +113,11 @@
 - [x] `sleep`: delay for a fixed duration
 - [x] `seq`: generate numeric sequences for loops, filenames, and quick test data
 
-### Shell language / builtins
-- [x] `type`: show whether something is a shell builtin, alias, function, or binary
-- [x] `which`: locate a command in `PATH`; prefer `type` for shell-aware lookup
-- [x] `help`: shell builtin docs
-- [x] `command`: run command bypassing shell functions/aliases
-- [x] `builtin`: run shell builtin explicitly
-- [x] `alias`: define/list aliases
-- [x] `unalias`: remove aliases
-- [x] `export`: put variables into environment
-- [x] `unset`: remove variable/function
-- [x] `set`: shell options + positional parameters
-- [x] `shopt`: Bash-specific shell options
-- [x] `source`: run file in current shell
-- [x] `.`: POSIX source
-- [x] `pushd`: push the current directory onto the stack and switch directories
-- [x] `popd`: pop a directory off the stack and switch back to it
-- [x] `dirs`: show or manipulate the shell directory stack
-- [x] `exec`: replace current shell/process
-- [x] `trap`: handle signals/cleanup in scripts
-- [x] `return`: return from function/sourced script
-- [x] `exit`: exit shell/script
-- [x] `shift`: shift positional parameters
-- [ ] `getopts`: parse shell script flags
-- [x] `ulimit`: shell resource limits
-- [x] `history`: shell history
-- [x] `fc`: edit/re-run previous commands
-- [x] `bindkey`: zsh keybindings
-- [x] `bind`: bash/readline keybindings
-- [x] `declare`: set shell variables and attributes
-
 ### Text processing
 - [x] `grep`: pattern search
 - [x] `sed`: stream editor [Read this](https://www.grymoire.com/Unix/Sed.html)
 - [x] `awk`: pattern/action language
-	- [x] https://catonmat.net/awk-book
+	- [ ] https://catonmat.net/awk-book
 - [x] `sort`: sort lines
 - [x] `uniq`: deduplicate adjacent lines
 - [x] `wc`: word/line/byte count
@@ -227,6 +190,7 @@
 	- Add this to the pre commit.
 - [ ] `codespell`: catch common misspellings in code, docs, and config files
 - [ ] `typos`: fast repo-wide spell checker for source, filenames, and CI
+- [ ] `vale`: prose/style linter for Markdown and documentation
 
 ### Shell testing
 - [ ] `bats`: Bash Automated Testing System
@@ -348,6 +312,35 @@ Fedora-native defaults apply.
 
 ### Important config locations
 - [x] `/etc/profile`, `~/.profile`, `~/.bashrc`, `~/.zshrc`
+
+### Shell language / builtins
+- [x] `type`: show whether something is a shell builtin, alias, function, or binary
+- [x] `which`: locate a command in `PATH`; prefer `type` for shell-aware lookup
+- [x] `help`: shell builtin docs
+- [x] `command`: run command bypassing shell functions/aliases
+- [x] `builtin`: run shell builtin explicitly
+- [x] `alias`: define/list aliases
+- [x] `unalias`: remove aliases
+- [x] `export`: put variables into environment
+- [x] `unset`: remove variable/function
+- [x] `set`: shell options + positional parameters
+- [x] `shopt`: Bash-specific shell options
+- [x] `source`: run file in current shell
+- [x] `.`: POSIX source
+- [x] `pushd`: push the current directory onto the stack and switch directories
+- [x] `popd`: pop a directory off the stack and switch back to it
+- [x] `dirs`: show or manipulate the shell directory stack
+- [x] `exec`: replace current shell/process
+- [x] `trap`: handle signals/cleanup in scripts
+- [x] `return`: return from function/sourced script
+- [x] `exit`: exit shell/script
+- [x] `shift`: shift positional parameters
+- [x] `ulimit`: shell resource limits
+- [x] `history`: shell history
+- [x] `fc`: edit/re-run previous commands
+- [x] `bindkey`: zsh keybindings
+- [x] `bind`: bash/readline keybindings
+- [x] `declare`: set shell variables and attributes
 
 ## Scope
 
