@@ -6,6 +6,7 @@ Curated entry point for the `productivity/` folder.
 
 ## Core system notes
 
+- [[Capability should direct learning]]
 - [[Personal Knowledge Management]]
 - [[TaskSetup]]
 - [[SubjectLeverage]]

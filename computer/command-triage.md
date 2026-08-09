@@ -20,7 +20,7 @@ The mode on each topic is the default; individual entries can override it.
     - [ ] `git config`: inspect/set identity, defaults, aliases, and tool integration
     - [x] `git init`: create a new repository
     - [x] `git log`: see what happened
-    - [x] `git show`: inspect one commit, tag, or object
+    - [ ] `git show`: inspect one commit, tag, or object
     - [ ] `git reflog`: recover where branches/HEAD used to point
     - [x] `git switch`
     - [x] `git branch`: switch and manage branches
@@ -76,12 +76,12 @@ The mode on each topic is the default; individual entries can override it.
 ## Modern CLI replacements — Learn lazily
 - [x] `fd`: fast, intuitive find replacement. Pairs with fzf
 - [ ] `eza`: modern `ls` replacement
-- [ ] `rg`: ripgrep — fast recursive grep with sane defaults
+- [x] `rg`: ripgrep — fast recursive grep with sane defaults
 - [ ] **Learn the trigger:** `ast-grep` searches and rewrites code by syntax structure rather than plain text
 - [ ] **Learn the trigger:** `rga` / `ripgrep-all` searches PDFs, Office docs, archives, and other rich files with ripgrep-like ergonomics
 - [ ] `bat`: cat with syntax highlighting and git integration
 - [ ] `yazi`: file browser tui
-- [ ] **Learn eagerly:** `fzf` is a composable fuzzy finder that transforms how you navigate
+- [x] **Learn eagerly:** `fzf` is a composable fuzzy finder that transforms how you navigate
 - [ ] `fzf-tab`: zsh plugin for fzf-powered tab completion
 - [ ] `fzf-tmux`: fzf inside tmux panes
 - [x] `atuin`: much better shell history/search
@@ -92,10 +92,10 @@ The mode on each topic is the default; individual entries can override it.
 - [ ] **Learn the trigger:** `hyperfine` benchmarks commands properly
 - [ ] `gum`: build polished interactive shell script prompts and menus
 - [ ] `btop`: gorgeous process/resource monitor
-- [ ] `ncdu`: interactive disk usage explorer — find what's eating space
-- [ ] `lazygit`: TUI git client you already use
+- [x] `ncdu`: interactive disk usage explorer — find what's eating space
+- [x] `lazygit`: TUI git client you already use
 -  pull requests?
-- [ ] `tree`: directory tree view
+- [x] `tree`: directory tree view
 
 ## Terraform / image build — Learn eagerly
 - [ ] `terraform`: core workflow (`fmt`, `validate`, `plan`, `apply`, `output`, `state`, `console`, `import`)
@@ -132,6 +132,16 @@ The mode on each topic is the default; individual entries can override it.
 - [ ] **Learn lazily:** `redis-cli` supports Redis inspection and debugging
 - [ ] **Learn lazily:** `sqlite3` inspects and queries SQLite databases
 
+## Systemd / logs — Learn eagerly
+- [ ] `systemctl`: service/unit management (`status`, `list-units`, `cat`, `edit`, `daemon-reload`)
+- [ ] `journalctl`: log viewer (`-u`, `-b`, `-f`)
+- [ ] **Learn the trigger:** `oomctl` inspects systemd-oomd state
+- [x] **Learn lazily:** `shutdown` schedules or triggers shutdown/reboot on modern systemd systems
+- [x] **Learn lazily:** `reboot` triggers an immediate reboot
+- [x] **Learn lazily:** `poweroff` powers the system down immediately
+- [x] **Learn lazily:** `halt` halts the machine; usually prefer `systemctl poweroff`
+- [ ] **Learn the trigger:** `rtcwake` suspends/hibernates until a scheduled wake time
+- [x] `timedatectl`: time/timezone/NTP state
 ## Docs / discovery — Learn eagerly
 - [x] `man`: primary system manuals
 - [x] `apropos`: find commands by keyword
@@ -414,17 +424,6 @@ The mode on each topic is the default; individual entries can override it.
 - [x] `sudoedit`: edit root-owned files safely through sudo
 - [x] `vipw`: safely edit `/etc/passwd` and related account files
 - [x] `vigr`: safely edit `/etc/group` and related group files
-
-## Systemd / logs — Learn eagerly
-- [ ] `systemctl`: service/unit management (`status`, `list-units`, `cat`, `edit`, `daemon-reload`)
-- [ ] `journalctl`: log viewer (`-u`, `-b`, `-f`)
-- [ ] **Learn the trigger:** `oomctl` inspects systemd-oomd state
-- [x] **Learn lazily:** `shutdown` schedules or triggers shutdown/reboot on modern systemd systems
-- [x] **Learn lazily:** `reboot` triggers an immediate reboot
-- [x] **Learn lazily:** `poweroff` powers the system down immediately
-- [x] **Learn lazily:** `halt` halts the machine; usually prefer `systemctl poweroff`
-- [ ] **Learn the trigger:** `rtcwake` suspends/hibernates until a scheduled wake time
-- [x] `timedatectl`: time/timezone/NTP state
 
 ## Cron basics — Learn eagerly
 - [x] `crontab`: cron job management
