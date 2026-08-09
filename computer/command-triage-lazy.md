@@ -423,7 +423,6 @@ Relevant to your Caddy and internal PKI work.
 - [ ] `slurp`: select a Wayland screen region, often used with `grim`
 - [ ] `swappy`: annotate/edit screenshots from Wayland capture workflows
 - [ ] `wl-screenrec`: Wayland screen recording
-- [ ] `wl-copy`: Wayland clipboard copy
 - [ ] `wl-paste`: Wayland clipboard paste
 
 ## Related

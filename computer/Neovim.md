@@ -92,16 +92,9 @@ Need to look at getting a start page with recently used files.
 
 ### Nvim documentation
 - [x] nvim-intro (READ)
-- [ ] Q_ct About Nvim (REF)
-- [ ] news News since the previous release (SKIM/REF)
-- [ ] nvim Getting started with Nvim (READ)
+- [x] nvim Getting started with Nvim (READ)
 - [x] tutor 30-minute interactive course (READ)
-- [ ] vim-differences Nvim compared to Vim (SKIM)
-- [ ] faq Frequently Asked Questions (SKIM)
 - [x] tips Various tips (REF)
-- [ ] bugs Where to send bug reports (REF)
-- [ ] support Supported platforms (REF)
-- [ ] copying About copyrights (DATED/REF)
 
 ### Usage
 - [x] helphelp Using the :help files (READ)
@@ -161,13 +154,6 @@ Need to look at getting a start page with recently used files.
 - [ ] syntax Syntax highlighting (SKIM/REF)
 - [ ] filetype Settings for specific types of files (READ)
 - [ ] quickfix Quick edit-compile-fix cycle (READ)
-- [ ] ft_ada.txt Ada filetype plugin (REF)
-- [ ] ft_hare.txt Hare filetype plugin (REF)
-- [ ] ft_ps1.txt PowerShell filetype plugin (REF)
-- [ ] ft_raku.txt Raku filetype plugin (REF)
-- [ ] ft_rust.txt Rust filetype plugin (REF)
-- [ ] ft_sql.txt SQL filetype plugin (REF)
-
 ### UI
 - [ ] tui Built-in UI (SKIM)
 - [ ] gui External graphical UIs (SKIM/REF)

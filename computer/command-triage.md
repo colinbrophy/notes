@@ -193,6 +193,7 @@
 - [x] `clear`: clear terminal screen
 - [x] `script`: record terminal session
 - [ ] `tmux`: terminal multiplexer
+- [ ] `wl-copy`: Wayland clipboard copy
 
 ### Package management
 - [ ] `dnf`: Fedora/RHEL package manager
