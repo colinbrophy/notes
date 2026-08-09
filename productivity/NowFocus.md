@@ -1,27 +1,20 @@
-Primary:
-- [[Project – Letby]]
-  Curate, analyse, and produce concrete outputs.
-  Treat this as a bounded campaign.
-  Avoid perfectionism.
+# Now focus
 
-Secondary (non-negotiable maintenance):
-- DevOps re-entry
-  Rebuild situational awareness after career break.
-  Focus on what has changed and what is now commonly expected in day-to-day work.
+## Active
 
-  Tools to become operationally fluent with:
-  - [[Neovim]]
-  - MCP
-  - Claude Code
-  - Codex
-  - Local LLM
-  - Bash / shell (aim for comfort and speed, not cleverness)
-  - [[Anki]] (for memorising commands, workflows, and terminology)
+- **Health** — restore regular exercise and address the weight gained over the last few months. This is a problem to act on now, not a background aspiration.
+- **French** — resume [[Language Learning]], with native audio comprehension as the main goal. Use vocabulary study and regular listening to make measurable progress.
+- **DevOps through work** — learning no longer needs to be a major separate project. Spend about 30 minutes of work time each day rebuilding fluency and learn the rest as needs arise on the job.
+- Bias towards practical use and durable skills rather than deep system-building or taxonomy; see [[Evergreen skills for AI-assisted coding]].
 
-  Mode:
-  - Memorisation through repetition and use
-  - Shallow breadth, frequent exposure
-  - No deep system-building or taxonomy
-  - Bias toward durable skills; see [[Evergreen skills for AI-assisted coding]]
+## Waiting
 
-Everything else is intentionally dormant. Although now it's the new system, I do feel some better understanding of [[Obsidian]] is needed, just read the official docs, no more.
+- [[Project – Letby]] — the case is largely in the hands of the CCRC. There is little useful action for me to take now, so monitor developments without manufacturing work.
+
+## Bounded background task
+
+- Read the official [[Obsidian]] documentation for a better understanding of the system, but do not turn this into another project.
+
+Everything else is intentionally dormant.
+
+#ai-written
