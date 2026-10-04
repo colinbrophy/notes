@@ -58,4 +58,10 @@ Searching for the perfect capability is another form of drift. A path only needs
 
 A practical horizon is one year of exercises, projects, feedback and finished work. The question is not "What was I meant to master?" but "Which good path am I willing to make mine for now?"
 
+## Capability can be part of the experience
+
+For a voluntary interest, "Could AI produce a better output?" need not decide whether learning is worthwhile. Translation can give me access to French content; understanding it directly is a capability and experience I may want for myself. Enjoyment, independence, and connection can justify practice without a competitive advantage. Career decisions still require attention to demand and substitution.
+
+Distilled from a [shared chat](https://chatgpt.com/share/6ac2afed-eb44-83eb-bc7e-97ce033c631c). Related: [[Language Learning]], [[Planning without an AI forecast]].
+
 Related: [[Thinking deeply]], [[Meaningless input]], [[Personal Knowledge Management]].
