@@ -3,7 +3,9 @@
 #ai-written
 
 * There is enough established knowledge. No need to track events live.
-* If something matters, it will be analysed and persist.
+* For routine news, I can usually wait for analysis rather than track events live.
+
+Persistence is a useful attention filter, not a guarantee of importance: [[Survival is not importance]]. Fleeting personal insights may still need deliberate capture; see [[Preserve the Non-Obvious]].
 
 **Rule:**
 If I don’t need to act, I can wait.

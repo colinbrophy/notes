@@ -103,3 +103,5 @@ Better loop:
 - pipe the text to an LLM for extraction/explanation
 
 See also: [[Evergreen skills for AI-assisted coding]]. [[ChatGPT and Other chatbots]]
+
+For artistic expression, see [[Rawness and a specific voice]]: convincing imitation and having a personal reason to express something are separate questions.
