@@ -14,7 +14,7 @@ Together they create the conviction that there is “no time”:
 - Short, low-commitment activities consume the gaps in the day without any one episode appearing significant.
 - Unlimited duties claim the remaining time in advance. Even when not actively working on them, they occupy attention and make other choices feel irresponsible.
 
-The result is that time is either quietly consumed or psychologically pre-committed. “I have no time” can therefore mean **I have no time that feels unclaimed**, rather than that the hours are genuinely unavailable.
+The result is that time is either quietly consumed or psychologically pre-committed. “I have no time” can therefore mean **I have no time that feels unclaimed**, rather than that the hours are genuinely unavailable. Protecting that space requires [[The importance of rest|real rest]], not another optimisation project.
 
 ## Manufactured duty
 

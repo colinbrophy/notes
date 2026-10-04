@@ -14,8 +14,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `vdir`: verbose `ls`
 - [ ] `more`: older pager, mostly superseded by `less`
 - [ ] `mknod`: create device nodes/FIFOs manually
-- [ ] `csplit`: split files by context/pattern
-- [ ] `tsort`: topological sort
 - [ ] `setpriv`: run a program with modified Linux privileges
 
 ### Basic System Oddities
@@ -399,7 +397,6 @@ Companion note for practical omissions from [[command-triage]]. These are candid
 - [ ] `clockdiff`: measure clock difference between hosts
 - [ ] `delv`: DNS lookup with DNSSEC validation
 - [ ] `doggo`: friendly DNS lookup tool
-- [ ] `getent`: query NSS databases, especially hosts/address resolution
 - [ ] `resolvectl`: inspect/query systemd-resolved
 - [ ] `dhcpcd`: DHCP client
 - [ ] `dnsdomainname`: show DNS domain name

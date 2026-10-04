@@ -4,7 +4,7 @@ Treat these as [[Bounded commitment|bounded commitments]], not unlimited duties.
 
 ## Active
 
-- **Health** — restore regular exercise and address the weight gained over the last few months. This is a problem to act on now, not a background aspiration.
+- **Health** — support both physical and mental health. Restore regular exercise, address the weight gained over the last few months, reduce unnecessary stimulation, and protect unclaimed time for [[The importance of rest|real rest]].
 - **French** — resume [[Language Learning]], with native audio comprehension as the main goal. Use vocabulary study and regular listening to make measurable progress.
 
 ## Waiting

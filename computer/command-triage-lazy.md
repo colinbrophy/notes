@@ -2,51 +2,53 @@
 
 These tools are outside the current stack or do not justify scheduled study. Use documentation, `--help`, or examples if a real task calls for them.
 
-## Git
+## [[Git]]
 - [ ] `git filter-repo`: rewrite history for cleanup or secret removal; learn carefully when needed
 - [ ] `git archive`: export a clean tar/zip snapshot of tracked files at a commit
 - [ ] `git fsck`: check repository object integrity when diagnosing corruption
 - [ ] `git format-patch`, `git am`: email/patch-based contribution workflow
 - [ ] `git describe`: derive human-readable version strings from tags and commits
-- [ ] `git bisect`: find the commit that introduced a regression
+- [x] `git bisect`: find the commit that introduced a regression
 - [ ] `git submodule`: manage nested external repositories when a project uses them
-- [ ] `git rev-parse`: scripting helper for repo roots, refs, and object names
 - [ ] `git mergetool`, `git difftool`: use external tools for conflicts and diffs
 - [ ] `git ls-files`: show files tracked by Git
 - [ ] `jj` (Jujutsu) is a Git-compatible version-control system with first-class change tracking and automatic working-copy commits
 - [ ] `git-absorb` automatically creates `fixup!` commits by matching staged changes to earlier commits
 - [ ] tuicr
 - [ ] `ghq` clones and manages many repos under one directory
-- [ ] `hunk` provides review-first terminal diffs for agent-authored changesets
 - [ ] Worktrunk and similar worktree managers
 - [ ] https://blog.jcoglan.com/2017/05/08/merging-with-diff3/
 - [ ] [Sapling](https://github.com/facebook/sapling)
-- [ ] `gitk` GUI log
 
-## Modern CLI replacements
+## Terminal productivity tools
 - [ ] `ast-grep` searches and rewrites code by syntax structure rather than plain text
 - [ ] `rga` / `ripgrep-all` searches PDFs, Office docs, archives, and other rich files with ripgrep-like ergonomics
-- [ ] `difft` / Difftastic provides syntax-aware structural diffs ([GitHub](https://github.com/Wilfred/difftastic))
-- [ ] `hyperfine` benchmarks commands properly
-- [ ] `eza`: modern `ls` replacement
-- [ ] `bat`: cat with syntax highlighting and git integration
-- [ ] `yazi`: file browser tui
-- [ ] `fzf-tab`: zsh plugin for fzf-powered tab completion
 - [ ] `fzf-tmux`: fzf inside tmux panes
 - [x] `atuin`: much better shell history/search
 - [ ] autin ai setup i
 - [ ] `gum`: build polished interactive shell script prompts and menus
 - [ ] `btop`: gorgeous process/resource monitor
 - [x] `ncdu`: interactive disk usage explorer — find what's eating space
-- [x] `lazygit`: TUI git client you already use
+- [x] [[lazygit]]: TUI Git client you already use
 -  pull requests?
 - [x] `tree`: directory tree view
 
-## AWS
+## Terraform / IaC
+- [ ] `infracost` estimates Terraform/OpenTofu cloud costs
+- [ ] `terraform-docs` generates documentation for Terraform modules
+- [ ] `terraform-ls` is the Terraform language server
+
+## [[AWS]]
 - [ ] `aws-vault` provides safer AWS credential handling
 - [ ] `granted` switches AWS accounts, profiles, and assumed roles
 
 ## Databases / cache
+- [ ] `pgcli` is an enhanced PostgreSQL shell with completion and syntax highlighting
+- [ ] `pg_dumpall` dumps all PostgreSQL databases plus global objects like roles
+- [ ] `pg_basebackup` performs physical PostgreSQL and replication base backups
+- [ ] `vacuumdb` runs vacuum/analyze/maintenance without opening `psql`
+- [ ] `reindexdb` rebuilds indexes when debugging corruption or bloat issues
+- [ ] `createuser` creates PostgreSQL roles/users from the CLI
 - [ ] `redis-cli` supports Redis inspection and debugging
 - [ ] `sqlite3` inspects and queries SQLite databases
 
@@ -61,12 +63,6 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [x] `poweroff` powers the system down immediately
 - [x] `halt` halts the machine; usually prefer `systemctl poweroff`
 
-## Docs / discovery
-
-## File operations
-- [ ] `rename` batch-renames files
-- [ ] `trash-cli` provides a safer interactive deletion workflow than raw `rm`
-
 ## Permissions / identity / access
 - [x] `umask`: default permissions for newly created files
 - [x] `getfacl`: view POSIX ACLs
@@ -75,6 +71,9 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [x] `getcap`: view file capabilities
 - [x] `setcap`: set file capabilities
 - [x] `runuser`: run command as another user, often from root scripts
+
+## Text processing
+- [ ] `diff3`: three-way file comparison
 
 ## Checksums / encoding / binary inspection
 - [x] `sha256sum`: verify file hash
@@ -86,7 +85,7 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [x] `od`: byte/word dumps with precise numeric formatting
 - [x] `strings`: extract printable strings from binaries
 
-## Terminal / TTY
+## Terminal / [[tty|TTY]]
 - [ ] `asciinema` records terminal sessions
 - [ ] `agg` turns asciinema recordings into GIF/video
 - [ ] `vhs` scripts terminal demos and recordings
@@ -133,10 +132,11 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [x] `swapon`: enable/list swap devices
 - [x] `swapoff`: disable swap devices
 - [x] `sync`: flush writes
+- [x] `dd`: low-level block copy; verify input and output paths carefully
 - [x] `chroot`: run a shell/command with a different root directory
 - [x] `snapper`: filesystem snapshot management
 
-## Networking / connectivity
+## [[Networking]] / connectivity
 - [x] `ip`: addresses, routes, links, and neighbours
 - [x] `ss`: sockets, listening ports, and connections
 - [x] `ping`: ICMP reachability
@@ -170,7 +170,8 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [x] `ufw` is a simple firewall frontend common on Ubuntu
 
 ## File transfer / sync fundamentals
-- [ ] `rsync`: serious file copy/sync
+- [x] `croc` provides simple encrypted file transfer between machines
+- [x] `rsync`: serious file copy/sync
 - [ ] `sshfs` mounts remote directories over SSH
 
 ## User management
@@ -196,14 +197,17 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [x] `crontab`: cron job management
 
 ## Package management
+- [x] `dnf`: Fedora/RHEL package manager
+- [x] `brew`: Homebrew package manager, common on macOS and useful via Linuxbrew
+- [x] `flatpak`: Flatpak package manager
 - [ ] `rpm`: low-level rpm operations
 - [ ] `alternatives`: manage default implementations on Fedora/RHEL
 - [ ] `update-alternatives`: manage default implementations for commands
-- [ ] `apt`: Debian/Ubuntu package manager
-- [ ] `apt-cache`: query Debian/Ubuntu package metadata
+- [x] `apt`: Debian/Ubuntu package manager
+- [x] `apt-cache`: query Debian/Ubuntu package metadata
 - [ ] `dpkg`: low-level Debian package operations
 
-## SSH
+## [[SSH]]
 - [x] `ssh`: remote shell
 - [x] `scp`: remote copy
 - [x] `sftp`: remote file transfer
@@ -215,7 +219,7 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [x] `sshd`: SSH daemon
 - [x] `sshpass`: non-interactive SSH password (use keys instead)
 - [ ] `autossh` keeps SSH tunnels alive
-- [ ] `ssh-audit` audits SSH server/client crypto configuration
+- [ ] `ssh-audit` audits SSH server/client crypt￼￼￼￼ ￼￼xxh￼￼ brings your shell environment over SSH without installing dotfiles remotelyo configuration
 - [ ] `xxh` brings your shell environment over SSH without installing dotfiles remotely
 
 ## Concepts
@@ -243,18 +247,29 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [x] `/proc/`
 - [x] `/sys/`
 
-## Shell scripting quality
+## Shell scripting helpers
 - [ ] `envsubst`: substitute env vars in templates — handy for deploy scripts
 - [ ] `dotenvx`: manage/load `.env` files with encryption support
 - [ ] `dotenv-linter`: catch mistakes in `.env` files
 - [x] `flock`: prevent overlapping cron/systemd jobs with a lockfile
-- [ ] `parallel`: GNU parallel — run jobs in parallel properly
 
-## Repo hygiene / CI / linting
+## Pre-commit hooks / linting
+- [ ] `pre-commit`: run the same local hooks as CI
+- [ ] `tflint` catches Terraform and provider-specific mistakes
+- [ ] `tfsec` performs Terraform static security scanning
+- [ ] `actionlint`: lint GitHub Actions workflows
+- [ ] `zizmor`: audit GitHub Actions workflows for security problems
+- [ ] `yamllint`: catch YAML syntax/structure/style issues
+- [ ] `ansible-lint`: lint playbooks
+- [x] `shellcheck`: static analysis for shell scripts — catches real bugs
+- [x] `shfmt`: shell script formatter (use with conform.nvim)
+	- Add this to the pre commit.
+- [ ] `codespell`: catch common misspellings in code, docs, and config files
+- [ ] `typos`: fast repo-wide spell checker for source, filenames, and CI
 - [ ] `trufflehog`: scan Git history and files for secrets; use as a pre-commit hook
 - [ ] `gitleaks`: scan repos for committed secrets; use as a pre-commit hook
 
-## Ansible
+## [[Ansible]]
 - [ ] `ansible`: ad-hoc automation
 - [ ] `ansible-inventory`: inspect inventory
 - [ ] `ansible-vault`: encrypted secrets
@@ -263,12 +278,7 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [ ] `ansible-config`: inspect effective Ansible configuration
 
 ## Data wrangling
-- [ ] `jc` converts common command output to JSON for piping into `jq`
-- [ ] `jo` builds JSON objects from shell scripts without quoting hell
-- [ ] `gron` flattens JSON into greppable assignments
-- [ ] `jd` provides JSON diffs
-- [ ] `jless` is an interactive JSON viewer
-- [ ] `jqp` is a TUI playground for `jq` filters
+- [ ] `yq` is the YAML equivalent of `jq`; useful for Ansible debugging
 
 ## Infrastructure debugging
 - [ ] `iostat`: CPU and disk I/O trends (sysstat)
@@ -280,7 +290,6 @@ These tools are outside the current stack or do not justify scheduled study. Use
 - [ ] `iotop`: per-process I/O usage
 - [ ] `dmesg`: kernel ring buffer — hardware events, driver issues
 - [ ] `perf`: Linux performance profiling and low-level CPU/system analysis
-- [ ] `dd`: block copy (careful with this one)
 
 ## SELinux
 Rocky Linux means you deal with this.
@@ -294,8 +303,12 @@ Rocky Linux means you deal with this.
 - [ ] `lynis`: Linux security audit/checklist tool
 - [ ] `auditd`: Linux audit daemon
 
-## Containers
+## [[Containers]]
 Fedora-native defaults apply.
+- [ ] `podman`: rootless containers — Docker-compatible
+- [ ] `docker`: widely used container tooling
+- [ ] `docker compose`: local multi-container stacks
+- [ ] `podman compose`: Compose-style Podman workflow
 - [ ] `skopeo` inspects and copies container images without pulling
 - [ ] `cosign` signs and verifies container images/artifacts
 - [ ] `trivy` scans images, filesystems, and IaC for security issues
@@ -332,13 +345,17 @@ Relevant to your Caddy and internal PKI work.
 - [ ] `lnav`: interactive log viewer for mixed log files and timestamps
 
 ## Language/runtime tooling
-- [ ] `perl`: regular expressions and older scripting glue
+- [ ] `python3`: Python interpreter
+- [ ] `pip`: Python package installer
+- [ ] `pipx`: install Python CLI apps cleanly
+- [ ] `venv`: Python virtual environments
+- [ ] `node`: JavaScript runtime
+- [ ] `npm`: Node package manager
+- [ ] [[Perl]]: regular expressions and older scripting glue
 
-## Build / compile basics
+## Build and command monitoring
 - [ ] `make`: build automation
 - [ ] `watch` repeats a command and displays its changing output
-- [ ] `watchexec` reruns commands when files change
-- [ ] `entr` reruns commands when listed files change
 
 ## Shell language / builtins
 - [ ] `getopts`: parse shell script flags
@@ -363,7 +380,7 @@ Relevant to your Caddy and internal PKI work.
 - [ ] `postqueue`: inspect Postfix queue
 - [ ] `postfix`: Postfix control
 
-## Spell checking / writing
+## Word-list lookup
 - [ ] `look`: prefix lookup in sorted word lists/dictionaries; handy, but much lower priority than actual spell checkers
 
 ## Additional file transfer / sync
@@ -371,23 +388,23 @@ Relevant to your Caddy and internal PKI work.
 - [ ] `syncthing`: p2p file sync
 
 ## Environment / dotfiles
+- [x] `stow`: symlink farm manager (your dotfiles)
+- [x] `direnv`: per-directory env vars
 - [ ] `chezmoi`: dotfiles manager for multi-machine setups
-
-## Pipeline helpers
-- [ ] `pv`: monitor progress through a pipe / long data stream
-- [ ] `sponge`: soak stdin before writing a file, useful in pipelines that update files in place
 
 ## VM / local lab
 - [ ] `vagrant`: VM provisioning (your ansible testing)
 
 ## Archiving/compression
-- [ ] `pigz`: parallel gzip for faster compression/decompression
 - [ ] `unar`: extract many archive formats with fewer flags to remember
 
 ## Terminal mail
 - [ ] `mutt`: text-based mail client when staying in the terminal is faster than context-switching to a browser
 - [ ] `mail`: minimal text-based mail client for simple send/read flows
 - [ ] `mailq`: inspect the local outgoing mail queue
+
+## Terminal docs / browsing
+- [ ] `w3m`: terminal web browser
 
 ## Text/doc conversion
 - [x] `pandoc`: universal doc converter — markdown to PDF, docx, etc.
@@ -403,12 +420,11 @@ Relevant to your Caddy and internal PKI work.
 - [ ] `lp`: submit files to print
 
 ## Desktop / media helpers
-- [ ] `chafa`: render images in the terminal; handy for quickly inspecting screenshots without leaving the shell
 - [ ] `playerctl`: control media players from the shell
 - [ ] `brightnessctl`: control laptop/display brightness from the shell
 - [ ] `yt-dlp`: video downloader
 
-## AI / local models
+## [[AI coding agents]] / local models
 - [ ] `herdr`: terminal workspace for running and monitoring multiple coding agents ([GitHub](https://github.com/ogulcancelik/herdr))
 - [ ] `bd` / Beads: distributed graph issue tracker and persistent structured memory for AI agents ([GitHub](https://github.com/gastownhall/beads))
 - [ ] `aider`: AI pair-programming CLI for editing code in local git repos ([site](https://aider.chat/))

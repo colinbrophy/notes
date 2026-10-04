@@ -1,10 +1,22 @@
 ## Information Diet (Summary)
 
+#ai-written
+
 * There is enough established knowledge. No need to track events live.
 * If something matters, it will be analysed and persist.
 
 **Rule:**
 If I don’t need to act, I can wait.
+
+### Learn / act / ignore
+
+- **Learn:** established knowledge and durable principles—core mathematics, physics, engineering, and systems design. Prioritise knowledge that survives testing and scrutiny over novelty.
+- **Act:** actionable [[News]] or a career, financial, or other choice I actually need to make now. Seek evidence relevant to that decision, not every opinion about it.
+- **Ignore by default:** predictions, hype, and unresolved debates that do not affect a current decision. Following them quickly reaches diminishing returns.
+
+Track concrete, verified breakthroughs rather than speculative meta-debates: what has demonstrably changed, not whether AI might replace physicists in five years.
+
+**Why:** attention is scarce. Important speculation can be revisited when evidence or real-world outcomes arrive; tracking every intermediate argument adds noise and decision fatigue.
 
 **Avoid (default):**
 

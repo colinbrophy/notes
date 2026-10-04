@@ -3,7 +3,12 @@
 - [ ] List all the plugins we need to review in [[Neovim Plugins]]
 Editing registers
 - [ ] / search in ex commands
-- [ ] wildmode and wildmenu
+- [ ] Relative line numbers (`relativenumber`)
+- [ ] Highlight matching brackets (`showmatch`)
+- [ ] Vim snippets
+- [ ] `wildmode` and `wildmenu`
+- [ ] Get Vim spell checking working in code comments
+- [ ] Emacs-style bindings in Insert mode
 - [ ] Edit a macro vim
 - [ ] ctrl r ctrl w or ctrl a check if we have a card yet
 - [ ] same for q/ ctrl f

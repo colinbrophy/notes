@@ -1,0 +1,1 @@
+- Locking during `plan` guarantees an accurate view of state, but you can safely disable it because a plan never changes anything — worst case it's stale, and `apply` will catch that anyway.

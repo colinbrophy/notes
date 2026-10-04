@@ -1,4 +1,10 @@
 #human-written
+
+## Work-hours boundary
+
+> The command/DevOps list and career study belong to work hours. Outside work, I do not have to fill every gap.
+
+Use occasional work-time sessions for study or Anki cards when real tasks reveal a need. Personal time should contain genuinely unclaimed space rather than becoming an extracurricular catch-up programme. This is an application of [[Bounded commitment]].
  
  In order to be able to consolidate learning, you need to when you don't feel like learning any more, not just switch to low stimulation stuff. What you need to do is just sit there with nothing. This applies at work too, just rest when you don't have anything left, ***do nothing!*** 
 
