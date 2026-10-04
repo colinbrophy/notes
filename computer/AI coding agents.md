@@ -61,4 +61,4 @@ If any is false: it’s a latency tax to avoid thinking.
 
 Practical workflow: [[AI coding agent workflow]].
 
-See also: [[Evergreen skills for AI-assisted coding]].
+See also: [[Evergreen skills for AI-assisted coding]], [[End-to-end agent workflows]] (delegating execution and review beyond code).
